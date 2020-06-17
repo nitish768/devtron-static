@@ -1,0 +1,2 @@
+.px-media__item{position:relative;top:0;right:0;bottom:0;left:0}.px-media .play-button{transform:translateX(-50%)}.px-media .full-button{display:none !important}.px-media .iframe-video.banner-video.simple .play-button{width:80px;height:80px;background-color:#0073e6}.px-media .iframe-video.banner-video.simple .play-button:before{content:"\f487";color:#fff;font-size:30px}.px-media .fluid-width-video-wrapper{padding-top:65.25% !important}@media (max-width: 767px){.px-media{text-align:center}}
+/*# sourceMappingURL=single_media.min.css.map */

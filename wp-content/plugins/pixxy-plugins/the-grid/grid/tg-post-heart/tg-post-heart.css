@@ -1,0 +1,112 @@
+.tg-post-heart a:not([class*="tg-element-"]),
+.tg-post-heart a:not([class*="tg-element-"]):active,
+.tg-post-heart a:not([class*="tg-element-"]):focus,
+.tg-post-heart [class*="tg-element-"] *:not(del) {
+	margin: 0;
+	padding: 0;
+	color: inherit !important;
+	text-align: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.tg-post-heart [class*="tg-element-"],
+.tg-post-heart .tg-item-overlay,
+.tg-post-heart .tg-center-holder,
+.tg-post-heart .tg-center-inner > * {
+	vertical-align: middle;
+}
+.tg-post-heart .tg-item-inner {
+	overflow: hidden;
+}
+.tg-post-heart .tg-item-overlay {
+	background-color: rgba(34,34,34,0.74) !important;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 700ms ease !important;
+	-moz-transition: all 700ms ease !important;
+	-ms-transition: all 700ms ease !important;
+	transition: all 700ms ease !important;
+}
+.tg-post-heart:not(.tg-force-play):not(.tg-is-playing):hover .tg-item-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.tg-post-heart .tg-element-2 {
+	position: relative;
+	font-size: 30px;
+	line-height: 1.3em;
+	color: #ffffff !important;
+	font-weight: 800;
+	display: block;
+	margin: 0 0 10px;
+	padding: 0 30px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	transition: all 400ms ease;
+	-webkit-transform: translate3d(25px,0px,0px);
+	-moz-transform: translate3d(25px,0px,0px);
+	-ms-transform: translate3d(25px,0px,0px);
+	transform: translate3d(25px,0px,0px);
+}
+.tg-post-heart:hover .tg-element-2 {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.tg-post-heart .tg-element-3 {
+	position: relative;
+	overflow: hidden;
+	font-size: 15px;
+	line-height: 20px;
+	color: #ffffff !important;
+	font-weight: 700;
+	display: block;
+	margin: 0 20px 17px 0;
+	padding: 0 30px 20px;
+	white-space:  nowrap;
+	text-overflow:  ellipsis;
+	-o-text-overflow:  ellipsis;
+	-ms-text-overflow:  ellipsis;
+	-moz-binding:  url(&#039;ellipsis.xml#ellipsis&#039;);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	transition: all 400ms ease;
+	-webkit-transform: translate3d(25px,0px,0px);
+	-moz-transform: translate3d(25px,0px,0px);
+	-ms-transform: translate3d(25px,0px,0px);
+	transform: translate3d(25px,0px,0px);
+}
+.tg-post-heart:hover .tg-element-3 {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.tg-post-heart .tg-element-3 .tg-item-term {
+	position: relative;
+	display: inline-block;
+}

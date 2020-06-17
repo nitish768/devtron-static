@@ -1,0 +1,789 @@
+0000.001 (0) Opened log file at time: Sat, 13 Jun 2020 11:31:16 +0000 on https://devtron.ai
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.25 WP: 5.4.2 PHP: 7.4.6 (apache2handler, Linux ip-172-31-17-131 5.3.0-1023-aws #25~18.04.1-Ubuntu SMP Fri Jun 5 15:18:30 UTC 2020 x86_64) MySQL: 5.7.30-0ubuntu0.18.04.1 WPLANG: en_US Server: Apache/2.4.29 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 10.7M | 2M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 9228.4 MB
+0000.003 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.003 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.005 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1591961466, seconds_ago=86410)
+0000.006 (0) Set semaphore last lock (fd) time to 2020-06-13 11:31:16
+0000.006 (0) Semaphore lock (fd) complete
+0000.008 (0) Backup run: resumption=0, nonce=6f813e5290eb, file_nonce=6f813e5290eb begun at=1592047876 (0s ago), job type=backup
+0000.009 (0) Scheduling a resumption (1) after 300 seconds (1592048176) in case this run gets aborted
+0000.179 (0) Checking if we have a zip executable available
+0000.181 (0) Creation of backups of directories: beginning
+0000.182 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.019 (0) Total entities for the zip file: 1800 directories, 10133 files (0 skipped as non-modified), 175 MB
+0001.026 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.031 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.036 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.041 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.046 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.046 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.9 MB, 10133 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0002.796 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 600 files added (on-disk size: 2298.9 KB)
+0002.801 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 700 files added (on-disk size: 2298.9 KB)
+0002.805 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 800 files added (on-disk size: 2298.9 KB)
+0002.810 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 900 files added (on-disk size: 2298.9 KB)
+0002.815 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1000 files added (on-disk size: 2298.9 KB)
+0002.815 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.5 MB, 10133 files batched, 501 (1002) added so far); re-opening (prior size: 2298.9 KB)
+0004.862 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1100 files added (on-disk size: 6160.5 KB)
+0004.866 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1200 files added (on-disk size: 6160.5 KB)
+0004.871 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1300 files added (on-disk size: 6160.5 KB)
+0004.875 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1400 files added (on-disk size: 6160.5 KB)
+0004.880 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1500 files added (on-disk size: 6160.5 KB)
+0004.881 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (23.9 MB, 10133 files batched, 501 (1503) added so far); re-opening (prior size: 6160.5 KB)
+0009.111 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1600 files added (on-disk size: 13421.7 KB)
+0009.116 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1700 files added (on-disk size: 13421.7 KB)
+0009.120 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1800 files added (on-disk size: 13421.7 KB)
+0009.125 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 1900 files added (on-disk size: 13421.7 KB)
+0009.130 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2000 files added (on-disk size: 13421.7 KB)
+0009.131 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.6 MB, 10133 files batched, 501 (2004) added so far); re-opening (prior size: 13421.7 KB)
+0009.888 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2100 files added (on-disk size: 14096 KB)
+0009.893 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2200 files added (on-disk size: 14096 KB)
+0009.898 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2300 files added (on-disk size: 14096 KB)
+0009.903 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2400 files added (on-disk size: 14096 KB)
+0009.908 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2500 files added (on-disk size: 14096 KB)
+0009.908 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.5 MB, 10133 files batched, 501 (2505) added so far); re-opening (prior size: 14096 KB)
+0011.400 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2600 files added (on-disk size: 17126.1 KB)
+0011.405 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2700 files added (on-disk size: 17126.1 KB)
+0011.410 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2800 files added (on-disk size: 17126.1 KB)
+0011.415 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 2900 files added (on-disk size: 17126.1 KB)
+0011.419 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3000 files added (on-disk size: 17126.1 KB)
+0011.420 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.6 MB, 10133 files batched, 501 (3006) added so far); re-opening (prior size: 17126.1 KB)
+0012.143 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3100 files added (on-disk size: 17776.5 KB)
+0012.148 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3200 files added (on-disk size: 17776.5 KB)
+0012.153 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3300 files added (on-disk size: 17776.5 KB)
+0012.158 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3400 files added (on-disk size: 17776.5 KB)
+0012.162 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3500 files added (on-disk size: 17776.5 KB)
+0012.163 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.6 MB, 10133 files batched, 501 (3507) added so far); re-opening (prior size: 17776.5 KB)
+0013.578 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3600 files added (on-disk size: 19475.1 KB)
+0013.582 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3700 files added (on-disk size: 19475.1 KB)
+0013.587 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3800 files added (on-disk size: 19475.1 KB)
+0013.592 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 3900 files added (on-disk size: 19475.1 KB)
+0013.596 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4000 files added (on-disk size: 19475.1 KB)
+0013.597 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.3 MB, 10133 files batched, 501 (4008) added so far); re-opening (prior size: 19475.1 KB)
+0015.542 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4100 files added (on-disk size: 21908.1 KB)
+0015.546 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4200 files added (on-disk size: 21908.1 KB)
+0015.551 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4300 files added (on-disk size: 21908.1 KB)
+0015.555 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4400 files added (on-disk size: 21908.1 KB)
+0015.560 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4500 files added (on-disk size: 21908.1 KB)
+0015.561 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 10133 files batched, 501 (4509) added so far); re-opening (prior size: 21908.1 KB)
+0016.270 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4600 files added (on-disk size: 22488.8 KB)
+0016.275 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4700 files added (on-disk size: 22488.8 KB)
+0016.279 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4800 files added (on-disk size: 22488.8 KB)
+0016.284 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 4900 files added (on-disk size: 22488.8 KB)
+0016.289 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5000 files added (on-disk size: 22488.8 KB)
+0016.290 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.5 MB, 10133 files batched, 501 (5010) added so far); re-opening (prior size: 22488.8 KB)
+0017.185 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5100 files added (on-disk size: 23494.2 KB)
+0017.189 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5200 files added (on-disk size: 23494.2 KB)
+0017.194 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5300 files added (on-disk size: 23494.2 KB)
+0017.199 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5400 files added (on-disk size: 23494.2 KB)
+0017.203 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5500 files added (on-disk size: 23494.2 KB)
+0017.204 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.6 MB, 10133 files batched, 501 (5511) added so far); re-opening (prior size: 23494.2 KB)
+0018.688 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5600 files added (on-disk size: 24462 KB)
+0018.693 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5700 files added (on-disk size: 24462 KB)
+0018.698 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5800 files added (on-disk size: 24462 KB)
+0018.703 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 5900 files added (on-disk size: 24462 KB)
+0018.707 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6000 files added (on-disk size: 24462 KB)
+0018.708 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.4 MB, 10133 files batched, 501 (6012) added so far); re-opening (prior size: 24462 KB)
+0020.901 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6100 files added (on-disk size: 28371.9 KB)
+0020.906 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6200 files added (on-disk size: 28371.9 KB)
+0020.910 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6300 files added (on-disk size: 28371.9 KB)
+0020.915 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6400 files added (on-disk size: 28371.9 KB)
+0020.920 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6500 files added (on-disk size: 28371.9 KB)
+0020.921 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.2 MB, 10133 files batched, 501 (6513) added so far); re-opening (prior size: 28371.9 KB)
+0021.925 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6600 files added (on-disk size: 31215.3 KB)
+0021.929 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6700 files added (on-disk size: 31215.3 KB)
+0021.934 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6800 files added (on-disk size: 31215.3 KB)
+0021.939 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 6900 files added (on-disk size: 31215.3 KB)
+0021.944 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7000 files added (on-disk size: 31215.3 KB)
+0021.945 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.2 MB, 10133 files batched, 501 (7014) added so far); re-opening (prior size: 31215.3 KB)
+0024.606 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7100 files added (on-disk size: 35436.5 KB)
+0024.611 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7200 files added (on-disk size: 35436.5 KB)
+0024.616 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7300 files added (on-disk size: 35436.5 KB)
+0024.621 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7400 files added (on-disk size: 35436.5 KB)
+0024.626 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7500 files added (on-disk size: 35436.5 KB)
+0024.627 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.2 MB, 10133 files batched, 501 (7515) added so far); re-opening (prior size: 35436.5 KB)
+0027.123 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7600 files added (on-disk size: 36629.5 KB)
+0027.128 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7700 files added (on-disk size: 36629.5 KB)
+0027.133 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7800 files added (on-disk size: 36629.5 KB)
+0027.138 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 7900 files added (on-disk size: 36629.5 KB)
+0027.143 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8000 files added (on-disk size: 36629.5 KB)
+0027.144 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.7 MB, 10133 files batched, 501 (8016) added so far); re-opening (prior size: 36629.5 KB)
+0030.096 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8100 files added (on-disk size: 39955.6 KB)
+0030.101 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8200 files added (on-disk size: 39955.6 KB)
+0030.106 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8300 files added (on-disk size: 39955.6 KB)
+0030.110 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8400 files added (on-disk size: 39955.6 KB)
+0030.115 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8500 files added (on-disk size: 39955.6 KB)
+0030.116 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (15.8 MB, 10133 files batched, 501 (8517) added so far); re-opening (prior size: 39955.6 KB)
+0034.349 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8600 files added (on-disk size: 48422.7 KB)
+0034.355 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8700 files added (on-disk size: 48422.7 KB)
+0034.360 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8800 files added (on-disk size: 48422.7 KB)
+0034.364 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 8900 files added (on-disk size: 48422.7 KB)
+0034.369 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9000 files added (on-disk size: 48422.7 KB)
+0034.371 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (11.4 MB, 10133 files batched, 501 (9018) added so far); re-opening (prior size: 48422.7 KB)
+0038.993 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9100 files added (on-disk size: 52841.2 KB)
+0038.998 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9200 files added (on-disk size: 52841.2 KB)
+0039.003 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9300 files added (on-disk size: 52841.2 KB)
+0039.008 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9400 files added (on-disk size: 52841.2 KB)
+0039.012 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9500 files added (on-disk size: 52841.2 KB)
+0039.014 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (14 MB, 10133 files batched, 501 (9519) added so far); re-opening (prior size: 52841.2 KB)
+0042.860 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9600 files added (on-disk size: 59996.2 KB)
+0042.865 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9700 files added (on-disk size: 59996.2 KB)
+0042.870 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9800 files added (on-disk size: 59996.2 KB)
+0042.874 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 9900 files added (on-disk size: 59996.2 KB)
+0042.879 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 10000 files added (on-disk size: 59996.2 KB)
+0042.881 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (15.7 MB, 10133 files batched, 501 (10020) added so far); re-opening (prior size: 59996.2 KB)
+0046.173 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip.tmp: 10100 files added (on-disk size: 70426.6 KB)
+0048.613 (0) Created plugins zip (0) - 74377.3 KB in 48.4 s (1535.8 KB/s) (sha1: 276954cb1a6ec86a4e345ad390eba862473e28e8, sha256: 91d527988ff1ae23108dcf23b934c95a75e561bd80cfac0174d884cf35b3c2ad)
+0048.614 (0) Beginning creation of dump of themes (split every: 400 MB)
+0048.645 (0) Total entities for the zip file: 55 directories, 589 files (0 skipped as non-modified), 16.5 MB
+0048.649 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0048.654 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0048.658 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0048.663 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0048.668 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0048.668 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.1 MB, 589 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0051.120 (0) Created themes zip (0) - 8865 KB in 2.5 s (3538.9 KB/s) (sha1: cb7b56554f6ed291da627666b8260d796512a852, sha256: e63a86ebf3697180fee38e43779d93d6d8e64b73f2effc4c91c6ecd05cc31868)
+0051.121 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0051.122 (0) Looking for candidates to backup in: /var/www/devtron.ai/wp-content/uploads
+0051.122 (0) finding files: GeoLite2-Country.mmdb: adding to list (1)
+0051.122 (0) finding files: woocommerce-placeholder-500x500.png: adding to list (2)
+0051.122 (0) finding files: woocommerce-placeholder-150x150.png: adding to list (3)
+0051.123 (0) finding files: woocommerce_uploads: adding to list (4)
+0051.123 (0) finding files: 2020.zip: adding to list (5)
+0051.123 (0) finding files: woocommerce-placeholder-100x100.png: adding to list (6)
+0051.124 (0) finding files: woocommerce-placeholder-600x400.png: adding to list (7)
+0051.124 (0) finding files: woocommerce-placeholder-768x768.png: adding to list (8)
+0051.124 (0) finding files: woocommerce-placeholder-600x600.png: adding to list (9)
+0051.124 (0) finding files: woocommerce-placeholder-1024x1024.png: adding to list (10)
+0051.125 (0) finding files: 2019: adding to list (11)
+0051.125 (0) finding files: .htaccess: adding to list (12)
+0051.125 (0) finding files: 2019.zip: adding to list (13)
+0051.126 (0) finding files: hummingbird-assets: adding to list (14)
+0051.126 (0) finding files: 2018: adding to list (15)
+0051.126 (0) finding files: woocommerce-placeholder-1000x1000.png: adding to list (16)
+0051.126 (0) finding files: woocommerce-placeholder.png: adding to list (17)
+0051.127 (0) finding files: woocommerce-placeholder-500x1000.png: adding to list (18)
+0051.127 (0) finding files: js_composer: adding to list (19)
+0051.127 (0) finding files: 2020: adding to list (20)
+0051.127 (0) finding files: wc-logs: adding to list (21)
+0051.128 (0) finding files: woocommerce-placeholder-1000x500.png: adding to list (22)
+0051.128 (0) finding files: __MACOSX: adding to list (23)
+0051.128 (0) finding files: redux: adding to list (24)
+0051.129 (0) finding files: woocommerce-placeholder-300x300.png: adding to list (25)
+0051.129 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0051.187 (0) Total entities for the zip file: 23 directories, 2659 files (0 skipped as non-modified), 120 MB
+0051.188 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (35.4 MB, 2659 files batched, 6 (6) added so far); re-opening (prior size: 0 KB)
+0056.903 (0) A useful amount of data was added after this amount of zip processing: 6.1 s (normalised: 4.3 s, rate: 5910.6 KB/s)
+0056.904 (0) Performance is good - will increase the amount of data we attempt to batch (time=6.1397359371185, normalised_time=4.3311988645469, max_time=56.902791023254, data points known=1, old_max_bytes=26214400, new_max_bytes=206641057)
+0056.909 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 100 files added (on-disk size: 34388.9 KB)
+0056.914 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 200 files added (on-disk size: 34388.9 KB)
+0056.918 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 300 files added (on-disk size: 34388.9 KB)
+0056.923 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 400 files added (on-disk size: 34388.9 KB)
+0056.928 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 500 files added (on-disk size: 34388.9 KB)
+0056.929 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (34.4 MB, 2659 files batched, 501 (507) added so far); re-opening (prior size: 34388.9 KB)
+0063.113 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 600 files added (on-disk size: 51778.8 KB)
+0063.117 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 700 files added (on-disk size: 51778.8 KB)
+0063.122 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 800 files added (on-disk size: 51778.8 KB)
+0063.127 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 900 files added (on-disk size: 51778.8 KB)
+0063.132 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1000 files added (on-disk size: 51778.8 KB)
+0063.133 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.8 MB, 2659 files batched, 501 (1008) added so far); re-opening (prior size: 51778.8 KB)
+0064.575 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1100 files added (on-disk size: 54767 KB)
+0064.580 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1200 files added (on-disk size: 54767 KB)
+0064.584 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1300 files added (on-disk size: 54767 KB)
+0064.589 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1400 files added (on-disk size: 54767 KB)
+0064.593 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1500 files added (on-disk size: 54767 KB)
+0064.594 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.6 MB, 2659 files batched, 501 (1509) added so far); re-opening (prior size: 54767 KB)
+0067.252 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1600 files added (on-disk size: 59576.3 KB)
+0067.256 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1700 files added (on-disk size: 59576.3 KB)
+0067.261 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1800 files added (on-disk size: 59576.3 KB)
+0067.265 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 1900 files added (on-disk size: 59576.3 KB)
+0067.269 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2000 files added (on-disk size: 59576.3 KB)
+0067.270 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.5 MB, 2659 files batched, 501 (2010) added so far); re-opening (prior size: 59576.3 KB)
+0068.716 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2100 files added (on-disk size: 69356 KB)
+0068.721 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2200 files added (on-disk size: 69356 KB)
+0068.725 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2300 files added (on-disk size: 69356 KB)
+0068.730 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2400 files added (on-disk size: 69356 KB)
+0068.735 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2500 files added (on-disk size: 69356 KB)
+0068.736 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (32.9 MB, 2659 files batched, 501 (2511) added so far); re-opening (prior size: 69356 KB)
+0072.334 (0) Zip: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip.tmp: 2600 files added (on-disk size: 103122.7 KB)
+0075.109 (0) Created uploads zip (0) - 103459.2 KB in 24 s (4314.4 KB/s) (sha1: ebd7747f45ce54fbee39199d5a2ea3dc534e6a22, sha256: 33522e5d3596f6a79d00a53bf3b90d33f861ab65bcb7d96081040f0be92ef4c6)
+0075.111 (0) Beginning backup of other directories found in the content directory (index: 0)
+0075.111 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0075.112 (0) Looking for candidates to backup in: /var/www/devtron.ai/wp-content
+0075.112 (0) finding files: wflogs: adding to list (1)
+0075.112 (0) finding files: wphb-cache: adding to list (2)
+0075.112 (0) finding files: updraft: skipping: this is the updraft directory
+0075.113 (0) finding files: plugins: skipping: this is the plugins directory
+0075.113 (0) finding files: uploads: skipping: this is the uploads directory
+0075.113 (0) finding files: wphb-logs: adding to list (3)
+0075.114 (0) finding files: themes: skipping: this is the themes directory
+0075.114 (0) finding files: upgrade: skipping: excluded by options
+0075.114 (0) finding files: index.php: adding to list (4)
+0075.121 (0) Total entities for the zip file: 11 directories, 61 files (0 skipped as non-modified), 5.3 MB
+0077.872 (0) Created others zip (0) - 2545.9 KB in 2.8 s (923.5 KB/s) (sha1: a96b370889a8e2e1d442c1267fea7fe1c110f708, sha256: aad174d7ff249da162a006c8f0b79cb54a17959582b6b7265b258d6efd8bd370)
+0077.874 (0) Saving backup status to database (elements: 8)
+0077.876 (0) Beginning creation of database dump (WordPress DB)
+0077.877 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0078.084 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1235 bytes total)
+0078.085 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0078.191 (0) Table wp_options: Total expected rows (approximate): 1292
+0079.427 (0) Table wp_options: Total rows added: 1288 in 1.24 seconds
+0079.428 (0) Table wp_options: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_options.table.gz - 4671.1 KB)
+0079.430 (0) Table wp_users: Total expected rows (approximate): 6
+0079.431 (0) Table wp_users: Total rows added: 6 in 0.00 seconds
+0079.432 (0) Table wp_users: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_users.table.gz - 1 KB)
+0079.434 (0) Table wp_usermeta: Total expected rows (approximate): 242
+0079.436 (0) Table wp_usermeta: Total rows added: 242 in 0.00 seconds
+0079.436 (0) Table wp_usermeta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_usermeta.table.gz - 8.6 KB)
+0079.439 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0079.440 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0079.440 (0) Table wp_commentmeta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0079.442 (0) Table wp_comments: Total expected rows (approximate): 4
+0079.443 (0) Table wp_comments: Total rows added: 4 in 0.00 seconds
+0079.443 (0) Table wp_comments: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_comments.table.gz - 1.3 KB)
+0079.446 (0) Table wp_links: Total expected rows (approximate): 0
+0079.447 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0079.447 (0) Table wp_links: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_links.table.gz - 0.4 KB)
+0079.449 (0) Table wp_postmeta: Total expected rows (approximate): 15888
+0079.520 (0) Binary mysqldump: error (code: 3)
+0079.783 (0) Table wp_postmeta: Total rows added: 15888 in 0.26 seconds
+0079.783 (0) Table wp_postmeta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_postmeta.table.gz - 1121.6 KB)
+0079.785 (0) Table wp_posts: Total expected rows (approximate): 1325
+0080.992 (0) Table wp_posts: Total rows added: 1325 in 1.21 seconds
+0080.993 (0) Table wp_posts: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_posts.table.gz - 5619.7 KB)
+0080.995 (0) Table wp_term_relationships: Total expected rows (approximate): 402
+0080.997 (0) Table wp_term_relationships: Total rows added: 402 in 0.00 seconds
+0080.998 (0) Table wp_term_relationships: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_term_relationships.table.gz - 1.5 KB)
+0080.999 (0) Table wp_term_taxonomy: Total expected rows (approximate): 272
+0081.003 (0) Table wp_term_taxonomy: Total rows added: 272 in 0.00 seconds
+0081.004 (0) Table wp_term_taxonomy: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_term_taxonomy.table.gz - 14.8 KB)
+0081.006 (0) Table wp_termmeta: Total expected rows (approximate): 192
+0081.007 (0) Table wp_termmeta: Total rows added: 192 in 0.00 seconds
+0081.008 (0) Table wp_termmeta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_termmeta.table.gz - 1.5 KB)
+0081.009 (0) Table wp_terms: Total expected rows (approximate): 272
+0081.011 (0) Table wp_terms: Total rows added: 272 in 0.00 seconds
+0081.012 (0) Table wp_terms: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_terms.table.gz - 6.6 KB)
+0081.014 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 48
+0081.016 (0) Table wp_yoast_seo_links: Total rows added: 48 in 0.00 seconds
+0081.017 (0) Table wp_yoast_seo_links: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_seo_links.table.gz - 1.7 KB)
+0081.018 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 614
+0081.020 (0) Table wp_yoast_seo_meta: Total rows added: 614 in 0.00 seconds
+0081.021 (0) Table wp_yoast_seo_meta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_seo_meta.table.gz - 1.9 KB)
+0081.023 (0) Table wp_sgpb_subscribers: Total expected rows (approximate): 0
+0081.024 (0) Table wp_sgpb_subscribers: Total rows added: 0 in 0.00 seconds
+0081.024 (0) Table wp_sgpb_subscribers: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_sgpb_subscribers.table.gz - 0.3 KB)
+0081.027 (0) Table wp_sgpb_subscription_error_log: Total expected rows (approximate): 0
+0081.028 (0) Table wp_sgpb_subscription_error_log: Total rows added: 0 in 0.00 seconds
+0081.028 (0) Table wp_sgpb_subscription_error_log: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_sgpb_subscription_error_log.table.gz - 0.3 KB)
+0081.030 (0) Table wp_smush_dir_images: Total expected rows (approximate): 0
+0081.031 (0) Table wp_smush_dir_images: Total rows added: 0 in 0.00 seconds
+0081.031 (0) Table wp_smush_dir_images: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_smush_dir_images.table.gz - 0.4 KB)
+0081.034 (0) Table wp_tg_item_elements: Total expected rows (approximate): 0
+0081.035 (0) Table wp_tg_item_elements: Total rows added: 0 in 0.00 seconds
+0081.035 (0) Table wp_tg_item_elements: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_tg_item_elements.table.gz - 0.4 KB)
+0081.037 (0) Table wp_tg_item_skins: Total expected rows (approximate): 0
+0081.038 (0) Table wp_tg_item_skins: Total rows added: 0 in 0.00 seconds
+0081.039 (0) Table wp_tg_item_skins: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_tg_item_skins.table.gz - 0.4 KB)
+0081.041 (0) Table wp_wc_download_log: Total expected rows (approximate): 0
+0081.042 (0) Table wp_wc_download_log: Total rows added: 0 in 0.00 seconds
+0081.042 (0) Table wp_wc_download_log: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_download_log.table.gz - 0.4 KB)
+0081.045 (0) Table wp_wc_product_meta_lookup: Total expected rows (approximate): 0
+0081.045 (0) Table wp_wc_product_meta_lookup: Total rows added: 0 in 0.00 seconds
+0081.046 (0) Table wp_wc_product_meta_lookup: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_product_meta_lookup.table.gz - 0.5 KB)
+0081.048 (0) Table wp_wc_tax_rate_classes: Total expected rows (approximate): 2
+0081.050 (0) Table wp_wc_tax_rate_classes: Total rows added: 2 in 0.00 seconds
+0081.050 (0) Table wp_wc_tax_rate_classes: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_tax_rate_classes.table.gz - 0.4 KB)
+0081.053 (0) Table wp_wc_webhooks: Total expected rows (approximate): 0
+0081.054 (0) Table wp_wc_webhooks: Total rows added: 0 in 0.00 seconds
+0081.054 (0) Table wp_wc_webhooks: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_webhooks.table.gz - 0.5 KB)
+0081.056 (0) Table wp_wfblockediplog: Total expected rows (approximate): 16
+0081.057 (0) Table wp_wfblockediplog: Total rows added: 16 in 0.00 seconds
+0081.057 (0) Table wp_wfblockediplog: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfblockediplog.table.gz - 0.5 KB)
+0081.059 (0) Table wp_wfblocks7: Total expected rows (approximate): 17
+0081.060 (0) Table wp_wfblocks7: Total rows added: 17 in 0.00 seconds
+0081.060 (0) Table wp_wfblocks7: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfblocks7.table.gz - 0.9 KB)
+0081.062 (0) Table wp_wfconfig: Total expected rows (approximate): 263
+0081.107 (0) Table wp_wfconfig: Total rows added: 263 in 0.05 seconds
+0081.109 (0) Table wp_wfconfig: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfconfig.table.gz - 418 KB)
+0081.111 (0) Table wp_wfcrawlers: Total expected rows (approximate): 6
+0081.112 (0) Table wp_wfcrawlers: Total rows added: 6 in 0.00 seconds
+0081.112 (0) Table wp_wfcrawlers: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfcrawlers.table.gz - 0.5 KB)
+0081.115 (0) Table wp_wffilechanges: Total expected rows (approximate): 0
+0081.116 (0) Table wp_wffilechanges: Total rows added: 0 in 0.00 seconds
+0081.116 (0) Table wp_wffilechanges: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wffilechanges.table.gz - 0.3 KB)
+0081.250 (0) Table wp_wffilemods: Total expected rows (approximate): 10877
+0081.382 (0) Table wp_wffilemods: binary mysqldump finished (writes: 37) in 0.13 seconds
+0081.383 (0) Table wp_wffilemods: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wffilemods.table.gz - 924.8 KB)
+0081.385 (0) Table wp_wfhits: Total expected rows (approximate): 107
+0081.387 (0) Table wp_wfhits: Total rows added: 107 in 0.00 seconds
+0081.388 (0) Table wp_wfhits: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfhits.table.gz - 2.9 KB)
+0081.390 (0) Table wp_wfhoover: Total expected rows (approximate): 0
+0081.391 (0) Table wp_wfhoover: Total rows added: 0 in 0.00 seconds
+0081.392 (0) Table wp_wfhoover: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfhoover.table.gz - 0.3 KB)
+0081.395 (0) Table wp_wfissues: Total expected rows (approximate): 8
+0081.396 (0) Table wp_wfissues: Total rows added: 8 in 0.00 seconds
+0081.397 (0) Table wp_wfissues: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfissues.table.gz - 2.8 KB)
+0081.408 (0) Table wp_wfknownfilelist: Total expected rows (approximate): 10877
+0081.454 (0) Table wp_wfknownfilelist: binary mysqldump finished (writes: 28) in 0.05 seconds
+0081.455 (0) Table wp_wfknownfilelist: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfknownfilelist.table.gz - 111.7 KB)
+0081.457 (0) Table wp_wflivetraffichuman: Total expected rows (approximate): 0
+0081.458 (0) Table wp_wflivetraffichuman: Total rows added: 0 in 0.00 seconds
+0081.459 (0) Table wp_wflivetraffichuman: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wflivetraffichuman.table.gz - 0.3 KB)
+0081.462 (0) Table wp_wflocs: Total expected rows (approximate): 11
+0081.463 (0) Table wp_wflocs: Total rows added: 11 in 0.00 seconds
+0081.463 (0) Table wp_wflocs: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wflocs.table.gz - 0.7 KB)
+0081.465 (0) Table wp_wflogins: Total expected rows (approximate): 101
+0081.467 (0) Table wp_wflogins: Total rows added: 101 in 0.00 seconds
+0081.467 (0) Table wp_wflogins: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wflogins.table.gz - 2.6 KB)
+0081.469 (0) Table wp_wfls_2fa_secrets: Total expected rows (approximate): 0
+0081.470 (0) Table wp_wfls_2fa_secrets: Total rows added: 0 in 0.00 seconds
+0081.470 (0) Table wp_wfls_2fa_secrets: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfls_2fa_secrets.table.gz - 0.4 KB)
+0081.472 (0) Table wp_wfls_settings: Total expected rows (approximate): 19
+0081.473 (0) Table wp_wfls_settings: Total rows added: 19 in 0.00 seconds
+0081.474 (0) Table wp_wfls_settings: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfls_settings.table.gz - 0.8 KB)
+0081.476 (0) Table wp_wfnotifications: Total expected rows (approximate): 2
+0081.477 (0) Table wp_wfnotifications: Total rows added: 2 in 0.00 seconds
+0081.478 (0) Table wp_wfnotifications: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfnotifications.table.gz - 0.5 KB)
+0081.480 (0) Table wp_wfpendingissues: Total expected rows (approximate): 0
+0081.481 (0) Table wp_wfpendingissues: Total rows added: 0 in 0.00 seconds
+0081.482 (0) Table wp_wfpendingissues: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfpendingissues.table.gz - 0.4 KB)
+0081.483 (0) Table wp_wfreversecache: Total expected rows (approximate): 8
+0081.484 (0) Table wp_wfreversecache: Total rows added: 8 in 0.00 seconds
+0081.485 (0) Table wp_wfreversecache: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfreversecache.table.gz - 0.5 KB)
+0081.487 (0) Table wp_wfsnipcache: Total expected rows (approximate): 0
+0081.487 (0) Table wp_wfsnipcache: Total rows added: 0 in 0.00 seconds
+0081.488 (0) Table wp_wfsnipcache: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfsnipcache.table.gz - 0.4 KB)
+0081.493 (0) Table wp_wfstatus: Total expected rows (approximate): 1196
+0081.502 (0) Table wp_wfstatus: Total rows added: 1196 in 0.01 seconds
+0081.503 (0) Table wp_wfstatus: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfstatus.table.gz - 20.7 KB)
+0081.505 (0) Table wp_wftrafficrates: Total expected rows (approximate): 0
+0081.506 (0) Table wp_wftrafficrates: Total rows added: 0 in 0.00 seconds
+0081.506 (0) Table wp_wftrafficrates: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wftrafficrates.table.gz - 0.3 KB)
+0081.508 (0) Table wp_woocommerce_api_keys: Total expected rows (approximate): 0
+0081.509 (0) Table wp_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0081.510 (0) Table wp_woocommerce_api_keys: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_api_keys.table.gz - 0.4 KB)
+0081.512 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0081.513 (0) Table wp_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0081.513 (0) Table wp_woocommerce_attribute_taxonomies: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_attribute_taxonomies.table.gz - 0.4 KB)
+0081.515 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0081.516 (0) Table wp_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0081.517 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0081.519 (0) Table wp_woocommerce_log: Total expected rows (approximate): 0
+0081.520 (0) Table wp_woocommerce_log: Total rows added: 0 in 0.00 seconds
+0081.520 (0) Table wp_woocommerce_log: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_log.table.gz - 0.4 KB)
+0081.523 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 0
+0081.523 (0) Table wp_woocommerce_order_itemmeta: Total rows added: 0 in 0.00 seconds
+0081.524 (0) Table wp_woocommerce_order_itemmeta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_order_itemmeta.table.gz - 0.4 KB)
+0081.526 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 0
+0081.527 (0) Table wp_woocommerce_order_items: Total rows added: 0 in 0.00 seconds
+0081.527 (0) Table wp_woocommerce_order_items: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_order_items.table.gz - 0.4 KB)
+0081.530 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0081.530 (0) Table wp_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.00 seconds
+0081.531 (0) Table wp_woocommerce_payment_tokenmeta: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0081.533 (0) Table wp_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0081.534 (0) Table wp_woocommerce_payment_tokens: Total rows added: 0 in 0.00 seconds
+0081.534 (0) Table wp_woocommerce_payment_tokens: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0081.537 (0) Table wp_woocommerce_sessions: Total expected rows (approximate): 1
+0081.538 (0) Table wp_woocommerce_sessions: Total rows added: 1 in 0.00 seconds
+0081.538 (0) Table wp_woocommerce_sessions: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_sessions.table.gz - 0.8 KB)
+0081.541 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (approximate): 1
+0081.542 (0) Table wp_woocommerce_shipping_zone_locations: Total rows added: 1 in 0.00 seconds
+0081.542 (0) Table wp_woocommerce_shipping_zone_locations: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0081.545 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (approximate): 2
+0081.546 (0) Table wp_woocommerce_shipping_zone_methods: Total rows added: 2 in 0.00 seconds
+0081.547 (0) Table wp_woocommerce_shipping_zone_methods: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0081.549 (0) Table wp_woocommerce_shipping_zones: Total expected rows (approximate): 1
+0081.550 (0) Table wp_woocommerce_shipping_zones: Total rows added: 1 in 0.00 seconds
+0081.551 (0) Table wp_woocommerce_shipping_zones: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_shipping_zones.table.gz - 0.4 KB)
+0081.553 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0081.554 (0) Table wp_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0081.554 (0) Table wp_woocommerce_tax_rate_locations: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0081.557 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0081.557 (0) Table wp_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0081.558 (0) Table wp_woocommerce_tax_rates: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_tax_rates.table.gz - 0.4 KB)
+0081.560 (0) Table wp_yoast_indexable: Total expected rows (approximate): 61
+0081.563 (0) Table wp_yoast_indexable: Total rows added: 73 in 0.00 seconds
+0081.564 (0) Table wp_yoast_indexable: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_indexable.table.gz - 8.8 KB)
+0081.565 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 0
+0081.566 (0) Table wp_yoast_indexable_hierarchy: Total rows added: 1 in 0.00 seconds
+0081.567 (0) Table wp_yoast_indexable_hierarchy: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_indexable_hierarchy.table.gz - 0.4 KB)
+0081.569 (0) Table wp_yoast_migrations: Total expected rows (approximate): 13
+0081.570 (0) Table wp_yoast_migrations: Total rows added: 13 in 0.00 seconds
+0081.570 (0) Table wp_yoast_migrations: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_migrations.table.gz - 0.5 KB)
+0081.572 (0) Table wp_yoast_primary_term: Total expected rows (approximate): 21
+0081.573 (0) Table wp_yoast_primary_term: Total rows added: 22 in 0.00 seconds
+0081.574 (0) Table wp_yoast_primary_term: finishing file (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_primary_term.table.gz - 0.7 KB)
+0081.575 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_options.table.gz (1/62): adding to final database dump
+0082.742 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_users.table.gz (2/62): adding to final database dump
+0082.743 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_usermeta.table.gz (3/62): adding to final database dump
+0082.745 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_commentmeta.table.gz (4/62): adding to final database dump
+0082.745 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_comments.table.gz (5/62): adding to final database dump
+0082.746 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_links.table.gz (6/62): adding to final database dump
+0082.746 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_postmeta.table.gz (7/62): adding to final database dump
+0082.997 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_posts.table.gz (8/62): adding to final database dump
+0084.130 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_term_relationships.table.gz (9/62): adding to final database dump
+0084.131 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_term_taxonomy.table.gz (10/62): adding to final database dump
+0084.134 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_termmeta.table.gz (11/62): adding to final database dump
+0084.135 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_terms.table.gz (12/62): adding to final database dump
+0084.136 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_seo_links.table.gz (13/62): adding to final database dump
+0084.137 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_seo_meta.table.gz (14/62): adding to final database dump
+0084.138 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_sgpb_subscribers.table.gz (15/62): adding to final database dump
+0084.138 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_sgpb_subscription_error_log.table.gz (16/62): adding to final database dump
+0084.139 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_smush_dir_images.table.gz (17/62): adding to final database dump
+0084.139 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_tg_item_elements.table.gz (18/62): adding to final database dump
+0084.139 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_tg_item_skins.table.gz (19/62): adding to final database dump
+0084.140 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_download_log.table.gz (20/62): adding to final database dump
+0084.140 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_product_meta_lookup.table.gz (21/62): adding to final database dump
+0084.140 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_tax_rate_classes.table.gz (22/62): adding to final database dump
+0084.141 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wc_webhooks.table.gz (23/62): adding to final database dump
+0084.141 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfblockediplog.table.gz (24/62): adding to final database dump
+0084.142 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfblocks7.table.gz (25/62): adding to final database dump
+0084.142 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfconfig.table.gz (26/62): adding to final database dump
+0084.192 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfcrawlers.table.gz (27/62): adding to final database dump
+0084.192 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wffilechanges.table.gz (28/62): adding to final database dump
+0084.193 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wffilemods.table.gz (29/62): adding to final database dump
+0084.292 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfhits.table.gz (30/62): adding to final database dump
+0084.293 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfhoover.table.gz (31/62): adding to final database dump
+0084.293 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfissues.table.gz (32/62): adding to final database dump
+0084.294 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfknownfilelist.table.gz (33/62): adding to final database dump
+0084.317 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wflivetraffichuman.table.gz (34/62): adding to final database dump
+0084.318 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wflocs.table.gz (35/62): adding to final database dump
+0084.318 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wflogins.table.gz (36/62): adding to final database dump
+0084.319 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfls_2fa_secrets.table.gz (37/62): adding to final database dump
+0084.320 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfls_settings.table.gz (38/62): adding to final database dump
+0084.320 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfnotifications.table.gz (39/62): adding to final database dump
+0084.320 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfpendingissues.table.gz (40/62): adding to final database dump
+0084.321 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfreversecache.table.gz (41/62): adding to final database dump
+0084.321 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfsnipcache.table.gz (42/62): adding to final database dump
+0084.322 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wfstatus.table.gz (43/62): adding to final database dump
+0084.326 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_wftrafficrates.table.gz (44/62): adding to final database dump
+0084.326 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_api_keys.table.gz (45/62): adding to final database dump
+0084.327 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_attribute_taxonomies.table.gz (46/62): adding to final database dump
+0084.327 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (47/62): adding to final database dump
+0084.327 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_log.table.gz (48/62): adding to final database dump
+0084.328 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_order_itemmeta.table.gz (49/62): adding to final database dump
+0084.328 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_order_items.table.gz (50/62): adding to final database dump
+0084.329 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_payment_tokenmeta.table.gz (51/62): adding to final database dump
+0084.329 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_payment_tokens.table.gz (52/62): adding to final database dump
+0084.329 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_sessions.table.gz (53/62): adding to final database dump
+0084.330 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_shipping_zone_locations.table.gz (54/62): adding to final database dump
+0084.330 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_shipping_zone_methods.table.gz (55/62): adding to final database dump
+0084.330 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_shipping_zones.table.gz (56/62): adding to final database dump
+0084.331 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_tax_rate_locations.table.gz (57/62): adding to final database dump
+0084.331 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_woocommerce_tax_rates.table.gz (58/62): adding to final database dump
+0084.332 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_indexable.table.gz (59/62): adding to final database dump
+0084.333 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_indexable_hierarchy.table.gz (60/62): adding to final database dump
+0084.334 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_migrations.table.gz (61/62): adding to final database dump
+0084.334 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db-table-wp_yoast_primary_term.table.gz (62/62): adding to final database dump
+0084.341 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz: finished writing out complete database file (12944 KB)
+0084.485 (0) Total database tables backed up: 62 (backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz, size: 13261960, sha1: a2c174108782d5d9b3c3286bf6ddaa5f7ad85088, sha256: f43c06246deb5f07d171eab01dd6bbb03ff225802c6e383552ffcbac0e85a91e)
+0084.490 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0084.490 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0084.491 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0084.491 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-others.zip: others: This file has not yet been successfully uploaded: will queue
+0084.491 (0) backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz: db: This file has not yet been successfully uploaded: will queue
+0084.492 (0) Saving backup history. Total backup size: 197.5 MB
+0084.493 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0084.495 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0084.495 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-3d6ba7e8ca0db549a46893123bf5198b)
+0086.845 (0) Google Drive: quota usage: used=2137.8 MB, total=30720 MB, available=28582.2 MB
+0086.846 (0) Google Drive: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip: Attempting to upload to Google Drive (into folder id: 1xtUQs1r5LW3Iw_HJZqvQXDA2QyGGjbnk)
+0087.476 (0) Googledrive chunked upload: 1.4 % uploaded (1048576)
+0087.708 (0) Googledrive chunked upload: 2.8 % uploaded (2097152)
+0087.948 (0) Googledrive chunked upload: 4.1 % uploaded (3145728)
+0088.190 (0) Googledrive chunked upload: 5.5 % uploaded (4194304)
+0088.436 (0) Googledrive chunked upload: 6.9 % uploaded (5242880)
+0088.700 (0) Googledrive chunked upload: 8.3 % uploaded (6291456)
+0088.950 (0) Googledrive chunked upload: 9.6 % uploaded (7340032)
+0089.218 (0) Googledrive chunked upload: 11 % uploaded (8388608)
+0089.462 (0) Googledrive chunked upload: 12.4 % uploaded (9437184)
+0089.727 (0) Googledrive chunked upload: 13.8 % uploaded (10485760)
+0089.972 (0) Googledrive chunked upload: 15.1 % uploaded (11534336)
+0090.215 (0) Googledrive chunked upload: 16.5 % uploaded (12582912)
+0090.458 (0) Googledrive chunked upload: 17.9 % uploaded (13631488)
+0090.752 (0) Googledrive chunked upload: 19.3 % uploaded (14680064)
+0091.075 (0) Googledrive chunked upload: 20.7 % uploaded (15728640)
+0091.326 (0) Googledrive chunked upload: 22 % uploaded (16777216)
+0091.570 (0) Googledrive chunked upload: 23.4 % uploaded (17825792)
+0091.813 (0) Googledrive chunked upload: 24.8 % uploaded (18874368)
+0092.067 (0) Googledrive chunked upload: 26.2 % uploaded (19922944)
+0092.317 (0) Googledrive chunked upload: 27.5 % uploaded (20971520)
+0092.590 (0) Googledrive chunked upload: 28.9 % uploaded (22020096)
+0092.861 (0) Googledrive chunked upload: 30.3 % uploaded (23068672)
+0093.118 (0) Googledrive chunked upload: 31.7 % uploaded (24117248)
+0093.379 (0) Googledrive chunked upload: 33 % uploaded (25165824)
+0093.726 (0) Googledrive chunked upload: 34.4 % uploaded (26214400)
+0093.987 (0) Googledrive chunked upload: 35.8 % uploaded (27262976)
+0094.244 (0) Googledrive chunked upload: 37.2 % uploaded (28311552)
+0094.515 (0) Googledrive chunked upload: 38.5 % uploaded (29360128)
+0094.792 (0) Googledrive chunked upload: 39.9 % uploaded (30408704)
+0095.055 (0) Googledrive chunked upload: 41.3 % uploaded (31457280)
+0095.319 (0) Googledrive chunked upload: 42.7 % uploaded (32505856)
+0095.576 (0) Googledrive chunked upload: 44.1 % uploaded (33554432)
+0095.890 (0) Googledrive chunked upload: 45.4 % uploaded (34603008)
+0096.149 (0) Googledrive chunked upload: 46.8 % uploaded (35651584)
+0096.425 (0) Googledrive chunked upload: 48.2 % uploaded (36700160)
+0096.691 (0) Googledrive chunked upload: 49.6 % uploaded (37748736)
+0096.991 (0) Googledrive chunked upload: 50.9 % uploaded (38797312)
+0097.247 (0) Googledrive chunked upload: 52.3 % uploaded (39845888)
+0097.505 (0) Googledrive chunked upload: 53.7 % uploaded (40894464)
+0097.776 (0) Googledrive chunked upload: 55.1 % uploaded (41943040)
+0098.034 (0) Googledrive chunked upload: 56.4 % uploaded (42991616)
+0098.290 (0) Googledrive chunked upload: 57.8 % uploaded (44040192)
+0098.574 (0) Googledrive chunked upload: 59.2 % uploaded (45088768)
+0098.832 (0) Googledrive chunked upload: 60.6 % uploaded (46137344)
+0099.102 (0) Googledrive chunked upload: 62 % uploaded (47185920)
+0099.369 (0) Googledrive chunked upload: 63.3 % uploaded (48234496)
+0099.650 (0) Googledrive chunked upload: 64.7 % uploaded (49283072)
+0099.910 (0) Googledrive chunked upload: 66.1 % uploaded (50331648)
+0100.169 (0) Googledrive chunked upload: 67.5 % uploaded (51380224)
+0100.434 (0) Googledrive chunked upload: 68.8 % uploaded (52428800)
+0100.695 (0) Googledrive chunked upload: 70.2 % uploaded (53477376)
+0100.953 (0) Googledrive chunked upload: 71.6 % uploaded (54525952)
+0101.228 (0) Googledrive chunked upload: 73 % uploaded (55574528)
+0101.533 (0) Googledrive chunked upload: 74.3 % uploaded (56623104)
+0101.794 (0) Googledrive chunked upload: 75.7 % uploaded (57671680)
+0102.059 (0) Googledrive chunked upload: 77.1 % uploaded (58720256)
+0102.327 (0) Googledrive chunked upload: 78.5 % uploaded (59768832)
+0102.581 (0) Googledrive chunked upload: 79.9 % uploaded (60817408)
+0102.852 (0) Googledrive chunked upload: 81.2 % uploaded (61865984)
+0103.107 (0) Googledrive chunked upload: 82.6 % uploaded (62914560)
+0103.427 (0) Googledrive chunked upload: 84 % uploaded (63963136)
+0103.690 (0) Googledrive chunked upload: 85.4 % uploaded (65011712)
+0103.949 (0) Googledrive chunked upload: 86.7 % uploaded (66060288)
+0104.207 (0) Googledrive chunked upload: 88.1 % uploaded (67108864)
+0104.472 (0) Googledrive chunked upload: 89.5 % uploaded (68157440)
+0104.774 (0) Googledrive chunked upload: 90.9 % uploaded (69206016)
+0105.069 (0) Googledrive chunked upload: 92.2 % uploaded (70254592)
+0105.335 (0) Googledrive chunked upload: 93.6 % uploaded (71303168)
+0105.626 (0) Googledrive chunked upload: 95 % uploaded (72351744)
+0105.923 (0) Googledrive chunked upload: 96.4 % uploaded (73400320)
+0106.182 (0) Googledrive chunked upload: 97.8 % uploaded (74448896)
+0106.459 (0) Googledrive chunked upload: 99.1 % uploaded (75497472)
+0107.711 (0) Googledrive chunked upload: 100 % uploaded (75497472)
+0107.713 (0) Google Drive: OK: Archive backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip uploaded in 20.87 seconds
+0107.713 (0) Recording as successfully uploaded: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip
+0107.724 (0) Deleting local file: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-plugins.zip: OK
+0107.963 (0) Google Drive: quota usage: used=2210.4 MB, total=30720 MB, available=28509.6 MB
+0107.963 (0) Google Drive: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip: Attempting to upload to Google Drive (into folder id: 1xtUQs1r5LW3Iw_HJZqvQXDA2QyGGjbnk)
+0108.544 (0) Googledrive chunked upload: 11.6 % uploaded (1048576)
+0108.861 (0) Googledrive chunked upload: 23.1 % uploaded (2097152)
+0109.112 (0) Googledrive chunked upload: 34.7 % uploaded (3145728)
+0109.369 (0) Googledrive chunked upload: 46.2 % uploaded (4194304)
+0109.622 (0) Googledrive chunked upload: 57.8 % uploaded (5242880)
+0109.920 (0) Googledrive chunked upload: 69.3 % uploaded (6291456)
+0110.200 (0) Googledrive chunked upload: 80.9 % uploaded (7340032)
+0110.475 (0) Googledrive chunked upload: 92.4 % uploaded (8388608)
+0111.890 (0) Googledrive chunked upload: 100 % uploaded (8388608)
+0111.892 (0) Google Drive: OK: Archive backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip uploaded in 3.93 seconds
+0111.892 (0) Recording as successfully uploaded: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip
+0111.894 (0) Deleting local file: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-themes.zip: OK
+0112.079 (0) Google Drive: quota usage: used=2219.1 MB, total=30720 MB, available=28500.9 MB
+0112.080 (0) Google Drive: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip: Attempting to upload to Google Drive (into folder id: 1xtUQs1r5LW3Iw_HJZqvQXDA2QyGGjbnk)
+0112.682 (0) Googledrive chunked upload: 1 % uploaded (1048576)
+0112.946 (0) Googledrive chunked upload: 2 % uploaded (2097152)
+0113.208 (0) Googledrive chunked upload: 3 % uploaded (3145728)
+0113.464 (0) Googledrive chunked upload: 4 % uploaded (4194304)
+0113.762 (0) Googledrive chunked upload: 4.9 % uploaded (5242880)
+0114.018 (0) Googledrive chunked upload: 5.9 % uploaded (6291456)
+0114.293 (0) Googledrive chunked upload: 6.9 % uploaded (7340032)
+0114.560 (0) Googledrive chunked upload: 7.9 % uploaded (8388608)
+0114.822 (0) Googledrive chunked upload: 8.9 % uploaded (9437184)
+0115.131 (0) Googledrive chunked upload: 9.9 % uploaded (10485760)
+0115.396 (0) Googledrive chunked upload: 10.9 % uploaded (11534336)
+0115.679 (0) Googledrive chunked upload: 11.9 % uploaded (12582912)
+0115.961 (0) Googledrive chunked upload: 12.9 % uploaded (13631488)
+0116.239 (0) Googledrive chunked upload: 13.9 % uploaded (14680064)
+0116.508 (0) Googledrive chunked upload: 14.8 % uploaded (15728640)
+0116.787 (0) Googledrive chunked upload: 15.8 % uploaded (16777216)
+0117.056 (0) Googledrive chunked upload: 16.8 % uploaded (17825792)
+0117.335 (0) Googledrive chunked upload: 17.8 % uploaded (18874368)
+0117.613 (0) Googledrive chunked upload: 18.8 % uploaded (19922944)
+0117.880 (0) Googledrive chunked upload: 19.8 % uploaded (20971520)
+0118.135 (0) Googledrive chunked upload: 20.8 % uploaded (22020096)
+0118.410 (0) Googledrive chunked upload: 21.8 % uploaded (23068672)
+0118.667 (0) Googledrive chunked upload: 22.8 % uploaded (24117248)
+0118.938 (0) Googledrive chunked upload: 23.8 % uploaded (25165824)
+0119.215 (0) Googledrive chunked upload: 24.7 % uploaded (26214400)
+0119.499 (0) Googledrive chunked upload: 25.7 % uploaded (27262976)
+0119.760 (0) Googledrive chunked upload: 26.7 % uploaded (28311552)
+0120.021 (0) Googledrive chunked upload: 27.7 % uploaded (29360128)
+0120.295 (0) Googledrive chunked upload: 28.7 % uploaded (30408704)
+0120.569 (0) Googledrive chunked upload: 29.7 % uploaded (31457280)
+0120.836 (0) Googledrive chunked upload: 30.7 % uploaded (32505856)
+0121.110 (0) Googledrive chunked upload: 31.7 % uploaded (33554432)
+0121.397 (0) Googledrive chunked upload: 32.7 % uploaded (34603008)
+0121.699 (0) Googledrive chunked upload: 33.7 % uploaded (35651584)
+0121.972 (0) Googledrive chunked upload: 34.6 % uploaded (36700160)
+0122.236 (0) Googledrive chunked upload: 35.6 % uploaded (37748736)
+0122.516 (0) Googledrive chunked upload: 36.6 % uploaded (38797312)
+0122.777 (0) Googledrive chunked upload: 37.6 % uploaded (39845888)
+0123.024 (0) Googledrive chunked upload: 38.6 % uploaded (40894464)
+0123.295 (0) Googledrive chunked upload: 39.6 % uploaded (41943040)
+0123.641 (0) Googledrive chunked upload: 40.6 % uploaded (42991616)
+0123.904 (0) Googledrive chunked upload: 41.6 % uploaded (44040192)
+0124.158 (0) Googledrive chunked upload: 42.6 % uploaded (45088768)
+0124.442 (0) Googledrive chunked upload: 43.5 % uploaded (46137344)
+0124.703 (0) Googledrive chunked upload: 44.5 % uploaded (47185920)
+0124.977 (0) Googledrive chunked upload: 45.5 % uploaded (48234496)
+0125.252 (0) Googledrive chunked upload: 46.5 % uploaded (49283072)
+0125.534 (0) Googledrive chunked upload: 47.5 % uploaded (50331648)
+0125.852 (0) Googledrive chunked upload: 48.5 % uploaded (51380224)
+0126.154 (0) Googledrive chunked upload: 49.5 % uploaded (52428800)
+0126.408 (0) Googledrive chunked upload: 50.5 % uploaded (53477376)
+0126.687 (0) Googledrive chunked upload: 51.5 % uploaded (54525952)
+0126.964 (0) Googledrive chunked upload: 52.5 % uploaded (55574528)
+0127.261 (0) Googledrive chunked upload: 53.4 % uploaded (56623104)
+0127.521 (0) Googledrive chunked upload: 54.4 % uploaded (57671680)
+0127.787 (0) Googledrive chunked upload: 55.4 % uploaded (58720256)
+0128.047 (0) Googledrive chunked upload: 56.4 % uploaded (59768832)
+0128.309 (0) Googledrive chunked upload: 57.4 % uploaded (60817408)
+0128.680 (0) Googledrive chunked upload: 58.4 % uploaded (61865984)
+0128.949 (0) Googledrive chunked upload: 59.4 % uploaded (62914560)
+0129.261 (0) Googledrive chunked upload: 60.4 % uploaded (63963136)
+0129.563 (0) Googledrive chunked upload: 61.4 % uploaded (65011712)
+0129.843 (0) Googledrive chunked upload: 62.4 % uploaded (66060288)
+0130.094 (0) Googledrive chunked upload: 63.3 % uploaded (67108864)
+0130.397 (0) Googledrive chunked upload: 64.3 % uploaded (68157440)
+0130.668 (0) Googledrive chunked upload: 65.3 % uploaded (69206016)
+0130.928 (0) Googledrive chunked upload: 66.3 % uploaded (70254592)
+0131.193 (0) Googledrive chunked upload: 67.3 % uploaded (71303168)
+0131.455 (0) Googledrive chunked upload: 68.3 % uploaded (72351744)
+0131.719 (0) Googledrive chunked upload: 69.3 % uploaded (73400320)
+0131.977 (0) Googledrive chunked upload: 70.3 % uploaded (74448896)
+0132.243 (0) Googledrive chunked upload: 71.3 % uploaded (75497472)
+0132.519 (0) Googledrive chunked upload: 72.3 % uploaded (76546048)
+0132.792 (0) Googledrive chunked upload: 73.2 % uploaded (77594624)
+0133.069 (0) Googledrive chunked upload: 74.2 % uploaded (78643200)
+0133.379 (0) Googledrive chunked upload: 75.2 % uploaded (79691776)
+0133.644 (0) Googledrive chunked upload: 76.2 % uploaded (80740352)
+0133.997 (0) Googledrive chunked upload: 77.2 % uploaded (81788928)
+0134.265 (0) Googledrive chunked upload: 78.2 % uploaded (82837504)
+0134.522 (0) Googledrive chunked upload: 79.2 % uploaded (83886080)
+0134.807 (0) Googledrive chunked upload: 80.2 % uploaded (84934656)
+0135.158 (0) Googledrive chunked upload: 81.2 % uploaded (85983232)
+0135.423 (0) Googledrive chunked upload: 82.2 % uploaded (87031808)
+0135.733 (0) Googledrive chunked upload: 83.1 % uploaded (88080384)
+0135.996 (0) Googledrive chunked upload: 84.1 % uploaded (89128960)
+0136.259 (0) Googledrive chunked upload: 85.1 % uploaded (90177536)
+0136.595 (0) Googledrive chunked upload: 86.1 % uploaded (91226112)
+0136.858 (0) Googledrive chunked upload: 87.1 % uploaded (92274688)
+0137.119 (0) Googledrive chunked upload: 88.1 % uploaded (93323264)
+0137.387 (0) Googledrive chunked upload: 89.1 % uploaded (94371840)
+0137.694 (0) Googledrive chunked upload: 90.1 % uploaded (95420416)
+0137.962 (0) Googledrive chunked upload: 91.1 % uploaded (96468992)
+0138.265 (0) Googledrive chunked upload: 92 % uploaded (97517568)
+0138.560 (0) Googledrive chunked upload: 93 % uploaded (98566144)
+0138.814 (0) Googledrive chunked upload: 94 % uploaded (99614720)
+0139.081 (0) Googledrive chunked upload: 95 % uploaded (100663296)
+0139.341 (0) Googledrive chunked upload: 96 % uploaded (101711872)
+0139.606 (0) Googledrive chunked upload: 97 % uploaded (102760448)
+0139.924 (0) Googledrive chunked upload: 98 % uploaded (103809024)
+0140.197 (0) Googledrive chunked upload: 99 % uploaded (104857600)
+0140.463 (0) Googledrive chunked upload: 100 % uploaded (105906176)
+0141.626 (0) Googledrive chunked upload: 100 % uploaded (105906176)
+0141.627 (0) Google Drive: OK: Archive backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip uploaded in 29.55 seconds
+0141.628 (0) Recording as successfully uploaded: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip
+0141.641 (0) Deleting local file: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-uploads.zip: OK
+0141.907 (0) Google Drive: quota usage: used=2320.1 MB, total=30720 MB, available=28399.9 MB
+0141.908 (0) Google Drive: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-others.zip: Attempting to upload to Google Drive (into folder id: 1xtUQs1r5LW3Iw_HJZqvQXDA2QyGGjbnk)
+0142.584 (0) Googledrive chunked upload: 40.2 % uploaded (1048576)
+0142.854 (0) Googledrive chunked upload: 80.4 % uploaded (2097152)
+0144.079 (0) Googledrive chunked upload: 100 % uploaded (2097152)
+0144.080 (0) Google Drive: OK: Archive backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-others.zip uploaded in 2.17 seconds
+0144.081 (0) Recording as successfully uploaded: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-others.zip
+0144.082 (0) Deleting local file: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-others.zip: OK
+0144.301 (0) Google Drive: quota usage: used=2322.6 MB, total=30720 MB, available=28397.4 MB
+0144.301 (0) Google Drive: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz: Attempting to upload to Google Drive (into folder id: 1xtUQs1r5LW3Iw_HJZqvQXDA2QyGGjbnk)
+0144.929 (0) Googledrive chunked upload: 7.9 % uploaded (1048576)
+0145.201 (0) Googledrive chunked upload: 15.8 % uploaded (2097152)
+0145.462 (0) Googledrive chunked upload: 23.7 % uploaded (3145728)
+0145.735 (0) Googledrive chunked upload: 31.6 % uploaded (4194304)
+0145.998 (0) Googledrive chunked upload: 39.5 % uploaded (5242880)
+0146.268 (0) Googledrive chunked upload: 47.4 % uploaded (6291456)
+0146.542 (0) Googledrive chunked upload: 55.3 % uploaded (7340032)
+0146.805 (0) Googledrive chunked upload: 63.3 % uploaded (8388608)
+0147.114 (0) Googledrive chunked upload: 71.2 % uploaded (9437184)
+0147.383 (0) Googledrive chunked upload: 79.1 % uploaded (10485760)
+0147.650 (0) Googledrive chunked upload: 87 % uploaded (11534336)
+0147.920 (0) Googledrive chunked upload: 94.9 % uploaded (12582912)
+0149.165 (0) Googledrive chunked upload: 100 % uploaded (12582912)
+0149.166 (0) Google Drive: OK: Archive backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz uploaded in 4.86 seconds
+0149.167 (0) Recording as successfully uploaded: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz
+0149.169 (0) Deleting local file: backup_2020-06-13-1701_Devtron_Labs_6f813e5290eb-db.gz: OK
+0149.171 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=10, retain_db=10
+0149.172 (0) Number of backup sets in history: 12; groups (db): 1
+0149.172 (0) Examining (for databases) backup set with group_id=0, nonce=6f813e5290eb, datestamp=1592047876 (Jun 13 2020 11:31:16)
+0149.172 (0) This backup set is the backup set just made, so will not be deleted.
+0149.172 (0) Examining (for databases) backup set with group_id=0, nonce=f82e939360e5, datestamp=1591961466 (Jun 12 2020 11:31:06)
+0149.172 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=bc77a0dc49d9, datestamp=1591875066 (Jun 11 2020 11:31:06)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=6f04489827ee, datestamp=1591811622 (Jun 10 2020 17:53:42)
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=31739950bb79, datestamp=1591788668 (Jun 10 2020 11:31:08)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=593a1a4efb14, datestamp=1591702267 (Jun 09 2020 11:31:07)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=06033000ecc4, datestamp=1591615867 (Jun 08 2020 11:31:07)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=55d1f970f3a2, datestamp=1591529471 (Jun 07 2020 11:31:11)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=65b4dea7d113, datestamp=1591443078 (Jun 06 2020 11:31:18)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=84c027390d51, datestamp=1591356670 (Jun 05 2020 11:31:10)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=63013ee892af, datestamp=1591270275 (Jun 04 2020 11:31:15)
+0149.173 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0149.173 (0) Examining (for databases) backup set with group_id=0, nonce=67c632426b8c, datestamp=1591183870 (Jun 03 2020 11:31:10)
+0149.173 (0) 1591183870: db: this set includes a database (backup_2020-06-03-1701_Devtron_Labs_67c632426b8c-db.gz); db count is now 10
+0149.173 (0) 1591183870: db: over retain limit (10); will delete this database
+0149.173 (0) Delete file: backup_2020-06-03-1701_Devtron_Labs_67c632426b8c-db.gz, service=googledrive
+0150.687 (0) Google Drive: backup_2020-06-03-1701_Devtron_Labs_67c632426b8c-db.gz: Deletion successful
+0150.689 (0) This backup set is now empty; will remove from history
+0150.689 (0) Deleting log file (log.67c632426b8c.txt)
+0150.689 (0) Number of backup sets in history: 11; groups (files): 1
+0150.690 (0) Examining (for files) backup set with nonce=6f813e5290eb, datestamp=1592047876 (Jun 13 2020 11:31:16)
+0150.690 (0) This backup set is the backup set just made, so will not be deleted.
+0150.690 (0) This backup set is the backup set just made, so will not be deleted.
+0150.690 (0) This backup set is the backup set just made, so will not be deleted.
+0150.690 (0) This backup set is the backup set just made, so will not be deleted.
+0150.690 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.690 (0) Examining (for files) backup set with nonce=f82e939360e5, datestamp=1591961466 (Jun 12 2020 11:31:06)
+0150.690 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.690 (0) Examining (for files) backup set with nonce=bc77a0dc49d9, datestamp=1591875066 (Jun 11 2020 11:31:06)
+0150.690 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.690 (0) Examining (for files) backup set with nonce=6f04489827ee, datestamp=1591811622 (Jun 10 2020 17:53:42)
+0150.691 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=31739950bb79, datestamp=1591788668 (Jun 10 2020 11:31:08)
+0150.691 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=593a1a4efb14, datestamp=1591702267 (Jun 09 2020 11:31:07)
+0150.691 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=06033000ecc4, datestamp=1591615867 (Jun 08 2020 11:31:07)
+0150.691 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=55d1f970f3a2, datestamp=1591529471 (Jun 07 2020 11:31:11)
+0150.691 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=65b4dea7d113, datestamp=1591443078 (Jun 06 2020 11:31:18)
+0150.691 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=84c027390d51, datestamp=1591356670 (Jun 05 2020 11:31:10)
+0150.691 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0150.691 (0) Examining (for files) backup set with nonce=63013ee892af, datestamp=1591270275 (Jun 04 2020 11:31:15)
+0150.691 (0) plugins: over retain limit (10); will delete this file entity
+0150.691 (0) themes: over retain limit (10); will delete this file entity
+0150.691 (0) uploads: over retain limit (10); will delete this file entity
+0150.691 (0) others: over retain limit (10); will delete this file entity
+0150.691 (0) Delete file: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-plugins.zip, service=googledrive
+0150.692 (0) Delete file: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-themes.zip, service=googledrive
+0150.692 (0) Delete file: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-uploads.zip, service=googledrive
+0150.692 (0) Delete file: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-others.zip, service=googledrive
+0151.801 (0) Google Drive: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-others.zip: Deletion successful
+0152.349 (0) Google Drive: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-uploads.zip: Deletion successful
+0153.001 (0) Google Drive: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-themes.zip: Deletion successful
+0153.499 (0) Google Drive: backup_2020-06-04-1701_Devtron_Labs_63013ee892af-plugins.zip: Deletion successful
+0153.501 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0153.501 (0) Retain: saving new backup history (sets now: 11) and finishing retain operation
+0153.504 (0) Resume backup (6f813e5290eb, 0): finish run
+0153.504 (0) Decremented the semaphore (fd) by 1
+0153.505 (0) Semaphore (fd) unlocked
+0153.505 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0153.507 (0) No email will/can be sent - the user has not configured an email address.
+0153.507 (0) The backup apparently succeeded and is now complete

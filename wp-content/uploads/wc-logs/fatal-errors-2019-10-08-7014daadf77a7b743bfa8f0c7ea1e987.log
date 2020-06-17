@@ -1,0 +1,16 @@
+2019-10-08T07:24:31+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home2/uuqp1570/public_html/devtron.ai/wp-includes/class-wp-image-editor-gd.php on line 189
+
+2019-10-08T07:25:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home2/uuqp1570/public_html/devtron.ai/wp-includes/class-wp-image-editor-gd.php on line 189
+
+2019-10-08T07:26:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /home2/uuqp1570/public_html/devtron.ai/wp-includes/class-wp-image-editor-gd.php on line 189
+
+2019-10-08T07:26:20+00:00 CRITICAL Uncaught Error: Cannot use string offset as an array in /home2/uuqp1570/public_html/devtron.ai/wp-content/plugins/pixxy-plugins/importer/index.php:967
+Stack trace:
+#0 /home2/uuqp1570/public_html/devtron.ai/wp-content/plugins/pixxy-plugins/importer/index.php(750): pixxy_Setup->_content_install_widgets('/Widgets')
+#1 /home2/uuqp1570/public_html/devtron.ai/wp-includes/class-wp-hook.php(286): pixxy_Setup->ajax_content('')
+#2 /home2/uuqp1570/public_html/devtron.ai/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home2/uuqp1570/public_html/devtron.ai/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /home2/uuqp1570/public_html/devtron.ai/wp-admin/admin-ajax.php(173): do_action('wp_ajax_envato_...')
+#5 {main}
+  thrown in /home2/uuqp1570/public_html/devtron.ai/wp-content/plugins/pixxy-plugins/importer/index.php on line 967
+

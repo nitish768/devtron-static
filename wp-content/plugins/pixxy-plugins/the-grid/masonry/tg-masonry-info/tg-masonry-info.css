@@ -1,0 +1,110 @@
+.tg-masonry-info a:not([class*="tg-element-"]),
+.tg-masonry-info a:not([class*="tg-element-"]):active,
+.tg-masonry-info a:not([class*="tg-element-"]):focus,
+.tg-masonry-info [class*="tg-element-"] *:not(del) {
+	margin: 0;
+	padding: 0;
+	color: inherit !important;
+	text-align: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.tg-masonry-info [class*="tg-element-"],
+.tg-masonry-info .tg-item-overlay,
+.tg-masonry-info .tg-center-holder,
+.tg-masonry-info .tg-center-inner > * {
+	vertical-align: middle;
+}
+.tg-masonry-info:not(.tg-force-play):not(.tg-is-playing) .tg-item-media-inner:not(.no-media-poster) > * {
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.tg-masonry-info .tg-top-holder {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 700ms ease;
+	-moz-transition: all 700ms ease;
+	-ms-transition: all 700ms ease;
+	transition: all 700ms ease;
+}
+.tg-masonry-info:hover .tg-top-holder {
+	opacity: 1;
+	visibility: visible;
+}
+.tg-masonry-info .tg-item-content-holder[data-position="bottom"] {
+	position: relative;
+	min-height: 1px;
+	display: block;
+	padding: 30px;
+}
+.tg-masonry-info div.tg-item-media-content {
+	text-align: center;
+}
+.tg-masonry-info .tg-element-2 {
+	position: relative;
+	font-size: 15px;
+	line-height: 24px;
+	color: #222222 !important;
+	font-weight: 400;
+	text-decoration: none;
+	text-align: center;
+	background-color: #ffffff;
+	display: inline-block;
+	float: right;
+	width: 55px;
+	min-width: 55px;
+	height: 55px;
+	min-height: 55px;
+	margin: 35px 45px 10px 10px;
+	padding: 15px 0 0;
+	cursor: pointer;
+	border-radius: 100%;
+	-webkit-transition: all 340ms ease;
+	-moz-transition: all 340ms ease;
+	-ms-transition: all 340ms ease;
+	transition: all 340ms ease;
+}
+.tg-masonry-info .tg-element-2:hover {
+	visibility: visible;
+	background-color: #ffffff;
+	opacity: 1 !important;
+}
+.tg-masonry-info .tg-element-1 {
+	position: relative;
+	font-size: 15px;
+	line-height: 20px;
+	color: #0073e6 !important;
+	font-weight: 700;
+	background-color: #ffffff;
+	display: inline-block;
+}
+.tg-masonry-info .tg-element-1 .tg-item-term {
+	position: relative;
+	display: inline-block;
+}
+.tg-masonry-info .tg-element-3 {
+	position: relative;
+	font-size: 21px;
+	line-height: 30px;
+	color: #222222;
+	font-weight: 800;
+	display: block;
+	margin: 10px 0 0;
+	padding: 0;
+	-webkit-transition: all 350ms ease;
+	-moz-transition: all 350ms ease;
+	-ms-transition: all 350ms ease;
+	transition: all 350ms ease;
+}
+.tg-masonry-info .tg-element-3:hover {
+	opacity: 0.7 !important;
+}

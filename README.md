@@ -1,0 +1,1 @@
+Repository for static pages of devtron.ai

@@ -1,0 +1,141 @@
+.tg-post-male a:not([class*="tg-element-"]),
+.tg-post-male a:not([class*="tg-element-"]):active,
+.tg-post-male a:not([class*="tg-element-"]):focus,
+.tg-post-male [class*="tg-element-"] *:not(del) {
+	margin: 0;
+	padding: 0;
+	color: inherit !important;
+	text-align: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.tg-post-male [class*="tg-element-"],
+.tg-post-male .tg-item-overlay,
+.tg-post-male .tg-center-holder,
+.tg-post-male .tg-center-inner > * {
+	vertical-align: middle;
+}
+.tg-post-male .tg-item-inner {
+	overflow: hidden;
+}
+.tg-post-male .tg-item-overlay {
+	background-color: #0073e6 !important;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.tg-post-male:not(.tg-force-play):not(.tg-is-playing) .tg-item-media-inner > * {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-webkit-transform-origin: 50% 0 0;
+	-moz-transform-origin: 50% 0 0;
+	-ms-transform-origin: 50% 0 0;
+	transform-origin: 50% 0 0;
+	-webkit-transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+	-moz-transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+	-ms-transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+	transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+}
+.tg-post-male:not(.tg-force-play):not(.tg-is-playing):hover .tg-item-media-inner > * {
+	-webkit-transform: perspective(550px) translate3d(0%,100%,0px) rotateX(-60deg);
+	-moz-transform: perspective(550px) translate3d(0%,100%,0px) rotateX(-60deg);
+	-ms-transform: perspective(550px) translate3d(0%,100%,0px) rotateX(-60deg);
+	transform: perspective(550px) translate3d(0%,100%,0px) rotateX(-60deg);
+}
+.tg-post-male div.tg-item-media-content {
+	text-align: center;
+	background-color: #ffffff;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-webkit-transform-origin: 50% 100% 0;
+	-moz-transform-origin: 50% 100% 0;
+	-ms-transform-origin: 50% 100% 0;
+	transform-origin: 50% 100% 0;
+	-webkit-transform: perspective(550px) translate3d(0%,-100%,0px) rotateX(60deg);
+	-moz-transform: perspective(550px) translate3d(0%,-100%,0px) rotateX(60deg);
+	-ms-transform: perspective(550px) translate3d(0%,-100%,0px) rotateX(60deg);
+	transform: perspective(550px) translate3d(0%,-100%,0px) rotateX(60deg);
+}
+.tg-post-male:hover .tg-item-media-content {
+	-webkit-transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+	-moz-transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+	-ms-transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+	transform: perspective(550px) translate3d(0,0,0) rotateX(0);
+}
+.tg-post-male .tg-element-3 {
+	position: absolute;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	text-decoration: none !important;
+	text-align: center;
+	display: block;
+	bottom: 22px;
+	right: 22px;
+	z-index: 3;
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	min-height: 20px;
+	cursor: pointer;
+	-webkit-transition: all 340ms ease;
+	-moz-transition: all 340ms ease;
+	-ms-transition: all 340ms ease;
+	transition: all 340ms ease;
+}
+.tg-post-male .tg-element-3:hover {
+	opacity: 0.75 !important;
+}
+.tg-post-male .tg-element-1 {
+	position: relative;
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff !important;
+	font-weight: 800;
+	display: block;
+	margin: 0 30px 5px;
+	padding: 0;
+}
+.tg-post-male .tg-element-2 {
+	position: relative;
+	font-size: 15px;
+	line-height: 20px;
+	color: rgba(255,255,255,0.8) !important;
+	font-weight: 700;
+	display: block;
+	margin: 0 30px 10px;
+}
+.tg-post-male .tg-element-2 .tg-item-term {
+	position: relative;
+	display: inline-block;
+}
+.is-ie .tg-post-male .tg-item-media-content {
+	opacity: 0;
+}
+.is-ie .tg-item.tg-post-male:hover .tg-item-media-content {
+	opacity: 1;
+}
+.tg-post-male .tg-item-media-holder > * {
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.tg-post-male .tg-item-media-inner > * {
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}

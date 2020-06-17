@@ -1,0 +1,103 @@
+/*** Google Fonts (http://fonts.googleapis.com/css?family=Nunito%3A700) ***/
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(http://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAjsOUYevN.ttf) format('truetype');
+}
+
+/*** Skin css ***/
+.tg-pixxy-praia a:not([class*="tg-element-"]),
+.tg-pixxy-praia a:not([class*="tg-element-"]):active,
+.tg-pixxy-praia a:not([class*="tg-element-"]):focus,
+.tg-pixxy-praia [class*="tg-element-"] *:not(del) {
+	margin: 0;
+	padding: 0;
+	color: inherit !important;
+	text-align: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.tg-pixxy-praia [class*="tg-element-"],
+.tg-pixxy-praia .tg-item-overlay,
+.tg-pixxy-praia .tg-center-holder,
+.tg-pixxy-praia .tg-center-inner > * {
+	vertical-align: middle;
+}
+.tg-pixxy-praia .tg-item-inner {
+	overflow: hidden;
+}
+.tg-pixxy-praia .tg-item-overlay {
+	background-color: #0073e6 !important;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.tg-pixxy-praia:not(.tg-force-play):not(.tg-is-playing) .tg-item-media-inner > * {
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.tg-pixxy-praia:not(.tg-force-play):not(.tg-is-playing):hover .tg-item-media-inner > * {
+	-webkit-transform: translate3d(0%,-100%,0px);
+	-moz-transform: translate3d(0%,-100%,0px);
+	-ms-transform: translate3d(0%,-100%,0px);
+	transform: translate3d(0%,-100%,0px);
+}
+.tg-pixxy-praia div.tg-item-media-content {
+	text-align: center;
+	background-color: #ffffff;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+	-webkit-transform: translate3d(0%,100%,0px);
+	-moz-transform: translate3d(0%,100%,0px);
+	-ms-transform: translate3d(0%,100%,0px);
+	transform: translate3d(0%,100%,0px);
+}
+.tg-pixxy-praia:hover .tg-item-media-content {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.tg-pixxy-praia .tg-element-1 {
+	position: relative;
+	font-size: 30px;
+	line-height: 33px;
+	font-weight: 700;
+	font-family: Nunito;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 30px 15px;
+	padding: 0;
+}
+.tg-pixxy-praia .tg-element-2 {
+	position: relative;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+	font-family: Nunito;
+	display: block;
+	margin: 0 30px 5px;
+}
+.tg-pixxy-praia .tg-element-2 .tg-item-term {
+	position: relative;
+	display: inline-block;
+}

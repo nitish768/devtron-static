@@ -1,0 +1,115 @@
+/*** Google Fonts (http://fonts.googleapis.com/css?family=Muli%3A400) ***/
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(http://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
+
+/*** Skin css ***/
+.tg-pixxy-pinterest a:not([class*="tg-element-"]),
+.tg-pixxy-pinterest a:not([class*="tg-element-"]):active,
+.tg-pixxy-pinterest a:not([class*="tg-element-"]):focus,
+.tg-pixxy-pinterest [class*="tg-element-"] *:not(del) {
+	margin: 0;
+	padding: 0;
+	color: inherit !important;
+	text-align: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.tg-pixxy-pinterest [class*="tg-element-"],
+.tg-pixxy-pinterest .tg-item-overlay,
+.tg-pixxy-pinterest .tg-center-holder,
+.tg-pixxy-pinterest .tg-center-inner > * {
+	vertical-align: middle;
+}
+.tg-pixxy-pinterest .tg-item-inner {
+	overflow: hidden;
+}
+.tg-pixxy-pinterest .tg-item-overlay {
+	background-color: #ffffff !important;
+}
+.tg-pixxy-pinterest div.tg-item-media-content {
+	text-align: left;
+}
+.tg-pixxy-pinterest .tg-element-1 {
+	position: relative;
+	font-size: 30px;
+	line-height: 1.2em;
+	color: #222222 !important;
+	font-weight: 400;
+	font-family: Muli;
+	text-align: left;
+	letter-spacing: 0.2px;
+	display: block;
+	margin: 0 0 10px;
+	padding: 0 0 0 15px;
+	-webkit-transition: all 320ms cubic-bezier(.7,.01,.31,.78);
+	-moz-transition: all 320ms cubic-bezier(.7,.01,.31,.78);
+	-ms-transition: all 320ms cubic-bezier(.7,.01,.31,.78);
+	transition: all 320ms cubic-bezier(.7,.01,.31,.78);
+}
+.tg-pixxy-pinterest .tg-element-1:hover {
+	opacity: 0.7 !important;
+}
+.tg-pixxy-pinterest .tg-element-2 {
+	position: relative;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+	font-family: Muli !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+	letter-spacing: 0.2px !important;
+	display: block;
+	padding: 0 0 0 15px;
+}
+.tg-pixxy-pinterest .tg-element-2 .tg-item-term {
+	position: relative;
+	display: inline-block;
+}
+.tg-pixxy-pinterest .title {
+	font-weight: 800;
+}
+.tg-pixxy-pinterest .category {
+	font-weight: 800;
+}
+.tg-pixxy-pinterest .tg-item-media-content .tg-bottom-holder {
+	position: absolute;
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	transform: translateY(100%);
+	padding: 23px 0 10px;
+	-webkit-transition: -webkit-transform .4s ease-in-out;
+	-moz-transition: -moz-transform .4s ease-in-out;
+	transition: transform .4s ease-in-out;
+	background-color: #fff;
+}
+.tg-pixxy-pinterest:hover .tg-item-media-content .tg-bottom-holder {
+	transform: translateY(1px);
+}
+.tg-pixxy-pinterest .tg-element-2 {
+	font-family: inherit !important;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0073e6 !important;
+	letter-spacing: 0;
+}
+.tg-pixxy-pinterest .tg-element-1 {
+	font-family: inherit !important;
+	letter-spacing: 0;
+}

@@ -1,0 +1,37 @@
+.insta-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  .insta-item {
+    flex: 1;
+    display: block;
+    background-size: cover;
+  }
+}
+.insta-descr {
+  text-align: center;
+  color: #888;
+  padding: 20px 15px;
+  a {
+    color: #0073e6;
+    text-decoration: none;
+    &:hover {
+      color: #888;
+    }
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .insta-wrapper {
+    .insta-item {
+      flex: 33.33%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .insta-wrapper {
+    .insta-item {
+      flex: 50%;
+    }
+  }
+}
+

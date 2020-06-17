@@ -1,0 +1,2 @@
+.info-list .info-item+.info-item{margin-top:54px}.info-list .info-item .title{color:#222;font-size:24px;line-height:1.33}.info-list .info-item .title:before{content:attr(data-count) ".";margin-right:7px;color:#0073e6}.info-list .info-item .description{font-size:15px;line-height:1.6;color:#888;padding-left:43px;margin-top:13px}@media (max-width: 767px){.info-list .info-item{text-align:center}.info-list .info-item+.info-item{margin-top:35px}.info-list .info-item .title{font-size:21px}}
+/*# sourceMappingURL=info_list.min.css.map */

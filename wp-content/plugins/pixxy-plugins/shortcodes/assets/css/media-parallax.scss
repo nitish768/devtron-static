@@ -1,0 +1,114 @@
+.px-parallax {
+  overflow: hidden;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    padding: 120px 15px;
+    margin: auto;
+    @media (max-width: 992px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+    color: inherit;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 0.96;
+    @media (max-width: 1200px) {
+      font-size: 80px;
+    }
+    @media (max-width: 992px) {
+      font-size: 60px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+      font-size: 40px;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+  &__video-wrapper {
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .fluid-width-video-wrapper {
+      opacity: 0;
+      visibility: hidden;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.3s opacity, 0.3s visibility;
+
+      &.play {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &.play {
+      .fluid-width-video-wrapper {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 80px;
+      height: 80px;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 40px;
+      cursor: pointer;
+      border-radius: 50%;
+      background: #0073e6;
+      opacity: 1;
+      transition: opacity 0.3s ease-out;
+      &.start {
+        opacity: 0;
+      }
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-7px, -50%);
+        font-family: "Ionicons", sans-serif;
+        content: "\f487";
+      }
+    }
+  }
+  &__description {
+    max-width: 560px;
+    color: inherit;
+    font-size: 18px;
+    line-height: 1.67;
+    @media (max-width: 992px) {
+      font-size: 15px;
+    }
+  }
+}

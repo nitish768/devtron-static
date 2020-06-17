@@ -1,0 +1,88 @@
+// PARALLAX SHOWCASE
+.parallax-showcase-wrapper {
+  .s-back-switch {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .parallax-showcase-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 200px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.2);
+    }
+  }
+  .parallax-showcase-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .title {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: normal;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .desc {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+    word-wrap: break-word;
+    max-width: 390px;
+  }
+  a {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and(max-width: 991px) {
+  .parallax-showcase-wrapper {
+    .parallax-showcase-item {
+      padding-left: 100px;
+    }
+    .title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media only screen and(max-width: 767px) {
+  .parallax-showcase-wrapper {
+    .parallax-showcase-item {
+      padding-left: 0;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .parallax-showcase-content {
+      max-width: 100%;
+      padding: 0 25px;
+      text-align: center;
+    }
+    .title {
+      font-size: 35px;
+    }
+    a{
+      margin-top: 20px;
+    }
+  }
+}

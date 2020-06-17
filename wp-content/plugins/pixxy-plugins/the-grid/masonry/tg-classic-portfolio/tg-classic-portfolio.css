@@ -1,0 +1,74 @@
+.tg-classic-portfolio a:not([class*="tg-element-"]),
+.tg-classic-portfolio a:not([class*="tg-element-"]):active,
+.tg-classic-portfolio a:not([class*="tg-element-"]):focus,
+.tg-classic-portfolio [class*="tg-element-"] *:not(del) {
+	margin: 0;
+	padding: 0;
+	color: inherit !important;
+	text-align: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+.tg-classic-portfolio [class*="tg-element-"],
+.tg-classic-portfolio .tg-item-overlay,
+.tg-classic-portfolio .tg-center-holder,
+.tg-classic-portfolio .tg-center-inner > * {
+	vertical-align: middle;
+}
+.tg-classic-portfolio .tg-item-inner {
+	overflow: visible;
+}
+.tg-classic-portfolio div.tg-item-media-content {
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 700ms ease;
+	-moz-transition: all 700ms ease;
+	-ms-transition: all 700ms ease;
+	transition: all 700ms ease;
+}
+.tg-classic-portfolio:hover .tg-item-media-content {
+	opacity: 1;
+	visibility: visible;
+}
+.tg-classic-portfolio .tg-element-2 {
+	position: relative;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: 700;
+	font-style: normal !important;
+	text-decoration: none !important;
+	display: block;
+	padding: 0 0 0 43px;
+}
+.tg-classic-portfolio .tg-element-2 .tg-item-term {
+	position: relative;
+	display: inline-block;
+}
+.tg-classic-portfolio .tg-element-1 {
+	position: relative;
+	font-size: 30px;
+	line-height: 1.2em;
+	color: #ffffff !important;
+	font-weight: 800;
+	text-align: left;
+	display: block;
+	margin: 5px 0 0;
+	padding: 5px 0 59px 43px;
+}
+.tg-classic-portfolio .tg-item-media-content {
+	background-color: #0696ff;
+	position: absolute;
+	max-width: 100%;
+	height: 100%;
+	left: -15px;
+	top: 15px;
+	padding: 40px 90px 40px 40px;
+}

@@ -1,0 +1,247 @@
+.last-posts {
+  padding-top: 40px;
+  .post-item {
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
+    &__wrapper {
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      transition: 0.3s ease-out;
+      height: 100%;
+      &:hover {
+        top: -30px;
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.12);
+      }
+    }
+    .post-categories {
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 16px;
+      }
+
+      a {
+        color: #0073e6;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+    &__image {
+      width: 100%;
+      height: 270px;
+      background-size: cover;
+      background-position: center;
+
+      .post-categories {
+        padding-top: 15px;
+        text-align: right;
+        a {
+          background-image: linear-gradient(97deg, #0696ff, #4ef9fe);
+          box-shadow: 0 0 10px 0 rgba(6, 150, 255, 0.19);
+          color: #fff;
+          display: block;
+          padding: 3px 10px;
+        }
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      min-height: 240px;
+      padding: 34px 30px 35px;
+    }
+    &__head {
+      p {
+        margin-top: 22px;
+      }
+      .title {
+        margin-top: 7px;
+        font-size: 24px;
+        line-height: 1.33;
+
+        &--small {
+          font-size: 20px;
+        }
+
+        > a {
+          color: #222;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__date {
+      margin-top: 25px;
+      font-size: 14px;
+      &:before {
+        font-size: 12px;
+        margin-right: 8px;
+      }
+
+      + .post-categories {
+        margin-top: 5px;
+      }
+    }
+
+    &.modern {
+      .post-item__image {
+        height: 250px;
+      }
+      .title {
+        margin-top: 13px;
+      }
+      .post-item__wrapper {
+        box-shadow: none;
+        background-color: transparent;
+        &:hover {
+          box-shadow: none;
+          top: 0;
+        }
+      }
+      .post-item__content {
+        padding: 36px 0 0;
+      }
+    }
+  }
+}
+
+.last-post-button {
+  text-align: center;
+  margin-top: 52px;
+
+  a {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:before {
+      font-size: 12px;
+      color: #004ae2;
+      margin-right: 10px;
+      content: "\f217";
+      font-family: "Ionicons";
+      transition: 0.3s ease-out;
+      display: inline-block;
+    }
+
+    &:hover {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.last-post-wrap {
+  &.simple {
+    .last-posts {
+      padding-top: 0;
+    }
+
+    .row {
+      margin-left: -29px;
+      margin-right: -29px;
+      margin-bottom: -58px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &.four-col {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: -30px;
+
+        .post-item__image {
+          @media (min-width: 1201px) {
+            height: 200px;
+          }
+        }
+      }
+    }
+
+    .post-item {
+      padding: 0 29px;
+      margin-bottom: 58px;
+
+      &.col-lg-3 {
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .post-categories {
+        margin-bottom: 6px;
+      }
+    }
+
+    .post-item__wrapper {
+      box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.03);
+      height: 100%;
+
+      &:hover {
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.12);
+        top: -20px;
+      }
+    }
+
+    .post-item__content {
+      padding: 32px 30px 35px;
+      flex: 1;
+      min-height: auto;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .last-post-wrap {
+    &.simple {
+      .row {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: -30px;
+      }
+
+      .post-item {
+        padding: 0 15px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .last-posts  {
+    .post-item {
+      &__content {
+        padding: 25px;
+        min-height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .last-posts  {
+    .post-item {
+      padding: 25px;
+    }
+  }
+  .last-posts .post-item__head {
+    .title {
+      font-size: 18px;
+
+      &--small {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+0000.000 (1) Opened log file at time: Wed, 10 Jun 2020 18:13:47 +0000 on http://devtron.ai
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.20 WP: 5.4.1 PHP: 7.4.6 (apache2handler, Linux ip-172-31-22-215 4.15.0-1065-aws #69-Ubuntu SMP Thu Mar 26 02:17:29 UTC 2020 x86_64) MySQL: 5.7.30-0ubuntu0.18.04.1 WPLANG: en_US Server: Apache/2.4.29 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 5.6M | 8M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 3948.7 MB
+0000.002 (1) This backup task (6f04489827ee) is either complete or began over 2 days ago: ending (1591812827.8987, ) (existing jobdata keys: )
