@@ -1,0 +1,85 @@
+.tabs {
+ /* color: red; */
+ height: 160px;
+ position: relative;  
+ width: 200px;
+}
+
+.tabs .active {
+    color: #F2C94C;
+}
+
+.tabs__item {
+ /* margin: 32px 0;  */
+ line-height: 40px;
+ padding: 0 20px;
+ vertical-align: middle;
+ cursor: pointer;
+ color: rgb(255,255,255,0.8);
+}
+
+.tabs:before {
+    background-color: rgb(255, 255, 255, 0.2);
+    /* background-color: red; */
+    width: 2px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    /* bottom: auto; */
+    /* top: 0; */
+    /* left: auto; */
+    /* right: 0; */
+}
+
+.tabs__activebar {
+    /* left: auto; */
+    /* right: 0; */
+    /* top: 0; */
+    /* bottom: auto; */
+    width: 2px;
+    position: absolute;
+    background-color: #F2C94C;
+    z-index: 1;
+    transition: transform .3s cubic-bezier(.645,.045,.355,1);
+    list-style: none;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.btn-link.focus, .btn-link:focus {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 30px 0;
+}
+
+.accordion {
+    padding: 0 20px;
+}
+
+.tabcontent .card {
+    background:#281566;
+    margin: 0 30px 30px 30px;
+}
+
+.collapse .card {
+    background:#281566;
+    margin: 0 30px 30px 30px;
+}
