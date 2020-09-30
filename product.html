@@ -13,54 +13,158 @@
         gtag('js', new Date());
         gtag('config', 'UA-163948066-3');
     </script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
 
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .main-nav {
+            position: fixed;
+            height: 100px;
+            top: 0;
+            width: 100%;
+        }
+
+        .main-nav__logo {
+            height: 25px;
+            margin-left: 37px;
+            margin-top: 21px;
+        }
+
+        .section-hero {
+            min-height: 588px;
+            padding: 113px 37px 47px 37px;
+            background-color: #140152;
+        }
+
+        .section-hero__button-container {
+            margin-top: 40px;
+            margin-bottom: 70px;
+        }
+
+        .section-hero__hr {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-hero__text {
+            width: 48%;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 47px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .main-title--light {
+            font-weight: 300;
+        }
+
+        .available {
+            margin-top: 65px;
+            color: #F2C94C;
+            text-transform: capitalize;
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .button-early-access {
+            height: 56px;
+            width: 173px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #140152;
+            background-color: #F2C94C;
+            border-radius: 4px;
+            box-shadow: 6px 6px 0px rgba(242, 201, 76, 0.3);
+        }
+
+        .section-hero__scroll-down {
+            height: 26px;
+            width: 15px;
+            display: block;
+        }
+
+        .section-why {
+            min-height: 588px;
+            background-color: #F2F4F7;
+        }
+
+        @media screen and (min-width: 768px) {
+            .section-hero {
+                min-height: 100vh;
+            }
+
+            .section-hero__button-container {
+                margin-top: 40px;
+                margin-bottom: 70px;
+            }
+
+            .section-why {
+                min-height: 100vh;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .main-title {
+                width: 48%;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 62px;
+            }
+        }
+    </style>
     <title>Devtron - The DevOps Accelerator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css"> -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
     <header class="">
         <nav class="main-nav">
-            <ul class="nav__list">
-                <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">About</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">Another page</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">Pricing</a>
-                </li>
-                <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
-            </ul>
-        </nav>
-        <nav class="account">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a class="nav__link nav__link--btn" href="#">Login</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#">Join</a>
-                </li>
-            </ul>
+            <img src="images/logo-color.svg" class="main-nav__logo" />
         </nav>
     </header>
-    <main class="hero">
+    <main>
+        <section class="section-hero">
+            <h1 class="main-title">Software delivery workflow for
+                <span class="main-title--light">Kubernetes</span>
+            </h1>
+            <h3 class="available">Available 15th October 2020</h3>
+            <div class="section-hero__text">
+                <hr class="section-hero__hr">
+                </hr>
+                <p>Application debugging dashboard</p>
+                <p>Integrated DevSecOps features</p>
+                <hr class="section-hero__hr">
+                </hr>
+            </div>
+            <div class="section-hero__button-container">
+                <button type="button" class="button-early-access">Get Early Access</button>
+            </div>
+            <img src="./images/ic-chevron-down.svg" class="section-hero__scroll-down" alt="scroll-down" />
+        </section>
 
+        <section class="section-why">
+
+        </section>
     </main>
 </body>
 
