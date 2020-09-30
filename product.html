@@ -21,19 +21,20 @@
 
         body {
             font-family: 'Open Sans', sans-serif;
+            background-color: #F2F4F7;
         }
 
         .main-nav {
             position: fixed;
-            height: 100px;
             top: 0;
+            height: 100px;
+            padding-top: 21px;
             width: 100%;
         }
 
         .main-nav__logo {
             height: 25px;
             margin-left: 37px;
-            margin-top: 21px;
         }
 
         .section-hero {
@@ -47,12 +48,31 @@
             margin-bottom: 70px;
         }
 
-        .section-hero__hr {
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
         .section-hero__text {
             width: 48%;
+        }
+
+        .section-hero__paragraph-container {
+            display: none;
+            padding: 0px 0px;
+            margin-top: 77px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-hero__paragraph {
+            font-size: 32px;
+            font-style: normal;
+            color: #56CCF2;
+            font-weight: 300;
+            line-height: 38px;
+            letter-spacing: 0em;
+            margin-bottom: 27px;
+            opacity: 0.5;
+        }
+
+        .section-hero__paragraph--selected {
+            opacity: 1;
         }
 
         .main-title {
@@ -63,6 +83,7 @@
             letter-spacing: 0em;
             text-align: left;
             color: #ffffff;
+            max-width: 700px;
         }
 
         .main-title--light {
@@ -101,12 +122,24 @@
 
         .section-why {
             min-height: 588px;
-            background-color: #F2F4F7;
         }
 
         @media screen and (min-width: 768px) {
             .section-hero {
                 min-height: 100vh;
+                border-bottom-left-radius: 100px;
+            }
+
+            .main-nav {
+                padding-top: 32px;
+            }
+
+            .main-nav__logo {
+                height: 32px;
+            }
+
+            .section-hero__paragraph-container {
+                display: block;
             }
 
             .section-hero__button-container {
@@ -133,7 +166,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
@@ -145,17 +177,14 @@
     <main>
         <section class="section-hero">
             <h1 class="main-title">Software delivery workflow for
-                <span class="main-title--light">Kubernetes</span>
+                <span class="main-title--light">kubernetes</span>
             </h1>
-            <h3 class="available">Available 15th October 2020</h3>
-            <div class="section-hero__text">
-                <hr class="section-hero__hr">
-                </hr>
-                <p>Application debugging dashboard</p>
-                <p>Integrated DevSecOps features</p>
-                <hr class="section-hero__hr">
-                </hr>
+            <div class="section-hero__text section-hero__paragraph-container">
+                <p class="section-hero__paragraph">Application debugging dashboard</p>
+                <p class="section-hero__paragraph section-hero__paragraph--selected">Integrated DevSecOps features</p>
+                <p class="section-hero__paragraph section-hero__paragraph">Integrated DevSecOps features</p>
             </div>
+            <h3 class="available">Available 15th October 2020</h3>
             <div class="section-hero__button-container">
                 <button type="button" class="button-early-access">Get Early Access</button>
             </div>
