@@ -1,22 +1,17 @@
-const header = document.querySelector("header");
-const sectionOne = document.querySelector(".home-intro");
 
-const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
-};
-
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled");
-    } else {
-      header.classList.remove("nav-scrolled");
+$(function () {
+  var $sectionOne = $(".section-hero");
+  var $navbar = $(".main-nav");
+  $(document).scroll(function () {
+    if ($(this).scrollTop() > $navbar.height()) {
+      $navbar.addClass("main-nav-light");
+      $navbar.removeClass("main-nav-dark");
     }
-  });
-},
-sectionOneOptions);
+    else if ($(this).scrollTop() > $sectionOne.height()) {
+      $navbar.removeClass("main-nav-light");
+      $navbar.addClass("main-nav-dark");
+    }
 
-sectionOneObserver.observe(sectionOne);
+    $navbar.removeClass("main-nav--light main-nav--dark", $(this).scrollTop() > $sectionOne.height());
+  });
+});
