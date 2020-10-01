@@ -206,22 +206,26 @@
         .section-why__grid-item {
             background-color: #ffffff;
             border-radius: 8px;
-            padding: 20px;
+            padding: 20px 20px 48px 20px;
             border: 1px solid #E0E0E0;
             min-width: 248px;
             scroll-snap-align: start;
             width: calc(100vw - 72px);
+            position: relative;
         }
 
         .section-why__why {
             font-weight: normal;
             font-size: 16px;
             line-height: 150%;
+            margin-bottom: 28px;
         }
 
         .social-icon__container {
             text-align: right;
-            padding: 8px 0;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
         }
 
         .social-icon__icon {
@@ -239,6 +243,7 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            align-items: center;
         }
 
         .section-why__gif {
@@ -286,6 +291,8 @@
             }
 
             .section-why__grid {
+                margin-top: 60px;
+                margin-bottom: 76px;
                 grid-row-gap: 30px;
                 grid-column-gap: 30px;
             }
