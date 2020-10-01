@@ -44,16 +44,23 @@
     list-style: none;
 }
 
-.btn:hover, .btn:active, .btn:focus {
-    outline: none;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
 .btn-link:hover {
     /* color: #0056b3; */
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #F2C94C;
+}
+
+.btn-link.focus, .btn-link:focus {
+    /* text-decoration: underline;
+     */
+    color: #F2C94C;
 }
 
 /* .btn-link:hover { */
@@ -73,7 +80,7 @@
 }
 
 .btn {
-    padding: 30px 0;
+    padding: 10px 0;
 }
 
 .accordion {
@@ -90,3 +97,16 @@
     /* margin: 0 30px 30px 30px; */
 }
 
+.accordion .card-body {
+    background:#281566;
+    margin: 16px 0 0 0;
+}
+
+.featureHeading {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.featureHeading:nth-of-type(1) {
+    color: #F2C94C;    ;
+} 

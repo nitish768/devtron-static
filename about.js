@@ -25,3 +25,22 @@ function handleTabChange(event, tabIdToDisplay) {
 }
 
 document.getElementById("defaultSelectedTab").click();
+
+
+const featureHeadingsSwitcher = {
+    featureHeadingsText: ['Application Monitoring and Debugging', 'Customizable Security Policies & Visibility', 'Insightful Deployment metrics'],
+    handleHeadingClick(indexClicked) {
+        const currentlySelected = this.featureHeadingsText[0];
+        this.featureHeadingsText[0] = this.featureHeadingsText[indexClicked];
+        this.featureHeadingsText[indexClicked] = currentlySelected;
+        this.fillValuesInDivs();
+    },
+    fillValuesInDivs() {
+        const featureHeadings = document.getElementsByClassName("featureHeading");
+        for (let i = 0; i < featureHeadings.length; i++) {
+            featureHeadings[i].innerText = this.featureHeadingsText[i];
+        }
+    }
+}
+
+featureHeadingsSwitcher.fillValuesInDivs();
