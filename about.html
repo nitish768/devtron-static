@@ -168,9 +168,26 @@
     </div>
 
     <div style="background: #140152;">
-      <div class="featureHeading"></div>
-      <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(1)"></div>
-      <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(2)"></div>
+      <div style="margin: 0 135px">
+        <div style="display: flex; align-items: center; margin: 0 0 80px 0">
+          <span class="heading__Dark">Sneak Peek </span>
+          <span class="heading__Light">into some exciting features</span>
+        </div>
+        <div style="display: flex">
+          <div>
+            <div class="featureHeading"></div>
+            <div class="featureHeading__next">NEXT</div>
+            <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(1)"></div>
+            <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(2)"></div>
+            <div class="section-sneakpeek__button-container">
+              <button type="button" class="button-early-access">Get Early Access</button>
+            </div>
+          </div>
+          <div>
+            <img id="sneakPeekImage" src="" style="width: 55vw; height: 500px"/>
+          </div>
+        </div>  
+      </div>
     </div>
   
 

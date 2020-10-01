@@ -28,19 +28,38 @@ document.getElementById("defaultSelectedTab").click();
 
 
 const featureHeadingsSwitcher = {
-    featureHeadingsText: ['Application Monitoring and Debugging', 'Customizable Security Policies & Visibility', 'Insightful Deployment metrics'],
+    featureHeadingsTextAndURL: [
+        {
+            text: 'Application Monitoring and Debugging',
+            imgURL: './images/app-detail-text (2) (1).gif'
+        },
+        {
+            text: 'Customizable Security Policies & Visibility',
+            imgURL: 'https://i.pinimg.com/originals/5d/5a/d7/5d5ad7f130ed36721952c388efe0517f.gif'
+        },
+        {
+            text: 'Insightful Deployment metrics',
+            imgURL: 'https://thumbs.gfycat.com/FortunateBrightFrog-size_restricted.gif'
+        },
+    ],
     handleHeadingClick(indexClicked) {
-        const currentlySelected = this.featureHeadingsText[0];
-        this.featureHeadingsText[0] = this.featureHeadingsText[indexClicked];
-        this.featureHeadingsText[indexClicked] = currentlySelected;
-        this.fillValuesInDivs();
+        const currentlySelected = this.featureHeadingsTextAndURL[0];
+        this.featureHeadingsTextAndURL[0] = this.featureHeadingsTextAndURL[indexClicked];
+        this.featureHeadingsTextAndURL[indexClicked] = currentlySelected;
+        this.fillValuesInDivsAndApplyImage();
     },
-    fillValuesInDivs() {
+    fillValuesInDivsAndApplyImage() {
         const featureHeadings = document.getElementsByClassName("featureHeading");
         for (let i = 0; i < featureHeadings.length; i++) {
-            featureHeadings[i].innerText = this.featureHeadingsText[i];
+            if (i === 0) {
+                featureHeadings[i].innerText = this.featureHeadingsTextAndURL[i].text;
+            }
+            else {
+                featureHeadings[i].innerHTML = `<div style="line-height: 1.5"><img src="${this.featureHeadingsTextAndURL[i].imgURL}" style="width: 80px; height: 50px; float: left; margin: 0 20px 0 0"/> ${this.featureHeadingsTextAndURL[i].text}</div>`
+            }
         }
+        document.getElementById('sneakPeekImage').src = this.featureHeadingsTextAndURL[0].imgURL
     }
 }
 
-featureHeadingsSwitcher.fillValuesInDivs();
+featureHeadingsSwitcher.fillValuesInDivsAndApplyImage();
