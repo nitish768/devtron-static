@@ -33,12 +33,12 @@
         .main-nav {
             position: fixed;
             top: 0;
-            height: 100px;
+            height: 75px;
             padding-top: 21px;
             width: 100%;
             z-index: 10;
             background-color: #140152;
-            transition: background-color 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            transition: background-color 0.5s ease-in-out;
         }
 
         .main-nav-dark {
@@ -164,12 +164,16 @@
         }
 
         .section-why__title {
-            font-size: 29px;
+            font-size: 30px;
+            line-height: 38px;
             font-style: normal;
             font-weight: 300;
-            line-height: 38px;
             letter-spacing: 0em;
-            text-align: left;
+            text-align: center;
+        }
+
+        .section-why__title--cycle {
+            margin-bottom: 40px;
         }
 
         .section-why__title-bold {
@@ -179,6 +183,59 @@
 
         .section-why__grid {
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-row-gap: 16px;
+            grid-column-gap: 16px;
+            overflow-y: auto;
+            margin-top: 40px;
+            margin-bottom: 32px;
+            padding-bottom: 8px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .section-why__grid-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #E0E0E0;
+            min-width: 248px;
+            scroll-snap-align: start;
+            width: calc(100vw - 72px);
+        }
+
+        .section-why__why {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .social-icon__container {
+            text-align: right;
+            padding: 8px 0;
+        }
+
+        .social-icon__icon {
+            width: 15px;
+            vertical-align: bottom;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .social-icon__icon:last-child {
+            margin-right: 0px;
+        }
+
+        .section-why__bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .section-why__gif {
+            width: 240px;
+            height: 240px;
+            display: block;
+            margin: auto;
         }
 
         @media screen and (min-width: 768px) {
@@ -186,10 +243,18 @@
                 min-height: 100vh;
                 border-bottom-left-radius: 100px;
                 padding-left: 135px;
+                padding-right: 135px;
+            }
+
+            .section-why {
+                min-height: 100vh;
+                border-bottom-left-radius: 100px;
+                padding: 100px 135px;
             }
 
             .main-nav {
                 padding-top: 32px;
+                height: 100px;
             }
 
             .main-nav__logo {
@@ -210,8 +275,31 @@
                 display: none;
             }
 
-            .section-why {
-                min-height: 100vh;
+            .section-why__grid {
+                grid-row-gap: 30px;
+                grid-column-gap: 30px;
+            }
+
+            .section-why__grid-item {
+                width: auto;
+            }
+
+            .section-why__title {
+                text-align: left;
+            }
+
+            .section-why__title--cycle {
+                display: inline-block;
+                max-width: 585px;
+            }
+
+            .section-why__bottom {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .section-why__gif {
+                margin: unset;
             }
         }
 
@@ -248,9 +336,7 @@
     <main>
         <section class="section-hero">
             <h1 class="main-title">Software delivery workflow for
-                <span class="main-title--light">kubernetes
-
-                </span>
+                <span class="main-title--light">kubernetes</span>
             </h1>
             <div class="section-hero__text section-hero__paragraph-container">
                 <p class="section-hero__paragraph">Application debugging dashboard</p>
@@ -272,12 +358,70 @@
                 we built devtron
             </h2>
             <div class="section-why__grid">
-
+                <div class="section-why__grid-item">
+                    <p class="section-why__why">Software delivery workflow DSLs are not domain aware. What's
+                        #Kubernetes, #BlueGreen, #FlakyTest?
+                    </p>
+                    <div class="social-icon__container">
+                        <img src="./images/linkedin.svg" class="social-icon__icon" alt="linked-in" />
+                        <img src="./images/twitter.svg" class="social-icon__icon" alt="twitter" />
+                    </div>
+                </div>
+                <div class="section-why__grid-item">
+                    <p class="section-why__why">
+                        Isolated software delivery and debugging platform. #ContextSwitching leads to #ProductivityLoss
+                    </p>
+                    <div class="social-icon__container">
+                        <img src="./images/linkedin.svg" class="social-icon__icon" alt="linked-in" />
+                        <img src="./images/twitter.svg" class="social-icon__icon" alt="twitter" />
+                    </div>
+                </div>
+                <div class="section-why__grid-item">
+                    <p class="section-why__why">
+                        Management of applications across environments is painful. #ConfigHell leads to #ConfigDrift
+                    </p>
+                    <div class="social-icon__container">
+                        <img src="./images/linkedin.svg" class="social-icon__icon" alt="linked-in" />
+                        <img src="./images/twitter.svg" class="social-icon__icon" alt="twitter" />
+                    </div>
+                </div>
+                <div class="section-why__grid-item">
+                    <p class="section-why__why">
+                        Enforcement and management of security policies is unwieldy. #SecurityPolicies debugging is
+                        #NotTopologyAware
+                    </p>
+                    <div class="social-icon__container">
+                        <img src="./images/linkedin.svg" class="social-icon__icon" alt="linked-in" />
+                        <img src="./images/twitter.svg" class="social-icon__icon" alt="twitter" />
+                    </div>
+                </div>
+                <div class="section-why__grid-item">
+                    <p class="section-why__why">
+                        Collaboration on helm charts across teams and environments is ineffective. #helmcharts are like
+                        #hydra, spawning two heads for every slain head
+                    </p>
+                    <div class="social-icon__container">
+                        <img src="./images/linkedin.svg" class="social-icon__icon" alt="linked-in" />
+                        <img src="./images/twitter.svg" class="social-icon__icon" alt="twitter" />
+                    </div>
+                </div>
+                <div class="section-why__grid-item">
+                    <p class="section-why__why">
+                        Agile processes are blindsided by missing devops metrics. #Measure before #ProcessImprovement
+                    </p>
+                    <div class="social-icon__container">
+                        <img src="./images/linkedin.svg" class="social-icon__icon" alt="linked-in" />
+                        <img src="./images/twitter.svg" class="social-icon__icon" alt="twitter" />
+                    </div>
+                </div>
             </div>
-            <h2 class="section-why__title">Almost
-                <b class="section-why__title-bold">impossible to achieve the optimal balance </b>
-                between Cost, Stability & Security.
-            </h2>
+            <div class="section-why__bottom">
+                <h2 class="section-why__title section-why__title--cycle">Almost
+                    <b class="section-why__title-bold">impossible to achieve the optimal balance </b>
+                    between Cost, Stability & Security.
+                </h2>
+                <img src="./images/knob-gif.gif" class="section-why__gif" alt="cycle" />
+            </div>
         </section>
     </main>
 
