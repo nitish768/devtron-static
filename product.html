@@ -21,6 +21,10 @@
             margin: 0px;
         }
 
+        .hidden {
+            visibility: hidden;
+        }
+
         body {
             font-family: 'Open Sans', sans-serif;
             background-color: #F2F4F7;
@@ -29,8 +33,6 @@
         button:focus {
             outline: none;
         }
-
-        .modal {}
 
         .main-nav {
             position: fixed;
@@ -77,6 +79,7 @@
             min-height: 588px;
             padding: 113px 37px 47px 37px;
             background-color: #140152;
+            position: relative;
         }
 
         .section-hero__button-container {
@@ -171,6 +174,7 @@
         .section-why {
             padding: 64px 36px;
             min-height: 588px;
+            position: relative;
         }
 
         .section-why__title {
@@ -253,6 +257,77 @@
             margin: auto;
         }
 
+        .section-landscape {
+            padding: 64px 36px;
+            min-height: 588px;
+            position: relative;
+            background-color: #140152;
+        }
+
+        .section-why__devtron-landscape {
+            width: 240px;
+            height: 240px;
+        }
+
+        .section-testimonials {
+            padding: 64px 36px;
+            min-height: 588px;
+            background-color: #ffffff;
+        }
+
+        .carousel-testimonial {
+            border-radius: 8px;
+            border: 1px solid #E0E0E0;
+            min-height: 446px;
+        }
+
+        .carousel-testimonial__bg {
+            width: 100%;
+            border-radius: inherit;
+        }
+
+        .carousel-testimonial__margins {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .carousel-testimonial__message {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 24px;
+            margin-bottom: 20px;
+        }
+
+        .carousel-testimonial__read-more {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0em;
+            color: #0066cc;
+            text-align: left;
+        }
+
+        .carousel-testimonial__person-name {
+            margin-top: 40px;
+            margin-bottom: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .carousel-testimonial__person-role {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+        }
+
         @media screen and (min-width: 768px) {
             .section-hero {
                 min-height: 100vh;
@@ -267,9 +342,21 @@
                 padding: 100px 135px;
             }
 
+            .section-landscape {
+                min-height: 100vh;
+                border-bottom-left-radius: 100px;
+                padding: 100px 135px;
+            }
+
+            .section-testimonials {
+                min-height: 100vh;
+                border-bottom-left-radius: 100px;
+                padding: 100px 135px;
+            }
+
             .main-nav {
-                padding-top: 32px;
-                height: 100px;
+                padding-top: 25px;
+                height: 80px;
             }
 
             .main-nav__logo {
@@ -317,6 +404,34 @@
 
             .section-why__gif {
                 margin: unset;
+                position: absolute;
+                clip: rect(0, auto, auto, 0);
+                right: 135px;
+            }
+
+            .section-landscape {
+                position: relative;
+                min-height: 100vh;
+                background-color: #140152;
+            }
+
+            .section-landscape__image {
+                position: absolute;
+                clip: rect(0, auto, auto, 0);
+                top: 35px;
+                right: 135px;
+                width: 240px;
+                height: 240px;
+                display: block;
+            }
+
+            .fixed-pos {
+                position: fixed;
+                top: 500px;
+            }
+
+            .section-testimonials__carousel {
+                display: none;
             }
         }
 
@@ -457,17 +572,81 @@
                     <b class="section-why__title-bold">impossible to achieve the optimal balance </b>
                     between Cost, Stability & Security.
                 </h2>
-                <img src="./images/knob-gif.gif" class="section-why__gif" alt="cycle" />
+                <img src="./images/knob-gif.gif" id="image-1" class="section-why__gif" alt="cycle" />
+            </div>
+        </section>
+        <section class="section-landscape">
+            <img src="./images/current_landscape.png" id="image-2" class="section-why__devtron-landscape" />
+
+        </section>
+        <section class="section-testimonials">
+            <div id="carouselExampleIndicators" class="carousel slide section-testimonials__carousel"
+                data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-testimonial">
+                        <img class="d-block carousel-testimonial__bg" src="./images/about-banner.png" height="100"
+                            alt="First slide">
+                        <div class="carousel-testimonial__margins">
+                            <p class="carousel-testimonial__message">You don't have to worry about over or under
+                                provisioning of your nodes, the system
+                                automatically watches all the workload, recommends and applies the right configurations.
+                                It
+                                can be configured to apply or reapply the be</p>
+                            <p class="carousel-testimonial__read-more">Read Story</p>
+                            <p class="carousel-testimonial__person-name">Kapil Bharti</p>
+                            <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-testimonial">
+                        <img class="d-block carousel-testimonial__bg" src="./images/devtron-as-platform.jpg"
+                            height="100" alt="second slide">
+                        <div class="carousel-testimonial__margins">
+                            <p class="carousel-testimonial__message">You don't have to worry about over or under
+                                provisioning of your nodes, the system
+                                automatically watches all the workload, recommends and applies the right configurations.
+                                It
+                                can be configured to apply or reapply the be</p>
+                            <p class="carousel-testimonial__read-more">Read Story</p>
+                            <p class="carousel-testimonial__person-name">Kapil Bharti</p>
+                            <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carousel-testimonial">
+                        <img class="d-block carousel-testimonial__bg" src="./images/debug.png" height="100"
+                            alt="third slide">
+                        <div class="carousel-testimonial__margins">
+                            <p class="carousel-testimonial__message">You don't have to worry about over or under
+                                provisioning of your nodes, the system
+                                automatically watches all the workload, recommends and applies the right configurations.
+                                It
+                                can be configured to apply or reapply the be</p>
+                            <p class="carousel-testimonial__read-more">Read Story</p>
+                            <p class="carousel-testimonial__person-name">Kapil Bharti</p>
+                            <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
             </div>
         </section>
     </main>
-
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/navbar.js"></script>
-
 </body>
 
 </html>
