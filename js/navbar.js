@@ -26,18 +26,18 @@ $(function () {
       $(image2).removeClass('fixed-pos fixed-pos__vision-landscape');
     }
 
-    if ($(this).scrollTop() > $sectionOne.height() + 431) {
+    if ($(this).scrollTop() > 1451 && $(this).scrollTop() < 1558) {
       console.log($(this).scrollTop());
       $(image1).addClass('fixed-pos fixed-pos__current-landscape')
-      $(image2).addClass('fixed-pos fixed-pos__vision-landscape')
+      // $(image2).addClass('fixed-pos fixed-pos__vision-landscape')
       // $(image1).removeClass('hidden')
     }
 
     if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))) {
       $navbar.addClass("main-nav-light");
       $navbar.removeClass("main-nav-dark");
-      $(image1).removeClass('fixed-pos')
-      $(image2).removeClass('fixed-pos')
+      $(image1).removeClass('fixed-pos');
+      $(image2).removeClass('fixed-pos');
     }
 
     if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (7 * $navbar.height()))) {

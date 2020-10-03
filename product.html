@@ -249,6 +249,8 @@
             justify-content: space-between;
             flex-direction: column;
             align-items: center;
+            min-height: 240px;
+            width: calc(100vw - 270px);
         }
 
         .section-why__gif {
@@ -263,6 +265,32 @@
             min-height: 588px;
             position: relative;
             background-color: #140152;
+        }
+
+        .section-landscape__top {
+            position: absolute;
+            top: 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(100vw - 72px);
+            min-height: 240px;
+        }
+
+        .section-landscape__title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .section-landscape__title--light {
+            line-height: 38px;
+            font-weight: 300;
         }
 
         .section-why__devtron-landscape {
@@ -330,6 +358,19 @@
         }
 
         @media screen and (min-width: 768px) {
+            .fixed-pos {
+                position: fixed;
+                right: 135px;
+            }
+
+            .fixed-pos__current-landscape {
+                top: 340px;
+            }
+
+            .fixed-pos__vision-landscape {
+                /* top: 340px; */
+            }
+
             .section-hero {
                 min-height: 100vh;
                 border-bottom-left-radius: 100px;
@@ -384,7 +425,7 @@
 
             .section-why__grid {
                 margin-top: 60px;
-                margin-bottom: 76px;
+                margin-bottom: 316px;
                 grid-row-gap: 30px;
                 grid-column-gap: 30px;
             }
@@ -405,6 +446,8 @@
             .section-why__bottom {
                 flex-direction: row;
                 justify-content: space-between;
+                position: absolute;
+                bottom: 64px;
             }
 
             .section-why__gif {
@@ -416,6 +459,17 @@
                 position: relative;
                 min-height: 100vh;
                 background-color: #140152;
+            }
+
+            .section-landscape__title {
+                text-align: left;
+            }
+
+            .section-landscape__top {
+                top: 64px;
+                flex-direction: row;
+                justify-content: space-between;
+                width: calc(100vw - 270px)
             }
 
             .section-landscape__image {
@@ -434,19 +488,6 @@
         }
 
         @media screen and (min-width: 1024px) {
-            .fixed-pos {
-                position: fixed;
-                right: 135px;
-            }
-
-            .fixed-pos__current-landscape {
-                top: 500px;
-            }
-
-            .fixed-pos__vision-landscape {
-                top: 500px;
-            }
-
             .main-title {
                 width: 48%;
                 font-size: 48px;
@@ -587,8 +628,12 @@
             </div>
         </section>
         <section class="section-landscape">
-            <img src="./images/current_landscape.png" id="image-2" class="section-why__devtron-landscape" />
-
+            <div class="section-landscape__top">
+                <h2 class="section-landscape__title">Greater Control
+                    <span class="section-landscape__title--light">& Optimization</span>
+                </h2>
+                <img src="./images/current_landscape.png" id="image-2" class="section-why__devtron-landscape" />
+            </div>
         </section>
         <section class="section-testimonials">
             <div id="carouselExampleIndicators" class="carousel slide section-testimonials__carousel"
@@ -625,7 +670,6 @@
                             <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
                         </div>
                     </div>
-
                     <div class="carousel-item carousel-testimonial">
                         <img class="d-block carousel-testimonial__bg" src="./images/debug.png" height="100"
                             alt="third slide">
