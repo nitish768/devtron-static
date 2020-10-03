@@ -100,6 +100,7 @@
         }
 
         .section-hero__calendar-icon {
+            display: none;
             width: 30px;
             vertical-align: middle;
             margin-right: 10px;
@@ -336,6 +337,10 @@
                 padding-right: 135px;
             }
 
+            .section-hero__calendar-icon {
+                display: inline-block;
+            }
+
             .section-why {
                 min-height: 100vh;
                 border-bottom-left-radius: 100px;
@@ -394,7 +399,7 @@
 
             .section-why__title--cycle {
                 display: inline-block;
-                max-width: 585px;
+                max-width: 540px;
             }
 
             .section-why__bottom {
@@ -404,9 +409,7 @@
 
             .section-why__gif {
                 margin: unset;
-                position: absolute;
                 clip: rect(0, auto, auto, 0);
-                right: 135px;
             }
 
             .section-landscape {
@@ -425,17 +428,25 @@
                 display: block;
             }
 
-            .fixed-pos {
-                position: fixed;
-                top: 500px;
-            }
-
             .section-testimonials__carousel {
                 display: none;
             }
         }
 
         @media screen and (min-width: 1024px) {
+            .fixed-pos {
+                position: fixed;
+                right: 135px;
+            }
+
+            .fixed-pos__current-landscape {
+                top: 500px;
+            }
+
+            .fixed-pos__vision-landscape {
+                top: 500px;
+            }
+
             .main-title {
                 width: 48%;
                 font-size: 48px;
@@ -582,11 +593,11 @@
         <section class="section-testimonials">
             <div id="carouselExampleIndicators" class="carousel slide section-testimonials__carousel"
                 data-ride="carousel">
-                <ol class="carousel-indicators">
+                <!-- <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+                </ol> -->
                 <div class="carousel-inner">
                     <div class="carousel-item active carousel-testimonial">
                         <img class="d-block carousel-testimonial__bg" src="./images/about-banner.png" height="100"
@@ -595,8 +606,7 @@
                             <p class="carousel-testimonial__message">You don't have to worry about over or under
                                 provisioning of your nodes, the system
                                 automatically watches all the workload, recommends and applies the right configurations.
-                                It
-                                can be configured to apply or reapply the be</p>
+                                It can be configured to apply or reapply the be</p>
                             <p class="carousel-testimonial__read-more">Read Story</p>
                             <p class="carousel-testimonial__person-name">Kapil Bharti</p>
                             <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
@@ -609,8 +619,7 @@
                             <p class="carousel-testimonial__message">You don't have to worry about over or under
                                 provisioning of your nodes, the system
                                 automatically watches all the workload, recommends and applies the right configurations.
-                                It
-                                can be configured to apply or reapply the be</p>
+                                It can be configured to apply or reapply the be</p>
                             <p class="carousel-testimonial__read-more">Read Story</p>
                             <p class="carousel-testimonial__person-name">Kapil Bharti</p>
                             <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
@@ -624,22 +633,13 @@
                             <p class="carousel-testimonial__message">You don't have to worry about over or under
                                 provisioning of your nodes, the system
                                 automatically watches all the workload, recommends and applies the right configurations.
-                                It
-                                can be configured to apply or reapply the be</p>
+                                It can be configured to apply or reapply the be</p>
                             <p class="carousel-testimonial__read-more">Read Story</p>
                             <p class="carousel-testimonial__person-name">Kapil Bharti</p>
                             <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
                         </div>
                     </div>
                 </div>
-                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a> -->
             </div>
         </section>
     </main>
