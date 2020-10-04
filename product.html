@@ -582,6 +582,19 @@
             letter-spacing: 0em;
         }
 
+        .early-access-form__para {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .early-access-form__para-margins {
+            margin-top: 32px;
+            margin-bottom: 27px;
+        }
+
         @media screen and (min-width: 768px) {
             .fixed-pos {
                 position: fixed;
@@ -759,7 +772,7 @@
         <div class="modal-dialog">
             <div class="modal-content modal-content--early-access">
                 <div class="modal-header modal-header--early-access">
-                    <h5 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h5>
+                    <h2 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -772,7 +785,8 @@
                         <label for="full-name" class="d-block early-access-form__label">Email</label>
                         <input type="email" id="email" name="email" tab-index="2"
                             class="d-block w-100 early-access-form__input" />
-                        <p>We will send you an invitation email at the earliest.</p>
+                        <p class="early-access-form__para early-access-form__para-margins">We will send you an
+                            invitation email at the earliest.</p>
                         <button type="submit" tab-index="3" class="d-block w-100 button-early-access">Submit</button>
                     </form>
                 </div>
