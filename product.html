@@ -133,6 +133,9 @@
 
         .main-title--light {
             font-weight: 300;
+        }
+
+        .img-underline {
             background-image: url(./images/underline.svg);
             background-repeat: no-repeat;
             background-position-y: bottom;
@@ -547,8 +550,36 @@
             box-shadow: 6px 6px 0px rgba(242, 201, 76, 0.3);
         }
 
-        .modal-content--devtron {
+        .modal-content--early-access {
             border: none;
+        }
+
+        .modal-header--early-access {
+            border: none;
+        }
+
+        .modal-title--early-access {
+            font-size: 30px;
+            font-weight: bold;
+            color: #000A14;
+        }
+
+        .early-access-form__label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .early-access-form__input {
+            border-radius: 4px;
+            border: 1px solid #BDBDBD;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 12px;
+            letter-spacing: 0em;
         }
 
         @media screen and (min-width: 768px) {
@@ -695,7 +726,6 @@
 
         @media screen and (min-width: 1024px) {
             .main-title {
-                width: 48%;
                 font-size: 48px;
                 font-weight: 600;
                 line-height: 62px;
@@ -727,21 +757,23 @@
     <div class="modal bg-white fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content modal-content--devtron">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Early Access</h5>
+            <div class="modal-content modal-content--early-access">
+                <div class="modal-header modal-header--early-access">
+                    <h5 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form class="w-100">
-                        <label for="full-name" class="d-block">Full Name</label>
-                        <input type="text" id="full-name" name="name" class="d-block" />
-                        <label for="full-name" class="d-block">Email</label>
-                        <input type="email" id="email" name="email" class="d-block" />
+                        <label for="full-name" class="d-block early-access-form__label">Full Name</label>
+                        <input type="text" id="full-name" autofocus tab-index="1" name="name"
+                            class="d-block w-100 early-access-form__input" />
+                        <label for="full-name" class="d-block early-access-form__label">Email</label>
+                        <input type="email" id="email" name="email" tab-index="2"
+                            class="d-block w-100 early-access-form__input" />
                         <p>We will send you an invitation email at the earliest.</p>
-                        <button type="submit" class="d-block button-early-access">Submit</button>
+                        <button type="submit" tab-index="3" class="d-block w-100 button-early-access">Submit</button>
                     </form>
                 </div>
             </div>
@@ -749,8 +781,10 @@
     </div>
     <main>
         <section class="section-hero">
-            <h1 class="main-title">Software delivery workflow for
-                <span class="main-title--light">kubernetes</span>
+            <h1 class="main-title">Software delivery workflow
+                <span class="main-title--light d-block">for
+                    <span class="img-underline">kubernetes</span>
+                </span>
             </h1>
             <div class="section-hero__text section-hero__paragraph-container">
                 <p class="section-hero__paragraph">Application debugging dashboard</p>
@@ -1289,13 +1323,13 @@
                                 data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
                                 aria-controls="collapseFive">
                                 Gitops platlform
-                                <svg style="float:right" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#ffffff" fill-rule="nonzero"
-                                        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
-                                </g>
-                            </svg>
+                                <svg style="float:right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="#ffffff" fill-rule="nonzero"
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
+                                    </g>
+                                </svg>
                             </button>
                         </h2>
                     </div>
