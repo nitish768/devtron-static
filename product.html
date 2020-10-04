@@ -310,6 +310,14 @@
             height: 240px;
         }
 
+        .devtron-stack {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
         .section-testimonials {
             padding: 64px 36px;
             min-height: 588px;
@@ -582,6 +590,11 @@
             letter-spacing: 0em;
         }
 
+        .early-access-form__input-margins {
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+
         .early-access-form__para {
             font-size: 14px;
             font-weight: 400;
@@ -593,6 +606,30 @@
         .early-access-form__para-margins {
             margin-top: 32px;
             margin-bottom: 27px;
+        }
+
+        .close--early-access {
+            margin-top: -10px !important;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #BDBDBD;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #BDBDBD;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #BDBDBD;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: #BDBDBD;
         }
 
         @media screen and (min-width: 768px) {
@@ -773,17 +810,17 @@
             <div class="modal-content modal-content--early-access">
                 <div class="modal-header modal-header--early-access">
                     <h2 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h2>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close close--early-access" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form class="w-100">
                         <label for="full-name" class="d-block early-access-form__label">Full Name</label>
-                        <input type="text" id="full-name" autofocus tab-index="1" name="name"
-                            class="d-block w-100 early-access-form__input" />
+                        <input type="text" id="full-name" placeholder="John Doe" autofocus tab-index="1" name="name"
+                            class="d-block w-100 early-access-form__input early-access-form__input-margins" />
                         <label for="full-name" class="d-block early-access-form__label">Email</label>
-                        <input type="email" id="email" name="email" tab-index="2"
+                        <input type="email" id="email" name="email" placeholder="Enter email id" tab-index="2"
                             class="d-block w-100 early-access-form__input" />
                         <p class="early-access-form__para early-access-form__para-margins">We will send you an
                             invitation email at the earliest.</p>
@@ -1521,7 +1558,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="devtron-stack">
+                <h2>Devtron is built </h2>
+            </div>
+
         </section>
+
     </main>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
