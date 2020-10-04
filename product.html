@@ -311,11 +311,35 @@
         }
 
         .devtron-stack {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .devtron-stack__title {
             font-size: 20px;
             font-weight: 700;
             line-height: 30px;
             letter-spacing: 0em;
-            text-align: left;
+            text-align: center;
+            max-width: 370px;
+            margin-bottom: 40px;
+            margin-top: 15px;
+        }
+
+        .devtron-stack__title--light {
+            font-weight: 300;
+        }
+
+        .devtron-stack__grid {
+            display: flex;
+            flex-wrap: wrap;
+            direction: rtl;
+        }
+
+        .devtron-stack__item {
+            width: 80px;
+            height: 80px;
+            margin: 15px;
         }
 
         .section-testimonials {
@@ -632,6 +656,13 @@
             color: #BDBDBD;
         }
 
+        .early-access-card {
+            border-radius: 12px;
+            color: #ffffff;
+            padding: 30px;
+            background: linear-gradient(294.67deg, #140152 24.36%, #0066CC 84.22%);
+        }
+
         @media screen and (min-width: 768px) {
             .fixed-pos {
                 position: fixed;
@@ -771,6 +802,25 @@
 
             .devtron-landscape--mob {
                 display: none;
+            }
+
+            .devtron-stack {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .devtron-stack__title {
+                font-size: 18px;
+                line-height: 27px;
+                text-align: left;
+            }
+
+            .devtron-stack__title--light {
+                font-weight: 300;
+            }
+
+            .early-access-card__text {
+                max-width: 368px;
             }
         }
 
@@ -1560,12 +1610,33 @@
             </div>
 
             <div class="devtron-stack">
-                <h2>Devtron is built </h2>
+                <h2 class="devtron-stack__title">Devtron is built on
+                    <span class="devtron-stack__title--light">some of the most trusted and loved technologies</span>
+                </h2>
+                <div class="devtron-stack__grid">
+                    <img src="./images/ic-argocd-logo.svg" class="devtron-stack__item" />
+                    <img src="./images/ic-golang-logo.svg" class="devtron-stack__item" />
+                    <img src="./images/ic-kubernetes-logo.svg" class="devtron-stack__item" />
+                    <img src="./images/ic-nats-logo.svg" class="devtron-stack__item" />
+                    <img src="./images/ic-react-logo.svg" class="devtron-stack__item" />
+                    <img src="./images/ic-typescript-logo.svg" class="devtron-stack__item" />
+                </div>
             </div>
 
+            <div class="early-access-card">
+                <div class="early-access-card__text">
+                    <h3 class="main-title"><span class="main-title--light">Get </span>early access</h3>
+                    <p>Here’s your invite to try Devtron before everyone else</p>
+                    <button type="button" class="button-early-access" data-toggle="modal" data-target="#staticBackdrop">
+                        I'm Interested
+                    </button>
+                </div>
+            </div>
         </section>
-
     </main>
+    <footer class="">
+
+    </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
