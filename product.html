@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -265,8 +266,18 @@
             background-color: #140152;
         }
 
+        .section-landscape__heading {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #8980A8;
+            text-transform: uppercase;
+        }
+
         .section-landscape__top {
-            position: absolute;
+            /* position: absolute; */
             top: 64px;
             display: flex;
             flex-direction: column;
@@ -536,6 +547,10 @@
             box-shadow: 6px 6px 0px rgba(242, 201, 76, 0.3);
         }
 
+        .modal-content--devtron {
+            border: none;
+        }
+
         @media screen and (min-width: 768px) {
             .fixed-pos {
                 position: fixed;
@@ -640,6 +655,10 @@
                 background-color: #140152;
             }
 
+            .section-landscape__heading {
+                text-align: left;
+            }
+
             .section-landscape__title {
                 text-align: left;
             }
@@ -708,7 +727,7 @@
     <div class="modal bg-white fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content modal-content--devtron">
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Early Access</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -716,8 +735,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
-
+                    <form class="w-100">
+                        <label for="full-name" class="d-block">Full Name</label>
+                        <input type="text" id="full-name" name="name" class="d-block" />
+                        <label for="full-name" class="d-block">Email</label>
+                        <input type="email" id="email" name="email" class="d-block" />
+                        <p>We will send you an invitation email at the earliest.</p>
+                        <button type="submit" class="d-block button-early-access">Submit</button>
                     </form>
                 </div>
             </div>
@@ -817,9 +841,12 @@
         </section>
         <section class="section-landscape">
             <div class="section-landscape__top">
-                <h2 class="section-landscape__title">Greater Control
-                    <span class="section-landscape__title--light">& Optimization</span>
-                </h2>
+                <div>
+                    <h2 class="section-landscape__heading">Envisioned AppOps landscape</h2>
+                    <h2 class="section-landscape__title">Greater Control
+                        <span class="section-landscape__title--light">& Optimization</span>
+                    </h2>
+                </div>
                 <img src="./images/current_landscape.png" id="image-2" class="section-why__devtron-landscape" />
             </div>
 
@@ -1325,14 +1352,17 @@
                 <span class="heading__Dark">Sneak Peek </span>
                 <span class="heading__Light">into some exciting features</span>
             </div>
-            <div style="display: flex">
+            <div style="display: flex;overflow: hidden;">
                 <div>
                     <div class="featureHeading"></div>
                     <div class="featureHeading__next">NEXT</div>
                     <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(1)"></div>
                     <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(2)"></div>
                     <div class="section-sneakpeek__button-container">
-                        <button type="button" class="button-early-access">Get Early Access</button>
+                        <button type="button" class="button-early-access" data-toggle="modal"
+                            data-target="#staticBackdrop">
+                            Get Early Access
+                        </button>
                     </div>
                 </div>
                 <div>
@@ -1399,4 +1429,5 @@
     <script src="js/navbar.js"></script>
     <script src="./about.js"></script>
 </body>
+
 </html>
