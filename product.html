@@ -351,7 +351,7 @@
 
         .devtron-stack__hr {
             width: 100%;
-            margin: 0 auto;
+            margin: 64px auto 0 auto;
             border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
 
@@ -1063,6 +1063,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -1895,52 +1897,44 @@
             </div>
         </div>
         <section class="section-testimonials">
-            <div id="carouselExampleIndicators" class="carousel slide section-testimonials__carousel"
-                data-ride="carousel">
-                <!-- <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol> -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active carousel-testimonial">
-                        <img class="d-block carousel-testimonial__bg" src="./images/about-banner.png" height="100"
-                            alt="First slide">
-                        <div class="carousel-testimonial__margins">
-                            <p class="carousel-testimonial__message">You don't have to worry about over or under
-                                provisioning of your nodes, the system
-                                automatically watches all the workload, recommends and applies the right configurations.
-                                It can be configured to apply or reapply the be</p>
-                            <p class="carousel-testimonial__read-more">Read Story</p>
-                            <p class="carousel-testimonial__person-name">Kapil Bharti</p>
-                            <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
-                        </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item active carousel-testimonial">
+                    <img class="d-block carousel-testimonial__bg" src="./images/about-banner.png" height="100"
+                        alt="First slide">
+                    <div class="carousel-testimonial__margins">
+                        <p class="carousel-testimonial__message">You don't have to worry about over or under
+                            provisioning of your nodes, the system
+                            automatically watches all the workload, recommends and applies the right configurations.
+                            It can be configured to apply or reapply the be</p>
+                        <p class="carousel-testimonial__read-more">Read Story</p>
+                        <p class="carousel-testimonial__person-name">Kapil Bharti</p>
+                        <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
                     </div>
-                    <div class="carousel-item carousel-testimonial">
-                        <img class="d-block carousel-testimonial__bg" src="./images/devtron-as-platform.jpg"
-                            height="100" alt="second slide">
-                        <div class="carousel-testimonial__margins">
-                            <p class="carousel-testimonial__message">You don't have to worry about over or under
-                                provisioning of your nodes, the system
-                                automatically watches all the workload, recommends and applies the right configurations.
-                                It can be configured to apply or reapply the be</p>
-                            <p class="carousel-testimonial__read-more">Read Story</p>
-                            <p class="carousel-testimonial__person-name">Kapil Bharti</p>
-                            <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
-                        </div>
+                </div>
+                <div class="item carousel-testimonial">
+                    <img class="d-block carousel-testimonial__bg" src="./images/devtron-as-platform.jpg" height="100"
+                        alt="second slide">
+                    <div class="carousel-testimonial__margins">
+                        <p class="carousel-testimonial__message">You don't have to worry about over or under
+                            provisioning of your nodes, the system
+                            automatically watches all the workload, recommends and applies the right configurations.
+                            It can be configured to apply or reapply the be</p>
+                        <p class="carousel-testimonial__read-more">Read Story</p>
+                        <p class="carousel-testimonial__person-name">Kapil Bharti</p>
+                        <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
                     </div>
-                    <div class="carousel-item carousel-testimonial">
-                        <img class="d-block carousel-testimonial__bg" src="./images/debug.png" height="100"
-                            alt="third slide">
-                        <div class="carousel-testimonial__margins">
-                            <p class="carousel-testimonial__message">You don't have to worry about over or under
-                                provisioning of your nodes, the system
-                                automatically watches all the workload, recommends and applies the right configurations.
-                                It can be configured to apply or reapply the be</p>
-                            <p class="carousel-testimonial__read-more">Read Story</p>
-                            <p class="carousel-testimonial__person-name">Kapil Bharti</p>
-                            <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
-                        </div>
+                </div>
+                <div class="item carousel-testimonial">
+                    <img class="d-block carousel-testimonial__bg" src="./images/debug.png" height="100"
+                        alt="third slide">
+                    <div class="carousel-testimonial__margins">
+                        <p class="carousel-testimonial__message">You don't have to worry about over or under
+                            provisioning of your nodes, the system
+                            automatically watches all the workload, recommends and applies the right configurations.
+                            It can be configured to apply or reapply the be</p>
+                        <p class="carousel-testimonial__read-more">Read Story</p>
+                        <p class="carousel-testimonial__person-name">Kapil Bharti</p>
+                        <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
                     </div>
                 </div>
             </div>
@@ -2019,6 +2013,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="./about.js"></script>
 </body>
