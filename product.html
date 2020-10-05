@@ -315,6 +315,12 @@
             padding-bottom: 40px;
         }
 
+        .devtron-stack__hr {
+            width: 100%;
+            margin: 0 auto;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
         .devtron-stack__title {
             font-size: 20px;
             font-weight: 700;
@@ -346,6 +352,7 @@
             padding: 64px 36px;
             min-height: 588px;
             background-color: #ffffff;
+            border-radius: 0px;
         }
 
         .carousel-testimonial {
@@ -661,6 +668,33 @@
             color: #ffffff;
             padding: 30px;
             background: linear-gradient(294.67deg, #140152 24.36%, #0066CC 84.22%);
+        }
+
+        .early-access-card__title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .early-access-card__title--light {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .early-access-card__subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .devtron-footer {
+            background: #140152;
+            padding: 65px 35px;
+            color: #ffffff;
         }
 
         @media screen and (min-width: 768px) {
@@ -1608,7 +1642,8 @@
                     </div>
                 </div>
             </div>
-
+            <hr class="devtron-stack__hr">
+            </hr>
             <div class="devtron-stack">
                 <h2 class="devtron-stack__title">Devtron is built on
                     <span class="devtron-stack__title--light">some of the most trusted and loved technologies</span>
@@ -1625,8 +1660,10 @@
 
             <div class="early-access-card">
                 <div class="early-access-card__text">
-                    <h3 class="main-title"><span class="main-title--light">Get </span>early access</h3>
-                    <p>Here’s your invite to try Devtron before everyone else</p>
+                    <h3 class="early-access-card__title">
+                        <span class="early-access-card__title--light">Get </span>early access
+                    </h3>
+                    <p class="early-access-card__subtitle">Here’s your invite to try Devtron before everyone else</p>
                     <button type="button" class="button-early-access" data-toggle="modal" data-target="#staticBackdrop">
                         I'm Interested
                     </button>
@@ -1634,8 +1671,16 @@
             </div>
         </section>
     </main>
-    <footer class="">
+    <footer class="devtron-footer">
+        <h3>An open-source release orchestration & CI/CD platform for Kubernetes</h3>
+        <aside>
 
+        </aside>
+        <h6>Available in 15d 18h 29m 40s</h6>
+        <p>Made with in India</p>
+        <hr>
+        </hr>
+        <p>© 2020 DevtronLabs. All rights reserved</p>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
