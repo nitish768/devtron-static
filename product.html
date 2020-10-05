@@ -731,6 +731,18 @@
             color: #ffffff;
         }
 
+        .devtron-footer__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .devtron-footer__social {
+            display: flex;
+            flex-wrap: wrap;
+            /* margin-top: 24px;
+            margin-bottom: 24px; */
+        }
+
         .footer__title {
             font-size: 14px;
             font-style: normal;
@@ -759,6 +771,8 @@
             display: inline-block;
             padding: 13px 19px;
             margin: 12px;
+            text-align: center;
+            vertical-align: middle;
             background-color: #281566;
         }
 
@@ -774,14 +788,24 @@
             border-top: 1px solid rgba(255, 255, 255, 0.2);
         }
 
+        .devtron-footer__left {
+            width: 265px;
+            flex-shrink: 0;
+        }
+
+        .devtron-footer__right {
+            display: flex;
+            flex-direction: column;
+        }
+
         .devtron-footer__fb-cover {
             width: 100%;
             height: auto;
             margin: auto;
             max-width: 590px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
-
-        .fb-community {}
 
         .fb-community__content {
             background-color: #281566;
@@ -807,7 +831,6 @@
             letter-spacing: 0em;
             text-align: left;
         }
-
 
         @media screen and (min-width: 768px) {
             .fixed-pos {
@@ -973,6 +996,31 @@
             .devtron-footer {
                 padding-left: 135px;
                 padding-right: 135px;
+            }
+
+            .devtron-footer__href {
+                width: 100px;
+                height: 100px;
+                margin-top: 0px;
+            }
+
+            .devtron-footer__social {
+                min-width: 224px;
+                direction: rtl;
+            }
+
+            .devtron-footer__content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .devtron-footer__right {
+                flex-direction: row;
+            }
+
+            .devtron-footer__href:first-of-type {
+                margin-top: 0px;
+                margin-left: 12px;
             }
         }
 
@@ -1850,39 +1898,46 @@
         </section>
     </main>
     <footer class="devtron-footer">
-        <img src="./images/devtron-header-logo.svg" width="120" height="32" />
-        <h3 class="footer__title">An open-source release orchestration & CI/CD platform for Kubernetes</h3>
-        <h6 class="available">Available in 15d 18h 29m 40s</h6>
-        <article>
-            <a href="https://www.linkedin.com/company/devtron-labs/" target="_blank" class="devtron-footer__href">
-                <img src="./images/linkedin.svg" alt="linked-in" width="18" height="18" />
-            </a>
-            <a href="https://twitter.com/DevtronL" target="_blank" class="devtron-footer__href">
-                <img src="./images/twitter.svg" alt="twitter" width="18" height="18" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCDbfFyHMWTUIKn3RrtU3f4A/featured" target="_blank"
-                class="devtron-footer__href">
-                <img src="./images/linkedin.svg" alt="youtube" width="18" height="18" />
-            </a>
-            <a href="https://www.facebook.com/devtronlabs" target="_blank" class="devtron-footer__href">
-                <img src="./images/twitter.svg" alt="facebook" width="18" height="18" />
-            </a>
-        </article>
-        <article class="fb-community">
-            <img src="./images/fb-group-cover.jpg" class="devtron-footer__fb-cover" width="180"
-                alt="join facebook community" />
-            <div class="fb-community__content">
-                <div>
-                    <h6 class="fb-community__title">Join the Community</h6>
-                    <p class="fb-community__desc">DevOps & Kubernetes Professionals</p>
-                </div>
-                <img src="./images/twitter.svg" alt="facebook" width="18" height="18" />
+        <div class="devtron-footer__content">
+            <div class="devtron-footer__left">
+                <img src="./images/devtron-header-logo.svg" width="120" height="32" />
+                <h3 class="footer__title">An open-source release orchestration & CI/CD platform for Kubernetes</h3>
+                <h6 class="available">Available in 15d 18h 29m 40s</h6>
             </div>
-        </article>
-        <p class="devtron-footer__copyright">Made with in India</p>
+            <div class="devtron-footer__right">
+                <article class="devtron-footer__social">
+                    <a href="https://www.linkedin.com/company/devtron-labs/" target="_blank"
+                        class="devtron-footer__href">
+                        <img src="./images/linkedin.svg" alt="linked-in" width="18" height="18" />
+                    </a>
+                    <a href="https://twitter.com/DevtronL" target="_blank" class="devtron-footer__href">
+                        <img src="./images/twitter.svg" alt="twitter" width="18" height="18" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCDbfFyHMWTUIKn3RrtU3f4A/featured" target="_blank"
+                        class="devtron-footer__href">
+                        <img src="./images/linkedin.svg" alt="youtube" width="18" height="18" />
+                    </a>
+                    <a href="https://www.facebook.com/devtronlabs" target="_blank" class="devtron-footer__href">
+                        <img src="./images/twitter.svg" alt="facebook" width="18" height="18" />
+                    </a>
+                </article>
+                <article class="fb-community">
+                    <img src="./images/fb-group-cover.jpg" class="devtron-footer__fb-cover" width="180"
+                        alt="join facebook community" />
+                    <div class="fb-community__content">
+                        <div>
+                            <h6 class="fb-community__title">Join the Community</h6>
+                            <p class="fb-community__desc">DevOps & Kubernetes Professionals</p>
+                        </div>
+                        <img src="./images/twitter.svg" alt="facebook" width="18" height="18" />
+                    </div>
+                </article>
+            </div>
+        </div>
+        <p class="devtron-footer__copyright">Made with &hearts; in India</p>
         <div class="devtron-footer__copyright-indent">
             <p class="devtron-footer__copyright">© 2020 DevtronLabs. All rights reserved</p>
-            <p class="devtron-footer__copyright">Made with in India</p>
+            <p class="devtron-footer__copyright">Made with &hearts; in India</p>
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
