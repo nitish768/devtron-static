@@ -1,0 +1,31 @@
+.testimonials__person-image {
+    position: absolute; 
+    z-index: 2; 
+    top: 40px; 
+    border-radius: 50%; 
+    width: 100px; 
+    height: 100px; 
+    left: 40px
+}
+
+.testimonials {
+    background-color: #fff; 
+    padding: 100px 135px 0 135px
+}
+
+.testimonials__name-designation-logo {
+    padding: 168px 40px 40px
+}
+.testimonials__designation {
+    padding: 4px 0 20px 0;
+    color: #333333;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.testimonials__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000A14;
+}
