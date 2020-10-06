@@ -616,6 +616,10 @@
             background-color: #fff;
         }
 
+        .section-learning--desktop {
+            display: none;
+        }
+
         .heading__Dark {
             color: #FFFFFF;
             font-size: 36px;
@@ -895,6 +899,14 @@
             line-height: 150%;
         }
 
+        .learning-card__text {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000A14;
+        }
+
         @media screen and (min-width: 768px) {
             .fixed-pos {
                 position: fixed;
@@ -1040,7 +1052,13 @@
                 display: block;
             }
 
+            .section-learning--mob {
+                display: none;
+            }
 
+            .section-learning--desktop {
+                display: block;
+            }
 
             .devtron-landscape {
                 display: flex;
@@ -1098,6 +1116,8 @@
                 margin-top: 0px;
                 margin-left: 12px;
             }
+
+
         }
 
         @media screen and (min-width: 1024px) {
@@ -1877,7 +1897,7 @@
                             Cost visiblity
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
 
             <h2>
@@ -1965,7 +1985,7 @@
         <section class="section-testimonials section-testimonials--mob">
             <h2 class="black-heading section-testimonials--title-margins">
                 <span class="black-heading-light"> We’re starting to </span>
-                <span class="black-heading-dark"> transform the way you DevOperate </span>
+                <span class="black-heading-dark">transform the way you DevOperate </span>
             </h2>
             <div class="owl-carousel owl-theme">
                 <div class="item active carousel-testimonial">
@@ -2037,19 +2057,19 @@
             </div>
         </section>
 
-        <section class="section-learning">
+        <section class="section-learning section-learning--desktop">
             <div class="flex-centre">
-                <div class="black-heading">
+                <h2 class="black-heading">
                     <span class="black-heading-dark">We love sharing</span>
                     <span class="black-heading-light">our learnings</span>
-                </div>
+                </h2>
                 <a class="blue-anchors" href="#">See all posts &#8594;</a>
             </div>
             <div class="learnings-card">
                 <div class="card">
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text">
+                        <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
@@ -2058,7 +2078,7 @@
                 <div class="card">
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text">
+                        <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
@@ -2067,7 +2087,7 @@
                 <div class="card">
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text">
+                        <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
@@ -2076,13 +2096,41 @@
                 <div class="card">
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text">
+                        <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="section-learning section-learning--mob">
+            <h2 class="black-heading">
+                <span class="black-heading-dark">We love sharing</span>
+                <span class="black-heading-light">our learnings</span>
+            </h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item card active">
+                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="learning-card__text">
+                            Some quick example text to build on the card title and make up the bulk of the
+                            card's content.
+                        </p>
+                    </div>
+                </div>
+                <div class="item card">
+                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="learning-card__text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="blue-anchors" href="#">See all posts &#8594;</a>
         </section>
     </main>
     <footer class="devtron-footer">
