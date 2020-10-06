@@ -176,9 +176,9 @@
         }
 
         .testimonials-card__company-background {
-            width: 100%; 
-            height: 90px; 
-            position: absolute; 
+            width: 100%;
+            height: 90px;
+            position: absolute;
             border-radius: 0 20px 0 0;
         }
 
@@ -401,6 +401,14 @@
             min-height: 588px;
             background-color: #ffffff;
             border-radius: 0px;
+        }
+
+        .section-testimonials--desktop {
+            display: none;
+        }
+
+        .section-testimonials--title-margins {
+            margin-bottom: 60px;
         }
 
         .carousel-testimonial {
@@ -727,10 +735,11 @@
 
         .early-access-card__title {
             font-size: 30px;
-            font-weight: 700;
+            font-weight: 700;   
             line-height: 39px;
             letter-spacing: 0em;
             text-align: left;
+            margin-bottom: 12px;
         }
 
         .early-access-card__title--light {
@@ -744,6 +753,7 @@
             line-height: 24px;
             letter-spacing: 0em;
             text-align: left;
+            margin-bottom: 24px;
         }
 
         .devtron-footer {
@@ -935,6 +945,7 @@
                 border-radius: 0px;
             }
 
+
             .main-nav {
                 padding-top: 25px;
                 height: 80px;
@@ -1021,9 +1032,15 @@
                 display: block;
             }
 
-            .section-testimonials__carousel {
+            .section-testimonials--mob {
                 display: none;
             }
+
+            .section-testimonials--desktop {
+                display: block;
+            }
+
+
 
             .devtron-landscape {
                 display: flex;
@@ -1090,9 +1107,10 @@
                 line-height: 62px;
             }
         }
+
         .testimonials__card-content-wrapper {
-            display: flex; 
-            margin: 60px 0 0 0; 
+            display: flex;
+            margin: 60px 0 0 0;
             justify-content: space-between;
         }
     </style>
@@ -1883,15 +1901,13 @@
                     <img id="sneakPeekImage" src="" style="width: 55vw; height: 500px" />
                 </div>
             </div>
-
         </section>
-        
-            
-        <div class="section-testimonials">
-            <div class="black-heading">
-                <span class="black-heading-light"> We’re starting to </span> 
+
+        <section class="section-testimonials section-testimonials--desktop">
+            <h2 class="black-heading">
+                <span class="black-heading-light"> We’re starting to </span>
                 <span class="black-heading-dark"> transform the way you DevOperate </span>
-            </div>
+            </h2>
             <div class="testimonials__card-content-wrapper">
                 <div style="width: 50vw">
                     <img src="./testimonialIcon.png">
@@ -1907,14 +1923,13 @@
                     </a>
                 </div>
                 <div class="testimonials-card">
-                    <img src="./delhivery_background.jpg"
-                        class="testimonials-card__company-background"/>
+                    <img src="./delhivery_background.jpg" class="testimonials-card__company-background" />
                     <img src="https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg"
                         class="testimonials__person-image" />
                     <div class="testimonials__name-designation-logo">
                         <div>Kapil Bharti</div>
                         <div class="testimonials__designation">Co-founder & CTO, Delhivery</div>
-                        <img src="./delhiveryLogo.png"/>
+                        <img src="./delhiveryLogo.png" />
                     </div>
 
                 </div>
@@ -1935,20 +1950,23 @@
                     </a>
                 </div>
                 <div class="testimonials-card">
-                    <img src="./delhivery_background.jpg"
-                        class="testimonials-card__company-background"/>
+                    <img src="./delhivery_background.jpg" class="testimonials-card__company-background" />
                     <img src="https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg"
                         class="testimonials__person-image" />
                     <div class="testimonials__name-designation-logo">
                         <div class="testimonials__name">Kapil Bharti</div>
                         <div class="testimonials__designation">Co-founder & CTO, Delhivery</div>
-                        <img src="./delhiveryLogo.png"/>
+                        <img src="./delhiveryLogo.png" />
                     </div>
 
                 </div>
             </div>
-        </div>
-        <section class="section-testimonials">
+        </section>
+        <section class="section-testimonials section-testimonials--mob">
+            <h2 class="black-heading section-testimonials--title-margins">
+                <span class="black-heading-light"> We’re starting to </span>
+                <span class="black-heading-dark"> transform the way you DevOperate </span>
+            </h2>
             <div class="owl-carousel owl-theme">
                 <div class="item active carousel-testimonial">
                     <img class="d-block carousel-testimonial__bg" src="./images/about-banner.png" height="100"
@@ -2032,7 +2050,8 @@
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
                         </p>
                     </div>
                 </div>
@@ -2040,7 +2059,8 @@
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
                         </p>
                     </div>
                 </div>
@@ -2048,7 +2068,8 @@
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
                         </p>
                     </div>
                 </div>
@@ -2056,11 +2077,12 @@
                     <img src="./img-blog.png" class="card-img-top" alt="">
                     <div class="card-body">
                         <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
                         </p>
                     </div>
-                </div> 
-            </div>   
+                </div>
+            </div>
         </section>
     </main>
     <footer class="devtron-footer">
@@ -2081,10 +2103,10 @@
                     </a>
                     <a href="https://www.youtube.com/channel/UCDbfFyHMWTUIKn3RrtU3f4A/featured" target="_blank"
                         class="devtron-footer__href">
-                        <img src="./images/linkedin.svg" alt="youtube" width="18" height="18" />
+                        <img src="./images/youtube.svg" alt="youtube" width="18" height="18" />
                     </a>
                     <a href="https://www.facebook.com/devtronlabs" target="_blank" class="devtron-footer__href">
-                        <img src="./images/twitter.svg" alt="facebook" width="18" height="18" />
+                        <img src="./images/facebook.svg" alt="facebook" width="18" height="18" />
                     </a>
                 </article>
                 <article class="fb-community">
