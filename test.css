@@ -44,3 +44,19 @@
     width: 25%;
     margin: 60px 30px 0 0;
 }
+
+.accordion .btn {
+    position: relative;
+}
+    
+.accordion .btn::after {
+    content: "\f107";
+    top: -2px;
+    right: 0px;
+    position: absolute;
+    font-family: "FontAwesome"
+}
+
+.accordion .btn[aria-expanded="true"]::after {
+    content: "\f106";
+}
