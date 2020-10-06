@@ -14,6 +14,13 @@
         gtag('js', new Date());
         gtag('config', 'UA-163948066-3');
     </script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+        hbspt.forms.create({
+            portalId: "6866519",
+            formId: "d4003723-6514-4bc7-bccd-c5a72010a357"
+        });
+    </script>
     <style>
         * {
             box-sizing: border-box;
@@ -258,7 +265,7 @@
             border-radius: 8px;
             padding: 20px 20px 48px 20px;
             border: 1px solid #E0E0E0;
-            min-width: 248px;
+            min-width: 240px;
             scroll-snap-align: start;
             width: calc(100vw - 72px);
             position: relative;
@@ -902,11 +909,37 @@
             line-height: 150%;
         }
 
+        .section-learning__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 12px;
+            overflow-y: auto;
+            scroll-snap-type: x mandatory;
+        }
+
+        .section-learning__grid-item {
+            min-width: 248px;
+            scroll-snap-align: start;
+            cursor: pointer;
+            min-height: 300px;
+        }
+
+        .learning-card {
+            padding-bottom: 41px;
+        }
+
         .learning-card__text {
             font-weight: 600;
             font-size: 16px;
             line-height: 150%;
             color: #000A14;
+        }
+
+        .learning-card__bottom {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            left: 20px;
         }
 
         .learning-card__read-more {
@@ -922,6 +955,12 @@
         .learning-card__img {
             height: 132px;
             width: auto;
+        }
+
+        .testimonials__card-content-wrapper {
+            display: flex;
+            margin: 60px 0 0 0;
+            justify-content: space-between;
         }
 
         @media screen and (min-width: 768px) {
@@ -956,8 +995,8 @@
             }
 
             .section-learning {
-                /* min-height: 588px; */
-                /* position: relative; */
+                min-height: 588px;
+                position: relative;
                 padding: 100px 135px;
             }
 
@@ -973,7 +1012,6 @@
                 padding: 100px 135px;
                 border-radius: 0px;
             }
-
 
             .main-nav {
                 padding-top: 25px;
@@ -1133,9 +1171,14 @@
                 margin-top: 0px;
                 margin-left: 12px;
             }
+
+            .section-learning__grid {
+                grid-template-columns: repeat(4, minmax(248px, 275px));
+            }
         }
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) and (max-width: 1440px) {
+
             .main-title {
                 font-size: 48px;
                 font-weight: 600;
@@ -1145,12 +1188,11 @@
             .section-learning__header-margins {
                 margin-bottom: 40px;
             }
-        }
 
-        .testimonials__card-content-wrapper {
-            display: flex;
-            margin: 60px 0 0 0;
-            justify-content: space-between;
+            .section-learning__grid {
+                grid-template-columns: repeat(4, minmax(248px, 275px));
+            }
+
         }
     </style>
     <title>Devtron - The DevOps Accelerator</title>
@@ -1217,8 +1259,7 @@
                 <p class="section-hero__paragraph section-hero__paragraph">Multi-cloud deployment support</p>
             </div>
             <h3 class="available section-hero__available-margins">
-                <img src="./images/calendar.svg" class="section-hero__calendar-icon" />
-                Available 15th October 2020
+                <img src="./images/calendar.svg" class="section-hero__calendar-icon" /> Available 15th October 2020
             </h3>
             <div class="section-hero__button-container">
                 <button type="button" class="button-early-access" data-toggle="modal" data-target="#staticBackdrop">
@@ -1229,8 +1270,7 @@
         </section>
 
         <section class="section-why">
-            <h2 class="section-why__title"><b class="section-why__title-bold">Why</b>
-                we built devtron
+            <h2 class="section-why__title"><b class="section-why__title-bold">Why</b> we built devtron
             </h2>
             <div class="section-why__grid">
                 <div class="section-why__grid-item">
@@ -1352,8 +1392,8 @@
             </div>
             <div class="section-why__bottom">
                 <h2 class="section-why__title section-why__title--cycle">Almost
-                    <b class="section-why__title-bold">impossible to achieve the optimal balance </b>
-                    between Cost, Stability & Security.
+                    <b class="section-why__title-bold">impossible to achieve the optimal balance </b> between Cost,
+                    Stability & Security.
                 </h2>
                 <img src="./images/knob-gif.gif" id="image-1" class="section-why__gif" alt="cycle" />
             </div>
@@ -1952,10 +1992,9 @@
                     <img src="./testimonialIcon.png">
                     <img src="./testimonialIcon.png">
                     <div class="testimonial-details">
-                        You don't have to worry about over or under provisioning of your nodes,
-                        the system automatically watches all the workload, recommends and applies the right
-                        configurations.
-                        It can be configured to apply.
+                        You don't have to worry about over or under provisioning of your nodes, the system automatically
+                        watches all the workload, recommends and applies the right configurations. It can be configured
+                        to apply.
                     </div>
                     <a href="#" class="blue-anchors">
                         Read story &#8594;
@@ -1979,10 +2018,9 @@
                     <img src="./testimonialIcon.png">
                     <img src="./testimonialIcon.png">
                     <div class="testimonial-details">
-                        You don't have to worry about over or under provisioning of your nodes,
-                        the system automatically watches all the workload, recommends and applies the right
-                        configurations.
-                        It can be configured to apply.
+                        You don't have to worry about over or under provisioning of your nodes, the system automatically
+                        watches all the workload, recommends and applies the right configurations. It can be configured
+                        to apply.
                     </div>
                     <a href="#" class="blue-anchors">
                         Read story &#8594;
@@ -2012,9 +2050,8 @@
                         alt="First slide">
                     <div class="carousel-testimonial__margins">
                         <p class="carousel-testimonial__message">You don't have to worry about over or under
-                            provisioning of your nodes, the system
-                            automatically watches all the workload, recommends and applies the right configurations.
-                            It can be configured to apply or reapply the be</p>
+                            provisioning of your nodes, the system automatically watches all the workload, recommends
+                            and applies the right configurations. It can be configured to apply or reapply the be</p>
                         <p class="carousel-testimonial__read-more">Read Story</p>
                         <p class="carousel-testimonial__person-name">Kapil Bharti</p>
                         <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
@@ -2025,9 +2062,8 @@
                         alt="second slide">
                     <div class="carousel-testimonial__margins">
                         <p class="carousel-testimonial__message">You don't have to worry about over or under
-                            provisioning of your nodes, the system
-                            automatically watches all the workload, recommends and applies the right configurations.
-                            It can be configured to apply or reapply the be</p>
+                            provisioning of your nodes, the system automatically watches all the workload, recommends
+                            and applies the right configurations. It can be configured to apply or reapply the be</p>
                         <p class="carousel-testimonial__read-more">Read Story</p>
                         <p class="carousel-testimonial__person-name">Kapil Bharti</p>
                         <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
@@ -2038,9 +2074,8 @@
                         alt="third slide">
                     <div class="carousel-testimonial__margins">
                         <p class="carousel-testimonial__message">You don't have to worry about over or under
-                            provisioning of your nodes, the system
-                            automatically watches all the workload, recommends and applies the right configurations.
-                            It can be configured to apply or reapply the be</p>
+                            provisioning of your nodes, the system automatically watches all the workload, recommends
+                            and applies the right configurations. It can be configured to apply or reapply the be</p>
                         <p class="carousel-testimonial__read-more">Read Story</p>
                         <p class="carousel-testimonial__person-name">Kapil Bharti</p>
                         <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
@@ -2084,45 +2119,49 @@
                 </h2>
                 <a class="blue-anchors" href="#" style="float:right;">See all posts &#8594;</a>
             </div>
-            <div class="learnings-card">
-                <div class="card">
+            <div class="section-learning__grid">
+                <div class="card section-learning__grid-item learning-card">
                     <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
+                            Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
                         </p>
-                        <p class="learning-card__read-more">Read</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card section-learning__grid-item learning-card">
                     <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
+                            Ultimate Guide of Pod Eviction on Kubernetes
                         </p>
-                        <p class="learning-card__read-more">Read</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card section-learning__grid-item learning-card">
                     <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
+                            How to use Spot to achieve Cost Savings with Stability on Kubernetes
                         </p>
-                        <p class="learning-card__read-more">Read</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card section-learning__grid-item learning-card">
                     <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
+                            Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must know
                         </p>
-                        <p class="learning-card__read-more">Read</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2134,24 +2173,44 @@
                 <span class="black-heading-light">our learnings</span>
             </h2>
             <div class="owl-carousel owl-theme">
-                <div class="item card active">
+                <div class="item card learning-card active">
                     <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
-                            Some quick example text to build on the card title and make up the bulk of the
-                            card's content.
+                            Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
                         </p>
-                        <p class="learning-card__read-more">Read</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
                     </div>
                 </div>
-                <div class="item card">
+                <div class="item card learning-card">
                     <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
-                        <p class="learning-card__text">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
-                        </p>
-                        <p class="learning-card__read-more">Read</p>
+                        <p class="learning-card__text">Ultimate Guide of Pod Eviction on Kubernetes</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item card learning-card">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                    <div class="card-body">
+                        <p class="learning-card__text">How to use Spot to achieve Cost Savings with Stability on
+                            Kubernetes</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item card learning-card">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                    <div class="card-body">
+                        <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must
+                            know</p>
+                        <div class="learning-card__bottom">
+                            <p class="learning-card__read-more">Read</p>
+                        </div>
                     </div>
                 </div>
             </div>
