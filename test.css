@@ -643,6 +643,7 @@ button:focus {
 
 .btn {
     padding: 20px 0 15px 0;
+    font-size: 16px;
 }
 
 .accordion {
@@ -668,6 +669,8 @@ button:focus {
 .accordion .card-body {
     background: #281566;
     margin: 16px 0 0 0;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .featureHeading:nth-of-type(1) {
@@ -976,9 +979,10 @@ button:focus {
 .testimonials-card {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0 20px 20px 20px;
-    width: 25%;
+    min-width: 25%;
     position: relative;
     background: #F2F4F7;
+    margin: 0 0 0 20px;
 }
 
 .testimonial-details {
@@ -991,7 +995,7 @@ button:focus {
 .section-learning__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 12px;
+    grid-column-gap: 30px;
     overflow-y: auto;
     scroll-snap-type: x mandatory;
 }
@@ -1264,7 +1268,7 @@ button:focus {
     }
 
     .section-learning__grid {
-        grid-template-columns: repeat(4, minmax(248px, 275px));
+        grid-template-columns: repeat(4, minmax(248px, 25%));
     }
 }
 
