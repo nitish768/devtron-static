@@ -16,7 +16,7 @@ function handleTabChange(event, tabIdToDisplay) {
     for (let i = 0; i < tablinks.length; i++) {
         // tablinks[i].className = tablinks[i].className.replace(" active", "");
         tablinks[i].className = tablinks[i].className.replace(" active", "");
-        console.log(tablinks[i].className)
+        // console.log(tablinks[i].className)
     }
 
     document.getElementById(tabIdToDisplay).style.display = "block";
