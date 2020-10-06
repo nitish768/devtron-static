@@ -63,7 +63,7 @@
     
 .accordion .btn::after {
     content: "\f107";
-    top: -2px;
+    top: 20px;
     right: 0px;
     position: absolute;
     font-family: "FontAwesome"
@@ -644,7 +644,7 @@ button:focus {
 }
 
 .btn {
-    padding: 10px 0;
+    padding: 20px 0 15px 0;
 }
 
 .accordion {
