@@ -16,6 +16,7 @@
 .testimonials__name-designation-logo {
     padding: 168px 40px 40px
 }
+
 .testimonials__designation {
     padding: 4px 0 20px 0;
     color: #333333;
@@ -37,10 +38,7 @@
 }
 
 .learnings-card {
-    display: flex;
-}
-
-.learnings-card .card {
-    width: 25%;
-    margin: 60px 30px 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 12px;
 }

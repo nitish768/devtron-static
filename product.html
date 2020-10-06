@@ -611,9 +611,13 @@
 
         .section-learning {
             padding: 64px 36px;
-            /* min-height: 588px; */
-            /* position: relative; */
+            min-height: 588px;
+            position: relative;
             background-color: #fff;
+        }
+
+        .section-learning__header-margins {
+            margin-bottom: 40px;
         }
 
         .section-learning--desktop {
@@ -632,7 +636,6 @@
             font-weight: 300;
             /* margin: 0 0 0 10px; */
         }
-
 
         .section-sneakpeek__button-container {
             margin-top: 80px;
@@ -900,11 +903,25 @@
         }
 
         .learning-card__text {
-            margin-top: 20px;
             font-weight: 600;
             font-size: 16px;
             line-height: 150%;
             color: #000A14;
+        }
+
+        .learning-card__read-more {
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-transform: uppercase;
+            color: #0066CC;
+        }
+
+        .learning-card__img {
+            height: 132px;
+            width: auto;
         }
 
         @media screen and (min-width: 768px) {
@@ -1116,8 +1133,6 @@
                 margin-top: 0px;
                 margin-left: 12px;
             }
-
-
         }
 
         @media screen and (min-width: 1024px) {
@@ -1125,6 +1140,10 @@
                 font-size: 48px;
                 font-weight: 600;
                 line-height: 62px;
+            }
+
+            .section-learning__header-margins {
+                margin-bottom: 40px;
             }
         }
 
@@ -2058,79 +2077,84 @@
         </section>
 
         <section class="section-learning section-learning--desktop">
-            <div class="flex-centre">
+            <div class="flex-centre section-learning__header-margins">
                 <h2 class="black-heading">
                     <span class="black-heading-dark">We love sharing</span>
                     <span class="black-heading-light">our learnings</span>
                 </h2>
-                <a class="blue-anchors" href="#">See all posts &#8594;</a>
+                <a class="blue-anchors" href="#" style="float:right;">See all posts &#8594;</a>
             </div>
             <div class="learnings-card">
                 <div class="card">
-                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
+                        <p class="learning-card__read-more">Read</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
+                        <p class="learning-card__read-more">Read</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
+                        <p class="learning-card__read-more">Read</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
+                        <p class="learning-card__read-more">Read</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section-learning section-learning--mob">
-            <h2 class="black-heading">
+            <h2 class="black-heading section-learning__header-margins">
                 <span class="black-heading-dark">We love sharing</span>
                 <span class="black-heading-light">our learnings</span>
             </h2>
             <div class="owl-carousel owl-theme">
                 <div class="item card active">
-                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the
                             card's content.
                         </p>
+                        <p class="learning-card__read-more">Read</p>
                     </div>
                 </div>
                 <div class="item card">
-                    <img src="./img-blog.png" class="card-img-top" alt="">
+                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                     <div class="card-body">
                         <p class="learning-card__text">
                             Some quick example text to build on the card title and make up the bulk of the card's
                             content.
                         </p>
+                        <p class="learning-card__read-more">Read</p>
                     </div>
                 </div>
             </div>
-            <a class="blue-anchors" href="#">See all posts &#8594;</a>
         </section>
     </main>
     <footer class="devtron-footer">
