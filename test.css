@@ -409,7 +409,7 @@ button:focus {
     align-items: center;
     justify-content: space-between;
     width: calc(100vw - 72px);
-    min-height: 240px;
+    min-height: 304px;
     top: 0px;
     padding-top: 64px;
 }
