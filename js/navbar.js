@@ -6,6 +6,21 @@ var $navbar = $(".main-nav");
 var $sectionTwo = $(".section-why");
 var $sectionThree = $(".section-landscape");
 
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  dots: false,
+  autoplay: true,
+  margin: 12,
+  stagePadding: 20,
+  items: 1,
+})
+ 
 $(function () {
 
   $(document).scroll(function () {
