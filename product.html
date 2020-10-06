@@ -477,7 +477,8 @@
             position: relative;
             border-radius: 0 50px 0 0;
             color: white;
-            padding: 100px 20px
+            padding: 100px 20px;
+            min-height: 585px;
         }
 
         .devtron-landscape--mob {
@@ -574,7 +575,7 @@
         }
 
         .accordion {
-            padding: 0 20px;
+            padding: 67px 20px 122px;
         }
 
         .tabcontent .card {
@@ -622,6 +623,7 @@
             min-height: 588px;
             position: relative;
             background-color: #fff;
+            /* border-radius: 0 0 80px 80px; */
         }
 
         .section-learning__header-margins {
@@ -1111,10 +1113,12 @@
 
             .section-learning--mob {
                 display: none;
+                /* border-radius: 0 0 20px 20px; */
             }
 
             .section-learning--desktop {
                 display: block;
+                border-radius: 0 0 80px 80px;
             }
 
             .devtron-landscape {
@@ -1609,13 +1613,20 @@
 
                     <div id="tab-4" class="tabcontent">
                         <div style="display: flex">
-                            <div style="width: 50%">
-                                <div class="card">
+                            <div style="width: 50%;">
+                                <div class="card" style="min-width: 155px">
                                     <div class="card-body">
                                         Gitops as API/UI
                                     </div>
                                 </div>
                             </div>
+                            <!-- <div style="width: 50%">
+                                <div class="card">
+                                    <div class="card-body">
+                                         
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -2094,111 +2105,114 @@
                 </div>
             </div>
         </section>
+        <div style="background-color: #140152;">
+            <section class="section-learning section-learning--desktop">
+                <div class="flex-centre section-learning__header-margins">
+                    <h2 class="black-heading">
+                        <span class="black-heading-dark">We love sharing</span>
+                        <span class="black-heading-light">our learnings</span>
+                    </h2>
+                    <a class="blue-anchors" href="#" style="float:right;">See all posts &#8594;</a>
+                </div>
+                <div class="section-learning__grid">
+                    <div class="card section-learning__grid-item learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">
+                                Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
+                            </p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card section-learning__grid-item learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">
+                                Ultimate Guide of Pod Eviction on Kubernetes
+                            </p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card section-learning__grid-item learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">
+                                How to use Spot to achieve Cost Savings with Stability on Kubernetes
+                            </p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card section-learning__grid-item learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">
+                                Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must know
+                            </p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <section class="section-learning section-learning--desktop">
-            <div class="flex-centre section-learning__header-margins">
-                <h2 class="black-heading">
+        <div style="background-color: #140152;">
+            <section class="section-learning section-learning--mob" style="border-radius: 0 0 20px 20px">
+                <h2 class="black-heading section-learning__header-margins">
                     <span class="black-heading-dark">We love sharing</span>
                     <span class="black-heading-light">our learnings</span>
                 </h2>
-                <a class="blue-anchors" href="#" style="float:right;">See all posts &#8594;</a>
-            </div>
-            <div class="section-learning__grid">
-                <div class="card section-learning__grid-item learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">
-                            Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
-                        </p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
+                <div class="owl-carousel owl-theme">
+                    <div class="item card learning-card active">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">
+                                Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
+                            </p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item card learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">Ultimate Guide of Pod Eviction on Kubernetes</p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item card learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">How to use Spot to achieve Cost Savings with Stability on
+                                Kubernetes</p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item card learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must
+                                know</p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card section-learning__grid-item learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">
-                            Ultimate Guide of Pod Eviction on Kubernetes
-                        </p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card section-learning__grid-item learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">
-                            How to use Spot to achieve Cost Savings with Stability on Kubernetes
-                        </p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card section-learning__grid-item learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">
-                            Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must know
-                        </p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read <span class="read_arrow">&#8594;</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-learning section-learning--mob">
-            <h2 class="black-heading section-learning__header-margins">
-                <span class="black-heading-dark">We love sharing</span>
-                <span class="black-heading-light">our learnings</span>
-            </h2>
-            <div class="owl-carousel owl-theme">
-                <div class="item card learning-card active">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">
-                            Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
-                        </p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">Ultimate Guide of Pod Eviction on Kubernetes</p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">How to use Spot to achieve Cost Savings with Stability on
-                            Kubernetes</p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item card learning-card">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must
-                            know</p>
-                        <div class="learning-card__bottom">
-                            <p class="learning-card__read-more">Read</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="devtron-footer">
         <div class="devtron-footer__content">
