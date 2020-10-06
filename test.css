@@ -1051,8 +1051,21 @@ button:focus {
     margin: 60px 0 0 0;
     justify-content: space-between;
 }
+.sneakpeek-mob {
+    margin-top: 40px ;
+    width: calc(100% + 66px);
+    margin-left: -30px;
+    margin-right: -30px;
+}
 
-.sneakpeek--desktop {
+.sneakpeek-mob__title{
+    color: #F2C94C;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-top: 20px;
+}
+.sneakpeek-desktop {
     display: none;
 }
 
@@ -1180,10 +1193,10 @@ button:focus {
         display: block;
         border-radius: 0 0 80px 80px;
     }
-    .sneakpeek--mob {
-        display: flex;
+    .sneakpeek-mob {
+        display: none;
     }
-    .sneakpeek--desktop {
+    .sneakpeek-desktop {
         display: flex;
     }
     .devtron-landscape {

@@ -22,6 +22,17 @@ $('.owl-carousel').owlCarousel({
   items: 1,
 })
 
+$('sneakpeek-mob').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  dots: true,
+  autoplay: false,
+  margin: 12,
+  stagePadding: 0,
+  items: 1,
+})
+
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -36,7 +47,7 @@ $(function () {
   if ($sectionThree.isInViewport()) {
     $(image1).addClass('fixed-pos');
     if ($devtronLandscape.isInViewport()) {
-      $(image2).removeClass('fixed-pos'); 
+      $(image2).removeClass('fixed-pos');
     }
     else {
       $(image2).addClass('fixed-pos');
@@ -64,7 +75,7 @@ $(function () {
     if ($sectionThree.isInViewport()) {
       $(image1).addClass('fixed-pos');
       if ($devtronLandscape.isInViewport()) {
-        $(image2).removeClass('fixed-pos'); 
+        $(image2).removeClass('fixed-pos');
       }
       else {
         $(image2).addClass('fixed-pos');
