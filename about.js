@@ -2,7 +2,7 @@ function handleTabChange(event, tabIdToDisplay) {
     let tabcontent, tablinks;
     // console.log(document.getElementsByClassName('tabs__activebar'))
     // to change the position of active bar line
-    let activeBarNumber = Number(tabIdToDisplay.split('-')[1]) * 40;
+    let activeBarNumber = Number(tabIdToDisplay.split('-')[1]) * 60;
     document.getElementsByClassName('tabs__activebar')[0].style.transform = `translateY(${activeBarNumber}px)`;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -63,3 +63,16 @@ const featureHeadingsSwitcher = {
 }
 
 featureHeadingsSwitcher.fillValuesInDivsAndApplyImage();
+
+function copyText () {
+    // console.log('ásd')
+    const gridItems = document.getElementsByClassName('section-why__why');
+    const text = gridItems[0].innerText;
+    const dummyTextArea = document.createElement("textarea");
+    document.body.appendChild(dummyTextArea);
+    dummyTextArea.value = text;
+    dummyTextArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummyTextArea);
+    // console.log(text)
+}

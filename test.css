@@ -558,9 +558,9 @@ button:focus {
 
 .tabs {
     /* color: red; */
-    height: 320px;
+    height: 480px;
     position: relative;
-    min-width: 350px;
+    min-width: 360px;
 }
 
 .tabs .active {
@@ -569,11 +569,13 @@ button:focus {
 
 .tabs__item {
     /* margin: 32px 0;  */
-    line-height: 40px;
-    padding: 0 20px;
+    /* line-height: 40px; */
+    padding: 0 18px;
     vertical-align: middle;
     cursor: pointer;
     color: rgb(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 60px;
 }
 
 .tabs:before {
@@ -652,6 +654,12 @@ button:focus {
 .tabcontent .card {
     background: #281566;
     margin: 0 30px 30px 30px;
+}
+
+.tabcontent .card-body {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
 }
 
 .collapse .card {
