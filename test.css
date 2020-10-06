@@ -78,7 +78,6 @@
     width: 281px; 
     height: 281px; 
     left: -40px; 
-    z-index: -1; 
     opacity: 8%
 }
 
@@ -87,7 +86,6 @@
     width: 281px; 
     height: 281px; 
     right: 0px;
-    z-index: -1; 
     opacity: 8%;
     background-image: url('./images/popper.svg');
     background-position-x: 30px;
@@ -378,7 +376,7 @@ button:focus {
     align-items: center;
     min-height: 240px;
     min-width: 240px;
-    width: calc(100vw - 270px);
+    width: calc(100vw - 282px);
 }
 
 .section-why__gif {
@@ -406,14 +404,14 @@ button:focus {
 }
 
 .section-landscape__top {
-    /* position: absolute; */
-    top: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: calc(100vw - 72px);
     min-height: 240px;
+    top: 0px;
+    padding-top: 64px;
 }
 
 .section-landscape__title {
@@ -1061,14 +1059,7 @@ button:focus {
     .fixed-pos {
         position: fixed;
         right: 135px;
-    }
-
-    .fixed-pos__current-landscape {
-        top: 340px;
-    }
-
-    .fixed-pos__vision-landscape {
-        /* top: 340px; */
+        top: 410px;
     }
 
     .section-hero {
@@ -1097,7 +1088,7 @@ button:focus {
     .section-landscape {
         min-height: 100vh;
         border-top-right-radius: 100px;
-        padding: 100px 135px;
+        padding: 340px 135px;
     }
 
     .section-testimonials {
@@ -1164,7 +1155,6 @@ button:focus {
     .section-landscape {
         position: relative;
         min-height: 100vh;
-        background-color: #140152;
     }
 
     .section-landscape__heading {
@@ -1176,15 +1166,15 @@ button:focus {
     }
 
     .section-landscape__top {
-        top: 64px;
+        position: absolute;
         flex-direction: row;
         justify-content: space-between;
-        width: calc(100vw - 270px)
+        width: calc(100vw - 282px); 
+        clip: rect(0, auto, 350px, 0);
     }
 
     .section-landscape__image {
         position: absolute;
-        clip: rect(0, auto, auto, 0);
         top: 35px;
         right: 135px;
         width: 240px;
