@@ -966,6 +966,10 @@
             justify-content: space-between;
         }
 
+        .sneakpeek--desktop {
+            display: none;
+        }
+
         @media screen and (min-width: 375px) and (max-width: 768px) {
             .devtron-footer__href {
                 width: 56px;
@@ -1119,12 +1123,19 @@
 
             .section-learning--mob {
                 display: none;
-                /* border-radius: 0 0 20px 20px; */
             }
 
             .section-learning--desktop {
                 display: block;
                 border-radius: 0 0 80px 80px;
+            }
+
+            .sneakpeek--mob {
+                display: flex;
+            }
+
+            .sneakpeek--desktop {
+                display: flex;
             }
 
             .devtron-landscape {
@@ -1994,7 +2005,7 @@
                 <span class="heading__Dark">Sneak Peek </span>
                 <span class="heading__Light">into some exciting features</span>
             </h2>
-            <div style="display: flex; justify-content: space-between; margin: 80px 0 0 0">
+            <div class="sneakpeek--desktop" style="justify-content: space-between; margin: 80px 0 0 0">
                 <div>
                     <div class="featureHeading"></div>
                     <div class="featureHeading__next">NEXT</div>
@@ -2199,78 +2210,59 @@
             </section>
         </div>
 
-        <section class="section-learning section-learning--mob">
-            <h2 class="black-heading section-learning__header-margins">
-                <span class="black-heading-dark">We love sharing</span>
-                <span class="black-heading-light">our learnings</span>
-            </h2>
-            <div class="owl-carousel owl-theme">
-                <div class="item card learning-card active">
-                    <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                    <div class="card-body">
-                        <p class="learning-card__text">
-                            Run A Container In Kubernetes Cluster Using Devtron’s CI/CD Tool
-                        </p>
-                        <div class="learning-card__bottom">
-                            <a href="https://devtron.ai/blog/run-a-container-in-kubernetes-cluster-using-devtrons-ci-cd-tool/"
-                                class="learning-card__read-more" target="_blank">Read
-                            </a>
-                            =======
-                            <div style="background-color: #140152;">
-                                <section class="section-learning section-learning--mob"
-                                    style="border-radius: 0 0 20px 20px">
-                                    <h2 class="black-heading section-learning__header-margins">
-                                        <span class="black-heading-dark">We love sharing</span>
-                                        <span class="black-heading-light">our learnings</span>
-                                    </h2>
-                                    <div class="owl-carousel owl-theme">
-                                        <div class="item card learning-card active">
-                                            <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                                            <div class="card-body">
-                                                <p class="learning-card__text">
-                                                    Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
-                                                </p>
-                                                <div class="learning-card__bottom">
-                                                    <p class="learning-card__read-more">Read</p>
-                                                </div>
-                                                >>>>>>> feat/website-revamp
-                                            </div>
-                                        </div>
-                                        <div class="item card learning-card">
-                                            <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                                            <div class="card-body">
-                                                <p class="learning-card__text">Ultimate Guide of Pod Eviction on
-                                                    Kubernetes</p>
-                                                <div class="learning-card__bottom">
-                                                    <p class="learning-card__read-more">Read</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item card learning-card">
-                                            <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                                            <div class="card-body">
-                                                <p class="learning-card__text">How to use Spot to achieve Cost Savings
-                                                    with Stability on
-                                                    Kubernetes</p>
-                                                <div class="learning-card__bottom">
-                                                    <p class="learning-card__read-more">Read</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item card learning-card">
-                                            <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
-                                            <div class="card-body">
-                                                <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs
-                                                    Dis-advantages a CTO must
-                                                    know</p>
-                                                <div class="learning-card__bottom">
-                                                    <p class="learning-card__read-more">Read</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+        <div style="background-color: #140152;">
+            <section class="section-learning section-learning--mob" style="border-radius: 0 0 20px 20px">
+                <h2 class="black-heading section-learning__header-margins">
+                    <span class="black-heading-dark">We love sharing</span>
+                    <span class="black-heading-light">our learnings</span>
+                </h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item card learning-card active">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">
+                                Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
+                            </p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="item card learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">Ultimate Guide of Pod Eviction on
+                                Kubernetes</p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item card learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">How to use Spot to achieve Cost Savings
+                                with Stability on
+                                Kubernetes</p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item card learning-card">
+                        <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
+                        <div class="card-body">
+                            <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs
+                                Dis-advantages a CTO must
+                                know</p>
+                            <div class="learning-card__bottom">
+                                <p class="learning-card__read-more">Read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="devtron-footer">
         <div class="devtron-footer__content">
