@@ -45,3 +45,19 @@
 .section-learning__grid-item:hover .learning-card__text {
     color: #0066CC;
 }
+
+.accordion .btn {
+    position: relative;
+}
+    
+.accordion .btn::after {
+    content: "\f107";
+    top: -2px;
+    right: 0px;
+    position: absolute;
+    font-family: "FontAwesome"
+}
+
+.accordion .btn[aria-expanded="true"]::after {
+    content: "\f106";
+}
