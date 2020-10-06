@@ -1,2 +1,0 @@
-.insta-wrapper{display:flex;flex-wrap:wrap}.insta-wrapper .insta-item{flex:1;display:block;background-size:cover}.insta-descr{text-align:center;color:#888;padding:20px 15px}.insta-descr a{color:#0073e6;text-decoration:none}.insta-descr a:hover{color:#888}@media only screen and (max-width: 1199px){.insta-wrapper .insta-item{flex:33.33%}}@media only screen and (max-width: 480px){.insta-wrapper .insta-item{flex:50%}}
-/*# sourceMappingURL=instagram.min.css.map */
