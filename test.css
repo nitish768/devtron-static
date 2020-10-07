@@ -88,6 +88,7 @@
     top: -60px;
     /* opacity: 8%; */
     background-image: url('./images/dots.png');
+    z-index: -1;
 }
 
 .popper__position {
@@ -377,6 +378,10 @@ button:focus {
 
 .social-icon__icon-twitter:hover path {
     fill: #1DA1F2;
+}
+
+.social-icon__icon-linkedin:hover path {
+    fill: #2867B2;
 }
 
 .social-icon__icon:last-child {
