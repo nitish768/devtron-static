@@ -54,17 +54,6 @@ $(function () {
   }
 
   $(document).scroll(function () {
-    //Transiton from current to Devtron Landscape
-    if ($sectionThree.isInViewport()) {
-      $(image1).addClass('fixed-pos');
-      if ($devtronLandscape.isInViewport()) {
-        $(image2).removeClass('fixed-pos');
-      }
-      else {
-        $(image2).addClass('fixed-pos');
-      }
-    }
-
     //Navbar 
     if ($(this).scrollTop() > $navbar.height()) {
       $navbar.addClass("main-nav-dark");
@@ -92,6 +81,17 @@ $(function () {
     if (viewportOffset.top < 80) {
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white");
+    }
+
+    //Transiton from current to Devtron Landscape
+    if ($sectionThree.isInViewport()) {
+      $(image1).addClass('fixed-pos');
+      if ($devtronLandscape.isInViewport()) {
+        $(image2).removeClass('fixed-pos');
+      }
+      else {
+        $(image2).addClass('fixed-pos');
+      }
     }
 
   });
