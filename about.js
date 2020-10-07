@@ -32,7 +32,7 @@ const featureHeadingsSwitcher = {
         },
         {
             text: 'Customizable Security Policies & Visibility',
-            imgURL: './images/sneak-peek-3.gif'
+            imgURL: './images/sneak-peek-2.gif'
         },
         {
             text: 'Insightful Deployment metrics',
