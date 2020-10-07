@@ -326,7 +326,7 @@ button:focus {
 }
 
 .section-hero__available-margins {
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .button-early-access {
@@ -1172,6 +1172,10 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .section-hero {
+        padding: 113px 40px 47px;
+    }
+
     .section-landscape {
         padding: 340px 40px 100px
     }
@@ -1215,7 +1219,6 @@ button:focus {
     .section-why__grid__web {
         display: block;
     }
-
     .fixed-pos {
         position: fixed;
         right: 135px;
