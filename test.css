@@ -235,21 +235,23 @@ button:focus {
     line-height: 38px;
     letter-spacing: 0em;
     margin-bottom: 27px;
+    transform: translateY(50px);
+    transition: 0.3s cubic-bezier(.645, .045, .355, 1);
+    position: absolute;
+    opacity: 0.5;
 }
 
 .section-hero__paragraph:nth-child(1) {
-    position: absolute;
-    top: -40px;
+    top: -90px;
 }
 
 .section-hero__paragraph:nth-child(2) {
-    position: absolute;
-    top: 70px;
+    top: 25px;
+    opacity: 1;
 }
 
 .section-hero__paragraph:nth-child(3) {
-    position: absolute;
-    top: 175px;
+    top: 130px;
 }
 
 @keyframes paragraph-animate-vertical {
@@ -1152,7 +1154,6 @@ button:focus {
         height: 56px;
         margin: 0 12px;
     }
-
     .dots__position {
         display: none;
     }
@@ -1163,7 +1164,6 @@ button:focus {
         width: 140px;
         height: 140px;
     }
-
     .popper__position {
         width: 140px;
         height: 140px;
@@ -1179,15 +1179,12 @@ button:focus {
         width: 300px;
         /* height: auto; */
     }
-    
     .featureHeading {
         font-size: 16px;
     }
-
     .landscape__gif {
         width: calc(100% - 280px);
-    }   
-    
+    }
     .landscape-card-width {
         width: 100%;
     }

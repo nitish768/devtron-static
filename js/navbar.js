@@ -11,6 +11,14 @@ var $paraContainer = $(".section-hero__paragraph-container");
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
+  setInterval(() => {
+    var $para1 = $(".section-hero__paragraph:nth-child(1)");
+    var $new = $para1.clone();
+$para1.remove();
+    $new.appendTo($paraContainer);
+    // $(".section-hero__paragraph:nth-child(1)")
+
+  }, 3000);
 });
 
 $('.owl-carousel').owlCarousel({
@@ -47,7 +55,7 @@ $.fn.isInViewport = function () {
 $(function () {
 
   $('.section-hero__paragraph:nth-child(1)').on("animationend", function (self) {
-    
+
     // $paraContainer.remove();
 
   });
