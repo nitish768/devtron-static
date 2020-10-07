@@ -6,6 +6,8 @@ var $sectionThree = $(".section-landscape");
 var $sectionTwo = $(".section-why");
 var $footer = $(".devtron-footer");
 var $devtronLandscape = $(".devtron-landscape");
+var $paraContainer = $(".section-hero__paragraph-container");
+
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
@@ -41,7 +43,15 @@ $.fn.isInViewport = function () {
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
+
 $(function () {
+
+  $('.section-hero__paragraph:nth-child(1)').on("animationend", function (self) {
+    
+    // $paraContainer.remove();
+
+  });
+
   //Transiton from current to Devtron Landscape
   if ($sectionThree.isInViewport()) {
     $(image1).addClass('fixed-pos');
