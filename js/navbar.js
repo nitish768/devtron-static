@@ -65,23 +65,6 @@ $(function () {
       $(image1).removeClass('fixed-pos');
       $(image2).removeClass('fixed-pos');
     }
-    if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))) {
-      $navbar.addClass("main-nav-dark");
-      $navbar.removeClass("main-nav-light bg-white");
-      $(image1).removeClass('fixed-pos');
-      $(image2).removeClass('fixed-pos');
-    }
-    if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (7 * $navbar.height()))) {
-      $navbar.removeClass("main-nav-dark");
-      $navbar.addClass("main-nav-light bg-white");
-    }
-
-    //footer 
-    var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
-    if (viewportOffset.top < 80) {
-      $navbar.addClass("main-nav-dark");
-      $navbar.removeClass("main-nav-light bg-white");
-    }
 
     //Transiton from current to Devtron Landscape
     if ($sectionThree.isInViewport()) {
@@ -94,5 +77,23 @@ $(function () {
       }
     }
 
+    if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))) {
+      $navbar.addClass("main-nav-dark");
+      $navbar.removeClass("main-nav-light bg-white");
+      $(image1).removeClass('fixed-pos');
+      $(image2).removeClass('fixed-pos');
+    }
+
+    if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (7 * $navbar.height()))) {
+      $navbar.removeClass("main-nav-dark");
+      $navbar.addClass("main-nav-light bg-white");
+    }
+
+    //footer 
+    var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
+    if (viewportOffset.top < 80) {
+      $navbar.addClass("main-nav-dark");
+      $navbar.removeClass("main-nav-light bg-white");
+    }
   });
 });
