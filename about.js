@@ -72,10 +72,9 @@ function handleLinkedinClick (index) {
     document.body.removeChild(dummyTextArea);
     $('#linkedin-toast').toast({
         delay: 3000,
-        autohide: false
     })
     $("#linkedin-toast").toast('show');
-    // setTimeout ( () => {
-    //     window.open('http://linkedin.com/', '_blank');
-    // }, 3000)
+    setTimeout ( () => {
+        window.open('http://linkedin.com/', '_blank');
+    }, 3000)
 }
