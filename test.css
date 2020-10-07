@@ -1082,6 +1082,10 @@ button:focus {
     width: calc(100% - 360px);
 }
 
+.landscape-card-width {
+    width: 50%;
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .devtron-footer__href {
         width: 56px;
@@ -1118,7 +1122,11 @@ button:focus {
 
     .landscape__gif {
         width: calc(100% - 280px);
-    }    
+    }   
+    
+    .landscape-card-width {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
