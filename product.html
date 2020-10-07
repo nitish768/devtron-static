@@ -6,14 +6,12 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163948066-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
         gtag('config', 'UA-163948066-3');
     </script>
-
     <title>Devtron - The DevOps Accelerator</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,6 +20,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./test.css">
@@ -55,6 +54,7 @@
             </div>
         </div>
     </div>
+
     <header class="">
         <nav class="main-nav">
             <svg class="main-nav__logo" width="150" height="40" viewBox="0 0 150 40" fill="none"
@@ -77,23 +77,31 @@
                         <span class="img-underline">kubernetes</span>
                     </span>
                 </h1>
-                <div class="section-hero__mid">
-                    <div class="section-hero__text section-hero__paragraph-container">
-                        <p class="section-hero__paragraph">Application debugging dashboard</p>
-                        <p class="section-hero__paragraph section-hero__paragraph--selected">Integrated DevSecOps
-                            features
-                        </p>
-                        <p class="section-hero__paragraph section-hero__paragraph">Multi-cloud deployment support</p>
+                <div style="display: flex;justify-content: space-between;align-items: flex-start;">
+                    <div class="section-hero__left">
+                        <div class="section-hero__text section-hero__paragraph-container">
+                            <p class="section-hero__paragraph paragraph__item ">
+                                Application debugging dashboard
+                            </p>
+                            <p class="section-hero__paragraph paragraph__item ">
+                                Integrated DevSecOps features</p>
+                            <p class="section-hero__paragraph paragraph__item ">Multi-cloud deployment
+                                support
+                            </p>
+                        </div>
+                        <h3 class="available section-hero__available-margins">
+                            <img src="./images/calendar.svg" class="section-hero__calendar-icon" /> Available 15th
+                            October
+                            2020
+                        </h3>
+                        <div class="section-hero__button-container">
+                            <button type="button" class="button-early-access" data-toggle="modal"
+                                data-target="#staticBackdrop">
+                                Get Early Access
+                            </button>
+                        </div>
                     </div>
-                    <img class="section-hero__gif" src="./images/img_subpoint.svg" alt="" />
-                </div>
-                <h3 class="available section-hero__available-margins">
-                    <img src="./images/calendar.svg" class="section-hero__calendar-icon" /> Available 15th October 2020
-                </h3>
-                <div class="section-hero__button-container">
-                    <button type="button" class="button-early-access" data-toggle="modal" data-target="#staticBackdrop">
-                        Get Early Access
-                    </button>
+                    <img class="section-hero__gif" src="./images/img_subpoint.svg" width="600" alt="" />
                 </div>
                 <img src="./images/scroll-down.svg" class="section-hero__scroll-down" alt="scroll-down" />
             </div>
