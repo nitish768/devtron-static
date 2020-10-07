@@ -1195,6 +1195,10 @@ button:focus {
     }
 }
 
+.section-why__grid__mob {
+    margin: 40px auto;
+}
+
 @media screen and (min-width: 1024px) {
     .section-landscape {
         padding: 340px 135px 100px
