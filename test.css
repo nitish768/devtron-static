@@ -1078,6 +1078,10 @@ button:focus {
     display: none;
 }
 
+.landscape__gif {
+    width: calc(100% - 340px);
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .devtron-footer__href {
         width: 56px;
@@ -1090,6 +1094,18 @@ button:focus {
     .section-landscape {
         padding: 340px 40px 100px
     }
+    .featureHeading:nth-of-type(1) {
+        font-size: 24px;
+        width: 300px;
+    }
+    
+    .featureHeading {
+        font-size: 16px;
+    }
+
+    .landscape__gif {
+        width: calc(100% - 300px);
+    }    
 }
 
 @media screen and (min-width: 1024px) {

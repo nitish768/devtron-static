@@ -27,16 +27,16 @@ document.getElementById("defaultSelectedTab").click();
 const featureHeadingsSwitcher = {
     featureHeadingsTextAndURL: [
         {
-            text: 'Application Monitoring and Debugging',
-            imgURL: './images/app-detail-text (2) (1).gif'
+            text: 'App Monitoring and Debugging',
+            imgURL: './images/sneak-peek-1.gif'
         },
         {
             text: 'Customizable Security Policies & Visibility',
-            imgURL: 'https://i.pinimg.com/originals/5d/5a/d7/5d5ad7f130ed36721952c388efe0517f.gif'
+            imgURL: './images/sneak-peek-3.gif'
         },
         {
             text: 'Insightful Deployment metrics',
-            imgURL: 'https://thumbs.gfycat.com/FortunateBrightFrog-size_restricted.gif'
+            imgURL: './images/sneak-peek-3.gif'
         },
     ],
     handleHeadingClick(indexClicked) {
