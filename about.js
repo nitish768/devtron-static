@@ -1,6 +1,5 @@
 function handleTabChange(event, tabIdToDisplay) {
     let tabcontent, tablinks;
-    // console.log(document.getElementsByClassName('tabs__activebar'))
     // to change the position of active bar line
     let activeBarNumber = Number(tabIdToDisplay.split('-')[1]) * 60;
     document.getElementsByClassName('tabs__activebar')[0].style.transform = `translateY(${activeBarNumber}px)`;
@@ -14,9 +13,7 @@ function handleTabChange(event, tabIdToDisplay) {
     tablinks = document.getElementsByClassName("tabs__item");
 
     for (let i = 0; i < tablinks.length; i++) {
-        // tablinks[i].className = tablinks[i].className.replace(" active", "");
         tablinks[i].className = tablinks[i].className.replace(" active", "");
-        // console.log(tablinks[i].className)
     }
 
     document.getElementById(tabIdToDisplay).style.display = "block";
@@ -64,15 +61,21 @@ const featureHeadingsSwitcher = {
 
 featureHeadingsSwitcher.fillValuesInDivsAndApplyImage();
 
-function copyText () {
-    // console.log('ásd')
+function handleLinkedinClick (index) {
     const gridItems = document.getElementsByClassName('section-why__why');
-    const text = gridItems[0].innerText;
+    const text = gridItems[index].innerText;
     const dummyTextArea = document.createElement("textarea");
     document.body.appendChild(dummyTextArea);
     dummyTextArea.value = text;
     dummyTextArea.select();
     document.execCommand("copy");
     document.body.removeChild(dummyTextArea);
-    // console.log(text)
+    $('#linkedin-toast').toast({
+        delay: 3000,
+        autohide: false
+    })
+    $("#linkedin-toast").toast('show');
+    // setTimeout ( () => {
+    //     window.open('http://linkedin.com/', '_blank');
+    // }, 3000)
 }
