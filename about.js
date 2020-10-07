@@ -1,6 +1,5 @@
 function handleTabChange(event, tabIdToDisplay) {
     let tabcontent, tablinks;
-    // console.log(document.getElementsByClassName('tabs__activebar'))
     // to change the position of active bar line
     let activeBarNumber = Number(tabIdToDisplay.split('-')[1]) * 60;
     document.getElementsByClassName('tabs__activebar')[0].style.transform = `translateY(${activeBarNumber}px)`;
@@ -14,9 +13,7 @@ function handleTabChange(event, tabIdToDisplay) {
     tablinks = document.getElementsByClassName("tabs__item");
 
     for (let i = 0; i < tablinks.length; i++) {
-        // tablinks[i].className = tablinks[i].className.replace(" active", "");
         tablinks[i].className = tablinks[i].className.replace(" active", "");
-        // console.log(tablinks[i].className)
     }
 
     document.getElementById(tabIdToDisplay).style.display = "block";
@@ -30,16 +27,16 @@ document.getElementById("defaultSelectedTab").click();
 const featureHeadingsSwitcher = {
     featureHeadingsTextAndURL: [
         {
-            text: 'Application Monitoring and Debugging',
-            imgURL: './images/app-detail-text (2) (1).gif'
+            text: 'App Monitoring and Debugging',
+            imgURL: './images/sneak-peek-1.gif'
         },
         {
             text: 'Customizable Security Policies & Visibility',
-            imgURL: 'https://i.pinimg.com/originals/5d/5a/d7/5d5ad7f130ed36721952c388efe0517f.gif'
+            imgURL: './images/sneak-peek-2.gif'
         },
         {
             text: 'Insightful Deployment metrics',
-            imgURL: 'https://thumbs.gfycat.com/FortunateBrightFrog-size_restricted.gif'
+            imgURL: './images/sneak-peek-3.gif'
         },
     ],
     handleHeadingClick(indexClicked) {
@@ -64,15 +61,20 @@ const featureHeadingsSwitcher = {
 
 featureHeadingsSwitcher.fillValuesInDivsAndApplyImage();
 
-function copyText () {
-    // console.log('ásd')
+function handleLinkedinClick (index) {
     const gridItems = document.getElementsByClassName('section-why__why');
-    const text = gridItems[0].innerText;
+    const text = gridItems[index].innerText;
     const dummyTextArea = document.createElement("textarea");
     document.body.appendChild(dummyTextArea);
     dummyTextArea.value = text;
     dummyTextArea.select();
     document.execCommand("copy");
     document.body.removeChild(dummyTextArea);
-    // console.log(text)
+    $('#linkedin-toast').toast({
+        delay: 3000,
+    })
+    $("#linkedin-toast").toast('show');
+    setTimeout ( () => {
+        window.open('http://linkedin.com/', '_blank');
+    }, 3000)
 }
