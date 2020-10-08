@@ -26,22 +26,36 @@ $(document).ready(function () {
 });
 
 $('.owl-carousel').owlCarousel({
-  loop: false,
-  margin: 10,
-  nav: false,
-  dots: false,
+  // loop: false,
+  // margin: 10,
+  // nav: false,
+  // dots: false,
+  // autoplay: false,
+  // margin: 12,
+  // stagePadding: 20,
+  // responsiveClass:true,
+  // items:1,
+  // responsiveness: {
+  //   0: {
+  //     items: 1,
+  //   },
+  //   450: {
+  //     items: 2,
+  //   }
+  // }
+
+  margin: 8,
   autoplay: false,
-  margin: 12,
   stagePadding: 20,
-  items: 1,
-  responsiveness: {
-    0: {
-      items: 1,
-    },
-    450: {
-      items: 2,
+  dots:false,
+  responsive: {
+      0: {
+          items: 1
+      },
+      456: {
+          items: 2
+      },
     }
-  }
 })
 
 // $('sneakpeek-mob').owlCarousel({
