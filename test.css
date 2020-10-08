@@ -191,6 +191,12 @@ main>section {
     min-height: 588px;
     padding: 113px 37px 47px 37px;
     position: relative;
+    background: url('./images/dots.png');
+    background-size: 440px auto;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 340px;
+
 }
 
 .section-hero__button-container {
