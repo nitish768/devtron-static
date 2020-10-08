@@ -1185,9 +1185,6 @@ main>section {
         height: 56px;
         margin: 0 12px;
     }
-    .dots__position {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
@@ -1198,6 +1195,9 @@ main>section {
     .popper__position {
         width: 140px;
         height: 140px;
+    }
+    .dots__position {
+        display: none;
     }
 }
 
