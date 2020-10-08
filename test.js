@@ -31,3 +31,53 @@ function setRemainigTime() {
 }
 
 setRemainigTime()
+
+
+function addButtonTestimonials() {
+  const testimonialsWrapperWidth = document.getElementsByClassName('section-learning__grid')[0].offsetWidth;
+  const gridItemsGap = 30;
+  const items = 4;
+  // reducing 30 as last one's gap is irrelevant
+  const gridItemsWidth = document.getElementsByClassName('section-learning__grid')[0].children[0].clientWidth * items + gridItemsGap * items - (30);
+
+  if (gridItemsWidth > testimonialsWrapperWidth) {
+    console.log(gridItemsWidth, testimonialsWrapperWidth);
+    document.getElementById('testimonial-LR-buttons').style.display = 'flex';
+    // const button = document.createElement("button");
+    // button.innerText = 'demo';
+    // document.getElementById('carouselButtons').appendChild(button)
+  }
+} 
+
+addButtonTestimonials()
+
+function moveScroll(leftVal) {
+  document.getElementsByClassName('section-learning__grid')[0].scrollBy({
+    left: leftVal,
+    behavior : "smooth"
+  })
+}
+
+function toggleDisplay() {
+  const classes = ['testimonial-left-button', 'testimonial-right-button'];
+
+  for (let i = 0; i < classes.length; i++) {
+    console.log(document.getElementsByClassName(classes[i]))
+    if (document.getElementsByClassName(classes[i])[0].style.visibility === 'hidden') {
+      document.getElementsByClassName(classes[i])[0].style.visibility = 'visible';
+    }
+    else {
+      document.getElementsByClassName(classes[i])[0].style.visibility = 'hidden';
+    }
+  }
+}
+
+function moveLearningCarouselLeft () {
+  moveScroll(-1000000);
+  toggleDisplay();
+}
+
+function moveLearningCarouselRight () {
+  moveScroll(1000000)
+  toggleDisplay();
+}
