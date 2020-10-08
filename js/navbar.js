@@ -7,41 +7,67 @@ var $sectionTwo = $(".section-why");
 var $footer = $(".devtron-footer");
 var $devtronLandscape = $(".devtron-landscape");
 var $paraContainer = $(".section-hero__paragraph-container");
-
+var $imgContainer = $(".section-hero__gif-wrapper");
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
+
   setInterval(() => {
     var $para1 = $(".section-hero__paragraph:nth-child(1)");
     var $new = $para1.clone();
-$para1.remove();
+    $para1.remove();
     $new.appendTo($paraContainer);
-    // $(".section-hero__paragraph:nth-child(1)")
 
-  }, 3000);
+    var $img = $(".section-hero__gif:nth-child(1)");
+    var $newImage = $img.clone();
+    $img.remove();
+    $newImage.appendTo($imgContainer);
+  }, 6000);
 });
 
 $('.owl-carousel').owlCarousel({
-  loop: false,
-  margin: 10,
-  nav: false,
-  dots: false,
+  // loop: false,
+  // margin: 10,
+  // nav: false,
+  // dots: false,
+  // autoplay: false,
+  // margin: 12,
+  // stagePadding: 20,
+  // responsiveClass:true,
+  // items:1,
+  // responsiveness: {
+  //   0: {
+  //     items: 1,
+  //   },
+  //   450: {
+  //     items: 2,
+  //   }
+  // }
+
+  margin: 8,
   autoplay: false,
-  margin: 12,
   stagePadding: 20,
-  items: 1,
+  dots:false,
+  responsive: {
+      0: {
+          items: 1
+      },
+      456: {
+          items: 2
+      },
+    }
 })
 
-$('sneakpeek-mob').owlCarousel({
-  loop: false,
-  margin: 10,
-  nav: false,
-  dots: true,
-  autoplay: false,
-  margin: 12,
-  stagePadding: 0,
-  items: 1,
-})
+// $('sneakpeek-mob').owlCarousel({
+//   loop: false,
+//   margin: 10,
+//   nav: false,
+//   dots: true,
+//   autoplay: false,
+//   margin: 12,
+//   stagePadding: 0,
+//   items: 1,
+// })
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -53,12 +79,6 @@ $.fn.isInViewport = function () {
 
 
 $(function () {
-
-  $('.section-hero__paragraph:nth-child(1)').on("animationend", function (self) {
-
-    // $paraContainer.remove();
-
-  });
 
   //Transiton from current to Devtron Landscape
   if ($sectionThree.isInViewport()) {
