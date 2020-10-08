@@ -27,7 +27,7 @@ document.getElementById("defaultSelectedTab").click();
 const featureHeadingsSwitcher = {
     featureHeadingsTextAndURL: [
         {
-            text: 'App Monitoring and Debugging',
+            text: 'Monitoring and Debugging',
             imgURL: './images/sneak-peek-1.gif'
         },
         {
