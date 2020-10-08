@@ -1232,6 +1232,9 @@ main>section {
     .section-hero__wrapper {
         border-bottom-left-radius: 80px;
     }
+    .section-landscape__wrapper {
+        border-top-right-radius: 80px;
+    }
     .section-why__grid__web {
         display: block;
     }
@@ -1406,6 +1409,9 @@ main>section {
 @media screen and (min-width: 1024px) {
     .section-hero__wrapper {
         border-bottom-left-radius: 100px;
+    }
+    .section-landscape__wrapper {
+        border-top-right-radius: 100px;
     }
     .section-hero {
         padding-left: 135px;
