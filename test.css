@@ -226,7 +226,7 @@ main>section {
 .section-hero__gif-wrapper {
     display: none;
     width: 50%;
-    min-width: 350px;
+    min-width: 320px;
     vertical-align: top;
     margin-left: auto;
     position: relative;
@@ -1234,16 +1234,22 @@ main>section {
 }
 
 .section-why__grid__mob .section-why__grid-item {
-    min-height: 274px;
+    min-height: 242px;
 }
 
 .section-why__grid__web {
     display: none;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 456px) and (max-width: 566px) {
     .section-why__grid__mob .section-why__grid-item {
-        min-height: 220px;
+        min-height: 310px;
+    }
+}
+
+@media screen and (min-width: 566px) {
+    .section-why__grid__mob .section-why__grid-item {
+        /* min-height: unset; */
     }
 }
 
@@ -1313,7 +1319,7 @@ main>section {
     }
     .fixed-pos {
         position: fixed;
-        right: 135px;
+        right: 40px;
         top: 410px;
     }
     .section-hero {
@@ -1379,14 +1385,14 @@ main>section {
     }
     .section-why__title--cycle {
         display: inline-block;
-        max-width: 540px;
+        width: 540px;
     }
     .section-why__bottom {
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
         bottom: 64px;
-        width: calc(100vw - 282px);
+        width: calc(100vw - 82px);
     }
     .section-why__gif {
         margin: unset;
@@ -1402,7 +1408,7 @@ main>section {
         position: absolute;
         flex-direction: row;
         justify-content: space-between;
-        width: calc(100vw - 282px);
+        width: calc(100vw - 82px);
         clip: rect(0, auto, 350px, 0);
     }
     .section-landscape__image {
@@ -1487,6 +1493,15 @@ main>section {
     .section-landscape__wrapper {
         border-top-right-radius: 100px;
     }
+
+    .section-landscape__top, .section-why__bottom {
+        width: calc(100vw - 282px);
+    }
+
+    .fixed-pos {
+        position: fixed;
+        right: 135px;
+    }
     .section-hero {
         padding-left: 135px;
         padding-right: 135px;
@@ -1507,7 +1522,7 @@ main>section {
         padding: 100px 135px;
     }
     .section-hero__gif-wrapper {
-       min-width: 450px;
+        min-width: 450px;
     }
     .main-nav__logo {
         margin-left: 135px;
@@ -1558,7 +1573,7 @@ main>section {
     }
     .section-hero__gif-wrapper {
         min-width: 550px;
-     }
+    }
     .section-hero__paragraph {
         font-size: 1.8rem;
     }
