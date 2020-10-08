@@ -423,7 +423,7 @@ main>section {
     border-radius: 8px;
     padding: 20px 20px 48px 20px;
     border: 1px solid #E0E0E0;
-    min-width: 240px;
+    /* min-width: 240px; */
     scroll-snap-align: start;
     width: calc(100vw - 72px);
     position: relative;

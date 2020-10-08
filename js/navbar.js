@@ -11,18 +11,17 @@ var $imgContainer = $(".section-hero__gif-wrapper");
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
+
   setInterval(() => {
     var $para1 = $(".section-hero__paragraph:nth-child(1)");
     var $new = $para1.clone();
     $para1.remove();
     $new.appendTo($paraContainer);
-    
+
     var $img = $(".section-hero__gif:nth-child(1)");
     var $newImage = $img.clone();
     $img.remove();
     $newImage.appendTo($imgContainer);
-
-
   }, 6000);
 });
 
@@ -35,18 +34,26 @@ $('.owl-carousel').owlCarousel({
   margin: 12,
   stagePadding: 20,
   items: 1,
+  responsiveness: {
+    0: {
+      items: 1,
+    },
+    450: {
+      items: 2,
+    }
+  }
 })
 
-$('sneakpeek-mob').owlCarousel({
-  loop: false,
-  margin: 10,
-  nav: false,
-  dots: true,
-  autoplay: false,
-  margin: 12,
-  stagePadding: 0,
-  items: 1,
-})
+// $('sneakpeek-mob').owlCarousel({
+//   loop: false,
+//   margin: 10,
+//   nav: false,
+//   dots: true,
+//   autoplay: false,
+//   margin: 12,
+//   stagePadding: 0,
+//   items: 1,
+// })
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -58,12 +65,6 @@ $.fn.isInViewport = function () {
 
 
 $(function () {
-
-  $('.section-hero__paragraph:nth-child(1)').on("animationend", function (self) {
-
-    // $paraContainer.remove();
-
-  });
 
   //Transiton from current to Devtron Landscape
   if ($sectionThree.isInViewport()) {
