@@ -198,12 +198,36 @@ main>section {
     margin-bottom: 70px;
 }
 
-.section-hero__gif {
+.section-hero__gif-wrapper {
     display: none;
     width: 50%;
-    min-width: 370px;
+    min-width: 350px;
     vertical-align: top;
     margin-left: auto;
+    position: relative;
+}
+
+.section-hero__gif {
+    position: absolute;
+    width: 100%;
+    transform: translateY(50px);
+    transition: 650ms cubic-bezier(.645, .045, .355, 1);
+    position: absolute;
+    opacity: 0;
+    right: -40px;
+}
+
+.section-hero__gif:nth-child(1) {
+    top: -100px;
+}
+
+.section-hero__gif:nth-child(2) {
+    top: -50px;
+    opacity: 1;
+}
+
+.section-hero__gif:nth-child(3) {
+    top: 0px;
 }
 
 .section-hero__paragraph-container {
@@ -232,7 +256,7 @@ main>section {
 }
 
 .section-hero__paragraph {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-style: normal;
     color: #56CCF2;
     min-width: 33%;
@@ -1238,6 +1262,7 @@ main>section {
         top: 410px;
     }
     .section-hero {
+        padding: 100px 135px;
         min-height: 100vh;
         border-bottom-left-radius: 100px;
         background: url('./images/dots.png');
@@ -1273,9 +1298,9 @@ main>section {
     }
     .section-hero__left {
         display: block;
-        min-width: 30%;
+        min-width: 33%;
     }
-    .section-hero__gif, .section-hero__paragraph-container {
+    .section-hero__gif-wrapper, .section-hero__paragraph-container {
         display: inline-block;
     }
     .section-hero__button-container {
@@ -1312,11 +1337,6 @@ main>section {
         margin: unset;
         clip: rect(0, auto, auto, 0);
     }
-    /* .section-landscape {
-        min-height: 100vh;
-        border-top-right-radius: 100px;
-        padding: 340px 135px 100px 135px;
-    } */
     .section-landscape__heading {
         text-align: left;
     }
@@ -1425,6 +1445,9 @@ main>section {
     .section-why {
         padding: 100px 135px;
     }
+    .section-hero__gif-wrapper {
+       min-width: 450px;
+    }
     .main-nav__logo {
         margin-left: 135px;
     }
@@ -1472,6 +1495,9 @@ main>section {
     .section-hero__paragraph-container {
         height: 285px;
     }
+    .section-hero__gif-wrapper {
+        min-width: 550px;
+     }
     .section-hero__paragraph {
         font-size: 1.8rem;
     }
@@ -1484,9 +1510,6 @@ main>section {
     }
     .section-hero__paragraph:nth-child(3) {
         top: 180px;
-    }
-    .section-hero__gif {
-        min-width: 500px;
     }
     .devtron-footer {
         padding-left: 135px;

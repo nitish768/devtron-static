@@ -7,18 +7,23 @@ var $sectionTwo = $(".section-why");
 var $footer = $(".devtron-footer");
 var $devtronLandscape = $(".devtron-landscape");
 var $paraContainer = $(".section-hero__paragraph-container");
-
+var $imgContainer = $(".section-hero__gif-wrapper");
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
   setInterval(() => {
     var $para1 = $(".section-hero__paragraph:nth-child(1)");
     var $new = $para1.clone();
-$para1.remove();
+    $para1.remove();
     $new.appendTo($paraContainer);
-    // $(".section-hero__paragraph:nth-child(1)")
+    
+    var $img = $(".section-hero__gif:nth-child(1)");
+    var $newImage = $img.clone();
+    $img.remove();
+    $newImage.appendTo($imgContainer);
 
-  }, 3000);
+
+  }, 6000);
 });
 
 $('.owl-carousel').owlCarousel({
