@@ -168,7 +168,7 @@ button:focus {
     padding-top: 21px;
     width: 100%;
     z-index: 10;
-    background-color: transparent;
+    background-color: #140152;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -1308,6 +1308,10 @@ main>section {
     .section-why__grid__mob {
         display: none;
     }
+    .button-early-access--mob{
+        display: none;
+    }
+
     .section-why__grid__web {
         display: block;
     }

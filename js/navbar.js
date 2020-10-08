@@ -28,7 +28,8 @@ $(document).ready(function () {
 $('.owl-carousel').owlCarousel({
   margin: 8,
   autoplay: false,
-  stagePadding: 20,
+  stagePadding: 40,
+  margin: 20,
   dots:false,
   responsive: {
       0: {
@@ -42,10 +43,10 @@ $('.owl-carousel').owlCarousel({
 
 $('sneakpeek-mob').owlCarousel({
   loop: false,
-  margin: 10,
   nav: false,
   dots: true,
-  margin: 8,
+  stagePadding: 40,
+  margin: 20,
   items: 1,
   responsive: {
     0: {
