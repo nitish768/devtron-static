@@ -26,24 +26,6 @@ $(document).ready(function () {
 });
 
 $('.owl-carousel').owlCarousel({
-  // loop: false,
-  // margin: 10,
-  // nav: false,
-  // dots: false,
-  // autoplay: false,
-  // margin: 12,
-  // stagePadding: 20,
-  // responsiveClass:true,
-  // items:1,
-  // responsiveness: {
-  //   0: {
-  //     items: 1,
-  //   },
-  //   450: {
-  //     items: 2,
-  //   }
-  // }
-
   margin: 8,
   autoplay: false,
   stagePadding: 20,
@@ -58,16 +40,22 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-// $('sneakpeek-mob').owlCarousel({
-//   loop: false,
-//   margin: 10,
-//   nav: false,
-//   dots: true,
-//   autoplay: false,
-//   margin: 12,
-//   stagePadding: 0,
-//   items: 1,
-// })
+$('sneakpeek-mob').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: false,
+  dots: true,
+  margin: 8,
+  items: 1,
+  responsive: {
+    0: {
+        items: 1
+    },
+    456: {
+        items: 2
+    },
+  }
+})
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -79,7 +67,6 @@ $.fn.isInViewport = function () {
 
 
 $(function () {
-
   //Transiton from current to Devtron Landscape
   if ($sectionThree.isInViewport()) {
     $(image1).addClass('fixed-pos');
