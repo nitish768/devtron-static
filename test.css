@@ -1152,7 +1152,8 @@ main>section {
 }
 
 .landscape__gif {
-    width: calc(100% - 360px);
+    /* width: calc(100% - 360px); */
+    flex-basis: 1;
 }
 
 .landscape-card-width {
@@ -1193,9 +1194,9 @@ main>section {
     .featureHeading {
         font-size: 16px;
     }
-    .landscape__gif {
+    /* .landscape__gif {
         width: calc(100% - 280px);
-    }
+    } */
     .landscape-card-width {
         width: 100%;
     }
