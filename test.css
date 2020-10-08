@@ -196,7 +196,6 @@ main>section {
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 340px;
-
 }
 
 .section-hero__button-container {
@@ -1159,48 +1158,6 @@ main>section {
     width: 50%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-    .devtron-footer__href {
-        width: 56px;
-        height: 56px;
-        margin: 0 12px;
-    }
-    .dots__position {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .binoculars__position {
-        width: 140px;
-        height: 140px;
-    }
-    .popper__position {
-        width: 140px;
-        height: 140px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .section-landscape {
-        padding: 340px 40px 100px
-    }
-    .featureHeading:nth-of-type(1) {
-        font-size: 24px;
-        width: 300px;
-        /* height: auto; */
-    }
-    .featureHeading {
-        font-size: 16px;
-    }
-    .landscape__gif {
-        width: calc(100% - 280px);
-    }
-    .landscape-card-width {
-        width: 100%;
-    }
-}
-
 .section-why__grid__mob {
     margin: 40px auto;
 }
@@ -1222,6 +1179,48 @@ main>section {
     display: none;
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .devtron-footer__href {
+        width: 56px;
+        height: 56px;
+        margin: 0 12px;
+    }
+    .dots__position {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .binoculars__position {
+        width: 140px;
+        height: 140px;
+    }
+    .popper__position {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .section-landscape {
+        padding: 340px 40px 100px
+    }
+    .featureHeading:nth-of-type(1) {
+        font-size: 24px;
+        width: 300px;
+        /* height: auto; */
+    }
+    .featureHeading {
+        font-size: 16px;
+    }
+    .landscape__gif {
+        width: calc(100% - 280px);
+    }
+    .landscape-card-width {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 375px) {
     .section-why__grid__mob .section-why__grid-item {
         min-height: 220px;
@@ -1234,7 +1233,7 @@ main>section {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
     .section-hero__wrapper {
         border-bottom-left-radius: 80px;
     }
@@ -1412,7 +1411,7 @@ main>section {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
     .section-hero__wrapper {
         border-bottom-left-radius: 100px;
     }
@@ -1460,13 +1459,13 @@ main>section {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) and (orientation: landscape) {
     .section-learning__header-margins {
         margin-bottom: 40px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (orientation: landscape) {
     .main-title {
         font-size: 3rem;
     }
