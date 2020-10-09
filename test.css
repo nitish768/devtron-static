@@ -361,7 +361,7 @@ main>section {
 }
 
 .main-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 47px;
@@ -433,7 +433,7 @@ main>section {
 }
 
 .section-why__title {
-    font-size: 30px;
+    font-size: 2.25rem;
     line-height: 38px;
     font-style: normal;
     font-weight: 300;
@@ -442,7 +442,9 @@ main>section {
 }
 
 .section-why__title--cycle {
+    display: inline-block;
     margin-bottom: 40px;
+    max-width: 446px;
 }
 
 .section-why__title-bold {
@@ -555,7 +557,7 @@ main>section {
 }
 
 .section-landscape__title {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0em;
@@ -608,6 +610,7 @@ main>section {
 .devtron-stack__item {
     width: 100%;
     height: auto;
+    mix-blend-mode: luminosity;
 }
 
 .section-testimonials {
@@ -966,16 +969,25 @@ main>section {
 .early-access-card {
     border-radius: 12px;
     color: #ffffff;
-    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
     background: linear-gradient(294.67deg, #140152 24.36%, #0066CC 84.22%);
 }
 
+.early-access-card__text {
+    max-width: 368px;
+    padding: 30px;
+    padding-top: 0px;
+}
+
 .early-access-card__title {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: left;
+    display: inline-block;
     margin-bottom: 12px;
 }
 
@@ -985,12 +997,22 @@ main>section {
 }
 
 .early-access-card__subtitle {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 24px;
+}
+
+.early-access-card__img {
+    display: none;
+    width: 50%;
+    background-image: url(./images/img-earlyaccess-card.png);
+    background-position-x: right;
+    background-position-y: 30px;
+    background-size: contain;
+    background-repeat: no-repeat
 }
 
 .devtron-footer {
@@ -1102,19 +1124,15 @@ main>section {
 }
 
 .black-heading {
-    font-size: 36px;
+    font-size: 30px;
     color: #000A14;
 }
 
 .black-heading-light {
-    /* font-size: 36px; */
-    /* color: #000A14; */
     font-weight: 300;
 }
 
 .black-heading-dark {
-    /* font-size: 36px; */
-    /* color: #000A14; */
     font-weight: 700;
 }
 
@@ -1245,12 +1263,6 @@ main>section {
     }
 }
 
-@media screen and (min-width: 566px) {
-    .section-why__grid__mob .section-why__grid-item {
-        /* min-height: unset; */
-    }
-}
-
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .devtron-footer__href {
         width: 56px;
@@ -1270,9 +1282,6 @@ main>section {
     }
     .dots__position {
         display: none;
-    }
-    .black-heading {
-        font-size: 30px;
     }
 }
 
@@ -1323,6 +1332,9 @@ main>section {
         right: 40px;
         top: 410px;
     }
+    .black-heading {
+        font-size: 36px;
+    }
     .section-hero {
         padding: 100px 135px;
         min-height: 100vh;
@@ -1344,11 +1356,8 @@ main>section {
     .section-learning {
         min-height: 588px;
         position: relative;
-        /* padding: 100px 135px; */
     }
     .section-testimonials {
-        /* min-height: 100vh; */
-        /* padding: 100px 135px; */
         border-radius: 0px;
     }
     .main-nav {
@@ -1383,10 +1392,6 @@ main>section {
     }
     .section-why__title {
         text-align: left;
-    }
-    .section-why__title--cycle {
-        display: inline-block;
-        width: 540px;
     }
     .section-why__bottom {
         flex-direction: row;
@@ -1453,8 +1458,8 @@ main>section {
     .devtron-stack__title--light {
         font-weight: 300;
     }
-    .early-access-card__text {
-        max-width: 368px;
+    .early-access-card__img {
+        display: block;
     }
     .devtron-footer {
         padding-left: 80px;
@@ -1533,9 +1538,9 @@ main>section {
     .main-nav__logo {
         margin-left: 135px;
     }
-    .main-title {
+    /* .main-title {
         font-size: 2.5rem;
-    }
+    } */
     .devtron-footer__href {
         width: 100%;
         height: 100%;
@@ -1565,9 +1570,9 @@ main>section {
 }
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
-    .main-title {
+    /* .main-title {
         font-size: 3rem;
-    }
+    } */
     .section-hero__left {
         margin-top: 50px;
     }
@@ -1592,6 +1597,9 @@ main>section {
     }
     .section-hero__paragraph:nth-child(3) {
         top: 180px;
+    }
+    .section-why__title--cycle {
+        max-width: 540px;
     }
     .devtron-footer {
         padding-left: 135px;
