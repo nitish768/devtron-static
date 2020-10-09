@@ -61,7 +61,10 @@ const featureHeadingsSwitcher = {
 
 featureHeadingsSwitcher.fillValuesInDivsAndApplyImage();
 
-function handleLinkedinClick (index) {
+function handleLinkedinClick (index, deviceType) {
+    if (deviceType === 'web') {
+        index += 6;
+    }
     const gridItems = document.getElementsByClassName('section-why__why');
     const text = gridItems[index].innerText;
     const dummyTextArea = document.createElement("textarea");
