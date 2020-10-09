@@ -1173,6 +1173,8 @@ main>section {
 .learning-card {
     min-height: 300px;
     padding-bottom: 41px;
+    margin: 0 0 10px 0;
+    border-radius: 8px;
 }
 
 .learning-card__text {
