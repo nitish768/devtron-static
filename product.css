@@ -270,8 +270,9 @@ main>section {
 
 .section-hero__calendar-icon {
     display: none;
-    width: 27px;
-    vertical-align: text-bottom;
+    width: 20px;
+    position: relative;
+    top: -2px;
     margin-right: 10px;
 }
 
@@ -1265,11 +1266,6 @@ main>section {
     .section-why__grid--mob .section-why__grid-item {
         min-height: 270px;
     }
-    /* .devtron-stack__grid {
-        grid-template-columns: repeat( 6, minmax(60px, 1fr));
-        max-width: 478px;
-        margin: auto;
-    } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1321,6 +1317,12 @@ main>section {
     } */
     .landscape-card-width {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .early-access-card__img {
+        display: block;
     }
 }
 
@@ -1470,9 +1472,6 @@ main>section {
     }
     .early-access-card__subtitle {
         margin-bottom: 63px;
-    }
-    .early-access-card__img {
-        display: block;
     }
     .devtron-footer {
         padding-left: 80px;
