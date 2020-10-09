@@ -1167,10 +1167,16 @@
                         <a class="blue-anchors" href="#" style="float:right;">See all posts <img src="./images/ic-arrow-right.svg"></a>
                     </div>
                     <div id="testimonial-LR-buttons" style="display: none;">
-                        <button class="testimonial-left-button" onclick="moveLearningCarouselLeft()"
-                            style="visibility: hidden">Left</button>
-                        <button class="testimonial-right-button" onclick="moveLearningCarouselRight()"
-                            style="visibility: visible">Right</button>
+                        <img 
+                            src='./images/ic-carousel-arrow.svg' 
+                            onclick="moveLearningCarouselLeft()" 
+                            style="visibility: hidden; transform: rotate(180deg);" 
+                            class="testimonial-left-button">
+                        <img 
+                            src='./images/ic-carousel-arrow.svg' 
+                            onclick="moveLearningCarouselRight()" 
+                            style="visibility: visible;" 
+                            class="testimonial-right-button">
                     </div>
                     <div class="section-learning__grid">
                         <div class="card section-learning__grid-item learning-card">
