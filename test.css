@@ -1010,7 +1010,7 @@ main>section {
     width: 50%;
     background-image: url(./images/img-earlyaccess-card.png);
     background-position-x: right;
-    background-position-y: 30px;
+    background-position-y: top;
     background-size: contain;
     background-repeat: no-repeat
 }
@@ -1457,6 +1457,9 @@ main>section {
     }
     .devtron-stack__title--light {
         font-weight: 300;
+    }
+    .early-access-card__subtitle{
+        margin-bottom: 63px;
     }
     .early-access-card__img {
         display: block;
