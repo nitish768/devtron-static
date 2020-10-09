@@ -1009,9 +1009,9 @@ main>section {
     display: none;
     width: 50%;
     background-image: url(./images/img-earlyaccess-card.png);
-    background-position-x: right;
+    background-position-x: left;
     background-position-y: top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat
 }
 
