@@ -82,7 +82,10 @@ function handleLinkedinClick (index, deviceType) {
     }, 3000)
 }
 
-function handleTwitterIconClick (itemCountInClass) {
+function handleTwitterIconClick (itemCountInClass, deviceType) {
+    if (deviceType === 'web') {
+      itemCountInClass += 6;
+    }
     const gridItems = document.getElementsByClassName('section-why__why');
     const currentItemContent = encodeURIComponent(gridItems[itemCountInClass].innerText);
     const twitterURL = `https://twitter.com/intent/tweet?text=${currentItemContent}`;
