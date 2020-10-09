@@ -1535,6 +1535,7 @@ main>section {
         grid-template-rows: repeat(2, minmax(52px, 100px));
         grid-template-columns: 1fr 1fr;
         grid-template-rows: max-content;
+        grid-gap: 24px;
     }
 }
 
