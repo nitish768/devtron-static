@@ -37,7 +37,6 @@ button:focus {
     height: 0px;
     width: 100%;
     padding-bottom: 100%;
-    background-color: red;
 }
 
 #testimonial-LR-buttons {
@@ -574,8 +573,8 @@ main>section {
 }
 
 .devtron-stack {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .devtron-stack__hr {
@@ -591,7 +590,6 @@ main>section {
     letter-spacing: 0em;
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 15px;
 }
 
 .devtron-stack__title--light {
@@ -602,6 +600,7 @@ main>section {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat( auto-fill, minmax(60px, 1fr));
+    max-width: 680px;
 }
 
 .devtron-stack__item {
@@ -1052,13 +1051,16 @@ main>section {
     vertical-align: middle;
     background-color: #281566;
     display: flex;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
 }
+
 .devtron-footer__href img {
     width: 35%;
     height: auto;
 }
+
 .devtron-footer__copyright-indent {
     padding: 30px 0;
     display: flex;
@@ -1263,6 +1265,11 @@ main>section {
     .section-why__grid--mob .section-why__grid-item {
         min-height: 270px;
     }
+    /* .devtron-stack__grid {
+        grid-template-columns: repeat( 6, minmax(60px, 1fr));
+        max-width: 478px;
+        margin: auto;
+    } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1459,12 +1466,7 @@ main>section {
         display: none;
     }
     .devtron-stack__title {
-        font-size: 18px;
-        line-height: 27px;
         text-align: left;
-    }
-    .devtron-stack__title--light {
-        font-weight: 300;
     }
     .early-access-card__subtitle {
         margin-bottom: 63px;
@@ -1503,11 +1505,15 @@ main>section {
         justify-content: space-between;
     }
     .devtron-stack__title {
-        max-width: 540px;
+        max-width: 230px;
+        margin-right: 40px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
     .devtron-stack__grid {
         flex: 1;
-        grid-template-columns: repeat( auto-fit, minmax(60px, 1fr));
+        grid-template-columns: repeat( 6, minmax(60px, 1fr));
+        max-width: 484px;
     }
     .fixed-pos {
         position: fixed;
