@@ -1016,7 +1016,7 @@ main>section {
 
 .devtron-footer {
     background: #140152;
-    padding: 65px 35px 0px 35px;
+    padding: 64px 40px 0px;
     color: #ffffff;
     max-width: 1440px;
     margin: auto;
@@ -1031,18 +1031,17 @@ main>section {
     display: flex;
 }
 
-.footer__title {
+.devtron-footer__title {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 28px;
-    margin-bottom: 24px;
+    margin: 24px 0px;
 }
 
-.devtron-footer__copyright {
+.devtron-footer__copyright-text {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1050,7 +1049,11 @@ main>section {
     letter-spacing: 0em;
     text-align: left;
     opacity: 0.8;
-    color: #ffffff
+    color: #ffffff;
+}
+
+.devtron-footer__copyright-text--desktop {
+    display: none;
 }
 
 .devtron-footer__href {
@@ -1239,25 +1242,25 @@ main>section {
     width: 50%;
 }
 
-.section-why__grid__mob {
+.section-why__grid--mob {
     margin: 40px auto;
 }
 
-.section-why__grid__mob .section-why__grid-item {
+.section-why__grid--mob .section-why__grid-item {
     margin-bottom: 16px;
     width: unset;
 }
 
-.section-why__grid__mob .section-why__grid-item {
+.section-why__grid--mob .section-why__grid-item {
     min-height: 242px;
 }
 
-.section-why__grid__web {
+.section-why__grid--web {
     display: none;
 }
 
 @media screen and (min-width: 456px) and (max-width: 566px) {
-    .section-why__grid__mob .section-why__grid-item {
+    .section-why__grid--mob .section-why__grid-item {
         min-height: 310px;
     }
 }
@@ -1320,13 +1323,13 @@ main>section {
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
-    .section-why__grid__mob {
+    .section-hero__scroll-down {
         display: none;
     }
-    .button-early-access--mob {
+    .section-why__grid--mob, .devtron-footer__copyright-text--mob, .button-early-access--mob {
         display: none;
     }
-    .section-why__grid__web {
+    .section-why__grid--web {
         display: block;
     }
     .section-hero__wrapper {
@@ -1385,9 +1388,6 @@ main>section {
     .section-hero__button-container {
         margin-top: 40px;
         margin-bottom: 70px;
-    }
-    .section-hero__scroll-down {
-        display: none;
     }
     .section-why__grid {
         margin-top: 60px;
@@ -1466,7 +1466,7 @@ main>section {
     .devtron-stack__title--light {
         font-weight: 300;
     }
-    .early-access-card__subtitle{
+    .early-access-card__subtitle {
         margin-bottom: 63px;
     }
     .early-access-card__img {
