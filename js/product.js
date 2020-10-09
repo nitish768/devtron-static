@@ -20,9 +20,8 @@ function handleTabChange(event, tabIdToDisplay) {
 
     event.currentTarget.className += " active";
 }
-
+// simulating click to have 1st one selected
 document.getElementById("defaultSelectedTab").click();
-
 
 const featureHeadingsSwitcher = {
     featureHeadingsTextAndURL: [
