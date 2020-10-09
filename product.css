@@ -823,7 +823,6 @@ main>section {
 
 .section-sneakpeek__button-container {
     margin-top: 80px;
-    margin-bottom: 70px;
 }
 
 .button-early-access {
@@ -1465,6 +1464,9 @@ main>section {
     }
     .section-learning__grid {
         grid-template-columns: repeat(4, minmax(270px, 270px));
+    }
+    .devtron-stack__hr {
+        margin: 100px auto 0 auto;
     }
 }
 
