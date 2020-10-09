@@ -276,8 +276,8 @@ main>section {
 
 .section-hero__calendar-icon {
     display: none;
-    width: 30px;
-    vertical-align: middle;
+    width: 24px;
+    vertical-align: text-bottom;
     margin-right: 10px;
 }
 
