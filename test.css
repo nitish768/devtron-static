@@ -591,7 +591,6 @@ main>section {
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
-    max-width: 370px;
     margin-bottom: 40px;
     margin-top: 15px;
 }
@@ -601,15 +600,14 @@ main>section {
 }
 
 .devtron-stack__grid {
-    display: flex;
-    flex-wrap: wrap;
-    direction: rtl;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat( auto-fill, minmax(60px, 1fr));
 }
 
 .devtron-stack__item {
-    width: 80px;
-    height: 80px;
-    margin: 15px;
+    width: 100%;
+    height: auto;
 }
 
 .section-testimonials {
@@ -1308,10 +1306,9 @@ main>section {
     .section-why__grid__mob {
         display: none;
     }
-    .button-early-access--mob{
+    .button-early-access--mob {
         display: none;
     }
-
     .section-why__grid__web {
         display: block;
     }
@@ -1448,10 +1445,6 @@ main>section {
     .devtron-landscape--mob {
         display: none;
     }
-    .devtron-stack {
-        display: flex;
-        justify-content: space-between;
-    }
     .devtron-stack__title {
         font-size: 18px;
         line-height: 27px;
@@ -1497,11 +1490,20 @@ main>section {
     .section-landscape__wrapper {
         border-top-right-radius: 100px;
     }
-
     .section-landscape__top, .section-why__bottom {
         width: calc(100vw - 282px);
     }
-
+    .devtron-stack {
+        display: flex;
+        justify-content: space-between;
+    }
+    .devtron-stack__title {
+        max-width: 540px;
+    }
+    .devtron-stack__grid {
+        flex: 1;
+        grid-template-columns: repeat( auto-fit, minmax(60px, 1fr));
+    }
     .fixed-pos {
         position: fixed;
         right: 135px;
