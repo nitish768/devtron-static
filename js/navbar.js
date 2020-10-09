@@ -22,7 +22,7 @@ $(document).ready(function () {
     var $newImage = $img.clone();
     $img.remove();
     $newImage.appendTo($imgContainer);
-  }, 3000);
+  }, 4500);
 });
 
 $('.owl-carousel').owlCarousel({
