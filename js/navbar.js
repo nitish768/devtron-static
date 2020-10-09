@@ -35,7 +35,7 @@ $('.owl-carousel').owlCarousel({
       0: {
           items: 1
       },
-      456: {
+      550: {
           items: 2
       },
     }
@@ -52,7 +52,7 @@ $('sneakpeek-mob').owlCarousel({
     0: {
         items: 1
     },
-    456: {
+    550: {
         items: 2
     },
   }
