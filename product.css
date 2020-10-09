@@ -37,24 +37,9 @@ button:focus {
     display: flex;
     justify-content: space-between;
     top: 180px;
-    /* width: 100%; */
     z-index: 2;
-    /* height: 0; */
     margin-top: -30px;
 }
-
-/* #testimonial-LR-buttons .left-button {
-    position: relative;
-    top: 135px;
-    z-index: 2;
-}
-
-#testimonial-LR-buttons .right-button {
-    position: relative;
-    top: 135px;
-    right: 0px;
-    z-index: 2;
-} */
 
 .testimonials__person-image {
     position: absolute;
@@ -112,7 +97,6 @@ button:focus {
     visibility: hidden;
     float: right;
     position: relative;
-    /* right: 1.25rem; */
 }
 
 .accordion .btn {
@@ -137,7 +121,6 @@ button:focus {
     height: 281px;
     left: -40px;
     opacity: 8%;
-    /* background-image: url('./images/img-binoculars.png'); */
 }
 
 .dots__position {
@@ -146,7 +129,6 @@ button:focus {
     height: 874px;
     left: -135px;
     top: -60px;
-    /* opacity: 8%; */
     background-image: url('./images/dots.png');
     z-index: -1;
 }
@@ -157,7 +139,6 @@ button:focus {
     height: 281px;
     right: -40px;
     opacity: 8%;
-    /* background-image: url('./images/img-confetti.png'); */
     background-position-x: 30px;
     z-index: -1;
 }
@@ -704,8 +685,6 @@ main>section {
 }
 
 .tabs__item {
-    /* margin: 32px 0;  */
-    /* line-height: 40px; */
     padding: 0 18px;
     vertical-align: middle;
     cursor: pointer;
@@ -716,22 +695,13 @@ main>section {
 
 .tabs:before {
     background-color: rgb(255, 255, 255, 0.2);
-    /* background-color: red; */
     width: 2px;
     content: "";
     height: 100%;
     position: absolute;
-    /* bottom: auto; */
-    /* top: 0; */
-    /* left: auto; */
-    /* right: 0; */
 }
 
 .tabs__activebar {
-    /* left: auto; */
-    /* right: 0; */
-    /* top: 0; */
-    /* bottom: auto; */
     width: 2px;
     position: absolute;
     background-color: #F2C94C;
@@ -741,7 +711,6 @@ main>section {
 }
 
 .btn-link:hover {
-    /* color: #0056b3; */
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
@@ -754,20 +723,8 @@ main>section {
 }
 
 .btn-link.focus, .btn-link:focus {
-    /* text-decoration: underline;
-*/
     color: #F2C94C;
 }
-
-/* .btn-link:hover { */
-
-/* color: #0056b3; */
-
-/* color: rgba(255, 255, 255, 0.8); */
-
-/* text-decoration: none; */
-
-/* } */
 
 .btn-link {
     color: rgba(255, 255, 255, 0.8);
@@ -1254,7 +1211,6 @@ main>section {
 }
 
 .landscape__gif {
-    /* width: calc(100% - 360px); */
     flex-basis: 1;
 }
 
