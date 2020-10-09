@@ -343,10 +343,10 @@ main>section {
 }
 
 .main-title {
-    font-size: 2.25rem;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 47px;
+    line-height: 130%;
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
@@ -1265,6 +1265,9 @@ main>section {
     }
     .dots__position {
         display: none;
+    }
+    .main-title {
+        font-size: 36px;
     }
 }
 
