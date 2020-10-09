@@ -1045,7 +1045,10 @@ main>section {
     align-items: center;
     justify-content: center;
 }
-
+.devtron-footer__href img {
+    width: 40%;
+    height: auto;
+}
 .devtron-footer__copyright-indent {
     padding: 30px 0;
     display: flex;
