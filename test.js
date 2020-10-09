@@ -41,11 +41,7 @@ function addButtonTestimonials() {
   const gridItemsWidth = document.getElementsByClassName('section-learning__grid')[0].children[0].clientWidth * items + gridItemsGap * items - (30);
 
   if (gridItemsWidth > testimonialsWrapperWidth) {
-    console.log(gridItemsWidth, testimonialsWrapperWidth);
     document.getElementById('testimonial-LR-buttons').style.display = 'flex';
-    // const button = document.createElement("button");
-    // button.innerText = 'demo';
-    // document.getElementById('carouselButtons').appendChild(button)
   }
 } 
 
