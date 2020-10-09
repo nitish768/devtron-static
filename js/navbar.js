@@ -69,15 +69,15 @@ $.fn.isInViewport = function () {
 
 $(function () {
   //Transiton from current to Devtron Landscape
-  if ($sectionThree.isInViewport()) {
-    $(image1).addClass('fixed-pos');
-    if ($devtronLandscape.isInViewport()) {
-      $(image2).removeClass('fixed-pos');
-    }
-    else {
-      $(image2).addClass('fixed-pos');
-    }
-  }
+  // if ($sectionThree.isInViewport()) {
+  //   $(image1).addClass('fixed-pos');
+  //   if ($devtronLandscape.isInViewport()) {
+  //     $(image2).removeClass('fixed-pos');
+  //   }
+  //   else {
+  //     $(image2).addClass('fixed-pos');
+  //   }
+  // }
 
   $(document).scroll(function () {
     //Navbar 
@@ -93,15 +93,15 @@ $(function () {
     }
 
     //Transiton from current to Devtron Landscape
-    if ($sectionThree.isInViewport()) {
-      $(image1).addClass('fixed-pos');
-      if ($devtronLandscape.isInViewport()) {
-        $(image2).removeClass('fixed-pos');
-      }
-      else {
-        $(image2).addClass('fixed-pos');
-      }
-    }
+    // if ($sectionThree.isInViewport()) {
+    //   $(image1).addClass('fixed-pos');
+    //   if ($devtronLandscape.isInViewport()) {
+    //     $(image2).removeClass('fixed-pos');
+    //   }
+    //   else {
+    //     $(image2).addClass('fixed-pos');
+    //   }
+    // }
 
     if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))) {
       $navbar.addClass("main-nav-dark");
