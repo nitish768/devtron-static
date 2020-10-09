@@ -20,9 +20,8 @@ function handleTabChange(event, tabIdToDisplay) {
 
     event.currentTarget.className += " active";
 }
-
+// simulating click to have 1st one selected
 document.getElementById("defaultSelectedTab").click();
-
 
 const featureHeadingsSwitcher = {
     featureHeadingsTextAndURL: [
@@ -82,7 +81,10 @@ function handleLinkedinClick (index, deviceType) {
     }, 3000)
 }
 
-function handleTwitterIconClick (itemCountInClass) {
+function handleTwitterIconClick (itemCountInClass, deviceType) {
+    if (deviceType === 'web') {
+      itemCountInClass += 6;
+    }
     const gridItems = document.getElementsByClassName('section-why__why');
     const currentItemContent = encodeURIComponent(gridItems[itemCountInClass].innerText);
     const twitterURL = `https://twitter.com/intent/tweet?text=${currentItemContent}`;
