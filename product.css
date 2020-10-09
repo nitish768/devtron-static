@@ -270,7 +270,7 @@ main>section {
 
 .section-hero__calendar-icon {
     display: none;
-    width: 20px;
+    width: 24px;
     position: relative;
     top: -2px;
     margin-right: 10px;
@@ -357,7 +357,7 @@ main>section {
 }
 
 .main-title {
-    font-size: 48px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
@@ -431,8 +431,8 @@ main>section {
 }
 
 .section-why__title {
-    font-size: 2.25rem;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 1.28;
     font-style: normal;
     font-weight: 300;
     letter-spacing: 0em;
@@ -1001,14 +1001,6 @@ main>section {
     grid-gap: 12px;
 }
 
-.devtron-footer__social-desktop {
-    margin-left: auto;
-    display: none;
-    grid-template-rows: 80px 80px;
-    grid-template-columns: 80px 80px;
-    grid-gap: 12px;
-}
-
 .devtron-footer__title {
     font-size: 14px;
     font-style: normal;
@@ -1289,9 +1281,6 @@ main>section {
     .dots__position {
         display: none;
     }
-    .main-title {
-        font-size: 36px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -1333,8 +1322,9 @@ main>section {
     .section-why__grid--web {
         display: block;
     }
-    .devtron-footer__social-desktop {
-        display: grid;
+    
+    .main-title {
+        font-size: 36px;
     }
     .section-hero__wrapper {
         border-bottom-left-radius: 80px;
