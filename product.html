@@ -49,15 +49,18 @@
                 </div>
                 <div class="modal-body">
                     <form class="w-100">
-                        <label for="full-name" class="d-block early-access-form__label">Full Name</label>
-                        <input type="text" id="full-name" placeholder="John Doe" autofocus tab-index="1" name="name"
+                        <label for="first-name" class="d-block early-access-form__label">First Name</label>
+                        <input type="text" id="first-name" placeholder="John" autofocus tab-index="1" name="first-name"
                             class="d-block w-100 early-access-form__input early-access-form__input-margins" />
-                        <label for="full-name" class="d-block early-access-form__label">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter email id" tab-index="2"
-                            class="d-block w-100 early-access-form__input" />
+                        <label for="last-name" class="d-block early-access-form__label">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Doe" autofocus tab-index="2" name="first-name"
+                            class="d-block w-100 early-access-form__input early-access-form__input-margins" />
+                        <label for="email" class="d-block early-access-form__label">Email <span style="position: relative; top: -5px">&lowast;</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter email id" tab-index="3"
+                            class="d-block w-100 early-access-form__input" required/>
                         <p class="early-access-form__para early-access-form__para-margins">We will send you an
                             invitation email at the earliest.</p>
-                        <button type="submit" tab-index="3" class="d-block w-100 button-early-access">Submit</button>
+                        <button type="submit" tab-index="3" class="d-block w-100 button-early-access" onclick="handleEarlyAccessFormSubmit(event)">Submit</button>
                     </form>
                 </div>
             </div>
