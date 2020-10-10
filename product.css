@@ -43,14 +43,14 @@ button:focus {
     padding-bottom: 100%;
 }
 
-#testimonial-LR-buttons {
+.testimonial-LR-buttons {
     position: relative;
-    display: flex;
-    justify-content: space-between;
     top: 326px;
     z-index: 2;
     margin-top: -326px;
     height: 326px;
+    vertical-align: middle; 
+    cursor: pointer;
 }
 
 .envision-logo {

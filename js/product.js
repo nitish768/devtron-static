@@ -126,8 +126,8 @@ function addButtonTestimonials() {
   // reducing 30 as last one's gap is irrelevant
   const gridItemsWidth = document.getElementsByClassName('section-learning__grid')[0].children[0].clientWidth * items + gridItemsGap * items - (30);
 
-  if (gridItemsWidth > testimonialsWrapperWidth) {
-    document.getElementById('testimonial-LR-buttons').style.display = 'flex';
+  if (gridItemsWidth < testimonialsWrapperWidth) {
+    document.getElementsByClassName('testimonial-right-button')[0].style.visibility = 'hidden';
   }
 } 
 
@@ -161,4 +161,15 @@ function moveLearningCarouselLeft () {
 function moveLearningCarouselRight () {
   moveScroll(1000000)
   toggleDisplay();
+}
+
+function openBlogPage(index) {
+  const urls = [
+    "https://devtron.ai/blog/upgrade-eks-1-16-cluster-to-eks-1-17-using-eksctl-in-6-steps/",
+    "https://devtron.ai/blog/ultimate-guide-of-pod-eviction-on-kubernetes/",
+    "https://devtron.ai/blog/how-to-use-spot-to-achieve-cost-savings-on-kubernetes/",
+    "https://devtron.ai/blog/advantages-disadvantages-of-migrating-to-kubernetes/"
+  ];
+  const currentUrl = urls[index];
+  window.open(currentUrl, "_blank");
 }
