@@ -76,6 +76,7 @@ $(function () {
   $(document).scroll(function () {
     var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
 
+
     //Navbar 
     if ($(this).scrollTop() > $navbar.height() && $(this).scrollTop() < ($sectionOne.height() + $navbar.height())) {
       $navbar.addClass("main-nav-dark");
@@ -87,21 +88,28 @@ $(function () {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light");
 
-      // if ($sectionThree.isInViewport() && !$policyTab.isInViewport()) {
-      //   var image = image1.get(0).getBoundingClientRect();
-      //   $(image1).css("position", "fixed").css("top", image.top).css("right", 135);
-      // }
-      // else {
-      //   $(image1).css("visibility", "visible");
-      // }
+      if (!$sectionThree.isInViewport()) {
+        $(image1).css("position", "static");
+      }
+
+      if ($sectionThree.isInViewport() && !$policyTab.isInViewport()) {
+        var image = image1.get(0).getBoundingClientRect();
+        $(image1).css("position", "fixed").css("top", image.top).css("right", 135);
+        $(image2).css("position", "fixed").css("top", image.top).css("right", 135);
+      }
+      else {
+        $(image1).css("visibility", "visible");
+      }
     }
 
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
 
-      // if ($policyTab.isInViewport()) {
-      //   $(image1).css("visibility", "visible");
-      // }
+      if ($policyTab.isInViewport()) {
+        $(image1).css("visibility", "visible");
+        $(image2).css("position", "static");
+      }
+      else $(image1).css("visibility", "hidden");
 
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white");
