@@ -84,7 +84,6 @@ $(function () {
     else if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
     ) {
-
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light");
 

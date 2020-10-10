@@ -1227,6 +1227,10 @@ main>section {
     margin-bottom: 240px;
 }
 
+.section-why__grid-item:hover {
+    box-shadow: 0px 4px 12px rgba(20, 1, 82, 0.25);
+}
+
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__copyright-text--mob {
         display: none;
@@ -1234,11 +1238,18 @@ main>section {
     .devtron-footer__copyright-text--desktop {
         display: block;
     }
+    .devtron-stack__grid {
+        margin: auto;
+        max-width: 464px;
+    }
     .devtron-footer__content {
         flex-direction: row;
     }
     .section-why__grid--mob .section-why__grid-item {
         min-height: 270px;
+    }
+    .fb-community {
+        margin-bottom: 24px;
     }
 }
 
@@ -1300,6 +1311,13 @@ main>section {
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .section-hero__scroll-down, .section-why__grid--mob, .button-early-access--mob {
         display: none;
+    }
+    .fb-community {
+        margin-bottom: 0px;
+    }
+    .fb-community__content {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
     .section-why__grid--web {
         display: block;
@@ -1507,7 +1525,7 @@ main>section {
     .devtron-footer__right {
         max-width: 600px;
         grid-template-rows: unset;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 0.75fr 2fr;
     }
     .devtron-footer__social-mob {
         grid-template-columns: repeat(2, minmax(52px, 100px));
