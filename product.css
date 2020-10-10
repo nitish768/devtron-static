@@ -599,7 +599,6 @@ main>section {
     grid-gap: 15px;
     grid-template-columns: repeat( auto-fill, minmax(60px, 1fr));
     max-width: 680px;
-    margin: auto;
 }
 
 .devtron-stack__item {
@@ -1238,6 +1237,10 @@ main>section {
     }
     .devtron-footer__copyright-text--desktop {
         display: block;
+    }
+    .devtron-stack__grid {
+        margin: auto;
+        max-width: 464px;
     }
     .devtron-footer__content {
         flex-direction: row;
