@@ -91,11 +91,12 @@ $(function () {
       if (!$sectionThree.isInViewport()) {
         $(image1).css("position", "static");
       }
-
       if ($sectionThree.isInViewport() && !$policyTab.isInViewport()) {
         var image = image1.get(0).getBoundingClientRect();
-        $(image1).css("position", "fixed").css("top", image.top).css("right", 135);
-        $(image2).css("position", "fixed").css("top", image.top).css("right", 135);
+        let rightOffset = $(window).width() - image.right;
+
+        $(image1).css("position", "fixed").css("top", image.top).css("right", rightOffset);
+        $(image2).css("position", "fixed").css("top", image.top).css("right", rightOffset);
       }
       else {
         $(image1).css("visibility", "visible");
