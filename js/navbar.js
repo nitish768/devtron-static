@@ -15,14 +15,18 @@ $(document).ready(function () {
   setInterval(() => {
     var $para1 = $(".section-hero__paragraph:nth-child(1)");
     var $new = $para1.clone();
-    $para1.remove();
     $new.appendTo($paraContainer);
 
     var $img = $(".section-hero__gif:nth-child(1)");
     var $newImage = $img.clone();
-    $img.remove();
     $newImage.appendTo($imgContainer);
-  }, 4500);
+
+    setTimeout(() => {
+      $para1.remove();
+      $img.remove();
+    }, 100)
+    
+  }, 4000);
 });
 
 $('.owl-carousel').owlCarousel({
@@ -30,15 +34,15 @@ $('.owl-carousel').owlCarousel({
   autoplay: false,
   stagePadding: 40,
   margin: 20,
-  dots:false,
+  dots: false,
   responsive: {
-      0: {
-          items: 1
-      },
-      550: {
-          items: 2
-      },
-    }
+    0: {
+      items: 1
+    },
+    550: {
+      items: 2
+    },
+  }
 })
 
 $('sneakpeek-mob').owlCarousel({
@@ -50,10 +54,10 @@ $('sneakpeek-mob').owlCarousel({
   items: 1,
   responsive: {
     0: {
-        items: 1
+      items: 1
     },
     550: {
-        items: 2
+      items: 2
     },
   }
 })

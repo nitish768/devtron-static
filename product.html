@@ -14,12 +14,12 @@
     </script>
     <title>Devtron - The DevOps Accelerator</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./product.css">
@@ -40,9 +40,14 @@
                     <h2 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h2>
                     <button type="button" class="close close--early-access" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">
-                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.51263 10.4003C7.99193 9.87964 7.99193 9.03542 8.51263 8.51472C9.03332 7.99402 9.87755 7.99402 10.3982 8.51472L25.4832 23.5997C26.0039 24.1204 26.0039 24.9646 25.4832 25.4853C24.9625 26.006 24.1183 26.006 23.5976 25.4853L8.51263 10.4003Z" fill="#828282"/>
-                                <path d="M8.51263 25.4853C7.99193 24.9646 7.99193 24.1204 8.51263 23.5997L23.5976 8.51472C24.1183 7.99402 24.9625 7.99402 25.4832 8.51472C26.0039 9.03542 26.0039 9.87964 25.4832 10.4003L10.3982 25.4853C9.87755 26.006 9.03332 26.006 8.51263 25.4853Z" fill="#828282"/>
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.51263 10.4003C7.99193 9.87964 7.99193 9.03542 8.51263 8.51472C9.03332 7.99402 9.87755 7.99402 10.3982 8.51472L25.4832 23.5997C26.0039 24.1204 26.0039 24.9646 25.4832 25.4853C24.9625 26.006 24.1183 26.006 23.5976 25.4853L8.51263 10.4003Z"
+                                    fill="#828282" />
+                                <path
+                                    d="M8.51263 25.4853C7.99193 24.9646 7.99193 24.1204 8.51263 23.5997L23.5976 8.51472C24.1183 7.99402 24.9625 7.99402 25.4832 8.51472C26.0039 9.03542 26.0039 9.87964 25.4832 10.4003L10.3982 25.4853C9.87755 26.006 9.03332 26.006 8.51263 25.4853Z"
+                                    fill="#828282" />
                             </svg>
                         </span>
                     </button>
@@ -86,15 +91,15 @@
                         <span class="img-underline">kubernetes</span>
                     </span>
                 </h1>
-                <div style="display: flex;justify-content: space-between;align-items: flex-start; margin-top: 35px;">
+                <div style="display: flex;justify-content: space-between;align-items: flex-start;">
                     <div class="section-hero__left">
                         <div class="section-hero__paragraph-container">
-                            <p class="section-hero__paragraph paragraph__item">
+                            <p class="section-hero__paragraph">
                                 Application debugging dashboard
                             </p>
-                            <p class="section-hero__paragraph paragraph__item">
+                            <p class="section-hero__paragraph">
                                 Integrated DevSecOps features</p>
-                            <p class="section-hero__paragraph paragraph__item">Multi-cloud deployment support</p>
+                            <p class="section-hero__paragraph">Multi-cloud deployment support</p>
                         </div>
                         <h3 class="section-hero__time">
                             <img src="./images/calendar.svg" class="section-hero__calendar-icon" /> Available 15th
@@ -120,7 +125,10 @@
 
         <section>
             <div class="section-why">
-                <h2 class="section-why__title"><b class="section-why__title-bold">Why</b> we built devtron</h2>
+                <h2 class="secondary-title">
+                    <b class="secondary-title--bold">Why</b>
+                    <b class="secondary-title--light">we built devtron</b>
+                </h2>
                 <div class="section-why__grid--mob">
                     <div class="owl-carousel owl-theme carousel-margins">
                         <div class="item active">
@@ -414,9 +422,10 @@
                     </div>
                 </div>
                 <div class="section-why__bottom">
-                    <h2 class="section-why__title section-why__title--cycle">Almost
-                        <b class="section-why__title-bold">impossible to achieve the optimal balance </b> between Cost,
-                        Stability & Security.
+                    <h2 class="secondary-title section-why__title--cycle">
+                        <span class="secondary-title--light">Almost</span>
+                        <b class="secondary-title--bold">impossible to achieve the optimal balance </b>
+                        <span class="secondary-title--light">between Cost, Stability & Security.</span>
                     </h2>
                     <img src="./images/knob-gif.gif" id="image-1" class="section-why__gif" alt="cycle" />
                 </div>
@@ -428,9 +437,9 @@
                 <img src="./images/img-binoculars.png" class="binoculars__position">
                 <div class="section-landscape__top">
                     <div>
-                        <h2 class="section-landscape__heading">Envisioned AppOps landscape</h2>
-                        <h2 class="section-landscape__title">Greater Control
-                            <span class="section-landscape__title--light">& Optimization</span>
+                        <h1 class="section-landscape__heading">Envisioned AppOps landscape</h1>
+                        <h2 class="secondary-title secondary-title--white secondary-title--bold mb-40">Greater Control
+                            <span class="secondary-title--light">& Optimization</span>
                         </h2>
                     </div>
                     <img src="./images/current_landscape.png" id="image-2" class="section-why__devtron-landscape" />
@@ -459,7 +468,8 @@
                                 <div class="landscape-card-width">
                                     <div class="card">
                                         <div class="card-body">
-                                            Fine grained access control; control who can edit configuration and who can deploy.
+                                            Fine grained access control; control who can edit configuration and who can
+                                            deploy.
                                         </div>
                                     </div>
                                     <div class="card">
@@ -493,7 +503,8 @@
                                 <div class="landscape-card-width">
                                     <div class="card">
                                         <div class="card-body">
-                                            Multi level security policy at global, cluster, environment and application for efficient hierarchical policy management
+                                            Multi level security policy at global, cluster, environment and application
+                                            for efficient hierarchical policy management
                                         </div>
                                     </div>
                                     <div class="card">
@@ -503,7 +514,8 @@
                                     </div>
                                     <div class="card">
                                         <div class="card-body">
-                                            Advanced workflow policies like blackout window, branch environment relationship to secure build and deployment pipelines
+                                            Advanced workflow policies like blackout window, branch environment
+                                            relationship to secure build and deployment pipelines
                                         </div>
                                     </div>
                                 </div>
@@ -554,12 +566,14 @@
                                     </div>
                                     <div class="card">
                                         <div class="card-body">
-                                            Application metrics for cpu, ram, http status code and latency with comparison between new and old
+                                            Application metrics for cpu, ram, http status code and latency with
+                                            comparison between new and old
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-body">
-                                            Intelligent correlation between events, logs for faster triangulation of issue
+                                            Intelligent correlation between events, logs for faster triangulation of
+                                            issue
                                         </div>
                                     </div>
                                 </div>
@@ -581,7 +595,8 @@
                                     </div>
                                     <div class="card">
                                         <div class="card-body">
-                                            Lock environment so that others cannot make any changes without your consent, for eg during testing
+                                            Lock environment so that others cannot make any changes without your
+                                            consent, for eg during testing
                                         </div>
                                     </div>
                                     <div class="card">
@@ -615,19 +630,20 @@
                                 <div class="landscape-card-width">
                                     <div class="card" style="min-width: 155px">
                                         <div class="card-body">
-                                            Gitops exposed through API and UI so that you dont have to interact with git cli
+                                            Gitops exposed through API and UI so that you dont have to interact with git
+                                            cli
                                         </div>
                                     </div>
                                     <div class="card" style="min-width: 155px">
                                         <div class="card-body">
-                                            Enforce finer access control than git                                        
+                                            Enforce finer access control than git
                                         </div>
                                     </div>
                                 </div>
                                 <div class="landscape-card-width">
                                     <div class="card" style="min-width: 155px">
                                         <div class="card-body">
-                                            Gitops backed by postgres for easier analysis                                        
+                                            Gitops backed by postgres for easier analysis
                                         </div>
                                     </div>
                                 </div>
@@ -639,14 +655,16 @@
                                 <div class="landscape-card-width">
                                     <div class="card">
                                         <div class="card-body">
-                                            Workflow which understands the domain of kubernetes and testing so that you dont have to write scripts to handle it
+                                            Workflow which understands the domain of kubernetes and testing so that you
+                                            dont have to write scripts to handle it
                                         </div>
                                     </div>
                                 </div>
                                 <div class="landscape-card-width">
                                     <div class="card">
                                         <div class="card-body">
-                                            Reusable and composable components so that workflows are easy to contruct and reason through
+                                            Reusable and composable components so that workflows are easy to contruct
+                                            and reason through
                                         </div>
                                     </div>
                                 </div>
@@ -658,7 +676,9 @@
                                 <div class="landscape-card-width">
                                     <div class="card">
                                         <div class="card-body">
-                                            Deployment metrics to measure success of agile process. It captures mttr, change failure rate, deployment frequency, deployment size out of the box.                                        </div>
+                                            Deployment metrics to measure success of agile process. It captures mttr,
+                                            change failure rate, deployment frequency, deployment size out of the box.
+                                        </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-body">
@@ -693,7 +713,7 @@
                                 <div class="landscape-card-width">
                                     <div class="card">
                                         <div class="card-body">
-                                            Unused resource management to rightsize cluster 
+                                            Unused resource management to rightsize cluster
                                         </div>
                                     </div>
                                     <div class="card">
@@ -751,7 +771,8 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Multi level security policy at global, cluster, environment and application for efficient hierarchical policy management
+                                Multi level security policy at global, cluster, environment and application for
+                                efficient hierarchical policy management
                             </div>
                             <div class="card-body">
                                 Behavior driven security policy
@@ -763,7 +784,8 @@
                                 Define policies for events for faster resolution
                             </div>
                             <div class="card-body">
-                                Advanced workflow policies like blackout window, branch environment relationship to secure build and deployment pipelines
+                                Advanced workflow policies like blackout window, branch environment relationship to
+                                secure build and deployment pipelines
                             </div>
                         </div>
                     </div>
@@ -792,7 +814,8 @@
                                 Access all manifests securely for eg secret obfuscation
                             </div>
                             <div class="card-body">
-                                Application metrics for cpu, ram, http status code and latency with comparison between new and old
+                                Application metrics for cpu, ram, http status code and latency with comparison between
+                                new and old
                             </div>
                             <div class="card-body">
                                 Intelligent correlation between events, logs for faster triangulation of issue
@@ -827,7 +850,8 @@
                                 Easily manage and share helm charts within and across teams
                             </div>
                             <div class="card-body">
-                                Lock environment so that others cannot make any changes without your consent, for eg during testing
+                                Lock environment so that others cannot make any changes without your consent, for eg
+                                during testing
                             </div>
                             <div class="card-body">
                                 Environment override to selectively override configuration for environment
@@ -854,10 +878,10 @@
                                 Gitops exposed through API and UI so that you dont have to interact with git cli
                             </div>
                             <div class="card-body">
-                                Enforce finer access control than git                            
+                                Enforce finer access control than git
                             </div>
                             <div class="card-body">
-                                Gitops backed by postgres for easier analysis                            
+                                Gitops backed by postgres for easier analysis
                             </div>
                         </div>
                     </div>
@@ -874,10 +898,12 @@
                         <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Workflow which understands the domain of kubernetes and testing so that you dont have to write scripts to handle it
+                                Workflow which understands the domain of kubernetes and testing so that you dont have to
+                                write scripts to handle it
                             </div>
                             <div class="card-body">
-                                Reusable and composable components so that workflows are easy to contruct and reason through
+                                Reusable and composable components so that workflows are easy to contruct and reason
+                                through
                             </div>
                         </div>
                     </div>
@@ -893,7 +919,8 @@
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Deployment metrics to measure success of agile process. It captures mttr, change failure rate, deployment frequency, deployment size out of the box.
+                                Deployment metrics to measure success of agile process. It captures mttr, change failure
+                                rate, deployment frequency, deployment size out of the box.
                             </div>
                             <div class="card-body">
                                 Audit log to understand the failure causes
@@ -919,7 +946,7 @@
                                 Automatic resource optimization even with HPA
                             </div>
                             <div class="card-body">
-                                Unused resource management to rightsize cluster 
+                                Unused resource management to rightsize cluster
                             </div>
                             <div class="card-body">
                                 Advanced pod placement strategies for instance and spot selection
@@ -934,8 +961,9 @@
                     <div class="dots__position"></div>
                 </div>
                 <img src="./images/img-confetti.png" class="popper__position">
-                <h2 class="section-landscape__title">Sneak Peek
-                    <span class="section-landscape__title--light">into some exciting features</span>
+                <h2 class="secondary-title secondary-title--left secondary-title--white secondary-title--bold">Sneak
+                    Peek
+                    <span class="secondary-title--light">into some exciting features</span>
                 </h2>
                 <div class="sneakpeek-desktop" style="justify-content: space-between; margin: 80px 0 0 0">
                     <div>
@@ -982,9 +1010,9 @@
         <section class="bg-white">
             <div class="section-testimonials">
                 <div class="section-testimonials--desktop">
-                    <h2 class="black-heading">
-                        <span class="black-heading-light"> We’re starting to </span>
-                        <span class="black-heading-dark"> transform the way you DevOperate </span>
+                    <h2 class="secondary-title secondary-title--left">
+                        <span class="secondary-title--light"> We’re starting to </span>
+                        <span class="secondary-title--bold"> transform the way you DevOperate </span>
                     </h2>
                     <div class="testimonials__card-content-wrapper">
                         <div style="width: 50vw">
@@ -1043,9 +1071,9 @@
                     </div>
                 </div>
                 <div class="section-testimonials--mob">
-                    <h2 class="black-heading section-testimonials--title-margins">
-                        <span class="black-heading-light"> We’re starting to </span>
-                        <span class="black-heading-dark">transform the way you DevOperate </span>
+                    <h2 class="secondary-title secondary-title--left section-testimonials--title-margins">
+                        <span class="secondary-title--light"> We’re starting to </span>
+                        <span class="secondary-title--bold">transform the way you DevOperate </span>
                     </h2>
                     <div class="owl-carousel owl-theme carousel-margins">
                         <div class="item active carousel-testimonial">
@@ -1136,8 +1164,9 @@
                 </div>
                 <div class="early-access-card">
                     <div class="early-access-card__text">
-                        <h3 class="early-access-card__title">
-                            <span class="early-access-card__title--light">Get </span>early access
+                        <h3 class="secondary-title secondary-title--white secondary-title--left">
+                            <span class="secondary-title--light early-access-card__title--light">Get </span>
+                            <span class="secondary-title--bold">early access</span>
                         </h3>
                         <p class="early-access-card__subtitle">Here’s your invite to try Devtron before everyone else
                         </p>
@@ -1146,33 +1175,27 @@
                             I'm Interested
                         </button>
                     </div>
-                    <div class="early-access-card__img" alt="" />
+                    <div class="early-access-card__img" alt="">
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section class="bg-blue">
             <div class="bg-white" style="border-radius: 0 0 40px 40px">
                 <div class="section-learning section-learning--desktop">
                     <div class="flex-centre section-learning__header-margins">
-                        <h2 class="black-heading">
-                            <span class="black-heading-dark">We love sharing</span>
-                            <span class="black-heading-light">our learnings</span>
+                        <h2 class="secondary-title secondary-title--left">
+                            <span class="secondary-title--bold">We love sharing</span>
+                            <span class="secondary-title--light">our learnings</span>
                         </h2>
                         <a class="blue-anchors" href="#" style="float:right;">See all posts <img
                                 src="./images/ic-arrow-right.svg"></a>
                     </div>
                     <div id="testimonial-LR-buttons" style="display: none;">
-                        <img 
-                            src='./images/ic-carousel-arrow.svg' 
-                            onclick="moveLearningCarouselLeft()" 
-                            style="visibility: hidden; transform: rotate(180deg);" 
-                            class="testimonial-left-button">
-                        <img 
-                            src='./images/ic-carousel-arrow.svg' 
-                            onclick="moveLearningCarouselRight()" 
-                            style="visibility: visible;" 
-                            class="testimonial-right-button">
+                        <img src='./images/ic-carousel-arrow.svg' onclick="moveLearningCarouselLeft()"
+                            style="visibility: hidden; transform: rotate(180deg);" class="testimonial-left-button">
+                        <img src='./images/ic-carousel-arrow.svg' onclick="moveLearningCarouselRight()"
+                            style="visibility: visible;" class="testimonial-right-button">
                     </div>
                     <div class="section-learning__grid">
                         <div class="card section-learning__grid-item learning-card">
@@ -1230,9 +1253,9 @@
 
         <section class="bg-blue">
             <div class="bg-white section-learning section-learning--mob" style="border-radius: 0 0 20px 20px">
-                <h2 class="black-heading section-learning__header-margins">
-                    <span class="black-heading-dark">We love sharing</span>
-                    <span class="black-heading-light">our learnings</span>
+                <h2 class="secondary-title secondary-title--left section-learning__header-margins">
+                    <span class="secondary-title--bold">We love sharing</span>
+                    <span class="secondary-title--light">our learnings</span>
                 </h2>
                 <div class="owl-carousel owl-theme carousel-margins">
                     <div class="item card learning-card active">
