@@ -1318,24 +1318,32 @@
                             <span class="secondary-title--bold">We love sharing</span>
                             <span class="secondary-title--light">our learnings</span>
                         </h2>
-                        <a class="blue-anchors" href="#" style="float:right;">See all posts <img
-                                src="./images/ic-arrow-right.svg"></a>
-                    </div>
-                    <div id="testimonial-LR-buttons" style="display: none;">
-                        <div style="background-image: url(./images/ic-carousel-gradient.png); visibility: hidden; transform: rotate(180deg); vertical-align: middle; line-height: 318px;" class="testimonial-left-button">
-                            <img 
-                                style="transform: rotate(0deg)"
-                                src='./images/ic-carousel-arrow.svg' 
-                                onclick="moveLearningCarouselLeft()">
-                        </div>
-                        <div style="background-image: url(./images/ic-carousel-gradient.png); visibility: visible; vertical-align: middle; line-height: 326px;" class="testimonial-right-button">  
+                        <a class="blue-anchors" href="https://devtron.ai/blog/" target="_blank" style="float:right;">See all posts 
                             <img
-                                src='./images/ic-carousel-arrow.svg' 
-                                onclick="moveLearningCarouselRight()">
-                        </div>
+                                src="./images/ic-arrow-right.svg"
+                                style="position: relative; top: -3px">
+                        </a>
+                    </div>
+                    <div 
+                        style="background-image: url(./images/ic-carousel-gradient.png); visibility: hidden; 
+                        transform: rotate(180deg); line-height: 318px; 
+                        display: inline-block;" 
+                        class="testimonial-left-button testimonial-LR-buttons">
+                        <img 
+                            style="transform: rotate(0deg)"
+                            src='./images/ic-carousel-arrow.svg' 
+                            onclick="moveLearningCarouselLeft()">
+                    </div>
+                    <div 
+                        style="background-image: url(./images/ic-carousel-gradient.png); visibility: visible; 
+                        line-height: 326px; float: right;" 
+                        class="testimonial-right-button testimonial-LR-buttons">  
+                        <img
+                            src='./images/ic-carousel-arrow.svg' 
+                            onclick="moveLearningCarouselRight()">
                     </div>
                     <div class="section-learning__grid">
-                        <div class="card section-learning__grid-item learning-card">
+                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(0)">
                             <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
@@ -1347,7 +1355,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card section-learning__grid-item learning-card">
+                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(1)">
                             <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
@@ -1359,7 +1367,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card section-learning__grid-item learning-card">
+                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(2)">
                             <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
@@ -1371,7 +1379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card section-learning__grid-item learning-card">
+                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(3)">
                             <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
@@ -1395,7 +1403,7 @@
                     <span class="secondary-title--light">our learnings</span>
                 </h2>
                 <div class="owl-carousel owl-theme carousel-margins">
-                    <div class="item card learning-card active">
+                    <div class="item card learning-card active" onclick="openBlogPage(0)">
                         <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">
@@ -1406,7 +1414,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item card learning-card">
+                    <div class="item card learning-card" onclick="openBlogPage(1)">
                         <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">Ultimate Guide of Pod Eviction on
@@ -1416,7 +1424,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item card learning-card">
+                    <div class="item card learning-card" onclick="openBlogPage(2)">
                         <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">How to use Spot to achieve Cost Savings
@@ -1427,7 +1435,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item card learning-card">
+                    <div class="item card learning-card" onclick="openBlogPage(3)">
                         <img src="./img-blog.png" class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs
