@@ -8,6 +8,7 @@ var $footer = $(".devtron-footer");
 var $devtronLandscape = $(".devtron-landscape");
 var $paraContainer = $(".section-hero__paragraph-container");
 var $imgContainer = $(".section-hero__gif-wrapper");
+var $policyTab = $(".devtron-landscape #policy-tab");
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
@@ -72,19 +73,9 @@ $.fn.isInViewport = function () {
 
 
 $(function () {
-  //Transiton from current to Devtron Landscape
-  // if ($sectionThree.isInViewport()) {
-  //   $(image1).addClass('fixed-pos');
-  //   if ($devtronLandscape.isInViewport()) {
-  //     $(image2).removeClass('fixed-pos');
-  //   }
-  //   else {
-  //     $(image2).addClass('fixed-pos');
-  //   }
-  // }
-
   $(document).scroll(function () {
     var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
+
     //Navbar 
     if ($(this).scrollTop() > $navbar.height() && $(this).scrollTop() < ($sectionOne.height() + $navbar.height())) {
       $navbar.addClass("main-nav-dark");
@@ -93,25 +84,26 @@ $(function () {
     else if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
     ) {
+
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light");
 
-      if ($sectionThree.isInViewport()) {
-        var image = image1.get(0).getBoundingClientRect();
-        console.log(image.top, image.right);
-        // $(image1).css("position", "fixed").css("top", image.top).css("right", 40);
-        // $(image2).css("position", "fixed").css("top", image.top).css("right", 40);
-      }
-      else {
-        console.log("remove")
-        $(image1).css("position", "static");
-        $(image2).css("position", "static");
-      }
+      // if ($sectionThree.isInViewport() && !$policyTab.isInViewport()) {
+      //   var image = image1.get(0).getBoundingClientRect();
+      //   $(image1).css("position", "fixed").css("top", image.top).css("right", 135);
+      // }
+      // else {
+      //   $(image1).css("visibility", "visible");
+      // }
     }
 
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
-      $(image1).css("position", "static");
+
+      // if ($policyTab.isInViewport()) {
+      //   $(image1).css("visibility", "visible");
+      // }
+
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white");
       $(image1).removeClass('fixed-pos');
@@ -121,6 +113,7 @@ $(function () {
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height())) && viewportOffset.top > 80) {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light bg-white");
+      $(image1).css("visibility", "hidden");
     }
 
     //footer 
@@ -132,14 +125,14 @@ $(function () {
 });
 
 
-function emptyErrorandSuccess () {
+function emptyErrorandSuccess() {
   const id = ['successMessage', 'errorMessage'];
   for (let i = 0; i < id.length; i++) {
     document.getElementById(id[i]).innerText = '';
   }
 }
 
-function handleEarlyAccessFormSubmit (event) {
+function handleEarlyAccessFormSubmit(event) {
   emptyErrorandSuccess()
   event.preventDefault();
   const xhr = new XMLHttpRequest();
@@ -168,11 +161,11 @@ function handleEarlyAccessFormSubmit (event) {
   xhr.open('POST', url);
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onreadystatechange = function () {
-    if(xhr.readyState == 4 && xhr.status == 200) { 
+    if (xhr.readyState == 4 && xhr.status == 200) {
       const successMessage = JSON.parse(xhr.responseText);
       document.getElementById("successMessage").innerHTML = successMessage.inlineMessage;
-    } else if (xhr.readyState == 4 && xhr.status == 400){ 
-      document.getElementById("errorMessage").innerText = "Email field is required"; 
+    } else if (xhr.readyState == 4 && xhr.status == 400) {
+      document.getElementById("errorMessage").innerText = "Email field is required";
     }
   }
   xhr.send(final_data)
