@@ -1227,6 +1227,10 @@ main>section {
     margin-bottom: 240px;
 }
 
+.section-why__grid-item:hover {
+    box-shadow: 0px 4px 12px rgba(20, 1, 82, 0.25);
+}
+
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__copyright-text--mob {
         display: none;
