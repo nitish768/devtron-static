@@ -118,10 +118,11 @@ button:focus {
 
 .accordion .btn::after {
     content: "\f107";
-    top: 20px;
+    top: 15px;
     right: 0px;
     position: absolute;
-    font-family: "FontAwesome"
+    font-family: "FontAwesome";
+    font-size: 20px;
 }
 
 .accordion .btn[aria-expanded="true"]::after {
