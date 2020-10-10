@@ -125,7 +125,15 @@ $(function () {
 });
 
 
+function emptyErrorandSuccess () {
+  const id = ['successMessage', 'errorMessage'];
+  for (let i = 0; i < id.length; i++) {
+    document.getElementById(id[i]).innerText = '';
+  }
+}
+
 function handleEarlyAccessFormSubmit (event) {
+  emptyErrorandSuccess()
   event.preventDefault();
   const xhr = new XMLHttpRequest();
   const url = 'https://api.hsforms.com/submissions/v3/integration/submit/6866519/d4003723-6514-4bc7-bccd-c5a72010a357';
@@ -152,5 +160,13 @@ function handleEarlyAccessFormSubmit (event) {
   const final_data = JSON.stringify(data);
   xhr.open('POST', url);
   xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function () {
+    if(xhr.readyState == 4 && xhr.status == 200) { 
+      const successMessage = JSON.parse(xhr.responseText);
+      document.getElementById("successMessage").innerHTML = successMessage.inlineMessage;
+    } else if (xhr.readyState == 4 && xhr.status == 400){ 
+      document.getElementById("errorMessage").innerText = "Email field is required"; 
+    }
+  }
   xhr.send(final_data)
 }
