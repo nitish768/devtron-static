@@ -123,3 +123,36 @@ $(function () {
     }
   });
 });
+
+
+function test () {
+  var xhr = new XMLHttpRequest();
+  var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6866519/d4003723-6514-4bc7-bccd-c5a72010a357'
+  var data = {
+    "fields": [
+      {
+        "name": "email",
+        "value": "first@subscriber.com"
+      },
+      {
+        "name": "firstname",
+        "value": "H"
+      },
+      {
+        "name": "lastname",
+        "value": "M"
+      }
+    ]
+  }
+  fd = JSON.stringify(data);
+  console.log(fd)
+  xhr.open('POST', url);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send(fd)
+
+  // $.post( "https://api.hsforms.com/submissions/v3/integration/submit/6866519/d4003723-6514-4bc7-bccd-c5a72010a357", 
+  //   { name: "John", time: "2pm" }, "json"
+  // );
+}
+
+test()
