@@ -169,7 +169,7 @@ button:focus {
     width: 100%;
     z-index: 10;
     background-color: #140152;
-    transition: background-color 200ms ease-in-out;
+    transition: background-color 250ms cubic-bezier(.645, .045, .355, 1);
 }
 
 .main-nav-dark {
@@ -230,6 +230,8 @@ main>section {
     vertical-align: top;
     margin-left: auto;
     position: relative;
+    height: 300px;
+    margin-left: 50px;
 }
 
 .section-hero__gif {
@@ -462,7 +464,6 @@ main>section {
     grid-column-gap: 16px;
     overflow-y: auto;
     margin-top: 40px;
-    margin-bottom: 32px;
     padding-bottom: 8px;
     scroll-snap-type: x mandatory;
 }
@@ -1217,6 +1218,7 @@ main>section {
 
 .section-why__grid--web {
     display: none;
+    margin-bottom: 240px;
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
@@ -1346,7 +1348,6 @@ main>section {
     }
     .section-why__grid {
         margin-top: 60px;
-        margin-bottom: 316px;
         grid-row-gap: 30px;
         grid-column-gap: 30px;
     }

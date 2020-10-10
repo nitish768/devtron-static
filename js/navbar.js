@@ -1,9 +1,9 @@
 var image1 = $('#image-1')
 var image2 = $('#image-2')
-var $sectionOne = $(".section-hero");
 var $navbar = $(".main-nav");
-var $sectionThree = $(".section-landscape");
+var $sectionOne = $(".section-hero");
 var $sectionTwo = $(".section-why");
+var $sectionThree = $(".section-landscape__wrapper");
 var $footer = $(".devtron-footer");
 var $devtronLandscape = $(".devtron-landscape");
 var $paraContainer = $(".section-hero__paragraph-container");
@@ -25,7 +25,7 @@ $(document).ready(function () {
       $para1.remove();
       $img.remove();
     }, 100)
-    
+
   }, 4000);
 });
 
@@ -84,44 +84,47 @@ $(function () {
   // }
 
   $(document).scroll(function () {
+    var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
     //Navbar 
-    if ($(this).scrollTop() > $navbar.height()) {
+    if ($(this).scrollTop() > $navbar.height() && $(this).scrollTop() < ($sectionOne.height() + $navbar.height())) {
       $navbar.addClass("main-nav-dark");
-      $navbar.removeClass("main-nav-light");
+      $navbar.removeClass("main-nav-light bg-white");
     }
-    if ($(this).scrollTop() > ($sectionOne.height() + 2 * $navbar.height())) {
+    else if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())
+      && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
+    ) {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light");
-      $(image1).removeClass('fixed-pos');
-      $(image2).removeClass('fixed-pos');
+
+      if ($sectionThree.isInViewport()) {
+        var image = image1.get(0).getBoundingClientRect();
+        console.log(image.top, image.right);
+        // $(image1).css("position", "fixed").css("top", image.top).css("right", 40);
+        // $(image2).css("position", "fixed").css("top", image.top).css("right", 40);
+      }
+      else {
+        console.log("remove")
+        $(image1).css("position", "static");
+        $(image2).css("position", "static");
+      }
     }
 
-    //Transiton from current to Devtron Landscape
-    // if ($sectionThree.isInViewport()) {
-    //   $(image1).addClass('fixed-pos');
-    //   if ($devtronLandscape.isInViewport()) {
-    //     $(image2).removeClass('fixed-pos');
-    //   }
-    //   else {
-    //     $(image2).addClass('fixed-pos');
-    //   }
-    // }
-
-    if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))) {
+    else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
+      && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
+      $(image1).css("position", "static");
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white");
       $(image1).removeClass('fixed-pos');
       $(image2).removeClass('fixed-pos');
     }
 
-    if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (7 * $navbar.height()))) {
+    else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height())) && viewportOffset.top > 80) {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light bg-white");
     }
 
     //footer 
-    var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
-    if (viewportOffset.top < 80) {
+    else if (viewportOffset.top < 80) {
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white");
     }
@@ -129,7 +132,7 @@ $(function () {
 });
 
 
-function test () {
+function test() {
   var xhr = new XMLHttpRequest();
   var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6866519/d4003723-6514-4bc7-bccd-c5a72010a357'
   var data = {
