@@ -47,9 +47,14 @@ button:focus {
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: 180px;
+    top: 326px;
     z-index: 2;
-    margin-top: -30px;
+    margin-top: -326px;
+    height: 326px;
+}
+
+.envision-logo {
+    padding: 0 0 16px 0;
 }
 
 #testimonial-LR-buttons img:hover {
