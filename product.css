@@ -502,8 +502,8 @@ main>section {
 .social-icon__container {
     text-align: right;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 40px;
 }
 
 .social-icon__icon {
@@ -1054,7 +1054,7 @@ main>section {
 }
 
 .devtron-footer__href img {
-    width: 35%;
+    width: 30%;
     height: auto;
 }
 
@@ -1241,6 +1241,9 @@ main>section {
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
+    .devtron-footer__href img {
+        width: 26%;
+    }
     .devtron-footer__copyright-text--mob {
         display: none;
     }
@@ -1320,6 +1323,9 @@ main>section {
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .section-hero__scroll-down, .section-why__grid--mob, .button-early-access--mob {
         display: none;
+    }
+    .devtron-footer__href img {
+        width: 26%;
     }
     .early-access-card__text {
         padding: 0 0 60px 72px;
@@ -1465,6 +1471,7 @@ main>section {
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 100px;
+        margin-top: 100px;
     }
     .section-learning__grid {
         grid-template-columns: repeat(4, minmax(270px, 270px));
@@ -1494,21 +1501,24 @@ main>section {
         border-top-right-radius: 100px;
     }
     .section-hero__paragraph-container {
-        height: 180px;
+        height: 240px;
     }
     .section-hero__paragraph {
         font-size: 1.7rem;
         line-height: 1.2;
     }
     .section-hero__paragraph:nth-child(1) {
-        top: -65px;
+        top: -110px;
     }
     .section-hero__paragraph:nth-child(2) {
-        top: 25px;
+        top: 40px;
         opacity: 1;
     }
     .section-hero__paragraph:nth-child(3) {
-        top: 120px;
+        top: 160px;
+    }
+    .section-hero__paragraph:nth-child(4) {
+        top: 200px;
     }
     .section-landscape__top, .section-why__bottom {
         width: calc(100% - 270px);
@@ -1575,6 +1585,19 @@ main>section {
 }
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
+    /* .section-why__gif, .section-why__devtron-landscape {
+        width: 310px;
+        height: 310px;
+    }
+    .section-why__grid--web{
+        margin-bottom: 340px;
+    }
+    .section-landscape{
+        padding-top: 376px;
+    } */
+    .section-hero__time {
+        font-size: 1.2rem;
+    }
     .section-hero__available-margins {
         margin-top: 50px;
     }
@@ -1588,7 +1611,7 @@ main>section {
         top: -70px;
     }
     .section-hero__paragraph:nth-child(2) {
-        top: 100px;
+        top: 90px;
         opacity: 1;
     }
     .section-hero__paragraph:nth-child(3) {
