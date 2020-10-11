@@ -213,6 +213,7 @@ button:focus {
 
 .show-get-early-access .button-early-access--nav {
     display: block;
+    box-shadow: none;
 }
 .main-nav__logo {
     height: 25px;
@@ -449,7 +450,7 @@ main>section {
     background-color: #F2C94C;
     border-radius: 4px;
     border: none;
-    padding: 10px 20px;
+    padding: 14px 20px;
     cursor: pointer;
     box-shadow: 6px 6px 0px rgba(242, 201, 76, 0.3);
     transition: box-shadow 0.5s;
@@ -457,7 +458,7 @@ main>section {
 
 
 .button-early-access--nav {
-    padding: 6px 12px;
+    /* padding: 6px 12px; */
     font-weight: normal;
     display: none;
     font-size: 0.8rem !important;
