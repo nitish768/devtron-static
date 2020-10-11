@@ -191,6 +191,21 @@ button:focus {
     background-color: #140152;
 }
 
+.main-nav__right {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__link-blog {
+    margin-right: 36px;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.main-nav__link-blog:hover {
+    color: #ffffff;
+}
+
 .main-nav-dark .main-nav___logo-icon {
     fill: #ffffff;
 }
@@ -209,6 +224,14 @@ button:focus {
 
 .main-nav-light .main-nav___logo-text {
     fill: #000A14;
+}
+
+.main-nav-light .main-nav__link-blog {
+    color: #140152;
+}
+
+.main-nav-light .main-nav__link-blog:hover {
+    color: #140152;
 }
 
 .show-get-early-access .button-early-access--nav {
@@ -397,7 +420,7 @@ main>section {
     margin-right: 10px;
 }
 
-.section-hero__button-container{
+.section-hero__button-container {
     margin: 40px 0;
 }
 
@@ -455,10 +478,9 @@ main>section {
 }
 
 .button-early-access--nav {
-    /* padding: 6px 12px; */
     font-weight: normal;
     display: none;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
 }
 
 .button-early-access--hero {
@@ -1354,6 +1376,9 @@ main>section {
     }
     .main-title {
         min-height: unset;
+    }
+    .main-nav__link-blog {
+        font-size: 1rem;
     }
     .section-hero__button-container {
         /* margin: 10px 0px 40px 0; */
