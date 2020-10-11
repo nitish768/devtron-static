@@ -170,12 +170,20 @@ button:focus {
     position: fixed;
     top: 0;
     height: 75px;
-    display: flex;
-    align-items: center;
     width: 100%;
     z-index: 10;
     background-color: #140152;
     transition: background-color 100ms cubic-bezier(.645, .045, .355, 1);
+}
+
+.main-nav__content {
+    max-width: 1440px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
 .main-nav-dark {
@@ -202,9 +210,11 @@ button:focus {
     fill: #000A14;
 }
 
+.show-get-early-access .button-early-access--nav {
+    display: block;
+}
 .main-nav__logo {
     height: 25px;
-    margin-left: 40px;
     width: auto;
 }
 
@@ -443,6 +453,15 @@ main>section {
     box-shadow: 6px 6px 0px rgba(242, 201, 76, 0.3);
     transition: box-shadow 0.5s;
 }
+
+
+.button-early-access--nav {
+    padding: 6px 12px;
+    font-weight: normal;
+    display: none;
+    font-size: 0.8rem !important;
+}
+
 
 .button-early-access--hero {
     padding: 16px 24px;
@@ -1584,8 +1603,8 @@ main>section {
     .section-hero__gif-wrapper {
         min-width: 450px;
     }
-    .main-nav__logo {
-        margin-left: 135px;
+    .main-nav__content {
+        padding: 0 135px;
     }
     .devtron-footer__right {
         max-width: 600px;

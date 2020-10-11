@@ -99,6 +99,11 @@ $(function () {
   $(document).scroll(function () {
     var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
 
+    if ($(this).scrollTop() < $navbar.height()) {
+      $navbar.addClass("main-nav-dark");
+      $navbar.removeClass("main-nav-light bg-white show-get-early-access");
+    }
+
     //Navbar 
     if ($(this).scrollTop() > $navbar.height() && $(this).scrollTop() < ($sectionOne.height() + $navbar.height())) {
       $navbar.addClass("main-nav-dark");
@@ -108,11 +113,11 @@ $(function () {
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
     ) {
       $navbar.removeClass("main-nav-dark");
-      $navbar.addClass("main-nav-light");
+      $navbar.addClass("main-nav-light show-get-early-access");
     }
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
-      $navbar.addClass("main-nav-dark");
+      $navbar.addClass("main-nav-dark show-get-early-access");
       $navbar.removeClass("main-nav-light bg-white");
     }
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height())) && viewportOffset.top > 80) {
@@ -121,7 +126,7 @@ $(function () {
     }
     //footer 
     else if (viewportOffset.top < 80) {
-      $navbar.addClass("main-nav-dark");
+      $navbar.addClass("main-nav-dark show-get-early-access");
       $navbar.removeClass("main-nav-light bg-white");
     }
 
