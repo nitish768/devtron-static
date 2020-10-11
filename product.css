@@ -49,7 +49,7 @@ button:focus {
     z-index: 2;
     margin-top: -326px;
     height: 326px;
-    vertical-align: middle; 
+    vertical-align: middle;
     cursor: pointer;
 }
 
@@ -456,7 +456,6 @@ main>section {
 .section-why {
     position: relative;
     padding: 64px 40px;
-    min-height: 588px;
     max-width: 1440px;
     margin: auto;
 }
@@ -1359,7 +1358,6 @@ main>section {
         display: inline-block;
     }
     .section-why {
-        min-height: 100vh;
         border-bottom-left-radius: 100px;
         padding: 100px 40px;
     }
@@ -1468,7 +1466,6 @@ main>section {
     html {
         font-size: 24px;
     }
-   
     .section-hero__wrapper {
         border-bottom-left-radius: 100px;
     }
@@ -1492,7 +1489,7 @@ main>section {
         top: 120px;
     }
     .section-landscape__top, .section-why__bottom {
-        width: calc(100vw - 282px);
+        width: calc(100% - 270px);
     }
     .devtron-stack {
         display: flex;
