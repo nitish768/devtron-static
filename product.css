@@ -144,6 +144,7 @@ button:focus {
     height: 281px;
     left: -40px;
     opacity: 8%;
+    top: 60px;
 }
 
 .dots__position {
@@ -659,7 +660,7 @@ main>section {
 
 .carousel-testimonial__bg {
     width: 100%;
-    border-radius: inherit;
+    border-radius: 8px 8px 0 0;
 }
 
 .carousel-testimonial__margins {
@@ -790,7 +791,7 @@ main>section {
 }
 
 .accordion {
-    padding: 67px 20px 122px;
+    padding: 67px 0px 122px;
 }
 
 .tabcontent .card {
@@ -814,6 +815,14 @@ main>section {
     margin: 16px 0 0 0;
     font-size: 16px;
     font-weight: 400;
+    border-radius: 8px;
+}
+
+.accordion .envision-logo {
+    width: 32px;
+    height: 38px;
+    position: relative;
+    left: -6px;
 }
 
 .featureHeading:nth-of-type(1) {
@@ -1297,6 +1306,7 @@ main>section {
     .binoculars__position {
         width: 140px;
         height: 140px;
+        top: 110px;
     }
     .popper__position {
         width: 140px;
