@@ -50,7 +50,7 @@ button:focus {
     margin-top: -326px;
     height: 326px;
     vertical-align: middle;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .envision-logo {
@@ -215,6 +215,7 @@ button:focus {
     display: block;
     box-shadow: none;
 }
+
 .main-nav__logo {
     height: 25px;
     width: auto;
@@ -456,14 +457,12 @@ main>section {
     transition: box-shadow 0.5s;
 }
 
-
 .button-early-access--nav {
     /* padding: 6px 12px; */
     font-weight: normal;
     display: none;
     font-size: 0.8rem !important;
 }
-
 
 .button-early-access--hero {
     padding: 16px 24px;
@@ -1266,7 +1265,7 @@ main>section {
 }
 
 .section-why__grid-item:hover {
-    box-shadow: 0px 4px 12px rgba(20, 1, 82, 0.25);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
@@ -1364,6 +1363,9 @@ main>section {
     .early-access-card {
         padding-top: 60px;
     }
+    .secondary-title--landscape {
+        max-width: 450px;
+    }
     .section-hero__left {
         display: flex;
         flex-direction: column;
@@ -1401,6 +1403,7 @@ main>section {
         display: block;
     }
     .section-hero {
+        min-height: 100vh;
         border-bottom-left-radius: 100px;
     }
     .section-hero:after {
@@ -1535,6 +1538,12 @@ main>section {
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .secondary-title--landscape {
+        max-width: unset;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
     .main-title {
         font-size: 2.6rem;
     }
@@ -1635,16 +1644,6 @@ main>section {
 }
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
-    /* .section-why__gif, .section-why__devtron-landscape {
-        width: 310px;
-        height: 310px;
-    }
-    .section-why__grid--web{
-        margin-bottom: 340px;
-    }
-    .section-landscape{
-        padding-top: 376px;
-    } */
     .section-hero__time {
         font-size: 1.2rem;
     }
@@ -1674,6 +1673,13 @@ main>section {
         max-width: 540px;
     }
     .devtron-footer {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (orientation: landscape) {
+    .section-hero {
         padding-left: 135px;
         padding-right: 135px;
     }
