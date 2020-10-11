@@ -227,6 +227,7 @@ main>section {
 .section-hero__content {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .section-hero__button-container {
@@ -1320,8 +1321,6 @@ main>section {
     .section-hero__scroll-down, .section-why__grid--mob, .button-early-access--mob {
         display: none;
     }
-    .button-early-access {}
-    .button-early-access--hero {}
     .early-access-card__text {
         padding: 0 0 60px 72px;
         padding-top: 0px;
@@ -1476,11 +1475,20 @@ main>section {
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-    html {
-        font-size: 24px;
+    .main-title {
+        font-size: 2.6rem;
+    }
+    .secondary-title {
+        font-size: 2rem;
+    }
+    .button-early-access {
+        font-size: 1.12rem;
     }
     .section-hero__wrapper {
         border-bottom-left-radius: 100px;
+    }
+    .section-hero__content {
+        justify-content: space-between;
     }
     .section-landscape__wrapper {
         border-top-right-radius: 100px;
@@ -1489,7 +1497,8 @@ main>section {
         height: 180px;
     }
     .section-hero__paragraph {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        line-height: 1.2;
     }
     .section-hero__paragraph:nth-child(1) {
         top: -65px;
