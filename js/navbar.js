@@ -15,18 +15,15 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 
+  //Set initial positions
   if (!isMobile() && !isLandscape() && vw > 786) {
-
     if ($sectionTwo.isInViewport() && $sectionThree.isInViewport()) {
       var bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
       let rightOffset = $(window).width() - bottom.right;
       $(image1).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
       $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
-
     }
-
   }
-
 
   setInterval(() => {
     var $para1 = $(".section-hero__paragraph:nth-child(1)");
@@ -113,22 +110,15 @@ $(function () {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light");
     }
-
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
-
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white");
-      $(image1).removeClass('fixed-pos');
-      $(image2).removeClass('fixed-pos');
     }
-
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height())) && viewportOffset.top > 80) {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light bg-white");
-      $(image1).css("visibility", "hidden");
     }
-
     //footer 
     else if (viewportOffset.top < 80) {
       $navbar.addClass("main-nav-dark");
@@ -136,7 +126,7 @@ $(function () {
     }
 
 
-    ///Landscap transition 
+    ///Landscape transition 
     if (!isMobile() && !isLandscape() && vw > 786) {
 
       if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())) {
@@ -161,7 +151,6 @@ $(function () {
         if ($(image1).offset().top > $(".devtron-landscape").offset().top) {
           $(image1).css("visibility", "hidden");
         }
-
       }
 
       if (($(image2).offset().top < $(".section-landscape__top").offset().top)) {
@@ -174,8 +163,8 @@ $(function () {
           $(image1).css("top", image.top);
           $(image2).css("top", image.top);
         }
-
       }
+
       if ($(image2).offset().top + $(image2).height() - 64 > $(".section-landscape__top").offset().top + $(".section-landscape__top").height()) {
         $(image2).css("position", "static");
         $(image1).css("visibility", "visible");
