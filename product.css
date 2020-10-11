@@ -1690,7 +1690,6 @@ main>section {
 
 @media screen and (min-width: 1600px) and (orientation: landscape) {
     .section-hero {
-        padding-left: 135px;
-        padding-right: 135px;
+       min-height: unset;
     }
 }
