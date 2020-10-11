@@ -963,29 +963,29 @@ main>section {
     justify-content: space-between;
     padding-top: 30px;
     background: linear-gradient(294.67deg, #140152 24.36%, #0066CC 84.22%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .early-access-card__text {
     padding: 0 0 30px 30px;
 }
 
-.early-access-card__title {
-    /* font-size: 44px;
-        font-weight: 700;
-        line-height: 1.5;
-        letter-spacing: 0em;
-        text-align: left; */
-    display: inline-block;
+.secondary-title--early-acceess {
     margin-bottom: 8px;
 }
 
-.early-access-card__title--light {
-    font-weight: 300;
+.early-access-card__title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 1.5;
+    margin-bottom: 8px;
 }
 
 .early-access-card__subtitle {
     font-size: 0.8rem;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
@@ -1516,9 +1516,7 @@ main>section {
     .devtron-stack__title {
         text-align: left;
     }
-    .early-access-card__subtitle {
-        margin-bottom: 63px;
-    }
+    
     .devtron-footer {
         padding-left: 80px;
         padding-right: 80px;
@@ -1549,6 +1547,13 @@ main>section {
     }
     .secondary-title {
         font-size: 2rem;
+    }
+    .early-access-card__title {
+        font-size: 2.4rem;
+    }
+    .early-access-card__subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 63px;
     }
     .section-hero__wrapper {
         border-bottom-left-radius: 100px;
