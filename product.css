@@ -505,7 +505,7 @@ main>section {
 .section-why__grid-item {
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 40px 40px 48px 40px;
+    padding: 20px 20px 48px 20px;
     border: 1px solid #E0E0E0;
     scroll-snap-align: start;
     width: calc(100vw - 72px);
@@ -522,8 +522,8 @@ main>section {
 .social-icon__container {
     text-align: right;
     position: absolute;
-    bottom: 30px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
 }
 
 .social-icon__icon {
@@ -1353,6 +1353,10 @@ main>section {
     .section-hero__scroll-down, .section-why__grid--mob, .button-early-access--mob {
         display: none;
     }
+    .social-icon__container {
+        right: 40px;
+        bottom: 40px;
+    }
     .devtron-footer__href img {
         width: 26%;
     }
@@ -1458,6 +1462,7 @@ main>section {
     }
     .section-why__grid-item {
         width: auto;
+        padding: 40px 40px 48px 40px;
     }
     .section-why__bottom {
         flex-direction: row;
