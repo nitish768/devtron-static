@@ -201,21 +201,21 @@ $(document).ready(function () {
     }
   }
 
-  setInterval(() => {
-    var $para1 = $(".section-hero__paragraph:nth-child(1)");
-    var $new = $para1.clone();
-    $new.appendTo($paraContainer);
+  // setInterval(() => {
+  //   var $para1 = $(".section-hero__paragraph:nth-child(1)");
+  //   var $new = $para1.clone();
+  //   $new.appendTo($paraContainer);
 
-    var $img = $(".section-hero__gif:nth-child(1)");
-    var $newImage = $img.clone();
-    $newImage.appendTo($imgContainer);
+  //   var $img = $(".section-hero__gif:nth-child(1)");
+  //   var $newImage = $img.clone();
+  //   $newImage.appendTo($imgContainer);
 
-    setTimeout(() => {
-      $para1.remove();
-      $img.remove();
-    }, 100)
+  //   setTimeout(() => {
+  //     $para1.remove();
+  //     $img.remove();
+  //   }, 100)
 
-  }, 4000);
+  // }, 4000);
 });
 
 $('.owl-carousel').owlCarousel({
