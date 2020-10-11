@@ -644,9 +644,9 @@ main>section {
 
 .devtron-stack__grid {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 25px;
     grid-template-columns: repeat( auto-fill, minmax(60px, 1fr));
-    max-width: 680px;
+    max-width: 605px;
 }
 
 .devtron-stack__item {
@@ -1301,7 +1301,6 @@ main>section {
     }
     .devtron-stack__grid {
         margin: auto;
-        max-width: 464px;
     }
     .devtron-footer__content {
         flex-direction: row;
@@ -1635,7 +1634,6 @@ main>section {
     .devtron-stack__grid {
         flex: 1;
         grid-template-columns: repeat( 6, minmax(60px, 1fr));
-        max-width: 484px;
     }
     .fixed-pos {
         position: fixed;
