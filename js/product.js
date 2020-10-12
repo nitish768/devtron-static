@@ -414,10 +414,14 @@ function handleEarlyAccessFormSubmit(event) {
     }
   }
   xhr.send(final_data);
+  gtag('event', 'Early Access Form Submit', {
+    'event_category': 'Early access',
+    'event_label': '',
+  });
 }
 
 function getEarlyAccessGAEvent(label) {
-  gtag('event', 'Early Access Clicked', {
+  gtag('event', 'Early Access Button Clicked', {
     'event_category': 'Early access',
     'event_label': label
   });
@@ -426,6 +430,20 @@ function getEarlyAccessGAEvent(label) {
 function quoteShareGAEvent(quote, social) {
   gtag('event', quote, {
     'event_category': 'Quote Shared',
+    'event_label': social
+  });
+}
+
+function footerLinksGAEvent(social) {
+  gtag('event', "Social Link clicked", {
+    'event_category': 'Footer',
+    'event_label': social
+  });
+}
+
+function blogCLickGAEvent(social) {
+  gtag('event', 'Blog Link Clicked', {
+    'event_category': 'Blog',
     'event_label': social
   });
 }
