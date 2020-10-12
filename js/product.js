@@ -422,6 +422,13 @@ function quoteShareGAEvent(quote, social) {
   });
 }
 
+function footerLinksGAEvent(social) {
+  gtag('event', "Social Link clicked", {
+    'event_category': 'Footer',
+    'event_label': social
+  });
+}
+
 function openLinkedin() {
   const profilesLink = ['', '', ''];
   console.log("called");
