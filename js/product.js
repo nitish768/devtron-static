@@ -92,27 +92,35 @@ function handleTwitterIconClick(itemCountInClass, deviceType) {
 }
 
 function setRemainigTime() {
-  const countDownDate = new Date("Oct 15, 2020 00:00:01").getTime();
+  const countDownDate = new Date("Oct 25, 2020 00:00:01").getTime();
 
   let intervalId = setInterval(() => {
 
     const now = new Date().getTime();
 
-    const distance = countDownDate - now;
+    const timeLeft = countDownDate - now;
 
     // Time calculations for days, hours, minutes and seconds
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
-    document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-    if (distance < 0) {
-      clearInterval(intervalId);
-      document.getElementById("ävailableTime").innerText = "Check out our product!!";
+    if (days > 2) {
+      document.getElementById("ävailableTime").innerText = "Available 25th October 2020";
     }
+
+    else if (days <= 2 && days >= 0) {
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+    }
+    
+
+    // to handle text for live if needed
+    // if (timeLeft < 0) {
+    //   clearInterval(intervalId);
+    //   document.getElementById("ävailableTime").innerText = "Check out our product!!";
+    // }
   }, 1000);
 }
 
