@@ -433,6 +433,13 @@ function footerLinksGAEvent(social) {
   });
 }
 
+function blogCLickGAEvent(social) {
+  gtag('event', 'Blog Link Clicked', {
+    'event_category': 'Blog',
+    'event_label': social
+  });
+}
+
 function openLinkedin() {
   const profilesLink = ['', '', ''];
   console.log("called");
