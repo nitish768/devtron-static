@@ -416,3 +416,10 @@ function getEarlyAccessGAEvent(label) {
     'event_label': label
   });
 }
+
+
+function openLinkedin() {
+  const profilesLink = ['', '', ''];
+  console.log("called");
+  // window.open()
+}
