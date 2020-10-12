@@ -500,7 +500,7 @@ main>section {
     font-weight: normal;
     display: none;
     font-size: 0.66rem;
-    padding: 8px 12px; 
+    padding: 8px 12px;
 }
 
 .button-early-access--hero {
@@ -1192,8 +1192,8 @@ main>section {
 .testimonial-details {
     margin: 16px 0 40px 0;
     color: #000A14;
-    font-size: 24px;
-    line-height: 150%;
+    font-size: 22px;
+    line-height: 170%;
     font-family: Noto Serif;
 }
 
@@ -1401,11 +1401,10 @@ main>section {
         font-size: 1rem;
         display: block;
     }
-
-.button-early-access--nav {
-    font-size: 0.8rem;
-    padding: 14px 20px;
-}
+    .button-early-access--nav {
+        font-size: 0.8rem;
+        padding: 14px 20px;
+    }
     .section-hero__button-container {
         /* margin: 10px 0px 40px 0; */
     }
