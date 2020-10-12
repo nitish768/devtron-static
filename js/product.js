@@ -194,17 +194,20 @@ var $paraContainer = $(".section-hero__paragraph-container");
 var $imgContainer = $(".section-hero__gif-wrapper");
 var $policyTab = $(".devtron-landscape #policy-tab");
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-
+let triggeerHeight = ($('.section-why__bottom').offset().top / 2) + $sectionOne.height();
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 
   //Set initial positions
-  if (!isMobile() && !isLandscape() && vw > 786) {
-    if ($sectionTwo.isInViewport() && $sectionThree.isInViewport()) {
-      var bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
-      let rightOffset = $(window).width() - bottom.right;
+  if (!isMobile() && !isLandscape() && vw > 768) {
+    var bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
+    let rightOffset = $(window).width() - bottom.right;
+    if ($(this).scrollTop() > triggeerHeight && $sectionThree.isInViewport()) {
       $(image1).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
+      $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
+    }
+    else {
       $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
     }
   }
@@ -317,15 +320,18 @@ $(function () {
     if (!isMobile() && !isLandscape() && vw > 786) {
 
       if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())) {
-
-        if (!$sectionThree.isInViewport()) {
+        let image = $(image1).get(0).getBoundingClientRect();
+        let rightOffset = $(window).width() - image.right;
+        if (!($(this).scrollTop() > triggeerHeight)) {
+          let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
           $(image1).css("position", "static");
           $(image1).css("visibility", "visible");
+          $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
 
         }
-        else if ($sectionThree.isInViewport()) {
-          var image = $(image1).get(0).getBoundingClientRect();
-          let rightOffset = $(window).width() - image.right;
+
+        else if ($(this).scrollTop() > triggeerHeight) {
+
           $(image1).css("position", "fixed").css("right", rightOffset);
           $(image2).css("position", "fixed").css("right", rightOffset);
 
