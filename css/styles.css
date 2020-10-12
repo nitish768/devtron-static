@@ -161,7 +161,7 @@ button:focus {
     height: 874px;
     left: -135px;
     top: -60px;
-    background-image: url('./images/dots.png');
+    background-image: url('../images/dots.png');
     z-index: -1;
 }
 
@@ -298,7 +298,7 @@ main>section {
 .dots-bg::after {
     content: "?";
     display: block;
-    background-image: url('./images/dots.png');
+    background-image: url('../images/dots.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 150px;
@@ -1030,7 +1030,7 @@ main>section {
 .early-access-card__img {
     display: none;
     width: 50%;
-    background-image: url('./images/img-earlyaccess-card.png');
+    background-image: url('../images/img-earlyaccess-card.png');
     background-position-x: left;
     background-position-y: top;
     background-size: cover;
@@ -1467,7 +1467,7 @@ main>section {
     }
     .section-hero:after {
         content: '';
-        background-image: url('./images/grey-dot-grid.png');
+        background-image: url('../images/grey-dot-grid.png');
         background-repeat: repeat;
         background-position-y: 440px;
         background-position-x: right;
@@ -1482,7 +1482,7 @@ main>section {
     .section-why:after {
         content: '';
         display: block;
-        background-image: url('./images/grey-dot-grid.png');
+        background-image: url('../images/grey-dot-grid.png');
         background-repeat: repeat;
         background-position-y: top;
         background-position-x: left;
