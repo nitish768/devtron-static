@@ -408,7 +408,7 @@ main>section {
 }
 
 .img-underline {
-    background-image: url('./images/underline.svg');
+    background-image: url('../images/underline.svg');
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-size: 100%;
