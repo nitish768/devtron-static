@@ -421,3 +421,9 @@ function quoteShareGAEvent(quote, social) {
     'event_label': social
   });
 }
+
+function openLinkedin() {
+  const profilesLink = ['', '', ''];
+  console.log("called");
+  // window.open()
+}
