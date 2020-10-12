@@ -406,10 +406,13 @@ function handleEarlyAccessFormSubmit(event) {
     }
   }
   xhr.send(final_data);
-  ga('send', 'event', "Form Submit", "Early acceess", "", 0, null);
 }
 
 function getEarlyAccessGAEvent(label) {
   console.log(label);
-  ga('send', 'event', "Button Click", "Early acceess", label, 0, null);
+  // ga('send', 'event', 'button', label, '');
+  gtag('event', 'button clicked', {
+    'event_category': 'early access',
+    'event_label': label
+  });
 }
