@@ -405,5 +405,11 @@ function handleEarlyAccessFormSubmit(event) {
       document.getElementById("errorMessage").innerText = "Email field is required";
     }
   }
-  xhr.send(final_data)
+  xhr.send(final_data);
+  ga('send', 'event', "Form Submit", "Early acceess", "", 0, null);
+}
+
+function getEarlyAccessGAEvent(label) {
+  console.log(label);
+  ga('send', 'event', "Button Click", "Early acceess", label, 0, null);
 }
