@@ -114,7 +114,7 @@ function setRemainigTime() {
       document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
     }
-    
+
 
     // to handle text for live if needed
     // if (timeLeft < 0) {
@@ -194,16 +194,18 @@ var $paraContainer = $(".section-hero__paragraph-container");
 var $imgContainer = $(".section-hero__gif-wrapper");
 var $policyTab = $(".devtron-landscape #policy-tab");
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-let triggeerHeight = ($('.section-why__bottom').offset().top / 2) + $sectionOne.height();
+let triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2) ;
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 
   //Set initial positions
   if (!isMobile() && !isLandscape() && vw > 768) {
-    var bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
+    let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
+    let image1Rect = image1.get(0).getBoundingClientRect()
     let rightOffset = $(window).width() - bottom.right;
-    if ($(this).scrollTop() > triggeerHeight && $sectionThree.isInViewport()) {
+
+    if (image1Rect.top < triggeerHeight && $sectionThree.isInViewport()) {
       $(image1).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
       $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
     }
@@ -317,24 +319,22 @@ $(function () {
 
 
     ///Landscape transition 
-    if (!isMobile() && !isLandscape() && vw > 786) {
+    if (!isMobile() && !isLandscape() && vw > 768) {
 
       if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())) {
         let image = $(image1).get(0).getBoundingClientRect();
         let rightOffset = $(window).width() - image.right;
-        if (!($(this).scrollTop() > triggeerHeight)) {
+        let image1Rect = image1.get(0).getBoundingClientRect();
+        if (!(image1Rect.top < triggeerHeight)) {
           let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
           $(image1).css("position", "static");
           $(image1).css("visibility", "visible");
           $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
-
         }
 
-        else if ($(this).scrollTop() > triggeerHeight) {
-
+        else if (image1Rect.top < triggeerHeight) {
           $(image1).css("position", "fixed").css("right", rightOffset);
           $(image2).css("position", "fixed").css("right", rightOffset);
-
           if (image.top > 0) {
             $(image1).css("top", image.top);
             $(image2).css("top", image.top);
