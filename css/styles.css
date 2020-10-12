@@ -1182,7 +1182,7 @@ main>section {
 
 .testimonials-card {
     border-radius: 0 40px 40px;
-    min-width: 25%;
+    min-width: 256px;
     position: relative;
     background: #F2F4F7;
     margin: 0 0 0 20px;
