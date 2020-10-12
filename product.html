@@ -3,14 +3,12 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163948066-3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163948066-6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-163948066-3');
+        gtag('config', 'UA-163948066-6');
     </script>
     <title>Devtron - The DevOps Accelerator</title>
     <meta charset="utf-8">
@@ -78,7 +76,7 @@
                         <button type="submit" tab-index="3" class="d-block w-100 button-early-access"
                             onclick="handleEarlyAccessFormSubmit(event)">Submit</button>
                     </form>
-                </div>
+                </div>  
             </div>
         </div>
     </div>
@@ -98,7 +96,7 @@
                 <div class="main-nav__right">
                     <a class="main-nav__link-blog" href="https://devtron.ai/blog/" target="_blank">Blog</a>
                     <button type="button" class="button-early-access button-early-access--nav" data-toggle="modal"
-                        data-target="#staticBackdrop" onclick="getEarlyAccessGAEvent('Header')">
+                        data-target="#staticBackdrop" onclick="getEarlyAccessGAEvent('Navbar')">
                         GET EARLY ACCESS
                     </button>
                 </div>
@@ -1141,7 +1139,7 @@
                         <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(2)"></div>
                         <div class="section-sneakpeek__button-container">
                             <button type="button" class="button-early-access" data-toggle="modal"
-                                data-target="#staticBackdrop">
+                                data-target="#staticBackdrop" onclick="getEarlyAccessGAEvent('Envisioned Landscape')">
                                 GET EARLY ACCESS
                             </button>
                         </div>
@@ -1168,7 +1166,7 @@
                 </div>
                 <div style="margin-top: 20px;margin-left: 0px;">
                     <button type="button" class="button-early-access button-early-access--mob" data-toggle="modal"
-                        data-target="#staticBackdrop">
+                        data-target="#staticBackdrop" onclick="getEarlyAccessGAEvent('Envisioned Landscape')">
                         GET EARLY ACCESS
                     </button>
                 </div>
@@ -1354,7 +1352,7 @@
                             </br>Devtron before everyone else
                         </p>
                         <button type="button" class="button-early-access" data-toggle="modal"
-                            data-target="#staticBackdrop">
+                            data-target="#staticBackdrop" onclick="getEarlyAccessGAEvent('Early Access Card')">
                             I'M INTERESTED
                         </button>
                     </div>
