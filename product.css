@@ -197,6 +197,7 @@ button:focus {
 }
 
 .main-nav__link-blog {
+    display: none;
     margin-right: 36px;
     color: #ffffff;
     font-size: 0.8rem;
@@ -493,7 +494,8 @@ main>section {
 .button-early-access--nav {
     font-weight: normal;
     display: none;
-    font-size: 0.8rem;
+    font-size: 0.66rem;
+    padding: 8px 12px; 
 }
 
 .button-early-access--hero {
@@ -1391,7 +1393,13 @@ main>section {
     }
     .main-nav__link-blog {
         font-size: 1rem;
+        display: block;
     }
+
+.button-early-access--nav {
+    font-size: 0.8rem;
+    padding: 14px 20px;
+}
     .section-hero__button-container {
         /* margin: 10px 0px 40px 0; */
     }
