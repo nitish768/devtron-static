@@ -9,6 +9,11 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-163948066-6');
+        // console.log(document.title, location.href)
+        gtag('config', 'UA-163948066-6', {
+            'page_title': document.title,
+            'page_path': location.href
+        });
     </script>
     <title>Devtron - The DevOps Accelerator</title>
     <meta charset="utf-8">
@@ -76,7 +81,7 @@
                         <button type="submit" tab-index="3" class="d-block w-100 button-early-access"
                             onclick="handleEarlyAccessFormSubmit(event)">Submit</button>
                     </form>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
@@ -165,7 +170,8 @@
                                             d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                             fill="#828282" />
                                     </svg>
-                                    <a class="twitter-share-button" onclick="handleTwitterIconClick(0);quoteShareGAEvent('Software delivery ...', 'Twitter');">
+                                    <a class="twitter-share-button"
+                                        onclick="handleTwitterIconClick(0);quoteShareGAEvent('Software delivery ...', 'Twitter');">
                                         <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                             viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -187,7 +193,8 @@
                                             d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                             fill="#828282" />
                                     </svg>
-                                    <a class="twitter-share-button" onclick="handleTwitterIconClick(1);quoteShareGAEvent('Enforcement and ...', 'Twitter');">
+                                    <a class="twitter-share-button"
+                                        onclick="handleTwitterIconClick(1);quoteShareGAEvent('Enforcement and ...', 'Twitter');">
                                         <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                             viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -212,7 +219,8 @@
                                             d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                             fill="#828282" />
                                     </svg>
-                                    <a class="twitter-share-button" onclick="handleTwitterIconClick(2);quoteShareGAEvent('Isolated software ...', 'Twitter');">
+                                    <a class="twitter-share-button"
+                                        onclick="handleTwitterIconClick(2);quoteShareGAEvent('Isolated software ...', 'Twitter');">
                                         <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                             viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -237,7 +245,8 @@
                                             d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                             fill="#828282" />
                                     </svg>
-                                    <a class="twitter-share-button" onclick="handleTwitterIconClick(3);quoteShareGAEvent('Collaboration on ...', 'Twitter');">
+                                    <a class="twitter-share-button"
+                                        onclick="handleTwitterIconClick(3);quoteShareGAEvent('Collaboration on ...', 'Twitter');">
                                         <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                             viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -262,7 +271,8 @@
                                             d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                             fill="#828282" />
                                     </svg>
-                                    <a class="twitter-share-button" onclick="handleTwitterIconClick(4);quoteShareGAEvent('Management of ...', 'Twitter');">
+                                    <a class="twitter-share-button"
+                                        onclick="handleTwitterIconClick(4);quoteShareGAEvent('Management of ...', 'Twitter');">
                                         <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                             viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -285,7 +295,8 @@
                                             d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                             fill="#828282" />
                                     </svg>
-                                    <a class="twitter-share-button" onclick="handleTwitterIconClick(5);quoteShareGAEvent('Agile processes ...', 'Twitter');">
+                                    <a class="twitter-share-button"
+                                        onclick="handleTwitterIconClick(5);quoteShareGAEvent('Agile processes ...', 'Twitter');">
                                         <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                             viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -312,7 +323,8 @@
                                         d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                         fill="#828282" />
                                 </svg>
-                                <a class="twitter-share-button" onclick="handleTwitterIconClick(0, 'web');quoteShareGAEvent('Software delivery...', 'Twitter');">
+                                <a class="twitter-share-button"
+                                    onclick="handleTwitterIconClick(0, 'web');quoteShareGAEvent('Software delivery...', 'Twitter');">
                                     <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                         viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -335,7 +347,8 @@
                                         d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                         fill="#828282" />
                                 </svg>
-                                <a class="twitter-share-button" onclick="handleTwitterIconClick(1, 'web');quoteShareGAEvent('Isolated software...', 'Twitter');">
+                                <a class="twitter-share-button"
+                                    onclick="handleTwitterIconClick(1, 'web');quoteShareGAEvent('Isolated software...', 'Twitter');">
                                     <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                         viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -358,7 +371,8 @@
                                         d="M0 2.00139C0 0.896526 0.896526 0 2.00138 0C3.10555 0 4.00208 0.896526 4.00277 2.00139C4.00277 3.10625 3.10624 4.02152 2.00138 4.02152C0.896526 4.02152 0 3.10625 0 2.00139ZM16.6625 16.6666V16.6659H16.6667V10.5534C16.6667 7.56312 16.0229 5.25965 12.5271 5.25965C10.8465 5.25965 9.71876 6.18187 9.25834 7.05618H9.20973V5.53882H5.89515V16.6659H9.34654V11.1562C9.34654 9.70548 9.62154 8.3027 11.4181 8.3027C13.1882 8.3027 13.2146 9.95826 13.2146 11.2492V16.6666H16.6625ZM0.275891 5.53968H3.73144V16.6667H0.275891V5.53968Z"
                                         fill="#828282" />
                                 </svg>
-                                <a class="twitter-share-button" onclick="handleTwitterIconClick(2, 'web');quoteShareGAEvent('Management of...', 'Twitter');">
+                                <a class="twitter-share-button"
+                                    onclick="handleTwitterIconClick(2, 'web');quoteShareGAEvent('Management of...', 'Twitter');">
                                     <svg width="18" height="15" class="social-icon__icon social-icon__icon-twitter"
                                         viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -1199,9 +1213,12 @@
                             <img src="./delhivery_background.jpg" class="testimonials-card__company-background" />
                             <img src="https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg"
                                 class="testimonials__person-image" />
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="linked-in-position">
-                                <rect width="32" height="32" rx="16" fill="white"/>
-                                <path d="M23.5 23.5H20.1667V17.875C20.1667 16.9928 19.1768 16.2548 18.2946 16.2548C17.4124 16.2548 16.8333 16.9928 16.8333 17.875V23.5H13.5V13.5H16.8333V15.1667C17.3853 14.2738 18.797 13.6977 19.7708 13.6977C21.8304 13.6977 23.5 15.3988 23.5 17.4583V23.5ZM11.8333 23.5H8.5V13.5H11.8333V23.5ZM10.1667 8.5C11.0871 8.5 11.8333 9.24619 11.8333 10.1667C11.8333 11.0871 11.0871 11.8333 10.1667 11.8333C9.2462 11.8333 8.50001 11.0871 8.50001 10.1667C8.50001 9.24619 9.2462 8.5 10.1667 8.5Z" fill="#2867B2"/>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="linked-in-position">
+                                <rect width="32" height="32" rx="16" fill="white" />
+                                <path
+                                    d="M23.5 23.5H20.1667V17.875C20.1667 16.9928 19.1768 16.2548 18.2946 16.2548C17.4124 16.2548 16.8333 16.9928 16.8333 17.875V23.5H13.5V13.5H16.8333V15.1667C17.3853 14.2738 18.797 13.6977 19.7708 13.6977C21.8304 13.6977 23.5 15.3988 23.5 17.4583V23.5ZM11.8333 23.5H8.5V13.5H11.8333V23.5ZM10.1667 8.5C11.0871 8.5 11.8333 9.24619 11.8333 10.1667C11.8333 11.0871 11.0871 11.8333 10.1667 11.8333C9.2462 11.8333 8.50001 11.0871 8.50001 10.1667C8.50001 9.24619 9.2462 8.5 10.1667 8.5Z"
+                                    fill="#2867B2" />
                             </svg>
                             <div class="testimonials__name-designation-logo">
                                 <div class="testimonials__name">Kapil Bharti</div>
@@ -1229,13 +1246,15 @@
                         </div>
                         <div class="testimonials-card">
                             <img src="./delhivery_background.jpg" class="testimonials-card__company-background" />
-                            <img src="./images/user-piyush-verma.jpeg"
-                                class="testimonials__person-image" />
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="linked-in-position" onclick="openLinkedin()">
-                                <rect width="32" height="32" rx="16" fill="white"/>
-                                <path d="M23.5 23.5H20.1667V17.875C20.1667 16.9928 19.1768 16.2548 18.2946 16.2548C17.4124 16.2548 16.8333 16.9928 16.8333 17.875V23.5H13.5V13.5H16.8333V15.1667C17.3853 14.2738 18.797 13.6977 19.7708 13.6977C21.8304 13.6977 23.5 15.3988 23.5 17.4583V23.5ZM11.8333 23.5H8.5V13.5H11.8333V23.5ZM10.1667 8.5C11.0871 8.5 11.8333 9.24619 11.8333 10.1667C11.8333 11.0871 11.0871 11.8333 10.1667 11.8333C9.2462 11.8333 8.50001 11.0871 8.50001 10.1667C8.50001 9.24619 9.2462 8.5 10.1667 8.5Z" fill="#2867B2"/>
+                            <img src="./images/user-piyush-verma.jpeg" class="testimonials__person-image" />
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="linked-in-position" onclick="openLinkedin()">
+                                <rect width="32" height="32" rx="16" fill="white" />
+                                <path
+                                    d="M23.5 23.5H20.1667V17.875C20.1667 16.9928 19.1768 16.2548 18.2946 16.2548C17.4124 16.2548 16.8333 16.9928 16.8333 17.875V23.5H13.5V13.5H16.8333V15.1667C17.3853 14.2738 18.797 13.6977 19.7708 13.6977C21.8304 13.6977 23.5 15.3988 23.5 17.4583V23.5ZM11.8333 23.5H8.5V13.5H11.8333V23.5ZM10.1667 8.5C11.0871 8.5 11.8333 9.24619 11.8333 10.1667C11.8333 11.0871 11.0871 11.8333 10.1667 11.8333C9.2462 11.8333 8.50001 11.0871 8.50001 10.1667C8.50001 9.24619 9.2462 8.5 10.1667 8.5Z"
+                                    fill="#2867B2" />
                             </svg>
-    
+
                             <div class="testimonials__name-designation-logo">
                                 <div class="testimonials__name">Kapil Bharti</div>
                                 <div class="testimonials__designation">Co-founder & CTO, Delhivery</div>
@@ -1270,13 +1289,15 @@
                                         <p class="carousel-testimonial__person-role">Co-founder & CTO Delhivery</p>
                                     </div>
                                     <div>
-                                        <img src="./images/user-piyush-verma.jpeg"
-                                            class="testimonoial_carousel_person">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="user-linkedin-icon">
-                                            <rect width="24" height="24" rx="12" fill="white"/>
-                                            <path d="M18 18H15.3333V13.5C15.3333 12.7943 14.5414 12.2039 13.8357 12.2039C13.1299 12.2039 12.6667 12.7943 12.6667 13.5V18H10V10H12.6667V11.3333C13.1082 10.619 14.2376 10.1582 15.0167 10.1582C16.6643 10.1582 18 11.5191 18 13.1667V18ZM8.66667 18H6V10H8.66667V18ZM7.33334 6C8.06972 6 8.66667 6.59695 8.66667 7.33333C8.66667 8.06971 8.06972 8.66667 7.33334 8.66667C6.59696 8.66667 6.00001 8.06971 6.00001 7.33333C6.00001 6.59695 6.59696 6 7.33334 6Z" fill="#2867B2"/>
+                                        <img src="./images/user-piyush-verma.jpeg" class="testimonoial_carousel_person">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="user-linkedin-icon">
+                                            <rect width="24" height="24" rx="12" fill="white" />
+                                            <path
+                                                d="M18 18H15.3333V13.5C15.3333 12.7943 14.5414 12.2039 13.8357 12.2039C13.1299 12.2039 12.6667 12.7943 12.6667 13.5V18H10V10H12.6667V11.3333C13.1082 10.619 14.2376 10.1582 15.0167 10.1582C16.6643 10.1582 18 11.5191 18 13.1667V18ZM8.66667 18H6V10H8.66667V18ZM7.33334 6C8.06972 6 8.66667 6.59695 8.66667 7.33333C8.66667 8.06971 8.06972 8.66667 7.33334 8.66667C6.59696 8.66667 6.00001 8.06971 6.00001 7.33333C6.00001 6.59695 6.59696 6 7.33334 6Z"
+                                                fill="#2867B2" />
                                         </svg>
-                                    </div>        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1370,7 +1391,8 @@
                             <span class="secondary-title--bold">We love sharing</span>
                             <span class="secondary-title--light">our learnings</span>
                         </h2>
-                        <a class="blue-anchors" href="https://devtron.ai/blog/" target="_blank" onclick="blogCLickGAEvent('See all posts')" style="float:right;">See
+                        <a class="blue-anchors" href="https://devtron.ai/blog/" target="_blank"
+                            onclick="blogCLickGAEvent('See all posts')" style="float:right;">See
                             all posts
                             <img src="./images/ic-arrow-right.svg" style="position: relative; top: -3px">
                         </a>
@@ -1386,8 +1408,10 @@
                         <img src='./images/ic-carousel-arrow.svg' onclick="moveLearningCarouselRight()">
                     </div>
                     <div class="section-learning__grid">
-                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(0);blogCLickGAEvent('Upgrade EKS')">
-                            <img src="./images/Upgrade-EKS-Cluster-using-EKSCTL-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <div class="card section-learning__grid-item learning-card"
+                            onclick="openBlogPage(0);blogCLickGAEvent('Upgrade EKS')">
+                            <img src="./images/Upgrade-EKS-Cluster-using-EKSCTL-Devtron.jpg"
+                                class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
@@ -1398,8 +1422,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(1);blogCLickGAEvent('Ultimate Guide')">
-                            <img src="./images/Pod-Eviction-On-Kubernetes-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <div class="card section-learning__grid-item learning-card"
+                            onclick="openBlogPage(1);blogCLickGAEvent('Ultimate Guide')">
+                            <img src="./images/Pod-Eviction-On-Kubernetes-Devtron.jpg"
+                                class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     Ultimate Guide of Pod Eviction on Kubernetes
@@ -1410,8 +1436,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(2);blogCLickGAEvent('How to use')">
-                            <img src="./images/Use-Spot-to-Save-Cost-on-Kubernetes-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <div class="card section-learning__grid-item learning-card"
+                            onclick="openBlogPage(2);blogCLickGAEvent('How to use')">
+                            <img src="./images/Use-Spot-to-Save-Cost-on-Kubernetes-Devtron.jpg"
+                                class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     How to use Spot to achieve Cost Savings with Stability on Kubernetes
@@ -1422,8 +1450,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card section-learning__grid-item learning-card" onclick="openBlogPage(3);blogCLickGAEvent('Migrating to')">
-                            <img src="./images/Advantages_Disadvantages-of-Kubernetes-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <div class="card section-learning__grid-item learning-card"
+                            onclick="openBlogPage(3);blogCLickGAEvent('Migrating to')">
+                            <img src="./images/Advantages_Disadvantages-of-Kubernetes-Devtron.jpg"
+                                class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must know
@@ -1446,8 +1476,10 @@
                     <span class="secondary-title--light">our learnings</span>
                 </h2>
                 <div class="owl-carousel owl-theme carousel-margins">
-                    <div class="item card learning-card active" onclick="openBlogPage(0);blogCLickGAEvent('Upgrade EKS')">
-                        <img src="./images/Upgrade-EKS-Cluster-using-EKSCTL-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                    <div class="item card learning-card active"
+                        onclick="openBlogPage(0);blogCLickGAEvent('Upgrade EKS')">
+                        <img src="./images/Upgrade-EKS-Cluster-using-EKSCTL-Devtron.jpg"
+                            class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">
                                 Upgrade EKS 1.16 Cluster To EKS 1.17 Using EKSCTL in 6 Steps
@@ -1458,7 +1490,8 @@
                         </div>
                     </div>
                     <div class="item card learning-card" onclick="openBlogPage(1);blogCLickGAEvent('Ultimate Guide')">
-                        <img src="./images/Pod-Eviction-On-Kubernetes-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <img src="./images/Pod-Eviction-On-Kubernetes-Devtron.jpg"
+                            class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">Ultimate Guide of Pod Eviction on
                                 Kubernetes</p>
@@ -1468,7 +1501,8 @@
                         </div>
                     </div>
                     <div class="item card learning-card" onclick="openBlogPage(2);blogCLickGAEvent('How to use')">
-                        <img src="./images/Use-Spot-to-Save-Cost-on-Kubernetes-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <img src="./images/Use-Spot-to-Save-Cost-on-Kubernetes-Devtron.jpg"
+                            class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">How to use Spot to achieve Cost Savings
                                 with Stability on
@@ -1479,7 +1513,8 @@
                         </div>
                     </div>
                     <div class="item card learning-card" onclick="openBlogPage(3);blogCLickGAEvent('Migrating to')">
-                        <img src="./images/Advantages_Disadvantages-of-Kubernetes-Devtron.jpg" class="card-img-top learning-card__img" alt="">
+                        <img src="./images/Advantages_Disadvantages-of-Kubernetes-Devtron.jpg"
+                            class="card-img-top learning-card__img" alt="">
                         <div class="card-body">
                             <p class="learning-card__text">Migrating to Kubernetes? Advantages Vs
                                 Dis-advantages a CTO must
@@ -1506,30 +1541,32 @@
                 <div class="devtron-footer__right">
                     <article class="devtron-footer__social-mob">
                         <div class="square-container">
-                            <a href="https://www.linkedin.com/company/devtron-labs/" onclick="footerLinksGAEvent('Linkedin')" target="_blank"
-                                class="devtron-footer__href">
+                            <a href="https://www.linkedin.com/company/devtron-labs/"
+                                onclick="footerLinksGAEvent('Linkedin')" target="_blank" class="devtron-footer__href">
                                 <img src="./images/linkedin.svg" alt="linked-in" width="20" height="20" />
                             </a>
                         </div>
                         <div class="square-container">
-                            <a href="https://twitter.com/DevtronL" target="_blank" onclick="footerLinksGAEvent('Twitter')" class="devtron-footer__href">
+                            <a href="https://twitter.com/DevtronL" target="_blank"
+                                onclick="footerLinksGAEvent('Twitter')" class="devtron-footer__href">
                                 <img src="./images/twitter.svg" alt="twitter" width="20" height="20" />
                             </a>
                         </div>
                         <div class="square-container">
-                            <a href="https://www.youtube.com/channel/UCDbfFyHMWTUIKn3RrtU3f4A/featured" onclick="footerLinksGAEvent('Youtube')" target="_blank"
-                                class="devtron-footer__href">
+                            <a href="https://www.youtube.com/channel/UCDbfFyHMWTUIKn3RrtU3f4A/featured"
+                                onclick="footerLinksGAEvent('Youtube')" target="_blank" class="devtron-footer__href">
                                 <img src="./images/youtube.svg" alt="youtube" width="20" height="20" />
                             </a>
                         </div>
                         <div class="square-container">
-                            <a href="https://www.facebook.com/devtronlabs" target="_blank" onclick="footerLinksGAEvent('Facebook')" class="devtron-footer__href">
+                            <a href="https://www.facebook.com/devtronlabs" target="_blank"
+                                onclick="footerLinksGAEvent('Facebook')" class="devtron-footer__href">
                                 <img src="./images/facebook.svg" alt="facebook" width="20" height="20" />
                             </a>
                         </div>
                     </article>
-                    <a href="https://www.facebook.com/groups/353685209144241/?ref=group_header" onclick="footerLinksGAEvent('Facebook community')" target="_blank"
-                        class="fb-community">
+                    <a href="https://www.facebook.com/groups/353685209144241/?ref=group_header"
+                        onclick="footerLinksGAEvent('Facebook community')" target="_blank" class="fb-community">
                         <img src="./images/fb-group-cover.jpg" class="devtron-footer__fb-cover" width="180"
                             alt="join facebook community" />
                         <div class="fb-community__content">
