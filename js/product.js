@@ -406,10 +406,14 @@ function handleEarlyAccessFormSubmit(event) {
     }
   }
   xhr.send(final_data);
+  gtag('event', 'Early Access Form Submit', {
+    'event_category': 'Early access',
+    'event_label': '',
+  });
 }
 
 function getEarlyAccessGAEvent(label) {
-  gtag('event', 'Early Access Clicked', {
+  gtag('event', 'Early Access Button Clicked', {
     'event_category': 'Early access',
     'event_label': label
   });
