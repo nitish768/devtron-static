@@ -61,14 +61,21 @@ const featureHeadingsSwitcher = {
 featureHeadingsSwitcher.fillValuesInDivsAndApplyImage();
 
 function handleLinkedinClick(index, deviceType) {
+  const textToAppend = `
+https://devtron.ai/?utm_source=linkedin&utm_medium=post&utm_campaign=quote
+  
+#devtron #kubernetes #continuousdeployment #devops
+`;
   if (deviceType === 'web') {
     index += 6;
   }
   const gridItems = document.getElementsByClassName('section-why__why');
   const text = gridItems[index].innerText;
+  const finalText = `${text}
+${textToAppend}`;
   const dummyTextArea = document.createElement("textarea");
   document.body.appendChild(dummyTextArea);
-  dummyTextArea.value = text;
+  dummyTextArea.value = finalText;
   dummyTextArea.select();
   document.execCommand("copy");
   document.body.removeChild(dummyTextArea);
@@ -82,11 +89,19 @@ function handleLinkedinClick(index, deviceType) {
 }
 
 function handleTwitterIconClick(itemCountInClass, deviceType) {
+  const textToAppend = `
+https://devtron.ai/?utm_source=twitter&utm_medium=tweet&utm_campaign=quote
+  
+#devtron #kubernetes #continuousdeployment #devops
+`;
+
   if (deviceType === 'web') {
     itemCountInClass += 6;
   }
   const gridItems = document.getElementsByClassName('section-why__why');
-  const currentItemContent = encodeURIComponent(gridItems[itemCountInClass].innerText);
+  const completeCurrentItemContent = `${gridItems[itemCountInClass].innerText}
+  ${textToAppend}`;
+  const currentItemContent = encodeURIComponent(completeCurrentItemContent);
   const twitterURL = `https://twitter.com/intent/tweet?text=${currentItemContent}`;
   window.open(twitterURL, '_blank');
 }
