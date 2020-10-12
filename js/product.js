@@ -415,6 +415,12 @@ function getEarlyAccessGAEvent(label) {
   });
 }
 
+function quoteShareGAEvent(quote, social) {
+  gtag('event', quote, {
+    'event_category': 'Quote Shared',
+    'event_label': social
+  });
+}
 
 function openLinkedin() {
   const profilesLink = ['', '', ''];
