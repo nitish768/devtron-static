@@ -409,9 +409,8 @@ function handleEarlyAccessFormSubmit(event) {
 }
 
 function getEarlyAccessGAEvent(label) {
-  console.log(label);
-  gtag('event', 'button clicked', {
-    'event_category': 'early access',
+  gtag('event', 'Early Access Clicked', {
+    'event_category': 'Early access',
     'event_label': label
   });
 }
