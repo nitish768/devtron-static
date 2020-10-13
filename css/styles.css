@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
+.text-white {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    letter-spacing: 0em;
+    color: #ffffff;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -459,14 +467,21 @@ main>section {
     border-radius: 0 40px 0 0;
 }
 
+.section-hero__text-margins {
+    margin-top: 60px;
+}
+
 .section-hero__time {
     color: #F2C94C;
     text-transform: capitalize;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 300;
-    margin-top: 60px;
     white-space: nowrap;
+}
+
+.text-white--hero {
+    margin-bottom: 4px;
 }
 
 .linked-in-position {
@@ -1428,6 +1443,7 @@ main>section {
     .section-hero__left {
         display: flex;
         flex-direction: column;
+        flex-basis: 30%;
         justify-content: space-evenly;
     }
     .fb-community {
@@ -1711,8 +1727,11 @@ main>section {
     .main-title {
         margin-bottom: 77px;
     }
-    .section-hero__time {
+    .text-white--hero {
         font-size: 1.2rem;
+    }
+    .section-hero__time {
+        font-size: 1rem;
     }
     .section-hero__available-margins {
         margin-top: 50px;
