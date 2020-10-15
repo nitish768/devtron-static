@@ -215,19 +215,19 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 
   //Set initial positions
-  if (!isMobile() && !isLandscape() && vw > 768) {
-    let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
-    let image1Rect = image1.get(0).getBoundingClientRect()
-    let rightOffset = $(window).width() - bottom.right;
+  // if (!isMobile() && !isLandscape() && vw > 768) {
+  //   let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
+  //   let image1Rect = image1.get(0).getBoundingClientRect()
+  //   let rightOffset = $(window).width() - bottom.right;
 
-    if (image1Rect.top < triggeerHeight && $sectionThree.isInViewport()) {
-      $(image1).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
-      $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
-    }
-    else {
-      $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
-    }
-  }
+  //   if (image1Rect.top < triggeerHeight && $sectionThree.isInViewport()) {
+  //     $(image1).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
+  //     $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
+  //   }
+  //   else {
+  //     $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
+  //   }
+  // }
 
   setInterval(() => {
     var $para1 = $(".section-hero__paragraph:nth-child(1)");
@@ -334,58 +334,58 @@ $(function () {
 
 
     ///Landscape transition 
-    if (!isMobile() && !isLandscape() && vw > 768) {
+    // if (!isMobile() && !isLandscape() && vw > 768) {
 
-      if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())) {
-        let image = $(image1).get(0).getBoundingClientRect();
-        let rightOffset = $(window).width() - image.right;
-        let image1Rect = image1.get(0).getBoundingClientRect();
-        if (!(image1Rect.top < triggeerHeight)) {
-          let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
-          $(image1).css("position", "static");
-          $(image1).css("visibility", "visible");
-          $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
-        }
+    //   if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())) {
+    //     let image = $(image1).get(0).getBoundingClientRect();
+    //     let rightOffset = $(window).width() - image.right;
+    //     let image1Rect = image1.get(0).getBoundingClientRect();
+    //     if (!(image1Rect.top < triggeerHeight)) {
+    //       let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
+    //       $(image1).css("position", "static");
+    //       $(image1).css("visibility", "visible");
+    //       $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
+    //     }
 
-        else if (image1Rect.top < triggeerHeight) {
-          $(image1).css("position", "fixed").css("right", rightOffset);
-          $(image2).css("position", "fixed").css("right", rightOffset);
-          if (image.top > 0) {
-            $(image1).css("top", image.top);
-            $(image2).css("top", image.top);
-          }
-        }
+    //     else if (image1Rect.top < triggeerHeight) {
+    //       $(image1).css("position", "fixed").css("right", rightOffset);
+    //       $(image2).css("position", "fixed").css("right", rightOffset);
+    //       if (image.top > 0) {
+    //         $(image1).css("top", image.top);
+    //         $(image2).css("top", image.top);
+    //       }
+    //     }
 
-        if ($(image1).offset().top > $(".devtron-landscape").offset().top) {
-          $(image1).css("visibility", "hidden");
-        }
-      }
+    //     if ($(image1).offset().top > $(".devtron-landscape").offset().top) {
+    //       $(image1).css("visibility", "hidden");
+    //     }
+    //   }
 
-      if (($(image2).offset().top < $(".section-landscape__top").offset().top)) {
-        var image = $(image2).get(0).getBoundingClientRect();
-        let rightOffset = $(window).width() - image.right;
-        $(image1).css("position", "fixed").css("right", rightOffset);
-        $(image2).css("position", "fixed").css("right", rightOffset);
-        $(image1).css("visibility", "visible");
-        if (image.top > 0) {
-          $(image1).css("top", image.top);
-          $(image2).css("top", image.top);
-        }
-      }
+    //   if (($(image2).offset().top < $(".section-landscape__top").offset().top)) {
+    //     var image = $(image2).get(0).getBoundingClientRect();
+    //     let rightOffset = $(window).width() - image.right;
+    //     $(image1).css("position", "fixed").css("right", rightOffset);
+    //     $(image2).css("position", "fixed").css("right", rightOffset);
+    //     $(image1).css("visibility", "visible");
+    //     if (image.top > 0) {
+    //       $(image1).css("top", image.top);
+    //       $(image2).css("top", image.top);
+    //     }
+    //   }
 
-      if ($(image2).offset().top + $(image2).height() - 64 > $(".section-landscape__top").offset().top + $(".section-landscape__top").height()) {
-        $(image2).css("position", "static");
-        $(image1).css("visibility", "visible");
-      }
+    //   if ($(image2).offset().top + $(image2).height() - 64 > $(".section-landscape__top").offset().top + $(".section-landscape__top").height()) {
+    //     $(image2).css("position", "static");
+    //     $(image1).css("visibility", "visible");
+    //   }
 
-      if (($(image1).offset().top > $(".section-testimonials").offset().top - 700)) {
-        $(image1).css("visibility", "hidden");
-      }
-      if (($(image1).offset().top < $(".section-why__bottom").offset().top)) {
-        $(image1).css("position", "static");
-      }
+    //   if (($(image1).offset().top > $(".section-testimonials").offset().top - 700)) {
+    //     $(image1).css("visibility", "hidden");
+    //   }
+    //   if (($(image1).offset().top < $(".section-why__bottom").offset().top)) {
+    //     $(image1).css("position", "static");
+    //   }
 
-    }
+    // }
 
   });
 });
