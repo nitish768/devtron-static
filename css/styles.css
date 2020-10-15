@@ -1359,6 +1359,7 @@ main>section {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 20px;
+    max-width: 470px;
 }
 
 .easily-integrate__icon {
