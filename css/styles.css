@@ -923,6 +923,10 @@ main>section {
 .section-contributor__content{
     position: relative;
 }
+
+.button-early-access--easily-integtate{
+    margin-top: 24px;
+}
 .section-learning {
     padding: 64px 40px;
     position: relative;
