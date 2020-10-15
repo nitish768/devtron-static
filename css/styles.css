@@ -645,7 +645,6 @@ main>section {
     width: calc(100vw - 72px);
     min-height: 304px;
     top: 0px;
-    padding-top: 64px;
 }
 
 .section-why__devtron-landscape {
@@ -691,7 +690,7 @@ main>section {
 }
 
 .section-testimonials {
-    padding: 64px 36px;
+    padding: 64px 40px;
     min-height: 588px;
     border-radius: 0px;
     max-width: 1440px;
@@ -905,7 +904,7 @@ main>section {
 }
 
 .section-learning {
-    padding: 0px 36px 64px;
+    padding: 64px 40px;
     position: relative;
     background-color: #fff;
     max-width: 1440px;
@@ -1316,13 +1315,55 @@ main>section {
     min-height: 220px;
 }
 
-.section-why__grid--web {
-    display: none;
-    margin-bottom: 240px;
-}
-
 .section-why__grid-item:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-title--easily-integrate {
+    margin-bottom: 20px;
+}
+
+.easily-integrate {
+    padding: 64px 40px;
+    background-color: inherit;
+}
+
+.easily-integrate__subtitle {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.easily-integrate__icon {
+    width: 40px;
+}
+
+.easily-integrate___all-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.easily-integrate__item-name {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000A14;
+    text-transform: capitalize;
+}
+
+.easily-integrate__item {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    border-radius: 8px;
+    border: solid 1px #E0E0E0;
+}
+
+.easily-integrate__item:hover {
+    border-color: transparent;
+    box-shadow: 0px 4px 12px 0px #140152 15%;
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
@@ -1380,20 +1421,13 @@ main>section {
     .section-testimonials {
         padding: 100px 40px;
     }
-    .section-learning {
-        padding: 0px 40px 100px;
-    }
     .featureHeading:nth-of-type(1) {
         font-size: 24px;
         width: 300px;
-        /* height: auto; */
     }
     .featureHeading {
         font-size: 16px;
     }
-    /* .landscape__gif {
-        width: calc(100% - 280px);
-    } */
     .landscape-card-width {
         width: 100%;
     }
@@ -1406,8 +1440,12 @@ main>section {
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
-    .section-hero__scroll-down, .section-why__grid--mob, .button-early-access--mob {
+    .section-hero__scroll-down, .button-early-access--mob {
         display: none;
+    }
+    .section-learning {
+        position: relative;
+        padding: 100px 40px;
     }
     .main-title {
         min-height: unset;
@@ -1419,9 +1457,6 @@ main>section {
     .button-early-access--nav {
         font-size: 0.8rem;
         padding: 14px 20px;
-    }
-    .section-hero__button-container {
-        /* margin: 10px 0px 40px 0; */
     }
     .social-icon__container {
         right: 40px;
@@ -1453,8 +1488,9 @@ main>section {
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
     }
-    .section-why__grid--web {
+    .section-why__grid--mob {
         display: block;
+        margin-bottom: 240px;
     }
     .secondary-title {
         text-align: left;
@@ -1464,11 +1500,6 @@ main>section {
     }
     .section-landscape__wrapper {
         border-top-right-radius: 80px;
-    }
-    .fixed-pos {
-        position: fixed;
-        right: 40px;
-        top: 410px;
     }
     .devtron-footer__copyright-text--mob {
         display: none;
@@ -1510,9 +1541,6 @@ main>section {
         z-index: -1;
         opacity: 0.7;
     }
-    .section-learning {
-        position: relative;
-    }
     .section-testimonials {
         border-radius: 0px;
     }
@@ -1552,6 +1580,7 @@ main>section {
         position: absolute;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 64px;
         width: calc(100vw - 82px);
         clip: rect(0, auto, 350px, 0);
     }
@@ -1623,6 +1652,25 @@ main>section {
     .secondary-title {
         font-size: 2rem;
     }
+    .section-hero {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    .section-landscape {
+        padding: 305px 135px 100px
+    }
+    .section-testimonials {
+        padding: 100px 135px
+    }
+    .section-learning {
+        padding: 100px 135px
+    }
+    .section-why {
+        padding: 100px 135px;
+    }
+    .easily-integrate {
+        padding: 100px 135px;
+    }
     .early-access-card__title {
         font-size: 2.4rem;
         line-height: 1.5;
@@ -1676,26 +1724,6 @@ main>section {
     .devtron-stack__grid {
         flex: 1;
         grid-template-columns: repeat( 6, minmax(60px, 1fr));
-    }
-    .fixed-pos {
-        position: fixed;
-        right: 135px;
-    }
-    .section-hero {
-        padding-left: 135px;
-        padding-right: 135px;
-    }
-    .section-landscape {
-        padding: 305px 135px 100px
-    }
-    .section-testimonials {
-        padding: 100px 135px
-    }
-    .section-learning {
-        padding: 0px 135px 100px
-    }
-    .section-why {
-        padding: 100px 135px;
     }
     .section-hero__gif-wrapper {
         min-width: 450px;

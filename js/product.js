@@ -209,11 +209,9 @@ var $paraContainer = $(".section-hero__paragraph-container");
 var $imgContainer = $(".section-hero__gif-wrapper");
 var $policyTab = $(".devtron-landscape #policy-tab");
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-let triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2) ;
+let triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
-
   //Set initial positions
   // if (!isMobile() && !isLandscape() && vw > 768) {
   //   let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
@@ -246,6 +244,26 @@ $(document).ready(function () {
   }, 4000);
 });
 
+
+$('.owl-carousel--section-why').owlCarousel({
+  margin: 8,
+  autoplay: false,
+  stagePadding: 40,
+  margin: 20,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    550: {
+      items: 2
+    },
+    768: {
+      items: 3,
+    }
+  }
+})
+
 $('.owl-carousel').owlCarousel({
   margin: 8,
   autoplay: false,
@@ -262,7 +280,7 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
-$('sneakpeek-mob').owlCarousel({
+$('.sneakpeek-mob').owlCarousel({
   loop: false,
   nav: false,
   dots: true,
