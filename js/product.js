@@ -27,15 +27,18 @@ const featureHeadingsSwitcher = {
   featureHeadingsTextAndURL: [
     {
       text: 'App Monitoring and Debugging',
-      imgURL: './images/sneak-peek-1.gif'
+      videoURL: './videos/App detail-comp-vdo.mp4',
+      imgURL: './images/app-detail-thumb.jpg',
     },
     {
       text: 'Customizable Security Policies & Visibility',
-      imgURL: './images/sneak-peek-2.gif'
+      videoURL: './videos/Security-comp-vdo.mp4',
+      imgURL: './images/security-thumb.jpg',
     },
     {
       text: 'Insightful Deployment metrics',
-      imgURL: './images/sneak-peek-3.gif'
+      videoURL: './videos/deployment-metrics.mp4',
+      imgURL: './images/dep-metrics-thumb.jpg',
     },
   ],
   handleHeadingClick(indexClicked) {
@@ -52,9 +55,11 @@ const featureHeadingsSwitcher = {
       }
       else {
         featureHeadings[i].innerHTML = `<div style="line-height: 1.5"><img src="${this.featureHeadingsTextAndURL[i].imgURL}" style="width: 80px; height: 50px; float: left; margin: 0 20px 0 0"/> ${this.featureHeadingsTextAndURL[i].text}</div>`
+        // featureHeadings[i].innerHTML = `<div style="line-height: 1.5">${this.featureHeadingsTextAndURL[i].text}</div>`
+
       }
     }
-    document.getElementById('sneakPeekImage').src = this.featureHeadingsTextAndURL[0].imgURL
+    document.getElementById('sneakPeekImage').src = this.featureHeadingsTextAndURL[0].videoURL
   }
 }
 
@@ -485,10 +490,4 @@ function blogCLickGAEvent(social) {
     'event_category': 'Blog',
     'event_label': social
   });
-}
-
-function openLinkedin() {
-  const profilesLink = ['', '', ''];
-  console.log("called");
-  // window.open()
 }
