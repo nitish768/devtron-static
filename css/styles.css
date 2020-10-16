@@ -977,17 +977,20 @@ main>section {
     margin: 0 0 44px 0;
 }
 
+.section-contributor__bg {
+    position: relative;
+    background-image: url('../images/bg-contributor.png');
+    background-repeat: repeat;
+    background-size: contain;
+}
 .section-contributor {
     padding: 64px 40px;
     max-width: 1440px;
     margin: auto;
-    position: relative;
-    background-image: url('../images/bg-contributor.png');
-    background-repeat: repeat-y;
-    background-size: contain;
+   
 }
 
-.section-contributor::before {
+.section-contributor__bg::before {
     content: '';
     position: absolute;
     top: 0;
