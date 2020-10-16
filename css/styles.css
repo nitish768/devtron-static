@@ -550,6 +550,7 @@ main>section {
     grid-template-rows: 1fr 1fr;
     row-gap: 16px;
     min-height: 616px;
+    margin: 16px 0;
 }
 
 .section-why__grid-item {
