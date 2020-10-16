@@ -263,7 +263,7 @@ $('.owl-carousel--section-why').owlCarousel({
     550: {
       items: 2
     },
-    768: {
+    1200: {
       items: 3,
     }
   }

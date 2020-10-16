@@ -545,16 +545,20 @@ main>section {
     max-width: 446px;
 }
 
+.owl-carousel--section-why .item {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 16px;
+    min-height: 616px;
+}
+
 .section-why__grid-item {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px 20px 48px 20px;
     border: 1px solid #E0E0E0;
     scroll-snap-align: start;
-    /* width: calc(100vw - 72px); */
-    margin-bottom: 16px;
     width: unset;
-    min-height: 220px;
     position: relative;
 }
 
@@ -586,7 +590,7 @@ main>section {
     cursor: pointer;
 }
 
-.social-icon__icon-twitter:hover  ~ .social-icon__text{
+.social-icon__icon-twitter:hover~.social-icon__text {
     display: block;
 }
 
@@ -1412,6 +1416,12 @@ main>section {
     line-height: 1.5;
 }
 
+@media screen and (min-width: 425px) and (max-width:549px) {
+    .owl-carousel--section-why .item {
+        min-height: 460px;
+    }
+}
+
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__href img {
         width: 26%;
@@ -1427,9 +1437,6 @@ main>section {
     }
     .devtron-footer__content {
         flex-direction: row;
-    }
-    .section-why__grid-item {
-        min-height: 270px;
     }
     .fb-community {
         margin-bottom: 24px;
@@ -1502,6 +1509,9 @@ main>section {
     .main-nav__link-blog {
         font-size: 1rem;
         display: block;
+    }
+    .owl-carousel--section-why .item {
+        min-height: 545px;
     }
     .button-early-access--nav {
         font-size: 0.8rem;
