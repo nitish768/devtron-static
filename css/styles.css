@@ -580,11 +580,22 @@ main>section {
     right: 20px;
 }
 
+.social-icon__text {
+    display: none;
+    font-size: 0.7rem;
+    line-height: 1.5%;
+    color: #828282;
+}
+
 .social-icon__icon {
     width: 40px;
     vertical-align: middle;
     margin-right: 5px;
     cursor: pointer;
+}
+
+.social-icon__icon-twitter:hover  ~ .social-icon__text{
+    display: block;
 }
 
 .social-icon__icon:hover path {
