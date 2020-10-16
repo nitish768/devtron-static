@@ -763,6 +763,43 @@ main>section {
     width: 30%;
 }
 
+.get-started {
+    padding: 40px 40px;
+    position: relative;
+}
+
+.get-started:before {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 60%;
+    background-image: url('../images/command.png');
+    background-position-x: right;
+    background-position-y: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.get-started__terminal {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #281566;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 45%;
+}
+
+.get-started__command {
+    padding: 14px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .section-testimonials {
     padding: 64px 40px;
     min-height: 588px;
@@ -983,11 +1020,11 @@ main>section {
     background-repeat: repeat;
     background-size: contain;
 }
+
 .section-contributor {
     padding: 64px 40px;
     max-width: 1440px;
     margin: auto;
-   
 }
 
 .section-contributor__bg::before {
@@ -1456,7 +1493,7 @@ main>section {
     line-height: 1.5;
 }
 
-@media screen and (min-width: 425px) and (max-width:549px) {
+@media screen and (min-width: 425px) and (max-width: 549px) {
     .owl-carousel--section-why .item {
         min-height: 460px;
     }
@@ -1538,6 +1575,12 @@ main>section {
     }
     .section-contributor {
         padding: 94px 40px;
+    }
+    .get-started {
+        padding: 100px 40px;
+    }
+    .get-started:before {
+        content: '';
     }
     .section-learning {
         position: relative;
@@ -1775,6 +1818,9 @@ main>section {
     .easily-integrate {
         padding: 100px 135px;
     }
+    .get-started {
+        padding: 100px 135px;
+    }
     .join-community {
         padding: 0px 135px;
     }
@@ -1853,11 +1899,7 @@ main>section {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) and (orientation: landscape) {
-    .section-learning__header-margins {
-        margin-bottom: 40px;
-    }
-}
+@media screen and (min-width: 768px) and (max-width: 1440px) and (orientation: landscape) {}
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
     .main-title {
