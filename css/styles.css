@@ -415,6 +415,26 @@ main>section {
     text-align: left;
 }
 
+.subtitle {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subtitle--easily-integrate {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    max-width: 470px;
+}
+
+.subtitle--join-community {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    max-width: 470px;
+}
+
 .img-underline {
     background-image: url('../images/underline.svg');
     background-repeat: no-repeat;
@@ -665,8 +685,7 @@ main>section {
 }
 
 .devtron-stack {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 40px 40px;
 }
 
 .devtron-stack__hr {
@@ -699,6 +718,49 @@ main>section {
     width: 100%;
     height: auto;
     mix-blend-mode: luminosity;
+}
+
+.join-community {
+    padding: 0px 40px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.join-community__img-container {
+    justify-self: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.join-community__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    max-width: 340px;
+    margin-bottom: 60px;
+}
+
+.join-community__img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.join-community__grid-item {
+    background-color: #F2F4F7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-community__grid-item img {
+    width: 30%;
 }
 
 .section-testimonials {
@@ -917,6 +979,8 @@ main>section {
 
 .section-contributor {
     padding: 64px 40px;
+    max-width: 1440px;
+    margin: auto;
     position: relative;
     background-image: url('../images/bg-contributor.png');
     background-repeat: repeat-y;
@@ -955,18 +1019,6 @@ main>section {
 
 .section-learning--desktop {
     display: none;
-}
-
-.heading__dark {
-    color: #FFFFFF;
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.heading__light {
-    color: #FFFFFF;
-    font-size: 36px;
-    font-weight: 300;
 }
 
 .section-sneakpeek__button-container {
@@ -1352,23 +1404,11 @@ main>section {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.secondary-title--easily-integrate {
-    margin-bottom: 20px;
-}
-
 .easily-integrate {
     padding: 64px 40px;
     background-color: inherit;
-}
-
-.easily-integrate__subtitle {
-    font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: 470px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .easily-integrate__icon {
@@ -1376,8 +1416,9 @@ main>section {
 }
 
 .easily-integrate___all-items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(250px, 320px));
+    grid-gap: 20px;
 }
 
 .easily-integrate__item-name {
@@ -1396,11 +1437,6 @@ main>section {
     display: grid;
     grid-template-columns: 34px 150px;
     column-gap: 30px;
-    margin: 0 15px;
-}
-
-.easily-integrate__item:first-child {
-    margin-left: 0px;
 }
 
 .easily-integrate__item:hover {
@@ -1510,6 +1546,10 @@ main>section {
     .main-nav__link-blog {
         font-size: 1rem;
         display: block;
+    }
+    .join-community__icon-and-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .owl-carousel--section-why .item {
         min-height: 545px;
@@ -1694,15 +1734,18 @@ main>section {
     }
 }
 
-@media screen and (min-width: 1024px) and (orientation: landscape) {
-    .secondary-title--landscape {
-        max-width: unset;
+@media screen and (min-width: 960px) {
+    .easily-integrate__item:first-child {
+        margin-left: 0px;
     }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
     .main-title {
         font-size: 2.6rem;
+    }
+    .secondary-title--landscape {
+        max-width: unset;
     }
     .secondary-title {
         font-size: 2rem;
@@ -1728,6 +1771,9 @@ main>section {
     }
     .easily-integrate {
         padding: 100px 135px;
+    }
+    .join-community {
+        padding: 0px 135px;
     }
     .early-access-card__title {
         font-size: 2.4rem;
@@ -1770,6 +1816,7 @@ main>section {
         width: calc(100% - 270px);
     }
     .devtron-stack {
+        padding: 80px 135px;
         display: flex;
         justify-content: space-between;
     }
