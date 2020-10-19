@@ -792,7 +792,8 @@ main>section {
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
-    width: 45%;
+    position: relative;
+    z-index: 1;
 }
 
 .get-started__command {
@@ -1751,6 +1752,9 @@ main>section {
     .section-learning--desktop {
         display: block;
         border-radius: 0 0 40px 40px;
+    }
+    .get-started__terminal {
+        width: 45%;
     }
     .sneakpeek-mob {
         display: none !important;
