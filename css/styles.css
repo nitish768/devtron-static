@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0em;
     color: #ffffff;
 }
-
 .hidden {
     visibility: hidden;
 }
@@ -1383,6 +1382,7 @@ main>section {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   
     .section-landscape {
         padding: 305px 40px 100px
     }
@@ -1457,6 +1457,7 @@ main>section {
         display: flex;
         flex-direction: column;
         flex-basis: 30%;
+        min-width: 333px;
         justify-content: space-evenly;
     }
     .fb-community {
@@ -1612,6 +1613,9 @@ main>section {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
     .main-title {
         font-size: 2.6rem;
+    }
+    .section-hero__left {
+        flex-basis: 326px;
     }
     .secondary-title {
         font-size: 2rem;
