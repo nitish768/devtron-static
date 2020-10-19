@@ -251,11 +251,6 @@ button:focus {
     color: #140152;
 }
 
-.show-get-early-access .button-early-access--nav {
-    display: block;
-    box-shadow: none;
-}
-
 .main-nav__logo {
     height: 25px;
     width: auto;
@@ -533,9 +528,10 @@ main>section {
 
 .button-early-access--nav {
     font-weight: normal;
-    display: none;
+    display: block;
     font-size: 0.66rem;
     padding: 8px 12px;
+    box-shadow: none;
 }
 
 .button-early-access--hero {
@@ -757,10 +753,6 @@ main>section {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.join-community__grid-item img {
-    width: 30%;
 }
 
 .get-started {
@@ -1303,11 +1295,6 @@ main>section {
     justify-content: center;
 }
 
-.devtron-footer__href img {
-    width: 30%;
-    height: auto;
-}
-
 .devtron-footer__copyright-indent {
     padding: 30px 0;
     display: flex;
@@ -1531,9 +1518,22 @@ main>section {
 }
 
 /* TODO: Use only classnames for styles  */
-
+/* 
 .button-early-access--easily-integtate img {
     margin-left: 15px;
+} */
+
+.button-early-access img {
+    margin-right: 10px;
+}
+
+.join-community__grid-item img {
+    width: 30%;
+}
+
+.devtron-footer__href img {
+    width: 30%;
+    height: auto;
 }
 
 @media screen and (min-width: 425px) and (max-width: 549px) {
@@ -1543,9 +1543,6 @@ main>section {
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
-    .devtron-footer__href img {
-        width: 26%;
-    }
     .devtron-footer__copyright-text--mob {
         display: none;
     }
@@ -1560,6 +1557,9 @@ main>section {
     }
     .fb-community {
         margin-bottom: 24px;
+    }
+    .devtron-footer__href img {
+        width: 26%;
     }
 }
 
@@ -1645,14 +1645,10 @@ main>section {
     }
     .button-early-access--nav {
         font-size: 0.8rem;
-        padding: 14px 20px;
     }
     .social-icon__container {
         right: 40px;
         bottom: 40px;
-    }
-    .devtron-footer__href img {
-        width: 26%;
     }
     .early-access-card__text {
         padding: 0 0 60px 72px;
@@ -1830,6 +1826,9 @@ main>section {
     }
     .devtron-stack__hr {
         margin: 100px auto 0 auto;
+    }
+    .devtron-footer__href img {
+        width: 26%;
     }
 }
 
