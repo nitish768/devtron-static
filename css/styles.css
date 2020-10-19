@@ -1018,7 +1018,7 @@ main>section {
     position: relative;
     background-image: url('../images/bg-contributor.png');
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .section-contributor {
