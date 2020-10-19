@@ -1493,6 +1493,12 @@ main>section {
     line-height: 1.5;
 }
 
+/* TODO: Use only classnames for styles  */
+
+.button-early-access--easily-integtate img {
+    margin-left: 15px;
+}
+
 @media screen and (min-width: 425px) and (max-width: 549px) {
     .owl-carousel--section-why .item {
         min-height: 460px;
