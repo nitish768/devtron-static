@@ -736,15 +736,15 @@ main>section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    max-width: 340px;
+    max-width: 300px;
     margin-bottom: 60px;
+    margin-right: 30px;
 }
 
 .join-community__img {
     display: block;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
 }
 
 .join-community__grid-item {
@@ -1766,6 +1766,13 @@ main>section {
     }
     .devtron-stack__title {
         text-align: left;
+    }
+    .join-community__grid {
+        max-width: 340px;
+        column-gap: 30px;
+    }
+    .join-community__img {
+        margin: 0 auto;
     }
     .devtron-footer {
         padding: 100px 80px 0 80px;
