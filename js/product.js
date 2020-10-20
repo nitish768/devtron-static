@@ -249,21 +249,6 @@ $(document).ready(function () {
   }, 4000);
 });
 
-$('.owl-carousel').owlCarousel({
-  margin: 8,
-  autoplay: false,
-  stagePadding: 40,
-  margin: 20,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    550: {
-      items: 2
-    },
-  }
-})
 
 $('.owl-carousel--section-why').owlCarousel({
   margin: 8,
@@ -319,6 +304,23 @@ $('.sneakpeek-mob').owlCarousel({
   stagePadding: 40,
   margin: 20,
   items: 1,
+  responsive: {
+    0: {
+      items: 1
+    },
+    550: {
+      items: 2
+    },
+  }
+})
+
+
+$('.owl-carousel').owlCarousel({
+  margin: 8,
+  autoplay: false,
+  stagePadding: 40,
+  margin: 20,
+  dots: false,
   responsive: {
     0: {
       items: 1
