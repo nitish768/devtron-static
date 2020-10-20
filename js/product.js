@@ -339,11 +339,12 @@ $.fn.isInViewport = function () {
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
-function toggleSeeMore(btnId, id) {
+function toggleSeeMore(btnId, containerId) {
   let btn = document.querySelector(btnId)
-  let message = document.getElementById(id);
+  let message = document.getElementById(containerId);
+  let fixedHeight = document.querySelector(`#${containerId} .carousel-testimonial__message`).scrollHeight || 360;
   if (btn.textContent.includes('more')) {
-    message.style.height = "360px";
+    message.style.height = `${fixedHeight}px`;
     btn.textContent = "Read less"
   }
   else {
