@@ -248,15 +248,12 @@ $(document).ready(function () {
 
   }, 4000);
 
-
-
   $('.owl-carousel--section-why').owlCarousel({
     margin: 8,
     autoplay: false,
     stagePadding: 40,
     margin: 20,
     dots: false,
-    singleItem: true,
     responsive: {
       0: {
         items: 1
@@ -266,7 +263,6 @@ $(document).ready(function () {
       },
       768: {
         items: 3,
-        singleItem: true,
       }
     }
   })
@@ -317,7 +313,6 @@ $(document).ready(function () {
       },
     }
   })
-
 
   $('.owl-carousel').owlCarousel({
     margin: 8,

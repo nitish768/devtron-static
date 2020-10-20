@@ -755,7 +755,6 @@ main>section {
     transition: height 200ms ease-in-out;
     overflow: hidden;
     margin-top: 24px;
-    /* margin-bottom: 20px; */
 }
 
 .carousel-testimonial__message {
