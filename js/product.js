@@ -343,7 +343,7 @@ function toggleSeeMore(btnId, id) {
   let btn = document.querySelector(btnId)
   let message = document.getElementById(id);
   if (btn.textContent.includes('more')) {
-    message.style.height = "336px";
+    message.style.height = "360px";
     btn.textContent = "Read less"
   }
   else {
