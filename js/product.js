@@ -272,6 +272,7 @@ $(document).ready(function () {
     let all = document.querySelectorAll('.carousel-testimonial__message-container');
     let allMessages = document.querySelectorAll('.carousel-testimonial__message');
     for (let i = 0; i < all.length; i++) {
+      console.log(allMessages[i].scrollHeight)
       if ((all[i].clientHeight >= allMessages[i].scrollHeight)) {
         all[i].classList.add('hide-see-more');
       }

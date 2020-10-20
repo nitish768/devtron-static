@@ -740,7 +740,7 @@ main>section {
     font-size: 0.7rem;
     line-height: 1.5;
     letter-spacing: 0;
-    font-weight: normal;
+    font-weight: 600;
     padding-left: 0px;
     text-transform: uppercase;
 }
@@ -751,7 +751,7 @@ main>section {
  }
  
 .carousel-testimonial__message-container {
-    height: 216px;
+    height: 190px;
     transition: height 200ms ease-in-out;
     overflow: hidden;
     margin-top: 24px;
