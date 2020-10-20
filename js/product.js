@@ -214,7 +214,7 @@ var $paraContainer = $(".section-hero__paragraph-container");
 var $imgContainer = $(".section-hero__gif-wrapper");
 var $policyTab = $(".devtron-landscape #policy-tab");
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-let triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2) ;
+let triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 
 $(document).ready(function () {
   //Set initial positions
@@ -249,26 +249,6 @@ $(document).ready(function () {
   }, 4000);
 });
 
-
-$('.owl-carousel--section-why').owlCarousel({
-  margin: 8,
-  autoplay: false,
-  stagePadding: 40,
-  margin: 20,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    550: {
-      items: 2
-    },
-    768: {
-      items: 3,
-    }
-  }
-})
-
 $('.owl-carousel').owlCarousel({
   margin: 8,
   autoplay: false,
@@ -284,6 +264,53 @@ $('.owl-carousel').owlCarousel({
     },
   }
 })
+
+$('.owl-carousel--section-why').owlCarousel({
+  margin: 8,
+  autoplay: false,
+  stagePadding: 40,
+  margin: 20,
+  dots: false,
+  singleItem: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    550: {
+      items: 2
+    },
+    768: {
+      items: 3,
+      singleItem: true,
+    }
+  }
+})
+
+let testimonials = $('.owl-carousel--testimonials').owlCarousel({
+  margin: 8,
+  autoplay: false,
+  stagePadding: 40,
+  margin: 20,
+  dots: false,
+  singleItem: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    550: {
+      items: 2
+    },
+    768: {
+      items: 3,
+      singleItem: true,
+    }
+  }
+})
+
+
+testimonials.on('changed.owl.carousel', function (e) {
+  // console.log(e.target);
+});
 
 $('.sneakpeek-mob').owlCarousel({
   loop: false,
@@ -463,6 +490,10 @@ function handleEarlyAccessFormSubmit(event) {
     'event_category': 'Early access',
     'event_label': '',
   });
+}
+
+function seeMore() {
+
 }
 
 function getEarlyAccessGAEvent(label) {

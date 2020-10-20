@@ -1320,7 +1320,7 @@ main>section {
 
 .section-why__grid {
     margin: 40px auto;
-    min-height: 320px;
+    min-height: 480px;
 }
 
 .section-why__grid-item:hover {
