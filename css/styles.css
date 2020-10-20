@@ -720,7 +720,7 @@ main>section {
 .carousel-testimonial {
     border-radius: 8px;
     border: 1px solid #E0E0E0;
-    min-height: 446px;
+    height: 446px;
 }
 
 .carousel-testimonial__bg {
@@ -1320,6 +1320,10 @@ main>section {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.owl-carousel--testimonials .owl-item.active .carousel-testimonial {
+    height: auto;
+}
+
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__href img {
         width: 26%;
@@ -1403,11 +1407,9 @@ main>section {
     .main-title {
         min-height: unset;
     }
-   
     .section-why__grid-item {
         padding: 40px 30px 48px 30px;
     }
-   
     .main-nav__link-blog {
         font-size: 1rem;
         display: block;
