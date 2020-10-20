@@ -344,7 +344,6 @@ main>section {
     font-size: 1.2rem;
     font-style: normal;
     color: #56CCF2;
-    min-width: 33%;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0em;
@@ -1455,7 +1454,7 @@ main>section {
     .section-hero__left {
         display: flex;
         flex-direction: column;
-        flex-basis: 30%;
+        min-width:  30%;
         justify-content: space-evenly;
     }
     .fb-community {
