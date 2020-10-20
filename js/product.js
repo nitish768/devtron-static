@@ -247,90 +247,94 @@ $(document).ready(function () {
     }, 100)
 
   }, 4000);
-});
 
 
-$('.owl-carousel--section-why').owlCarousel({
-  margin: 8,
-  autoplay: false,
-  stagePadding: 40,
-  margin: 20,
-  dots: false,
-  singleItem: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    550: {
-      items: 2
-    },
-    768: {
-      items: 3,
-      singleItem: true,
+
+  $('.owl-carousel--section-why').owlCarousel({
+    margin: 8,
+    autoplay: false,
+    stagePadding: 40,
+    margin: 20,
+    dots: false,
+    singleItem: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      550: {
+        items: 2
+      },
+      768: {
+        items: 3,
+        singleItem: true,
+      }
     }
-  }
-})
+  })
 
-let testimonials = $('.owl-carousel--testimonials').owlCarousel({
-  margin: 8,
-  autoplay: false,
-  stagePadding: 40,
-  margin: 20,
-  dots: false,
-  singleItem: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    550: {
-      items: 2
-    },
-    768: {
-      items: 3,
-      singleItem: true,
+  let testimonials = $('.owl-carousel--testimonials');
+  testimonials.on('initialized.owl.carousel', function (e) {
+    let all = document.querySelectorAll('.carousel-testimonial__message-container');
+    let allMessages = document.querySelectorAll('.carousel-testimonial__message');
+    for (let i = 0; i < all.length; i++) {
+      if ((all[i].clientHeight >= allMessages[i].scrollHeight)) {
+        all[i].classList.add('hide-see-more');
+      }
     }
-  }
-})
+  });
+
+  testimonials.owlCarousel({
+    margin: 8,
+    autoplay: false,
+    stagePadding: 40,
+    margin: 20,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      550: {
+        items: 2
+      },
+      768: {
+        items: 3,
+      }
+    }
+  })
+
+  $('.sneakpeek-mob').owlCarousel({
+    loop: false,
+    nav: false,
+    dots: true,
+    stagePadding: 40,
+    margin: 20,
+    items: 1,
+    responsive: {
+      0: {
+        items: 1
+      },
+      550: {
+        items: 2
+      },
+    }
+  })
 
 
-testimonials.on('changed.owl.carousel', function (e) {
-  // console.log(e.target);
+  $('.owl-carousel').owlCarousel({
+    margin: 8,
+    autoplay: false,
+    stagePadding: 40,
+    margin: 20,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      550: {
+        items: 2
+      },
+    }
+  })
 });
-
-$('.sneakpeek-mob').owlCarousel({
-  loop: false,
-  nav: false,
-  dots: true,
-  stagePadding: 40,
-  margin: 20,
-  items: 1,
-  responsive: {
-    0: {
-      items: 1
-    },
-    550: {
-      items: 2
-    },
-  }
-})
-
-
-$('.owl-carousel').owlCarousel({
-  margin: 8,
-  autoplay: false,
-  stagePadding: 40,
-  margin: 20,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1
-    },
-    550: {
-      items: 2
-    },
-  }
-})
-
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -339,6 +343,19 @@ $.fn.isInViewport = function () {
   var viewportBottom = viewportTop + $(window).height();
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
+
+function toggleSeeMore(btnId, id) {
+  let btn = document.querySelector(btnId)
+  let message = document.getElementById(id);
+  if (btn.textContent.includes('more')) {
+    message.style.height = "336px";
+    btn.textContent = "Read less"
+  }
+  else {
+    message.style.height = "";
+    btn.textContent = "Read more";
+  }
+}
 
 function isMobile() {
   var a = navigator.userAgent || navigator.vendor || window.opera;
@@ -492,10 +509,6 @@ function handleEarlyAccessFormSubmit(event) {
     'event_category': 'Early access',
     'event_label': '',
   });
-}
-
-function seeMore() {
-
 }
 
 function getEarlyAccessGAEvent(label) {

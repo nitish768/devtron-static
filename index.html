@@ -1051,20 +1051,24 @@
                         </div>
                     </div>
                     <div class="landscape__gif">
-                        <video autoplay loop muted playsinline id="sneakPeekImage" style="height: auto; margin: 0 0 0 20px; width: 100%; border-radius: 8px"></video>
+                        <video autoplay loop muted playsinline id="sneakPeekImage"
+                            style="height: auto; margin: 0 0 0 20px; width: 100%; border-radius: 8px"></video>
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme carousel-margins sneakpeek-mob">
                     <div class="item active">
-                        <video autoplay loop muted playsinline src="./videos/App detail-comp-vdo.mp4" class="sneakpeek-mob__img" style="width: 100%;"></video>
+                        <video autoplay loop muted playsinline src="./videos/App detail-comp-vdo.mp4"
+                            class="sneakpeek-mob__img" style="width: 100%;"></video>
                         <h3 class="sneakpeek-mob__title">App Monitoring and Debugging</h3>
                     </div>
                     <div class="item">
-                        <video autoplay loop muted playsinline src="./videos/Security-comp-vdo.mp4" class="sneakpeek-mob__img" style="width: 100%;"></video>
+                        <video autoplay loop muted playsinline src="./videos/Security-comp-vdo.mp4"
+                            class="sneakpeek-mob__img" style="width: 100%;"></video>
                         <h3 class="sneakpeek-mob__title">Customizable Security Policies & Visibility</h3>
                     </div>
                     <div class="item">
-                        <video autoplay loop muted playsinline src="./videos/deployment-metrics.mp4" class="sneakpeek-mob__img" style="width: 100%;"></video>
+                        <video autoplay loop muted playsinline src="./videos/deployment-metrics.mp4"
+                            class="sneakpeek-mob__img" style="width: 100%;"></video>
                         <h3 class="sneakpeek-mob__title">Insightful Deployment metrics</h3>
                     </div>
 
@@ -1240,13 +1244,18 @@
                             <div class="carousel-testimonial__margins">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
-                                <p class="carousel-testimonial__message">
-                                    Devtron has been our go-to tool for deployment on Kubernetes for more than a year
-                                    now. Single pane view for application debugging has improved the stability of our
-                                    applications, and deployment metrics has helped us measure our deployment
-                                    frequencies. We are making automated deployments without any hassle.
-                                    <!-- <button type="button" onclick="seemore(1)">See more</button> -->
-                                </p>
+                                <div id="message__vaibhav" class="carousel-testimonial__message-container">
+                                    <p class="carousel-testimonial__message">
+                                        Devtron has been our go-to tool for deployment on Kubernetes for more than a
+                                        year
+                                        now. Single pane view for application debugging has improved the stability of
+                                        our
+                                        applications, and deployment metrics has helped us measure our deployment
+                                        frequencies. We are making automated deployments without any hassle.
+                                    </p>
+                                </div>
+                                <button type="button" id="see-more__vaibhav" class="carousel-testimonial__see-more"
+                                    onclick="toggleSeeMore('#see-more__vaibhav','message__vaibhav')">Read more</button>
                                 <div class="testimonial_carousel_persondesignationimage">
                                     <div style="flex-basis: 1;">
                                         <p class="carousel-testimonial__person-name">Vaibhav Khulbe</p>
@@ -1274,15 +1283,21 @@
                             <div class="carousel-testimonial__margins">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
-                                <p class="carousel-testimonial__message">
-                                    With over 400 consumer groups, we wrote and managed our own python script for
-                                    deployment via Jenkins. Features like Linked CI and Deployment Groups in Devtron
-                                    enabled us to deploy any number of applications with shared codebase together for
-                                    downstream deployments. Ability to Clone Apps allowed us to create new applications
-                                    with a single click. Also, ability to Tail and Grep logs within Devtron helps to
-                                    debug applications, check events and config in one screen without switching to
-                                    cloudwatch.
-                                </p>
+                                <div id="message__piyush" class="carousel-testimonial__message-container">
+                                    <p class="carousel-testimonial__message">
+                                        With over 400 consumer groups, we wrote and managed our own python script for
+                                        deployment via Jenkins. Features like Linked CI and Deployment Groups in Devtron
+                                        enabled us to deploy any number of applications with shared codebase together
+                                        for
+                                        downstream deployments. Ability to Clone Apps allowed us to create new
+                                        applications
+                                        with a single click. Also, ability to Tail and Grep logs within Devtron helps to
+                                        debug applications, check events and config in one screen without switching to
+                                        cloudwatch.
+                                    </p>
+                                </div>
+                                <button type="button" id="see-more__piyush" class="carousel-testimonial__see-more"
+                                    onclick="toggleSeeMore('#see-more__piyush','message__piyush')">Read More</button>
                                 <div class="testimonial_carousel_persondesignationimage">
                                     <div style="flex-basis: 1;">
                                         <p class="carousel-testimonial__person-name">Piyush Verma</p>
@@ -1309,14 +1324,19 @@
                             <div class="carousel-testimonial__margins">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
-                                <p class="carousel-testimonial__message">
-                                    Devtron has been instrumental in quick adoption of kubernetes at BharatPe.
-                                    Our team was able to move more than 80% of our applications running on kubernetes in
-                                    production clusters in less than 2 months without having to delve too much into
-                                    learning kubernetes.
-                                    This has lead to increased productivity of the devops team and they are able to
-                                    contribute more in other areas.
-                                </p>
+                                <div id="message__ravi" class="carousel-testimonial__message-container">
+                                    <p class="carousel-testimonial__message">
+                                        Devtron has been instrumental in quick adoption of kubernetes at BharatPe.
+                                        Our team was able to move more than 80% of our applications running on
+                                        kubernetes in
+                                        production clusters in less than 2 months without having to delve too much into
+                                        learning kubernetes.
+                                        This has lead to increased productivity of the devops team and they are able to
+                                        contribute more in other areas.
+                                    </p>
+                                </div>
+                                <button type="button" id="see-more__ravi" class="carousel-testimonial__see-more"
+                                    onclick="toggleSeeMore('#see-more__ravi','message__ravi')">Read more</button>
                                 <div class="testimonial_carousel_persondesignationimage">
                                     <div style="flex-basis: 1;">
                                         <p class="carousel-testimonial__person-name">Ravi Ranjan Kumar</p>
@@ -1344,12 +1364,18 @@
                             <div class="carousel-testimonial__margins">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
                                 <img src="./images/testimonialIcon.png" class="carousel__arrow">
-                                <p class="carousel-testimonial__message">
-                                    No more messy manifests to manage. We at Devtron, manage all our Deployments and
-                                    Helm charts for all the clients and environments right from Devtron dashboard with
-                                    proper role based access control for the entire Team. We deploy across multiple
-                                    clusters at just a click of a button.
-                                </p>
+                                <div id="message__prakarsh" class="carousel-testimonial__message-container">
+                                    <p class="carousel-testimonial__message">
+                                        No more messy manifests to manage. We at Devtron, manage all our Deployments and
+                                        Helm charts for all the clients and environments right from Devtron dashboard
+                                        with
+                                        proper role based access control for the entire Team. We deploy across multiple
+                                        clusters at just a click of a button.
+                                    </p>
+                                </div>
+                                <button type="button" id="see-more__prakarsh" class="carousel-testimonial__see-more"
+                                    onclick="toggleSeeMore('#see-more__prakarsh','message__prakarsh')">Read
+                                    more</button>
                                 <div class="testimonial_carousel_persondesignationimage">
                                     <div style="flex-basis: 1;">
                                         <p class="carousel-testimonial__person-name">Prakarsh</p>
