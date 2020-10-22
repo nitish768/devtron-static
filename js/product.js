@@ -131,8 +131,8 @@ function setRemainigTime() {
       const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-      document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+      // document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
+      //   + minutes + "m " + seconds + "s ";
     }
 
 
@@ -272,7 +272,6 @@ $(document).ready(function () {
     let all = document.querySelectorAll('.carousel-testimonial__message-container');
     let allMessages = document.querySelectorAll('.carousel-testimonial__message');
     for (let i = 0; i < all.length; i++) {
-      console.log(allMessages[i].scrollHeight)
       if ((all[i].clientHeight >= allMessages[i].scrollHeight)) {
         all[i].classList.add('hide-see-more');
       }
@@ -509,20 +508,19 @@ function handleEarlyAccessFormSubmit(event) {
 }
 
 function copy() {
-  var textArea = document.querySelector("#command");
-  // textArea.value = `bash -c "$(curl-fsSL https://devtron.ai/install.sh)`;
-  textArea.disabled = false;
-  textArea.focus();
-  textArea.select();
-  textArea.disabled = true;
+  let body = document.querySelector('body');
+  let textArea = document.createElement("textarea");
+  textArea.value = `bash -c "$(curl-fsSL https://devtron.ai/install.sh)`;
+  body.appendChild(textArea);
 
   try {
-    var successful = document.execCommand('copy');
-    var msg = successful ? 'successful' : 'unsuccessful';
+    textArea.select();
+    document.execCommand('copy');
+    console.log("Copied");
   } catch (err) {
     console.error('Oops, unable to copy', err);
   }
-
+  body.removeChild(textArea);
 }
 
 function getEarlyAccessGAEvent(label) {

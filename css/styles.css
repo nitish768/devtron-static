@@ -808,7 +808,7 @@ main>section {
 
 .get-started__shell {
     padding: 14px 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
     width: 100%;
     resize: none;
     background-color: inherit;
