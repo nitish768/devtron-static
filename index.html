@@ -1488,11 +1488,12 @@
                     <span class="secondary-title--light">in minutes</span>
                 </h2>
                 <article class="get-started__terminal">
-                    <p class="get-started__command">Run Command to install</p>
-                    <div class="get-started__shell">
-                        bash -c <span style="color: rgb(242, 153, 74);">"$(curl-fsSL
-                            https://devtron.ai/install.sh)</span>
+                    <div class="get-started__icon-and-cmd">
+                        <p class="get-started__command">Run Command to install</p>
+                        <img src="./images/ic-copy.svg" class="get-started__copy" onclick="copy()" />
                     </div>
+                    <!-- <span style="color: rgb(242, 153, 74);"></span> -->
+                    <textarea class="get-started__shell" id="command" disabled="true">bash -c "$(curl-fsSL https://devtron.ai/install.sh)</textarea>
                 </article>
                 <article class="get-started__guide">
                     <img src="images/ic-file.svg" class="guide__img" alt="" />

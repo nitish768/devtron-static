@@ -508,6 +508,23 @@ function handleEarlyAccessFormSubmit(event) {
   });
 }
 
+function copy() {
+  var textArea = document.querySelector("#command");
+  // textArea.value = `bash -c "$(curl-fsSL https://devtron.ai/install.sh)`;
+  textArea.disabled = false;
+  textArea.focus();
+  textArea.select();
+  textArea.disabled = true;
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+  } catch (err) {
+    console.error('Oops, unable to copy', err);
+  }
+
+}
+
 function getEarlyAccessGAEvent(label) {
   gtag('event', 'Early Access Button Clicked', {
     'event_category': 'Early access',

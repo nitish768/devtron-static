@@ -764,6 +764,21 @@ main>section {
     margin: auto;
 }
 
+.get-started__icon-and-cmd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.get-started__copy {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
 .get-started:before {
     position: absolute;
     right: 0px;
@@ -791,16 +806,14 @@ main>section {
     z-index: 1;
 }
 
-.get-started__command {
-    padding: 14px 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.6);
-}
-
 .get-started__shell {
     padding: 14px 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    resize: none;
+    background-color: inherit;
     color: #BB6BD9;
+    border: none;
 }
 
 .get-started__guide {
@@ -1242,10 +1255,12 @@ main>section {
     padding: 6px 12px;
     font-weight: 400;
 }
+
 .devtron-footer__git:hover {
     color: #ffffff;
     text-decoration: none;
 }
+
 .devtron-footer__logo {
     display: none;
     margin-bottom: 24px;
