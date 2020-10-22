@@ -328,7 +328,7 @@ main>section {
     display: none;
     padding: 0px 0px;
     position: relative;
-    height: 140px;
+    height: 158px;
     width: 100%;
     overflow: hidden;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -339,13 +339,13 @@ main>section {
     font-size: 1.2rem;
     font-style: normal;
     color: #56CCF2;
-    min-width: 33%;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0em;
     transform: translateY(30px);
     transition: 650ms cubic-bezier(.645, .045, .355, 1);
     position: absolute;
+    width: 100%;
     opacity: 0.5;
 }
 
@@ -453,7 +453,7 @@ main>section {
 }
 
 .section-hero__button-container {
-    margin: 40px 0;
+    margin: 100px 0 40px 0;
 }
 
 .carousel__arrow {
@@ -530,7 +530,7 @@ main>section {
     font-weight: normal;
     display: block;
     font-size: 0.66rem;
-    padding: 8px 12px;
+    padding: 6px 12px;
     box-shadow: none;
 }
 
@@ -575,7 +575,6 @@ main>section {
     padding: 20px 20px 48px 20px;
     border: 1px solid #E0E0E0;
     scroll-snap-align: start;
-    width: unset;
     position: relative;
 }
 
@@ -650,7 +649,7 @@ main>section {
     min-height: 588px;
     max-width: 1440px;
     margin: auto;
-    background-color: #140152;
+    /* background-color: #140152; */
     z-index: 1;
 }
 
@@ -671,8 +670,9 @@ main>section {
     align-items: center;
     justify-content: space-between;
     width: calc(100vw - 72px);
-    min-height: 304px;
+    min-height: 415px;
     top: 0px;
+    padding-top: 95px;
 }
 
 .section-why__devtron-landscape {
@@ -848,7 +848,6 @@ main>section {
 .carousel-testimonial {
     border-radius: 8px;
     border: 1px solid #E0E0E0;
-    min-height: 446px;
 }
 
 .carousel-testimonial__bg {
@@ -862,6 +861,29 @@ main>section {
     margin-bottom: 20px;
 }
 
+.carousel-testimonial__see-more {
+    color: #0066CC;
+    background-color: white;
+    border: none;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 600;
+    padding-left: 0px;
+    text-transform: uppercase;
+}
+
+.hide-see-more+.carousel-testimonial__see-more {
+    visibility: hidden;
+}
+
+.carousel-testimonial__message-container {
+    height: 190px;
+    transition: height 200ms ease-in-out;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
 .carousel-testimonial__message {
     font-family: 'Noto Serif', serif;
     font-size: 16px;
@@ -869,19 +891,6 @@ main>section {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
-    margin-top: 24px;
-    margin-bottom: 20px;
-}
-
-.carousel-testimonial__read-more {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 21px;
-    letter-spacing: 0em;
-    color: #0066cc;
     text-align: left;
 }
 
@@ -1219,18 +1228,29 @@ main>section {
     margin: auto;
 }
 
+.devtron-footer__git {
+    border-radius: 4px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    font-size: 0.7rem;
+    display: inline-block;
+    line-height: 1.4;
+    padding: 6px 12px;
+    font-weight: 400;
+}
+.devtron-footer__git:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
 .devtron-footer__logo {
     display: none;
     margin-bottom: 24px;
 }
 
-.devtron-footer__time {
-    color: #F2C94C;
-    text-transform: capitalize;
-    line-height: 30px;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 24px 0;
+.devtron-footer__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }
 
 .devtron-footer__content {
@@ -1379,12 +1399,6 @@ main>section {
     margin: 0 0 10px 0;
 }
 
-.section-learning__grid-item {
-    min-width: 248px;
-    scroll-snap-align: start;
-    cursor: pointer;
-}
-
 .learning-card {
     min-height: 300px;
     padding-bottom: 41px;
@@ -1461,18 +1475,11 @@ main>section {
 
 .section-why__grid {
     margin: 40px auto;
-    min-height: 320px;
-}
-
-.section-why__grid-item:hover {
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 480px;
 }
 
 .easily-integrate {
     padding: 64px 40px;
-    background-color: inherit;
-    max-width: 1440px;
-    margin: auto;
 }
 
 .easily-integrate__icon {
@@ -1518,6 +1525,7 @@ main>section {
 }
 
 /* TODO: Use only classnames for styles  */
+
 /* 
 .button-early-access--easily-integtate img {
     margin-left: 15px;
@@ -1539,6 +1547,12 @@ main>section {
 @media screen and (min-width: 425px) and (max-width: 549px) {
     .owl-carousel--section-why .item {
         min-height: 460px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    .devtron-footer__href img {
+        width: 26%;
     }
 }
 
@@ -1604,6 +1618,9 @@ main>section {
     .landscape-card-width {
         width: 100%;
     }
+    .owl-carousel--section-why .item {
+        min-height: 740px;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -1616,8 +1633,14 @@ main>section {
     .section-hero__scroll-down, .button-early-access--mob {
         display: none;
     }
+    .section-hero__button-container {
+        margin: 40px 0;
+    }
     .section-contributor {
         padding: 94px 40px;
+    }
+    .button-early-access--nav {
+        font-size: 0.8rem;
     }
     .get-started {
         padding: 100px 40px;
@@ -1632,6 +1655,9 @@ main>section {
     .main-title {
         min-height: unset;
     }
+    .section-why__grid-item {
+        padding: 40px 30px 48px 30px;
+    }
     .main-nav__link-blog {
         font-size: 1rem;
         display: block;
@@ -1643,12 +1669,16 @@ main>section {
     .owl-carousel--section-why .item {
         min-height: 545px;
     }
-    .button-early-access--nav {
-        font-size: 0.8rem;
+    .section-why__grid {
+        display: block;
+        margin-bottom: 310px;
     }
-    .social-icon__container {
-        right: 40px;
-        bottom: 40px;
+    .section-why__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 95px;
+        width: calc(100vw - 82px);
     }
     .early-access-card__text {
         padding: 0 0 60px 72px;
@@ -1663,7 +1693,7 @@ main>section {
     .section-hero__left {
         display: flex;
         flex-direction: column;
-        flex-basis: 30%;
+        min-width: 33%;
         justify-content: space-evenly;
     }
     .fb-community {
@@ -1726,6 +1756,12 @@ main>section {
         z-index: -1;
         opacity: 0.7;
     }
+    .section-learning--mob {
+        display: none;
+    }
+    .section-learning {
+        position: relative;
+    }
     .section-testimonials {
         border-radius: 0px;
     }
@@ -1746,7 +1782,7 @@ main>section {
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        bottom: 64px;
+        bottom: 95px;
         width: calc(100vw - 82px);
     }
     .section-why__gif {
@@ -1762,7 +1798,7 @@ main>section {
         justify-content: space-between;
         padding-top: 64px;
         width: calc(100vw - 82px);
-        clip: rect(0, auto, 350px, 0);
+        clip: rect(0, auto, auto, 0);
     }
     .section-landscape__image {
         position: absolute;
@@ -1777,9 +1813,6 @@ main>section {
     }
     .section-testimonials--desktop {
         display: block;
-    }
-    .section-learning--mob {
-        display: none;
     }
     .section-learning--desktop {
         display: block;
@@ -1812,6 +1845,10 @@ main>section {
     }
     .devtron-footer {
         padding: 100px 80px 0 80px;
+    }
+    .devtron-footer__git {
+        /* font-size: 0.8rem; */
+        margin-top: 30px;
     }
     .devtron-footer__logo {
         display: block;
@@ -1876,6 +1913,9 @@ main>section {
     .join-community {
         padding: 0px 135px;
     }
+    .section-why__grid-item {
+        padding: 40px 40px 48px 40px;
+    }
     .early-access-card__title {
         font-size: 2.4rem;
         line-height: 1.5;
@@ -1889,6 +1929,9 @@ main>section {
     }
     .section-hero__content {
         justify-content: space-between;
+    }
+    .section-hero__left {
+        min-width: 40%;
     }
     .section-landscape__wrapper {
         border-top-right-radius: 100px;
@@ -1931,8 +1974,27 @@ main>section {
         flex: 1;
         grid-template-columns: repeat( 6, minmax(60px, 1fr));
     }
+    .section-hero {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    .section-landscape {
+        padding: 305px 135px 100px
+    }
+    .section-testimonials {
+        padding: 100px 135px
+    }
+    .section-learning {
+        padding: 0px 135px 100px
+    }
+    .section-why {
+        padding: 100px 135px;
+    }
     .section-hero__gif-wrapper {
         min-width: 450px;
+    }
+    .owl-carousel--section-why .item {
+        min-height: 740px;
     }
     .main-nav__content {
         padding: 0 135px;
@@ -1951,7 +2013,17 @@ main>section {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) and (orientation: landscape) {}
+@media screen and (min-width: 768px) and (max-width: 1440px) and (orientation: landscape) {
+    .section-learning__header-margins {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape) {
+    .section-hero__left {
+        min-width: 30%;
+    }
+}
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
     .main-title {
@@ -1959,6 +2031,9 @@ main>section {
     }
     .text-white--hero {
         font-size: 1.1rem;
+    }
+    .owl-carousel--section-why .item {
+        min-height: 500px;
     }
     .section-hero__time {
         font-size: 0.88rem;
@@ -1987,6 +2062,20 @@ main>section {
     }
     .section-why__title--cycle {
         max-width: 540px;
+    }
+    .section-why__grid {
+        margin-bottom: 380px;
+    }
+    .section-landscape {
+        padding-top: 415px;
+    }
+    .section-why__gif {
+        width: 310px;
+        height: 310px;
+    }
+    .section-why__devtron-landscape {
+        width: 310px;
+        height: 310px;
     }
     .devtron-footer {
         padding-left: 135px;
