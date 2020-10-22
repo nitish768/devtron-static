@@ -682,6 +682,8 @@ main>section {
 
 .devtron-stack {
     padding: 40px 40px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .devtron-stack__hr {
@@ -758,6 +760,8 @@ main>section {
 .get-started {
     padding: 40px 40px;
     position: relative;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .get-started:before {
@@ -1480,6 +1484,8 @@ main>section {
 
 .easily-integrate {
     padding: 64px 40px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .easily-integrate__icon {
