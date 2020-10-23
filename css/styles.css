@@ -275,6 +275,7 @@ main>section {
     min-height: 588px;
     padding: 113px 40px 47px;
     position: relative;
+    overflow: visible;
 }
 
 .section-hero__content {
@@ -291,10 +292,10 @@ main>section {
     position: relative;
     height: 300px;
     margin-left: 50px;
+    overflow: hidden;
 }
 
 .section-hero__gif {
-    position: absolute;
     width: 100%;
     transform: translateY(30px);
     transition: 650ms cubic-bezier(.645, .045, .355, 1);
@@ -303,21 +304,22 @@ main>section {
     right: 0px;
 }
 
-.dots-bg::after {
-    content: "?";
-    display: block;
-    background-image: url('../images/dots.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 150px;
-    background-position-y: 100px;
-    width: 500px;
-    height: 500px;
-    background-color: red;
-}
-
 .section-hero__gif:nth-child(1) {
     top: -100px;
+}
+
+.section-hero__gif--one::after {
+    content: "";
+    display: block;
+    background-image: url('../images/dots.png');
+    background-repeat: repeat;
+    background-position-x: 150px;
+    background-position-y: 100px;
+    position: absolute;
+    top: 60px;
+    left: 221px;
+    width: 140%;
+    height: 600px;
 }
 
 .section-hero__gif:nth-child(2) {
@@ -325,9 +327,38 @@ main>section {
     opacity: 1;
 }
 
+.section-hero__gif--two::after {
+    content: "";
+    display: block;
+    background-image: url('../images/dots.png');
+    background-repeat: repeat;
+    background-position-x: 150px;
+    background-position-y: 100px;
+    position: absolute;
+    top: 30px;
+    left: 249px;
+    width: 100%;
+    height: 600px;
+}
+
 .section-hero__gif:nth-child(3) {
     top: 0px;
 }
+/* 
+
+.section-hero__gif--three::after {
+    content: "";
+    display: block;
+    background-image: url('../images/dots.png');
+    background-repeat: repeat;
+    background-position-x: 150px;
+    background-position-y: 100px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+} */
 
 .section-hero__paragraph-container {
     display: none;
@@ -543,6 +574,7 @@ main>section {
     display: inline-block;
     margin-bottom: 40px;
     max-width: 446px;
+    line-height: 1.5;
 }
 
 .owl-carousel--section-why .item {
@@ -745,11 +777,10 @@ main>section {
     text-transform: uppercase;
 }
 
-
 .hide-see-more+.carousel-testimonial__see-more {
     visibility: hidden;
- }
- 
+}
+
 .carousel-testimonial__message-container {
     height: 190px;
     transition: height 200ms ease-in-out;
@@ -1722,11 +1753,13 @@ main>section {
         margin-bottom: 40px;
     }
 }
+
 @media screen and (min-width: 1300px) and (orientation: landscape) {
     .section-hero__left {
         min-width: 30%;
     }
 }
+
 @media screen and (min-width: 1440px) and (orientation: landscape) {
     .main-title {
         margin-bottom: 77px;
