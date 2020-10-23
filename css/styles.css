@@ -1,3 +1,32 @@
+@font-face {
+    font-family: NotoSerif;
+    src: url(../fonts/NotoSerif.ttf);
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
 html {
     font-size: 18px;
 }
@@ -34,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-white {
-    font-weight: 400;
+    font-weight: normal;
     line-height: 1.5;
     font-size: 1.1rem;
     letter-spacing: 0em;
@@ -46,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: openSans;
     background-color: #F2F4F7;
 }
 
@@ -382,7 +411,7 @@ main>section {
 
 .main-title {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1.3;
     letter-spacing: 0em;
     margin-bottom: 65px;
@@ -409,7 +438,7 @@ main>section {
 }
 
 .secondary-title--bold {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .secondary-title--white {
@@ -669,7 +698,7 @@ main>section {
 
 .section-landscape__heading {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 24px;
     letter-spacing: 0.1em;
     text-align: center;
@@ -708,7 +737,7 @@ main>section {
 
 .devtron-stack__title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
@@ -916,10 +945,10 @@ main>section {
 }
 
 .carousel-testimonial__message {
-    font-family: 'Noto Serif', serif;
+    font-family: NotoSerif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -1035,25 +1064,23 @@ main>section {
 .tabcontent .card-body {
     font-size: 18px;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .collapse .card {
     background: #281566;
-    /* margin: 0 30px 30px 30px; */
 }
 
 .accordion .card-body {
     background: #281566;
     margin: 16px 0 0 0;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: normal;
     border-radius: 8px;
 }
 
 .accordion .envision-logo {
     width: 32px;
-    /* height: 38px; */
     position: relative;
     left: -6px;
 }
@@ -1069,7 +1096,7 @@ main>section {
 
 .featureHeading__next {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     color: rgb(137, 128, 168, 1);
     margin: 0 0 22px 0;
 }
@@ -1077,7 +1104,7 @@ main>section {
 .featureHeading {
     color: #FFFFFF;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 18px;
     width: 340px;
     margin: 0 0 44px 0;
@@ -1130,6 +1157,18 @@ main>section {
     display: none;
 }
 
+.heading__dark {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.heading__light {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 300;
+}
+
 .section-sneakpeek__button-container {
     margin-top: 80px;
 }
@@ -1150,7 +1189,7 @@ main>section {
 
 .early-access-form__label {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
@@ -1160,7 +1199,7 @@ main>section {
     border-radius: 4px;
     border: 1px solid #BDBDBD;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 20px;
     padding: 12px;
     letter-spacing: 0em;
@@ -1173,7 +1212,7 @@ main>section {
 
 .early-access-form__para {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
@@ -1223,7 +1262,7 @@ main>section {
 }
 
 .early-access-card__title {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.6rem;
     color: #ffffff;
     letter-spacing: 0;
@@ -1301,7 +1340,7 @@ main>section {
 .devtron-footer__title {
     font-size: 0.8rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
@@ -1312,7 +1351,7 @@ main>section {
 .devtron-footer__copyright-text {
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
@@ -1387,7 +1426,7 @@ main>section {
 .fb-community__title {
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
@@ -1415,7 +1454,7 @@ main>section {
     color: #000A14;
     font-size: 22px;
     line-height: 170%;
-    font-family: Noto Serif;
+    font-family: NotoSerif;
 }
 
 .section-learning__grid {
@@ -1465,7 +1504,7 @@ main>section {
 }
 
 .learning-card__img {
-    height: 132px;
+    height: 145px;
     width: auto;
     border-radius: 8px 8px 0 0;
 }
@@ -1489,7 +1528,7 @@ main>section {
 .sneakpeek-mob__title {
     color: #F2C94C;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 33px;
     margin-top: 20px;
 }
@@ -1808,10 +1847,6 @@ main>section {
     }
     .section-hero__gif-wrapper, .section-hero__paragraph-container {
         display: block;
-    }
-    .section-why__grid-item {
-        width: auto;
-        padding: 40px 40px 48px 40px;
     }
     .section-why__bottom {
         flex-direction: row;
