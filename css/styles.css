@@ -307,7 +307,7 @@ main>section {
     top: -100px;
 }
 
-.section-hero__gif--one::after {
+/* .section-hero__gif--one::after {
     content: "";
     display: block;
     background-image: url('../images/dots.png');
@@ -319,14 +319,14 @@ main>section {
     left: 221px;
     width: 140%;
     height: 600px;
-}
+} */
 
 .section-hero__gif:nth-child(2) {
     top: -40px;
     opacity: 1;
 }
 
-.section-hero__gif--two::after {
+/* .section-hero__gif--two::after {
     content: "";
     display: block;
     background-image: url('../images/dots.png');
@@ -338,26 +338,11 @@ main>section {
     left: 249px;
     width: 100%;
     height: 600px;
-}
+} */
 
 .section-hero__gif:nth-child(3) {
     top: 0px;
 }
-/* 
-
-.section-hero__gif--three::after {
-    content: "";
-    display: block;
-    background-image: url('../images/dots.png');
-    background-repeat: repeat;
-    background-position-x: 150px;
-    background-position-y: 100px;
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    width: 300px;
-    height: 300px;
-} */
 
 .section-hero__paragraph-container {
     display: none;
