@@ -1136,9 +1136,9 @@ main>section {
 
 .section-contributor__bg {
     position: relative;
-    background-image: url('../images/bg-contributor.png');
+    background-image: url('../images/bg-contributor-pattern.png');
     background-repeat: repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .section-contributor {
