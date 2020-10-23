@@ -162,7 +162,7 @@ button:focus {
     justify-content: space-between;
 }
 
-.section-learning__grid-item:hover {
+.section-why__grid-item:hover, .section-learning__grid-item:hover {
     box-shadow: 0px 4px 12px rgba(20, 1, 82, 0.15);
 }
 
