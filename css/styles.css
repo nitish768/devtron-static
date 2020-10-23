@@ -198,11 +198,10 @@ button:focus {
 
 .binoculars__position {
     position: absolute;
-    width: 281px;
-    height: 281px;
     left: -40px;
     opacity: 8%;
-    top: 60px;
+    width: 170px;
+    top: 50px;
 }
 
 .dots__position {
@@ -213,6 +212,7 @@ button:focus {
     top: -60px;
     background-image: url('../images/dots.png');
     z-index: -1;
+    display: none;
 }
 
 .popper__position {
@@ -731,9 +731,8 @@ main>section {
     align-items: center;
     justify-content: space-between;
     width: calc(100vw - 72px);
-    min-height: 415px;
+    min-height: 345px;
     top: 0px;
-    padding-top: 95px;
 }
 
 .section-why__devtron-landscape {
@@ -1002,7 +1001,6 @@ main>section {
     position: relative;
     border-radius: 0 50px 0 0;
     color: white;
-    padding: 100px 0px;
     min-height: 585px;
 }
 
@@ -1691,33 +1689,16 @@ main>section {
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .binoculars__position {
-        left: 0px;
-    }
-    .popper__position {
-        right: 0px;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .binoculars__position {
-        width: 140px;
-        height: 140px;
-        top: 110px;
-    }
     .popper__position {
         width: 140px;
         height: 140px;
-    }
-    .dots__position {
-        display: none;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .section-landscape {
-        padding: 305px 40px 100px
+        padding: 345px 40px 100px
     }
     .section-testimonials {
         padding: 100px 40px;
@@ -1755,6 +1736,9 @@ main>section {
     }
     .section-hero__button-container {
         margin: 40px 0;
+    }
+    .dots__position {
+        display: block;
     }
     .section-contributor {
         padding: 94px 40px;
@@ -1795,6 +1779,11 @@ main>section {
     }
     .secondary-title--landscape {
         max-width: 450px;
+    }
+    .binoculars__position {
+        width: 281px;
+        height: 281px;
+        top: 72px;
     }
     .section-hero__left {
         display: flex;
@@ -1898,7 +1887,7 @@ main>section {
         position: absolute;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 64px;
+        padding-top: 105px;
         width: calc(100vw - 82px);
         clip: rect(0, auto, auto, 0);
     }
@@ -1931,6 +1920,7 @@ main>section {
     }
     .devtron-landscape {
         display: flex;
+        padding: 65px 0 100px 0;
     }
     .devtron-landscape--mob {
         display: none;
@@ -1989,12 +1979,9 @@ main>section {
     .secondary-title {
         font-size: 2rem;
     }
-    .section-hero {
+    .section-hero, .section-landscape {
         padding-left: 135px;
         padding-right: 135px;
-    }
-    .section-landscape {
-        padding: 305px 135px 100px;
     }
     .section-testimonials {
         padding: 100px 135px
@@ -2060,7 +2047,7 @@ main>section {
     .section-hero__paragraph:nth-child(4) {
         top: 200px;
     }
-    .section-landscape__top, .section-why__bottom {
+    .section-why__bottom, .section-landscape__top {
         width: calc(100% - 270px);
     }
     .devtron-stack {
@@ -2081,9 +2068,6 @@ main>section {
     .section-hero {
         padding-left: 135px;
         padding-right: 135px;
-    }
-    .section-landscape {
-        padding: 305px 135px 100px
     }
     .section-testimonials {
         padding: 100px 135px
@@ -2173,6 +2157,12 @@ main>section {
     .section-why__devtron-landscape, .section-why__gif {
         width: 260px;
         height: 260px;
+    }
+    .binoculars__position {
+        left: 0px;
+    }
+    .popper__position {
+        right: 0px;
     }
     .devtron-footer {
         padding-left: 135px;
