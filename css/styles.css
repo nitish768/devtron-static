@@ -1777,10 +1777,6 @@ main>section {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .section-why__grid {
-        display: block;
-        margin-bottom: 310px;
-    }
     .early-access-card__text {
         padding: 0 0 60px 72px;
         padding-top: 0px;
@@ -2164,18 +2160,14 @@ main>section {
         max-width: 540px;
     }
     .section-why__grid {
-        margin-bottom: 380px;
+        margin-bottom: 320px;
     }
     .section-landscape {
-        padding-top: 415px;
+        padding-top: 380px;
     }
-    .section-why__gif {
-        width: 310px;
-        height: 310px;
-    }
-    .section-why__devtron-landscape {
-        width: 310px;
-        height: 310px;
+    .section-why__devtron-landscape, .section-why__gif {
+        width: 260px;
+        height: 260px;
     }
     .devtron-footer {
         padding-left: 135px;
