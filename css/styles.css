@@ -1147,6 +1147,10 @@ main>section {
     margin: auto;
 }
 
+.section-contributor--contributor {
+    display: block;
+}
+
 .section-contributor__bg::before {
     content: '';
     position: absolute;
@@ -1735,6 +1739,9 @@ main>section {
 @media screen and (min-width: 650px) {
     .early-access-card__img {
         display: block;
+    }
+    .section-contributor--contributor {
+        display: inline;
     }
 }
 
