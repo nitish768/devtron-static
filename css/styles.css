@@ -585,10 +585,14 @@ main>section {
 
 .button-early-access--nav {
     font-weight: normal;
-    display: block;
+    display: none;
     font-size: 0.66rem;
     padding: 6px 12px;
     box-shadow: none;
+}
+
+.show-nav-github .button-early-access--nav {
+    display: block;
 }
 
 .button-early-access--hero {
@@ -2085,7 +2089,7 @@ main>section {
         padding: 100px 135px
     }
     .section-learning {
-        padding: 0px 135px 100px
+        padding: 100px 135px;
     }
     .section-why {
         padding: 100px 135px;

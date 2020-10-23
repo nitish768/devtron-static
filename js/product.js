@@ -372,7 +372,7 @@ $(function () {
 
     if ($(this).scrollTop() < $navbar.height()) {
       $navbar.addClass("main-nav-dark");
-      $navbar.removeClass("main-nav-light bg-white show-get-early-access");
+      $navbar.removeClass("main-nav-light bg-white show-nav-github");
     }
 
     if ($(this).scrollTop() > $navbar.height() && $(this).scrollTop() < ($sectionOne.height() + 2 * $navbar.height())) {
@@ -383,11 +383,11 @@ $(function () {
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
     ) {
       $navbar.removeClass("main-nav-dark");
-      $navbar.addClass("main-nav-light show-get-early-access");
+      $navbar.addClass("main-nav-light show-nav-github");
     }
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
       && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
-      $navbar.addClass("main-nav-dark show-get-early-access");
+      $navbar.addClass("main-nav-dark show-nav-github");
       $navbar.removeClass("main-nav-light bg-white");
     }
     else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height())) && viewportOffset.top > 80) {
@@ -396,7 +396,7 @@ $(function () {
     }
     //footer 
     else if (viewportOffset.top < 80) {
-      $navbar.addClass("main-nav-dark show-get-early-access");
+      $navbar.addClass("main-nav-dark show-nav-github");
       $navbar.removeClass("main-nav-light bg-white");
     }
 
