@@ -659,7 +659,6 @@ main>section {
 }
 
 .social-icon__icon {
-    width: 40px;
     vertical-align: middle;
     margin-right: 5px;
     cursor: pointer;
@@ -802,7 +801,17 @@ main>section {
 .join-community__img {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
+}
+
+.divider-join-community-learning {
+    margin: 0px auto 100px auto;
+    display: none;
+    border: none;
+    height: 0px;
+    width: 80%;
+    max-width: 1170px;
+    border-top: 1px solid #D8DFEB;
 }
 
 .join-community__grid-item {
@@ -815,6 +824,7 @@ main>section {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
 }
 
 .get-started {
@@ -856,6 +866,7 @@ main>section {
     margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 4px;
+    font-family: monospace;
     background-color: #281566;
     font-size: 0.7rem;
     font-weight: 400;
@@ -868,7 +879,6 @@ main>section {
 
 .get-started__shell {
     padding: 14px 20px;
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
     width: 100%;
     resize: none;
     background-color: inherit;
@@ -1628,7 +1638,7 @@ main>section {
 }
 
 .join-community__grid-item img {
-    width: 30%;
+    width: 40px;
 }
 
 .devtron-footer__href img {
@@ -1923,6 +1933,9 @@ main>section {
     .devtron-stack__title {
         text-align: left;
     }
+    .divider-join-community-learning {
+        display: block;
+    }
     .join-community__grid {
         max-width: 340px;
         column-gap: 30px;
@@ -1934,7 +1947,6 @@ main>section {
         padding: 100px 80px 0 80px;
     }
     .devtron-footer__git {
-        /* font-size: 0.8rem; */
         margin-top: 30px;
     }
     .devtron-footer__logo {
