@@ -1599,12 +1599,13 @@ main>section {
     line-height: 1.5;
 }
 
-/* TODO: Use only classnames for styles  */
+.icon-learn-more {
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
 
-/* 
-.button-early-access--easily-integtate img {
-    margin-left: 15px;
-} */
+/* TODO: Use only classnames for styles  */
 
 .button-early-access img {
     margin-right: 10px;
@@ -1636,6 +1637,7 @@ main>section {
         min-height: 540px;
     }
 }
+
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__copyright-text--mob {
         display: none;
@@ -1699,11 +1701,13 @@ main>section {
         width: 100%;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
     .owl-carousel--section-why .item {
         min-height: 740px;
     }
 }
+
 @media screen and (min-width: 650px) {
     .early-access-card__img {
         display: block;
@@ -1751,7 +1755,6 @@ main>section {
         display: block;
         margin-bottom: 310px;
     }
-    
     .early-access-card__text {
         padding: 0 0 60px 72px;
         padding-top: 0px;
