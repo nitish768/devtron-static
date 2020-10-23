@@ -670,6 +670,7 @@ main>section {
 }
 
 .section-why__bottom {
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -1750,13 +1751,7 @@ main>section {
         display: block;
         margin-bottom: 310px;
     }
-    .section-why__bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 95px;
-        width: calc(100vw - 82px);
-    }
+    
     .early-access-card__text {
         padding: 0 0 60px 72px;
         padding-top: 0px;
@@ -1782,7 +1777,7 @@ main>section {
     }
     .section-why__grid {
         display: block;
-        margin-bottom: 240px;
+        margin-bottom: 280px;
     }
     .secondary-title {
         text-align: left;
