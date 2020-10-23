@@ -868,7 +868,7 @@ main>section {
     border-radius: 4px;
     font-family: monospace;
     background-color: #281566;
-    font-size: 0.7rem;
+    font-size: 0.77rem;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0em;
@@ -904,14 +904,14 @@ main>section {
 
 .guide__guide {
     font-weight: normal;
-    font-size: 0.7rem;
+    font-size: 0.77rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .guide__getting-started {
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     line-height: 1.5;
     color: #F2C94C;
 }
@@ -1613,7 +1613,7 @@ main>section {
 
 .easily-integrate__item:hover {
     border-color: transparent;
-    box-shadow: 0px 4px 12px 0px #140152 15%;
+    box-shadow: 0px 4px 12px rgba(20, 1, 82, 0.15);
 }
 
 .easily-integrate__item-link {
@@ -1966,6 +1966,10 @@ main>section {
     .devtron-footer__href img {
         width: 26%;
     }
+    .get-started__terminal{
+        /* font-size: 0.88rem; */
+    }
+
 }
 
 @media screen and (min-width: 960px) {
