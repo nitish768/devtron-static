@@ -275,7 +275,7 @@ main>section {
     min-height: 588px;
     padding: 113px 40px 47px;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .section-hero__content {
@@ -292,7 +292,6 @@ main>section {
     position: relative;
     height: 300px;
     margin-left: 50px;
-    overflow: hidden;
 }
 
 .section-hero__gif {
