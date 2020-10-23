@@ -1585,7 +1585,7 @@ main>section {
 }
 
 .easily-integrate__icon {
-    width: 100%;
+    width: 40px;
 }
 
 .easily-integrate___all-items {
@@ -1604,7 +1604,7 @@ main>section {
 
 .easily-integrate__item {
     background-color: #ffffff;
-    padding: 24px 20px;
+    padding: 20px;
     border-radius: 8px;
     border: solid 1px #E0E0E0;
     display: grid;
