@@ -1983,6 +1983,9 @@ main>section {
         padding-left: 135px;
         padding-right: 135px;
     }
+    .section-landscape {
+        padding-top: 345px;
+    }
     .section-testimonials {
         padding: 100px 135px
     }
