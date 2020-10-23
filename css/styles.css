@@ -1585,7 +1585,7 @@ main>section {
 }
 
 .easily-integrate__icon {
-    width: 40px;
+    width: 100%;
 }
 
 .easily-integrate___all-items {
@@ -1608,8 +1608,9 @@ main>section {
     border-radius: 8px;
     border: solid 1px #E0E0E0;
     display: grid;
-    grid-template-columns: 34px 150px;
+    grid-template-columns: 40px 150px;
     column-gap: 30px;
+    align-items: center;
 }
 
 .easily-integrate__item:hover {
@@ -1963,10 +1964,9 @@ main>section {
     .devtron-footer__href img {
         width: 26%;
     }
-    .get-started__terminal{
+    .get-started__terminal {
         /* font-size: 0.88rem; */
     }
-
 }
 
 @media screen and (min-width: 960px) {
