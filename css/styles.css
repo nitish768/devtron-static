@@ -1608,8 +1608,8 @@ main>section {
     border-radius: 8px;
     border: solid 1px #E0E0E0;
     display: grid;
-    grid-template-columns: 40px 150px;
-    column-gap: 30px;
+    grid-template-columns: 60px 150px;
+    column-gap: 20px;
     align-items: center;
 }
 
