@@ -19,6 +19,20 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
+.toast__wrapper {
+    left: 50%;
+    position: fixed;
+    z-index: 25;
+    top: 100px;
+    transform: translateX(-50%);
+}
+
+.toast-body--devtron {
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
 .text-white {
     font-weight: 400;
     line-height: 1.5;

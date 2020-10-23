@@ -512,7 +512,6 @@ function copy() {
   let textArea = document.createElement("textarea");
   textArea.value = `bash -c "$(curl-fsSL https://devtron.ai/install.sh)`;
   body.appendChild(textArea);
-
   try {
     textArea.select();
     document.execCommand('copy');
@@ -521,6 +520,7 @@ function copy() {
     console.error('Oops, unable to copy', err);
   }
   body.removeChild(textArea);
+  $("#copy-toast").toast('show');
 }
 
 function getEarlyAccessGAEvent(label) {

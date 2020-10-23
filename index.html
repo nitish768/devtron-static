@@ -46,14 +46,18 @@
 </head>
 
 <body>
-    <div class="toast" id="linkedin-toast" style="left: 50%;
-    position: fixed;
-    z-index: 25;
-    top: 100px;
-    transform: translateX(-50%);">
-        <!-- opens on linkein button click -->
-        <div class="toast-body" style="padding: 0.75rem; background: rgba(0,0,0,0.9); color: #fff;">
-            <div>Copied! Redirecting to LinkedIn…</div>
+    <!-- opens on linkein button click -->
+    <div role="alert" id="linkedin-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
+        data-delay="300" data-autohide="true" data-animation="true">
+        <div class="toast-body toast-body--devtron">
+            Copied! Redirecting to linkedin...
+        </div>
+    </div>
+
+    <div id="copy-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true" data-delay="300"
+        data-autohide="true" data-animation="true" role="alert">
+        <div class="toast-body toast-body--devtron">
+            Copied!
         </div>
     </div>
     <div class="modal bg-white fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
