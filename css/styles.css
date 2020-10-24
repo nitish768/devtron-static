@@ -290,6 +290,7 @@ button:focus {
     fill: #000A14;
 }
 
+.bg-white .main-nav__link-blog,
 .main-nav-light .main-nav__link-blog {
     color: #140152;
 }
@@ -592,6 +593,7 @@ main>section {
     background-color: #F2C94C;
     border-radius: 4px;
     border: none;
+    display: inline-block;
     padding: 14px 20px;
     cursor: pointer;
     box-shadow: 6px 6px 0px rgba(242, 201, 76, 0.3);
