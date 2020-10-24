@@ -845,6 +845,12 @@ main>section {
     margin: auto;
 }
 
+.secondary-title--get-started {
+    position: relative;
+    z-index: 2;
+    background-color: inherit;
+}
+
 .get-started__icon-and-cmd {
     display: flex;
     justify-content: space-between;
