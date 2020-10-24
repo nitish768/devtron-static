@@ -501,16 +501,26 @@ main>section {
     color: #0066CC;
 }
 
-.section-hero__calendar-icon {
-    display: none;
-    width: 24px;
-    position: relative;
-    top: -2px;
-    margin-right: 10px;
-}
-
 .section-hero__button-container {
     margin: 100px 0 40px 0;
+}
+
+.section-hero__os-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.section-hero__try-now {
+    font-weight: normal;
+    font-size: 0.77rem;
+    line-height: 1.5;
+    color: #F2C94C;
+    margin-bottom: 40px;
 }
 
 .carousel__arrow {
@@ -1827,9 +1837,6 @@ main>section {
         background-repeat: repeat;
         background-position-y: 440px;
         background-position-x: right;
-    }
-    .section-hero__calendar-icon {
-        display: inline-block;
     }
     .section-why {
         border-bottom-left-radius: 100px;
