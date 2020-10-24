@@ -282,16 +282,15 @@ button:focus {
     background-color: #F2F4F7;
 }
 
-.main-nav-light .main-nav___logo-icon {
+.bg-white .main-nav___logo-icon, .main-nav-light .main-nav___logo-icon {
     fill: #0066cc;
 }
 
-.main-nav-light .main-nav___logo-text {
+.bg-white .main-nav___logo-text, .main-nav-light .main-nav___logo-text {
     fill: #000A14;
 }
 
-.bg-white .main-nav__link-blog,
-.main-nav-light .main-nav__link-blog {
+.bg-white .main-nav__link-blog, .main-nav-light .main-nav__link-blog {
     color: #140152;
 }
 
