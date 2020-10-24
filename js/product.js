@@ -205,9 +205,16 @@ function openBlogPage(index) {
 var image1 = $('#image-1')
 var image2 = $('#image-2')
 var $navbar = $(".main-nav");
-var $sectionOne = $(".section-hero");
+var $sectionOneHeight = $(".section-hero").outerHeight();
 var $sectionTwo = $(".section-why");
 var $sectionThree = $(".section-landscape__wrapper");
+var $devtronStack = $(".devtron-stack");
+var $easilyIntegrate = $(".easily-integrate");
+var $testimonials = $(".section-testimonials");
+var $joinCommunity = $(".join-community");
+var $getStarted = $(".get-started");
+var $contributor = $(".section-contributor");
+var $learning = $(".section-learning");
 var $footer = $(".devtron-footer");
 var $devtronLandscape = $(".devtron-landscape");
 var $paraContainer = $(".section-hero__paragraph-container");
@@ -366,46 +373,60 @@ function isLandscape() {
   else return false;
 }
 
-
 $(function () {
   $(document).scroll(function () {
-    var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
-
-    if ($(this).scrollTop() < $navbar.height()) {
+    const scrollTop = $(this).scrollTop();
+    if (scrollTop < ($sectionOneHeight - $navbar.height())) {
       $navbar.addClass("main-nav-dark");
       $navbar.removeClass("main-nav-light bg-white show-nav-github");
     }
-
-    if ($(this).scrollTop() > $navbar.height() && $(this).scrollTop() < ($sectionOne.height() + 2 * $navbar.height())) {
-      $navbar.addClass("main-nav-dark");
-      $navbar.removeClass("main-nav-light bg-white");
-    }
-    else if ($(this).scrollTop() > ($sectionOne.height() + 2 * $navbar.height())
-      && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
-    ) {
+    else if (scrollTop > ($sectionOneHeight - $navbar.height()) && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() - $navbar.height())) {
       $navbar.removeClass("main-nav-dark");
       $navbar.addClass("main-nav-light show-nav-github");
     }
-    else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + (5 * $navbar.height()))
-      && $(this).scrollTop() < ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height()))) {
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() - $navbar.height())) {
       $navbar.addClass("main-nav-dark show-nav-github");
       $navbar.removeClass("main-nav-light bg-white");
     }
-    else if ($(this).scrollTop() > ($sectionOne.height() + $sectionTwo.height() + $sectionThree.height() + (5 * $navbar.height())) && viewportOffset.top > 80) {
-      $navbar.removeClass("main-nav-dark");
-      $navbar.addClass("main-nav-light bg-white");
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() - $navbar.height())) {
+      $navbar.addClass("bg-white show-nav-github");
+      $navbar.removeClass("main-nav-dark main-nav-light");
+    }
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() - $navbar.height())) {
+      $navbar.addClass("main-nav-light show-nav-github");
+      $navbar.removeClass("main-nav-dark bg-white");
+    }
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())) {
+      $navbar.addClass("bg-white show-nav-github");
+      $navbar.removeClass("main-nav-dark main-nav-light");
+    }
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())) {
+      $navbar.addClass("main-nav-dark show-nav-github");
+      $navbar.removeClass("bg-white main-nav-light");
+    }
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() + $contributor.outerHeight() + $learning.outerHeight() - $navbar.height())) {
+      $navbar.addClass("bg-white show-nav-github");
+      $navbar.removeClass("main-nav-dark main-nav-light");
     }
     //footer 
-    else if (viewportOffset.top < 80) {
-      $navbar.addClass("main-nav-dark show-nav-github");
-      $navbar.removeClass("main-nav-light bg-white");
+    else {
+      var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
+      if (viewportOffset.top <= 80) {
+        $navbar.addClass("main-nav-dark show-nav-github");
+        $navbar.removeClass("main-nav-light bg-white");
+      }
     }
-
 
     ///Landscape transition 
     // if (!isMobile() && !isLandscape() && vw > 768) {
 
-    //   if ($(this).scrollTop() > ($sectionOne.height() + $navbar.height())) {
+    //   if (scrollTop > ($sectionOne.height() + $navbar.height())) {
     //     let image = $(image1).get(0).getBoundingClientRect();
     //     let rightOffset = $(window).width() - image.right;
     //     let image1Rect = image1.get(0).getBoundingClientRect();
