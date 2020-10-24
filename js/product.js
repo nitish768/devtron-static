@@ -265,6 +265,7 @@ $(document).ready(function () {
       },
       768: {
         items: 3,
+        margin: 30,
       }
     }
   })

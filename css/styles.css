@@ -637,7 +637,7 @@ main>section {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 16px;
-    min-height: 588px;
+    min-height: 510px;
     margin: 16px 0;
 }
 
@@ -654,7 +654,7 @@ main>section {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .social-icon__container {
@@ -1660,25 +1660,13 @@ main>section {
     height: auto;
 }
 
-@media screen and (min-width: 425px) and (max-width: 549px) {
-    .owl-carousel--section-why .item {
-        min-height: 442px;
-    }
-}
-
 @media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__href img {
         width: 26%;
     }
-}
-
-@media screen and (min-width: 650px) and (max-width: 768px) {
     .owl-carousel--section-why .item {
-        min-height: 540px;
+        min-height: 555px;
     }
-}
-
-@media screen and (min-width: 550px) and (max-width: 768px) {
     .devtron-footer__copyright-text--mob {
         display: none;
     }
@@ -1723,11 +1711,8 @@ main>section {
     .landscape-card-width {
         width: 100%;
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
     .owl-carousel--section-why .item {
-        min-height: 740px;
+        min-height: 750px;
     }
 }
 
@@ -1743,6 +1728,9 @@ main>section {
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .section-hero__scroll-down, .button-early-access--mob {
         display: none;
+    }
+    .owl-carousel--section-why .item {
+        row-gap: 30px;
     }
     .section-hero__button-container {
         margin: 40px 0;
@@ -2005,6 +1993,9 @@ main>section {
     .section-why {
         padding: 100px 135px;
     }
+    .owl-carousel--section-why .item {
+        min-height: 700px;
+    }
     .easily-integrate {
         padding: 100px 135px;
     }
@@ -2118,6 +2109,9 @@ main>section {
     .section-hero__left {
         min-width: 30%;
     }
+    .owl-carousel--section-why .item {
+        min-height: 510px;
+    }
 }
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
@@ -2126,9 +2120,6 @@ main>section {
     }
     .text-white--hero {
         font-size: 1.1rem;
-    }
-    .owl-carousel--section-why .item {
-        min-height: 500px;
     }
     .section-hero__time {
         font-size: 0.88rem;
