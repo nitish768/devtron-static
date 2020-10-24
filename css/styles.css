@@ -668,13 +668,17 @@ main>section {
     position: absolute;
     bottom: 20px;
     right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .social-icon__text {
     display: none;
     font-size: 0.7rem;
-    line-height: 1.5%;
+    line-height: 1.5;
     color: #828282;
+    margin-right: 8px;
+    align-items: center;
 }
 
 .social-icon__icon {
@@ -683,8 +687,13 @@ main>section {
     cursor: pointer;
 }
 
-.social-icon__icon-twitter:hover~.social-icon__text {
-    display: block;
+.social-icon__icon-twitter:hover~.social-icon__text-twitter {
+    display: inline-flex;
+}
+
+
+.social-icon__icon-linkedin:hover~.social-icon__text-linkedin {
+    display: inline-flex;
 }
 
 .social-icon__icon:hover path {
