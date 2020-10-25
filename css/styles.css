@@ -685,6 +685,7 @@ main>section {
     margin-right: 5px;
     cursor: pointer;
 }
+
 /* 
 .social-icon__icon-twitter:hover~.social-icon__text-twitter {
     display: inline-flex;
@@ -831,6 +832,15 @@ main>section {
 .divider-join-community-learning {
     margin: 0px auto 100px auto;
     display: none;
+    border: none;
+    height: 0px;
+    width: 80%;
+    max-width: 1170px;
+    border-top: 1px solid #D8DFEB;
+}
+
+.divider-stack-testimonial {
+    margin: 0px auto;
     border: none;
     height: 0px;
     width: 80%;
