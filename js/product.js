@@ -112,7 +112,7 @@ https://devtron.ai/?utm_source=twitter&utm_medium=tweet&utm_campaign=quote
 }
 
 function setRemainigTime() {
-  const countDownDate = new Date("Oct 25, 2020 00:00:01").getTime();
+  const countDownDate = new Date("Nov 5, 2020 00:00:01").getTime();
 
   let intervalId = setInterval(() => {
 
@@ -124,7 +124,7 @@ function setRemainigTime() {
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
     if (days > 2) {
-      document.getElementById("ävailableTime").innerText = "Available 25th October 2020";
+      document.getElementById("ävailableTime").innerText = "Available 5th November 2020";
     }
 
     else if (days <= 2 && days >= 0) {
