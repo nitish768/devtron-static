@@ -114,34 +114,34 @@ https://devtron.ai/?utm_source=twitter&utm_medium=tweet&utm_campaign=quote
 function setRemainigTime() {
   const countDownDate = new Date("Nov 5, 2020 00:00:01").getTime();
 
-  let intervalId = setInterval(() => {
+  // let intervalId = setInterval(() => {
 
-    const now = new Date().getTime();
+  //   const now = new Date().getTime();
 
-    const timeLeft = countDownDate - now;
+  //   const timeLeft = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  //   // Time calculations for days, hours, minutes and seconds
+  //   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 
-    if (days > 2) {
-      document.getElementById("ävailableTime").innerText = "Available 5th November 2020";
-    }
+  //   if (days > 2) {
+  //     document.getElementById("ävailableTime").innerText = "Available 5th November 2020";
+  //   }
 
-    else if (days <= 2 && days >= 0) {
-      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-      // document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
-      //   + minutes + "m " + seconds + "s ";
-    }
+  //   else if (days <= 2 && days >= 0) {
+  //     const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  //     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  //     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  //     document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
+  //       + minutes + "m " + seconds + "s ";
+  //   }
 
 
-    // to handle text for live if needed
-    // if (timeLeft < 0) {
-    //   clearInterval(intervalId);
-    //   document.getElementById("ävailableTime").innerText = "Check out our product!!";
-    // }
-  }, 1000);
+  //   // to handle text for live if needed
+  //   // if (timeLeft < 0) {
+  //   //   clearInterval(intervalId);
+  //   //   document.getElementById("ävailableTime").innerText = "Check out our product!!";
+  //   // }
+  // }, 1000);
 }
 
 setRemainigTime()

@@ -1977,7 +1977,7 @@ main>section {
         display: block;
     }
     .join-community__grid {
-        max-width: 340px;
+        max-width: 440px;
         column-gap: 30px;
     }
     .join-community__img {
