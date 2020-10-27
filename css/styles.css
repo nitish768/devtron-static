@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .toast__wrapper {
     left: 50%;
     position: fixed;
@@ -803,17 +807,13 @@ main>section {
 }
 
 .join-community {
-    padding: 0px 40px;
+    padding: 64px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 1440px;
     margin: auto;
 }
-
-.join-community__img-container {
-    justify-self: center;
-    display: flex;
-    align-items: flex-end;
-}
-
 .join-community__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -824,19 +824,27 @@ main>section {
 }
 
 .join-community__img {
-    display: block;
     width: 100%;
+    margin: 0px;
     max-width: 450px;
 }
 
+.join-community__img--mob {
+    display: block;
+}
+
+.join-community__img--desktop {
+    display: none;
+}
+
 .divider-join-community-learning {
-    margin: 0px auto 100px auto;
     display: none;
     border: none;
     height: 0px;
     width: 80%;
     max-width: 1170px;
     border-top: 1px solid #D8DFEB;
+    margin: auto;
 }
 
 .join-community__grid-item {
@@ -964,7 +972,7 @@ main>section {
 }
 
 .section-testimonials {
-    padding: 64px 40px;
+    padding: 64px 40px 0px;
     min-height: 588px;
     border-radius: 0px;
     max-width: 1440px;
@@ -1698,6 +1706,7 @@ main>section {
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
+    
     .devtron-footer__href img {
         width: 26%;
     }
@@ -1760,6 +1769,22 @@ main>section {
     .section-contributor--contributor {
         display: inline;
     }
+    .join-community {
+        flex-direction: row;
+        align-items: center;
+    }
+    .join-community__left {
+        width: 50%;
+    }    
+    .join-community__img--mob {
+        display: none;
+    }
+    .join-community__img--desktop {
+        display: block;
+    }
+    .join-community__img {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
@@ -1804,10 +1829,6 @@ main>section {
     .main-nav__link-blog {
         font-size: 1rem;
         display: block;
-    }
-    .join-community__icon-and-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
     .early-access-card__text {
         padding: 0 0 60px 72px;
@@ -1971,9 +1992,6 @@ main>section {
         max-width: 340px;
         column-gap: 30px;
     }
-    .join-community__img {
-        margin: 0 auto;
-    }
     .devtron-footer {
         padding: 100px 80px 0 80px;
     }
@@ -2044,7 +2062,7 @@ main>section {
         padding: 100px 135px;
     }
     .join-community {
-        padding: 0px 135px;
+        padding: 100px 135px;
     }
     .section-why__grid-item {
         padding: 40px 40px 48px 40px;
