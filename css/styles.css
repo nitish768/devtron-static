@@ -274,8 +274,7 @@ button:focus {
     color: #ffffff;
 }
 
-.main-nav-dark .github-star__icon,
-.main-nav-dark .main-nav___logo-text, .main-nav-dark .main-nav___logo-icon {
+.main-nav-dark .github-star__icon, .main-nav-dark .main-nav___logo-text, .main-nav-dark .main-nav___logo-icon {
     fill: #ffffff;
 }
 
@@ -289,6 +288,14 @@ button:focus {
     color: #fff;
     font-size: 0.77rem;
     display: flex;
+}
+
+.github-star__icon {
+    margin-right: 8px;
+}
+
+.github-star:hover, .github-star:focus {
+    color: #fff;
 }
 
 .github-star__count {
@@ -308,13 +315,14 @@ button:focus {
     fill: #000A14;
 }
 
-.bg-white .main-nav__link-blog, .main-nav-light .main-nav__link-blog, 
-.bg-white .github-star, .main-nav-light .github-star {
+.bg-white .main-nav__link-blog, .main-nav-light .main-nav__link-blog, .bg-white .github-star, .main-nav-light .github-star {
     color: #140152;
 }
-.bg-white .github-star, .main-nav-light .github-star, .bg-white .github-star__count, .main-nav-light .github-star__count  {
+
+.bg-white .github-star, .main-nav-light .github-star, .bg-white .github-star__count, .main-nav-light .github-star__count {
     border-color: #140152;
 }
+
 .main-nav-light .main-nav__link-blog:hover {
     color: #140152;
 }
@@ -619,23 +627,18 @@ main>section {
     transition: box-shadow 0.5s;
 }
 
-.button-early-access--nav {
-    font-weight: normal;
-    display: none;
-    font-size: 0.66rem;
-    padding: 6px 12px;
-    box-shadow: none;
-    margin-right: 36px;
+.section-hero__view-github {
+    display: grid;
+    grid-template-columns: 38px auto;
+    align-items: center;
+    padding: 8px 24px;
+    width: max-content;
 }
-
-.show-nav-github .button-early-access--nav {
-    display: block;
+.view-github__os {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 400;
 }
-
-.button-early-access--hero {
-    padding: 16px 24px;
-}
-
 .button-early-access:hover {
     box-shadow: none;
 }
@@ -2193,7 +2196,7 @@ main>section {
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
     .main-title {
-        margin-bottom: 77px;
+        margin-bottom: 60px;
     }
     .text-white--hero {
         font-size: 1.1rem;
@@ -2252,4 +2255,18 @@ main>section {
     .section-hero {
         min-height: unset;
     }
+}
+
+[data-scroll] {
+    transition: all 2s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translatey(200px);
 }
