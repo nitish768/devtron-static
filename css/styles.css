@@ -361,7 +361,7 @@ main>section {
     vertical-align: top;
     margin-left: auto;
     position: relative;
-    height: 300px;
+    height: 275px;
     margin-left: 50px;
 }
 
@@ -1842,7 +1842,7 @@ main>section {
     }
     .main-title {
         min-height: unset;
-        margin-bottom: 65px;
+        margin-bottom: 55px;
     }
     .section-why__grid-item {
         padding: 40px 30px 48px 30px;
