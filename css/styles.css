@@ -816,7 +816,7 @@ main>section {
 
 .join-community__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     max-width: 300px;
     margin-bottom: 60px;
@@ -832,15 +832,6 @@ main>section {
 .divider-join-community-learning {
     margin: 0px auto 100px auto;
     display: none;
-    border: none;
-    height: 0px;
-    width: 80%;
-    max-width: 1170px;
-    border-top: 1px solid #D8DFEB;
-}
-
-.divider-stack-testimonial {
-    margin: 0px auto;
     border: none;
     height: 0px;
     width: 80%;
@@ -1977,7 +1968,7 @@ main>section {
         display: block;
     }
     .join-community__grid {
-        max-width: 440px;
+        max-width: 340px;
         column-gap: 30px;
     }
     .join-community__img {
