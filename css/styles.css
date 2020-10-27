@@ -274,11 +274,8 @@ button:focus {
     color: #ffffff;
 }
 
-.main-nav-dark .main-nav___logo-icon {
-    fill: #ffffff;
-}
-
-.main-nav-dark .main-nav___logo-text {
+.main-nav-dark .github-star__icon,
+.main-nav-dark .main-nav___logo-text, .main-nav-dark .main-nav___logo-icon {
     fill: #ffffff;
 }
 
@@ -286,18 +283,38 @@ button:focus {
     background-color: #F2F4F7;
 }
 
+.github-star {
+    border-radius: 4px;
+    border: solid 1px #fff;
+    color: #fff;
+    font-size: 0.77rem;
+    display: flex;
+}
+
+.github-star__count {
+    padding: 6px 12px;
+    border-left: solid 1px #fff;
+}
+
+.github-star__right {
+    padding: 6px 12px;
+}
+
 .bg-white .main-nav___logo-icon, .main-nav-light .main-nav___logo-icon {
     fill: #0066cc;
 }
 
-.bg-white .main-nav___logo-text, .main-nav-light .main-nav___logo-text {
+.bg-white .main-nav___logo-text, .main-nav-light .main-nav___logo-text, .bg-white .github-star__icon path, .main-nav-light .github-star__icon path {
     fill: #000A14;
 }
 
-.bg-white .main-nav__link-blog, .main-nav-light .main-nav__link-blog {
+.bg-white .main-nav__link-blog, .main-nav-light .main-nav__link-blog, 
+.bg-white .github-star, .main-nav-light .github-star {
     color: #140152;
 }
-
+.bg-white .github-star, .main-nav-light .github-star, .bg-white .github-star__count, .main-nav-light .github-star__count  {
+    border-color: #140152;
+}
 .main-nav-light .main-nav__link-blog:hover {
     color: #140152;
 }
@@ -608,6 +625,7 @@ main>section {
     font-size: 0.66rem;
     padding: 6px 12px;
     box-shadow: none;
+    margin-right: 36px;
 }
 
 .show-nav-github .button-early-access--nav {
@@ -814,6 +832,7 @@ main>section {
     max-width: 1440px;
     margin: auto;
 }
+
 .join-community__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1706,7 +1725,6 @@ main>section {
 }
 
 @media screen and (min-width: 550px) and (max-width: 768px) {
-    
     .devtron-footer__href img {
         width: 26%;
     }
@@ -1775,7 +1793,7 @@ main>section {
     }
     .join-community__left {
         width: 50%;
-    }    
+    }
     .join-community__img--mob {
         display: none;
     }

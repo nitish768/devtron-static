@@ -239,6 +239,8 @@ $(document).ready(function () {
   //   }
   // }
 
+  getGithubStars();
+
   if ($('.section-hero__gif-wrapper').is(':visible')) {
     setInterval(() => {
       var $para1 = $(".section-hero__paragraph:nth-child(1)");
@@ -480,6 +482,27 @@ $(function () {
   });
 });
 
+function getGithubStars() {
+  const URL = 'https://api.github.com/orgs/devtron-labs/repos?type=all&per_page=90&page=1';
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', URL);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      const response = JSON.parse(xhr.responseText);
+      let list = response || [];
+      let main = list.find(repo => repo.name.toLowerCase() === "devtron-documentation");
+      let stars = main.stargazers_count || 0;
+      if (stars >= 1000) stars = `${Math.trunc(10*stars / 1000)/10}K`;
+      document.querySelector('#star-count').innerText = stars;
+    }
+    else if (xhr.readyState == 4 && xhr.status == 400) {
+    }
+  }
+  xhr.send();
+
+
+}
 
 function emptyErrorandSuccess() {
   const id = ['successMessage', 'errorMessage'];
