@@ -239,6 +239,12 @@ $(document).ready(function () {
   //   }
   // }
 
+  ScrollOut({
+    targets: ".section-why__grid-item",
+    threshold: 0.3,
+    once: true,
+  });
+
   getGithubStars();
 
   if ($('.section-hero__gif-wrapper').is(':visible')) {
@@ -493,7 +499,7 @@ function getGithubStars() {
       let list = response || [];
       let main = list.find(repo => repo.name.toLowerCase() === "devtron-documentation");
       let stars = main.stargazers_count || 0;
-      if (stars >= 1000) stars = `${Math.trunc(10*stars / 1000)/10}K`;
+      if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
       document.querySelector('#star-count').innerText = stars;
     }
     else if (xhr.readyState == 4 && xhr.status == 400) {
