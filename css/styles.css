@@ -634,11 +634,13 @@ main>section {
     padding: 8px 24px;
     width: max-content;
 }
+
 .view-github__os {
     text-transform: uppercase;
     font-size: 0.6rem;
     font-weight: 400;
 }
+
 .button-early-access:hover {
     box-shadow: none;
 }
@@ -2257,7 +2259,7 @@ main>section {
     }
 }
 
-/* [data-scroll] {
+[data-scroll] {
     transition: all 2s;
 }
 
@@ -2269,4 +2271,4 @@ main>section {
 [data-scroll="out"] {
     opacity: 0;
     transform: translatey(200px);
-} */
+}
