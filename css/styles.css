@@ -316,7 +316,7 @@ button:focus {
 }
 
 .bg-white .main-nav__link-blog, .main-nav-light .main-nav__link-blog, .bg-white .github-star, .main-nav-light .github-star {
-    color: #140152;
+    color: #000A14;
 }
 
 .bg-white .github-star, .main-nav-light .github-star, .bg-white .github-star__count, .main-nav-light .github-star__count {
@@ -610,7 +610,7 @@ main>section {
 }
 
 .button-early-access {
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     line-height: 1.5;
     font-style: normal;
     font-weight: 600;
@@ -2260,7 +2260,7 @@ main>section {
 }
 
 [data-scroll] {
-    transition: all 1s;
+    transition: all 600ms;
 }
 
 [data-scroll="in"] {
