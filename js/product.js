@@ -239,15 +239,16 @@ $(document).ready(function () {
   //   }
   // }
 
-  ScrollOut({
-    targets: ".section-why__grid-item",
-    threshold: 0.3,
-    once: true,
-  });
-
   getGithubStars();
 
   if ($('.section-hero__gif-wrapper').is(':visible')) {
+   
+    ScrollOut({
+      targets: ".slide-up",
+      threshold: 0.5,
+      once: true,
+    });
+
     setInterval(() => {
       var $para1 = $(".section-hero__paragraph:nth-child(1)");
       var $new = $para1.clone();

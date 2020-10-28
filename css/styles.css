@@ -2270,5 +2270,5 @@ main>section {
 
 [data-scroll="out"] {
     opacity: 0;
-    transform: translatey(200px);
+    transform: translateY(50px);
 }
