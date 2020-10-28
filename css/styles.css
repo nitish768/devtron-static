@@ -2257,7 +2257,7 @@ main>section {
     }
 }
 
-[data-scroll] {
+/* [data-scroll] {
     transition: all 2s;
 }
 
@@ -2269,4 +2269,4 @@ main>section {
 [data-scroll="out"] {
     opacity: 0;
     transform: translatey(200px);
-}
+} */
