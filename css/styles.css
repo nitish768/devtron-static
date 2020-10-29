@@ -347,6 +347,9 @@ main>section {
     padding: 113px 40px 47px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .section-hero__content {
@@ -464,7 +467,6 @@ main>section {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
-    min-height: 130px;
     max-width: 700px;
 }
 
@@ -532,10 +534,6 @@ main>section {
     font-size: 18px;
     line-height: 150%;
     color: #0066CC;
-}
-
-.section-hero__button-container {
-    margin: 100px 0 40px 0;
 }
 
 .section-hero__os-text {
@@ -649,6 +647,7 @@ main>section {
     height: 26px;
     width: 15px;
     display: block;
+    margin-top: 20px;
 }
 
 .section-why {
@@ -1802,9 +1801,6 @@ main>section {
     .subtitle {
         font-size: 1rem;
     }
-    .section-hero__scroll-down, .button-early-access--mob {
-        display: none;
-    }
     .owl-carousel--section-why .item {
         row-gap: 30px;
     }
@@ -1831,7 +1827,7 @@ main>section {
         padding: 100px 40px;
     }
     .main-title {
-        margin-bottom: 55px;
+        /* margin-bottom: 55px; */
     }
     .section-why__grid-item {
         padding: 40px 30px 48px 30px;
@@ -1890,13 +1886,6 @@ main>section {
     .section-hero {
         min-height: 100vh;
         border-bottom-left-radius: 100px;
-    }
-    .section-hero:after {
-        content: '';
-        background-image: url('../images/grey-dot-grid.png');
-        background-repeat: repeat;
-        background-position-y: 440px;
-        background-position-x: right;
     }
     .section-why {
         border-bottom-left-radius: 100px;
@@ -2043,7 +2032,7 @@ main>section {
     .secondary-title {
         font-size: 2rem;
     }
-    .section-hero, .section-landscape {
+    .section-landscape {
         padding-left: 135px;
         padding-right: 135px;
     }
@@ -2189,6 +2178,9 @@ main>section {
     }
     .text-white--hero {
         font-size: 1.1rem;
+    }
+    .section-hero {
+        padding: 135px;
     }
     .section-hero__time {
         font-size: 0.88rem;
