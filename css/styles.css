@@ -2262,6 +2262,14 @@ main>section {
     --animate-duration: 600ms;
 }
 
+.section-hero__left {
+    animation-delay: 300ms;
+}
+
+.section-hero__gif-wrapper {
+    animation-delay: 600ms;
+}
+
 /*[data-scroll] {
     transition: all 600ms;
 }
