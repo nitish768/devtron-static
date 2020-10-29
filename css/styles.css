@@ -1843,7 +1843,6 @@ main>section {
         padding: 100px 40px;
     }
     .main-title {
-        min-height: unset;
         margin-bottom: 55px;
     }
     .section-why__grid-item {
@@ -2260,6 +2259,10 @@ main>section {
 }
 
 [data-scroll] {
+    --animate-duration: 600ms;
+}
+
+/*[data-scroll] {
     transition: all 600ms;
 }
 
@@ -2271,4 +2274,4 @@ main>section {
 [data-scroll="out"] {
     opacity: 0;
     transform: translateY(50px);
-}
+} */

@@ -242,11 +242,19 @@ $(document).ready(function () {
   getGithubStars();
 
   if ($('.section-hero__gif-wrapper').is(':visible')) {
-   
+
     ScrollOut({
       targets: ".slide-up",
       threshold: 0.5,
       once: true,
+      onShown(el) {
+        el.classList.add("animate__animated");
+        el.classList.add("animate__slideInUp");
+      },
+      onHidden(el) {
+        el.classList.remove("animate__animated");
+        el.classList.remove("animate__slideInUp");
+      }
     });
 
     setInterval(() => {
