@@ -1164,6 +1164,13 @@ main>section {
 .tabcontent .card {
     background: #281566;
     margin: 0 30px 30px 30px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: slideInUp;
 }
 
 .tabcontent .card-body {
@@ -1264,18 +1271,6 @@ main>section {
 
 .section-learning--desktop {
     display: none;
-}
-
-.heading__dark {
-    color: #FFFFFF;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.heading__light {
-    color: #FFFFFF;
-    font-size: 36px;
-    font-weight: 300;
 }
 
 .section-sneakpeek__button-container {
@@ -2256,20 +2251,4 @@ main>section {
     .section-hero {
         min-height: unset;
     }
-}
-
-[data-scroll] {
-    --animate-duration: 600ms;
-}
-
-.animation-delay {
-    animation-delay: 200ms;
-}
-
-.section-hero__left {
-    animation-delay: 300ms;
-}
-
-.section-hero__gif-wrapper {
-    animation-delay: 600ms;
 }

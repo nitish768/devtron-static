@@ -21,7 +21,6 @@ function handleTabChange(event, tabIdToDisplay) {
   event.currentTarget.className += " active";
 }
 // simulating click to have 1st one selected
-document.getElementById("defaultSelectedTab").click();
 
 const featureHeadingsSwitcher = {
   featureHeadingsTextAndURL: [
@@ -238,6 +237,7 @@ $(document).ready(function () {
   //     $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
   //   }
   // }
+  document.getElementById("defaultSelectedTab").click();
 
   getGithubStars();
 
@@ -246,7 +246,8 @@ $(document).ready(function () {
     ScrollOut({
       targets: ".slide-up",
       once: true,
-      threshold: 0,
+      offset: 0,
+      threshold: 0.1,
       onShown(el) {
         el.classList.add("animate__animated");
         el.classList.add("animate__slideInUp");
