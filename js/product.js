@@ -237,17 +237,14 @@ $(document).ready(function () {
   //     $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
   //   }
   // }
-  document.getElementById("defaultSelectedTab").click();
 
   getGithubStars();
-
   if ($('.section-hero__gif-wrapper').is(':visible')) {
-
+    document.getElementById("defaultSelectedTab").click();
     ScrollOut({
       targets: ".slide-up",
       once: true,
-      offset: 0,
-      threshold: 0.1,
+      threshold: 0,
       onShown(el) {
         el.classList.add("animate__animated");
         el.classList.add("animate__slideInUp");
