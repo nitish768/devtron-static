@@ -246,6 +246,7 @@ $(document).ready(function () {
     ScrollOut({
       targets: ".slide-up",
       once: true,
+      threshold: 0,
       onShown(el) {
         el.classList.add("animate__animated");
         el.classList.add("animate__slideInUp");

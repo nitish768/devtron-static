@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: openSans;
+    font-family: openSans, 'sans-serif';
     background-color: #F2F4F7;
 }
 
@@ -2262,6 +2262,10 @@ main>section {
     --animate-duration: 600ms;
 }
 
+.animation-delay {
+    animation-delay: 200ms;
+}
+
 .section-hero__left {
     animation-delay: 300ms;
 }
@@ -2269,17 +2273,3 @@ main>section {
 .section-hero__gif-wrapper {
     animation-delay: 600ms;
 }
-
-/*[data-scroll] {
-    transition: all 600ms;
-}
-
-[data-scroll="in"] {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-[data-scroll="out"] {
-    opacity: 0;
-    transform: translateY(50px);
-} */
