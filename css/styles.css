@@ -1826,8 +1826,8 @@ main>section {
         position: relative;
         padding: 100px 40px;
     }
-    .main-title {
-        /* margin-bottom: 55px; */
+    .button-early-access--mob {
+        display: none;
     }
     .section-why__grid-item {
         padding: 40px 30px 48px 30px;

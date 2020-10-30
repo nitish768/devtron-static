@@ -239,8 +239,8 @@ $(document).ready(function () {
   // }
 
   getGithubStars();
+  document.getElementById("defaultSelectedTab").click();
   if ($('.section-hero__gif-wrapper').is(':visible')) {
-    document.getElementById("defaultSelectedTab").click();
     ScrollOut({
       targets: ".slide-up",
       once: true,
