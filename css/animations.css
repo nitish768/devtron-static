@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -11,7 +10,7 @@
 :root {
 	--animate-duration: 1s;
 	--animate-delay: 1s;
-	--animate-repeat: 1
+	--animate-repeat: 1;
 }
 
 .animate__animated {
@@ -21,6 +20,21 @@
 	animation-duration: var(--animate-duration);
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both
+}
+
+.animate__slideInUp {
+	-webkit-animation-name: slideInUp;
+	animation-name: slideInUp;
+}
+
+.animate__slideInUp25 {
+	-webkit-animation-name: slideInUp25;
+	animation-name: slideInUp25;
+}
+
+.animate__fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
 }
 
 @-webkit-keyframes slideInUp {
@@ -47,11 +61,6 @@
 	}
 }
 
-.animate__slideInUp {
-	-webkit-animation-name: slideInUp;
-	animation-name: slideInUp
-}
-
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0
@@ -70,19 +79,38 @@
 	}
 }
 
-.animate__fadeIn {
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn
+@-webkit-keyframes slideInUp25 {
+	0% {
+		-webkit-transform: translate3d(0, 25%, 0);
+		transform: translate3d(0, 25%, 0);
+		visibility: visible
+	}
+	to {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
+}
+
+@keyframes slideInUp25 {
+	0% {
+		-webkit-transform: translate3d(0, 25%, 0);
+		transform: translate3d(0, 25%, 0);
+		visibility: visible
+	}
+	to {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
 }
 
 [data-scroll] {
-    --animate-duration: 600ms;
+	--animate-duration: 600ms;
 }
 
 .section-hero__left {
-    animation-delay: 300ms;
+	animation-delay: 300ms;
 }
 
 .section-hero__gif-wrapper {
-    animation-delay: 600ms;
+	animation-delay: 600ms;
 }

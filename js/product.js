@@ -228,7 +228,6 @@ $(document).ready(function () {
   //   let bottom = $(".section-why__bottom").get(0).getBoundingClientRect();
   //   let image1Rect = image1.get(0).getBoundingClientRect()
   //   let rightOffset = $(window).width() - bottom.right;
-
   //   if (image1Rect.top < triggeerHeight && $sectionThree.isInViewport()) {
   //     $(image1).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
   //     $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
@@ -244,14 +243,22 @@ $(document).ready(function () {
     ScrollOut({
       targets: ".slide-up",
       once: true,
-      threshold: 0,
       onShown(el) {
-        el.classList.add("animate__animated");
-        el.classList.add("animate__slideInUp");
+        el.classList.add("animate__animated", "animate__slideInUp");
       },
       onHidden(el) {
-        el.classList.remove("animate__animated");
-        el.classList.remove("animate__slideInUp");
+        el.classList.remove("animate__animated", "animate__slideInUp");
+      }
+    });
+
+    ScrollOut({
+      targets: ".card",
+      once: true,
+      onShown(el) {
+        el.classList.add("animate__animated", "animate__slideInUp25");
+      },
+      onHidden(el) {
+        // el.classList.remove("animate__animated", "animate__slideInUp25");
       }
     });
 
