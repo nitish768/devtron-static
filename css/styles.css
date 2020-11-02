@@ -267,7 +267,7 @@ button:focus {
     display: none;
     margin-right: 36px;
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.88rem;
 }
 
 .main-nav__link-blog:hover {
@@ -686,6 +686,17 @@ main>section {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 32px;
+}
+
+mark {
+    background-color: white;
+    padding: 0.2em;
+}
+
+.section-why__grid-item:hover .section-why__why mark {
+    /* background: rgba(242, 201, 76, 0.5); */
+    background: linear-gradient(180deg, rgba(242, 201, 76, 0) 50%, #F2C94C 50%);
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFD0AE 50%); */
 }
 
 .social-icon__container {
@@ -1833,7 +1844,6 @@ main>section {
         padding: 40px 30px 48px 30px;
     }
     .main-nav__link-blog {
-        font-size: 1rem;
         display: block;
     }
     .early-access-card__text {
