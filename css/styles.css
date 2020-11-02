@@ -694,9 +694,7 @@ mark {
 }
 
 .section-why__grid-item:hover .section-why__why mark {
-    /* background: rgba(242, 201, 76, 0.5); */
-    background: linear-gradient(180deg, rgba(242, 201, 76, 0) 50%, #F2C94C 50%);
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFD0AE 50%); */
+    background: linear-gradient(180deg, rgba(242, 201, 76, 0) 50%, rgba(242, 201, 76, 0.5) 50%);
 }
 
 .social-icon__container {
