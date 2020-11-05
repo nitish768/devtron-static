@@ -940,11 +940,11 @@ mark {
     background-repeat: no-repeat;
 }
 
-.get-started__terminal:first-child {
+.get-started__terminal:nth-of-type(1) {
     margin-top: 40px;
 }
 
-.get-started__terminal:last-child {
+.get-started__terminal:nth-of-type(4) {
     margin-bottom: 40px;
 }
 
@@ -2012,6 +2012,12 @@ mark {
     .join-community__grid {
         max-width: 340px;
         column-gap: 30px;
+    }
+    .get-started__terminal:nth-of-type(1) {
+        width: 68%;
+    }
+    .get-started__terminal:nth-of-type(3) {
+        width: 40%;
     }
     .devtron-footer {
         padding: 100px 80px 0 80px;
