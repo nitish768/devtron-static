@@ -292,6 +292,7 @@ button:focus {
     color: #fff;
     font-size: 0.77rem;
     display: flex;
+    min-width: 116px;
 }
 
 .github-star__icon {
@@ -309,6 +310,7 @@ button:focus {
 
 .github-star__right {
     padding: 6px 12px;
+    min-width: 74px;
 }
 
 .bg-white .main-nav___logo-icon, .main-nav-light .main-nav___logo-icon {
