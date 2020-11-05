@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 
+.font-monospace {
+    font-family: monospace;
+}
+
 .toast__wrapper {
     left: 50%;
     position: fixed;
@@ -947,7 +951,6 @@ mark {
 .get-started__terminal {
     margin: 20px 0;
     border-radius: 4px;
-    font-family: monospace;
     background-color: #281566;
     font-size: 0.77rem;
     font-weight: 400;

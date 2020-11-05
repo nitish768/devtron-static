@@ -1547,39 +1547,40 @@
                     <span class="secondary-title--light">in minutes</span>
                 </h2>
                 <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd">
+                    <div class="get-started__icon-and-cmd font-monospace">
                         <p class="get-started__command">1. Run command to clone git repo</p>
                         <img src="./images/ic-copy.svg" class="get-started__copy"
                             onclick='copy("git clone https://github.com/devtron-labs/devtron-installation-script.git")' />
                     </div>
-                    <div class="get-started__shell">
+                    <div class="get-started__shell font-monospace">
                         <span style="color: rgb(242, 153, 74);">git clone </span>
                         https://github.com/devtron-labs/devtron-installation-script.git
                     </div>
                 </article>
                 <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd">
+                    <div class="get-started__icon-and-cmd font-monospace">
                         <p class="get-started__command">2. Navigate to chart directory</p>
                         <img src="./images/ic-copy.svg" class="get-started__copy"
-                            onclick='copy("cd devtron-installation-script/helmChart")' />
+                            onclick='copy("cd devtron-installation-script/charts")' />
                     </div>
-                    <div class="get-started__shell">
+                    <div class="get-started__shell font-monospace">
                         <span style="color: rgb(242, 153, 74);">cd </span>
-                        devtron-installation-script/helmChart
+                        devtron-installation-script/charts
                     </div>
                 </article>
                 <article class="get-started__terminal">
                     <div class="get-started__icon-and-cmd">
-                        <p class="get-started__command">3. Edit value.yaml</p>
+                        <p class="get-started__command font-monospace">3. Edit value.yaml</p>
                         <a href="" target="_blank" style="color: rgb(242, 153, 74);">View Schema</a>
                     </div>
                 </article>
                 <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd">
+                    <div class="get-started__icon-and-cmd font-monospace">
                         <p class="get-started__command">4. Run Command to install</p>
-                        <img src="./images/ic-copy.svg" class="get-started__copy" onclick='copy("helm install devtron . -f values.yaml")' />
+                        <img src="./images/ic-copy.svg" class="get-started__copy"
+                            onclick='copy("helm install devtron . -f values.yaml")' />
                     </div>
-                    <div class="get-started__shell">
+                    <div class="get-started__shell font-monospace">
                         <span style="color: rgb(242, 153, 74);">helm install</span>
                         devtron . -f values.yaml
                     </div>
