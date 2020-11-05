@@ -600,10 +600,10 @@ function handleEarlyAccessFormSubmit(event) {
   });
 }
 
-function copy() {
+function copy(command) {
   let body = document.querySelector('body');
   let textArea = document.createElement("textarea");
-  textArea.value = `bash -c "$(curl-fsSL https://devtron.ai/install.sh)`;
+  textArea.value = command;
   body.appendChild(textArea);
   try {
     textArea.select();

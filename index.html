@@ -1548,12 +1548,40 @@
                 </h2>
                 <article class="get-started__terminal">
                     <div class="get-started__icon-and-cmd">
-                        <p class="get-started__command">Run Command to install</p>
-                        <img src="./images/ic-copy.svg" class="get-started__copy" onclick="copy()" />
+                        <p class="get-started__command">1. Run command to clone git repo</p>
+                        <img src="./images/ic-copy.svg" class="get-started__copy"
+                            onclick='copy("git clone https://github.com/devtron-labs/devtron-installation-script.git")' />
                     </div>
                     <div class="get-started__shell">
-                        bash -c <span style="color: rgb(242, 153, 74);">"$(curl-fsSL
-                            https://devtron.ai/install.sh)</span>
+                        <span style="color: rgb(242, 153, 74);">git clone </span>
+                        https://github.com/devtron-labs/devtron-installation-script.git
+                    </div>
+                </article>
+                <article class="get-started__terminal">
+                    <div class="get-started__icon-and-cmd">
+                        <p class="get-started__command">2. Navigate to chart directory</p>
+                        <img src="./images/ic-copy.svg" class="get-started__copy"
+                            onclick='copy("cd devtron-installation-script/helmChart")' />
+                    </div>
+                    <div class="get-started__shell">
+                        <span style="color: rgb(242, 153, 74);">cd </span>
+                        devtron-installation-script/helmChart
+                    </div>
+                </article>
+                <article class="get-started__terminal">
+                    <div class="get-started__icon-and-cmd">
+                        <p class="get-started__command">3. Edit value.yaml</p>
+                        <a href="" target="_blank" style="color: rgb(242, 153, 74);">View Schema</a>
+                    </div>
+                </article>
+                <article class="get-started__terminal">
+                    <div class="get-started__icon-and-cmd">
+                        <p class="get-started__command">4. Run Command to install</p>
+                        <img src="./images/ic-copy.svg" class="get-started__copy" onclick='copy("helm install devtron . -f values.yaml")' />
+                    </div>
+                    <div class="get-started__shell">
+                        <span style="color: rgb(242, 153, 74);">helm install</span>
+                        devtron . -f values.yaml
                     </div>
                 </article>
                 <div data-scroll="out"

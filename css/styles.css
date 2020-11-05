@@ -936,9 +936,16 @@ mark {
     background-repeat: no-repeat;
 }
 
-.get-started__terminal {
+.get-started__terminal:first-child {
     margin-top: 40px;
-    margin-bottom: 20px;
+}
+
+.get-started__terminal:last-child {
+    margin-bottom: 40px;
+}
+
+.get-started__terminal {
+    margin: 20px 0;
     border-radius: 4px;
     font-family: monospace;
     background-color: #281566;
