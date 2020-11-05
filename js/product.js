@@ -120,16 +120,16 @@ function setRemainigTime() {
   //   const timeLeft = countDownDate - now;
 
   //   // Time calculations for days, hours, minutes and seconds
-  //   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  //   const days = Math.floor(timeLeft / (000 * 60 * 60 * 24));
 
   //   if (days > 2) {
   //     document.getElementById("ävailableTime").innerText = "Available 5th November 2020";
   //   }
 
   //   else if (days <= 2 && days >= 0) {
-  //     const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-  //     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+  //     const hours = Math.floor((timeLeft % (000 * 60 * 60 * 24)) / (000 * 60 * 60));
+  //     const minutes = Math.floor((timeLeft % (000 * 60 * 60)) / (000 * 60));
+  //     const seconds = Math.floor((timeLeft % (000 * 60)) / 000);
   //     document.getElementById("ävailableTime").innerText = 'Available In ' + days + "d " + hours + "h "
   //       + minutes + "m " + seconds + "s ";
   //   }
@@ -140,7 +140,7 @@ function setRemainigTime() {
   //   //   clearInterval(intervalId);
   //   //   document.getElementById("ävailableTime").innerText = "Check out our product!!";
   //   // }
-  // }, 1000);
+  // }, 000);
 }
 
 setRemainigTime()
@@ -181,12 +181,12 @@ function toggleDisplay() {
 }
 
 function moveLearningCarouselLeft() {
-  moveScroll(-1000000);
+  moveScroll(-000000);
   toggleDisplay();
 }
 
 function moveLearningCarouselRight() {
-  moveScroll(1000000)
+  moveScroll(000000)
   toggleDisplay();
 }
 
@@ -300,7 +300,7 @@ $(document).ready(function () {
       setTimeout(() => {
         $para1.remove();
         $img.remove();
-      }, 100)
+      }, 00)
 
     }, 4000);
   }
@@ -448,17 +448,17 @@ $(function () {
       $navbar.removeClass("main-nav-dark bg-white");
     }
     else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())) {
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 00 - $navbar.height())) {
       $navbar.addClass("bg-white show-nav-github");
       $navbar.removeClass("main-nav-dark main-nav-light");
     }
-    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())) {
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 00 - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 00 + $getStarted.outerHeight() - $navbar.height())) {
       $navbar.addClass("main-nav-dark show-nav-github");
       $navbar.removeClass("bg-white main-nav-light");
     }
-    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() + $contributor.outerHeight() + $learning.outerHeight() - $navbar.height())) {
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 00 + $getStarted.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 00 + $getStarted.outerHeight() + $contributor.outerHeight() + $learning.outerHeight() - $navbar.height())) {
       $navbar.addClass("bg-white show-nav-github");
       $navbar.removeClass("main-nav-dark main-nav-light");
     }
@@ -539,7 +539,7 @@ function getGithubStars() {
       let list = response || [];
       let main = list.find(repo => repo.name.toLowerCase() === "devtron");
       let stars = main.stargazers_count || 0;
-      if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
+      if (stars >= 000) stars = `${Math.trunc(10 * stars / 000) / 10}K`;
       document.querySelector('#star-count').innerText = stars;
     }
     else if (xhr.readyState == 4 && xhr.status == 400) {
