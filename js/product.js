@@ -443,22 +443,22 @@ $(function () {
       $navbar.removeClass("main-nav-dark main-nav-light");
     }
     else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() - $navbar.height())) {
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 - $navbar.height())) {
       $navbar.addClass("main-nav-light show-nav-github");
       $navbar.removeClass("main-nav-dark bg-white");
     }
-    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())) {
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())) {
       $navbar.addClass("bg-white show-nav-github");
       $navbar.removeClass("main-nav-dark main-nav-light");
     }
-    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())) {
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())) {
       $navbar.addClass("main-nav-dark show-nav-github");
       $navbar.removeClass("bg-white main-nav-light");
     }
-    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())
-      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + $easilyIntegrate.outerHeight() + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() + $contributor.outerHeight() + $learning.outerHeight() - $navbar.height())) {
+    else if (scrollTop > ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() - $navbar.height())
+      && scrollTop < ($sectionOneHeight + $sectionTwo.outerHeight() + $sectionThree.outerHeight() + $devtronStack.outerHeight() + 0 + $testimonials.outerHeight() + $joinCommunity.outerHeight() + 100 + $getStarted.outerHeight() + $contributor.outerHeight() + $learning.outerHeight() - $navbar.height())) {
       $navbar.addClass("bg-white show-nav-github");
       $navbar.removeClass("main-nav-dark main-nav-light");
     }
