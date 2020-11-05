@@ -539,7 +539,7 @@ function getGithubStars() {
       let list = response || [];
       let main = list.find(repo => repo.name.toLowerCase() === "devtron");
       let stars = main.stargazers_count || 0;
-      if (stars >= 000) stars = `${Math.trunc(10 * stars / 000) / 10}K`;
+      if (stars >= 1000) stars = `${Math.trunc(10 * stars / 000) / 10}K`;
       document.querySelector('#star-count').innerText = stars;
     }
     else if (xhr.readyState == 4 && xhr.status == 400) {
