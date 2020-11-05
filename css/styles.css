@@ -694,7 +694,7 @@ mark {
 }
 
 .section-why__grid-item:hover .section-why__why mark {
-    background:linear-gradient(180deg, rgba(242, 201, 76, 0) 60%, rgba(86, 204, 242, 0.5) 40%);
+    background: linear-gradient(180deg, rgba(242, 201, 76, 0) 60%, rgba(86, 204, 242, 0.5) 40%);
 }
 
 .social-icon__container {
@@ -870,13 +870,16 @@ mark {
 }
 
 .divider-join-community-learning {
-    display: none;
     border: none;
     height: 0px;
     width: 80%;
     max-width: 1170px;
     border-top: 1px solid #D8DFEB;
     margin: auto;
+}
+
+.join-community .divider-join-community-learning {
+    display: none;
 }
 
 .join-community__grid-item {
@@ -1659,6 +1662,7 @@ mark {
     padding: 64px 40px;
     max-width: 1440px;
     margin: auto;
+    display: none;
 }
 
 .easily-integrate__icon {

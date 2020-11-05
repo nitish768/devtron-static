@@ -537,7 +537,7 @@ function getGithubStars() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       const response = JSON.parse(xhr.responseText);
       let list = response || [];
-      let main = list.find(repo => repo.name.toLowerCase() === "devtron-documentation");
+      let main = list.find(repo => repo.name.toLowerCase() === "devtron");
       let stars = main.stargazers_count || 0;
       if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
       document.querySelector('#star-count').innerText = stars;
