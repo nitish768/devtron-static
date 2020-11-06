@@ -539,15 +539,13 @@ function getGithubStars() {
       let list = response || [];
       let main = list.find(repo => repo.name.toLowerCase() === "devtron");
       let stars = main.stargazers_count || 0;
-      if (stars >= 1000) stars = `${Math.trunc(10 * stars / 000) / 10}K`;
+      if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
       document.querySelector('#star-count').innerText = stars;
     }
     else if (xhr.readyState == 4 && xhr.status == 400) {
     }
   }
   xhr.send();
-
-
 }
 
 function emptyErrorandSuccess() {
@@ -616,9 +614,9 @@ function copy(command) {
   $("#copy-toast").toast('show');
 }
 
-function getEarlyAccessGAEvent(label) {
-  gtag('event', 'Early Access Button Clicked', {
-    'event_category': 'Early access',
+function viewOnGithubGAEvent(label) {
+  gtag('event', 'View on Github Button Clicked', {
+    'event_category': 'View on Github',
     'event_label': label
   });
 }

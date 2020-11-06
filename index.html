@@ -57,51 +57,6 @@
             Copied!
         </div>
     </div>
-    <div class="modal bg-white fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content modal-content--early-access">
-                <div class="modal-header modal-header--early-access">
-                    <h2 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h2>
-                    <button type="button" class="close close--early-access" data-dismiss="modal" aria-label="Close"
-                        style="z-index: 30">
-                        <span aria-hidden="true">
-                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.51263 10.4003C7.99193 9.87964 7.99193 9.03542 8.51263 8.51472C9.03332 7.99402 9.87755 7.99402 10.3982 8.51472L25.4832 23.5997C26.0039 24.1204 26.0039 24.9646 25.4832 25.4853C24.9625 26.006 24.1183 26.006 23.5976 25.4853L8.51263 10.4003Z"
-                                    fill="#828282" />
-                                <path
-                                    d="M8.51263 25.4853C7.99193 24.9646 7.99193 24.1204 8.51263 23.5997L23.5976 8.51472C24.1183 7.99402 24.9625 7.99402 25.4832 8.51472C26.0039 9.03542 26.0039 9.87964 25.4832 10.4003L10.3982 25.4853C9.87755 26.006 9.03332 26.006 8.51263 25.4853Z"
-                                    fill="#828282" />
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="w-100">
-                        <label for="first-name" class="d-block early-access-form__label">First Name</label>
-                        <input type="text" id="first-name" placeholder="John" autofocus tab-index="1" name="first-name"
-                            class="d-block w-100 early-access-form__input early-access-form__input-margins" />
-                        <label for="last-name" class="d-block early-access-form__label">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Doe" autofocus tab-index="2" name="first-name"
-                            class="d-block w-100 early-access-form__input early-access-form__input-margins" />
-                        <label for="email" class="d-block early-access-form__label">Email <span
-                                style="position: relative; top: -5px">&lowast;</span></label>
-                        <input type="email" id="email" name="email" placeholder="Enter email id" tab-index="3"
-                            class="d-block w-100 early-access-form__input" required />
-                        <p class="early-access-form__para early-access-form__para-margins">We will send you an
-                            invitation email at the earliest.</p>
-                        <div id="successMessage" class="early-access-form__para early-access-form__para-margins"></div>
-                        <div id="errorMessage" class="early-access-form__para early-access-form__para-margins"></div>
-                        <div></div>
-                        <button type="submit" tab-index="3" class="d-block w-100 button-early-access"
-                            onclick="handleEarlyAccessFormSubmit(event)">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <header class="">
         <nav class="main-nav">
@@ -171,7 +126,7 @@
                     <!-- <h3 class="section-hero__os-text">An open-source project</h3>
                     <p class="section-hero__try-now">Try it now!</p> -->
                     <a data-scroll="out" href="https://github.com/devtron-labs/devtron.git" target="_blank"
-                        class="button-early-access section-hero__view-github slide-up">
+                        class="button-early-access section-hero__view-github slide-up" onclick='viewOnGithubGAEvent("Hero")'>
                         <img src="./images/ic-github-big.svg" alt="" />
                         <div style="text-align: left;">
                             <p class="view-github__os">Open Source</p>
@@ -1088,7 +1043,7 @@
                         <div class="featureHeading__next">NEXT</div>
                         <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(1)"></div>
                         <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(2)"></div>
-                        <div class="section-sneakpeek__button-container">
+                        <div class="section-sneakpeek__button-container" onclick='viewOnGithubGAEvent("Sneak Peak")'>
                             <a href="https://github.com/devtron-labs/devtron.git" target="_blank"
                                 class="button-early-access">
                                 <img src="./images/ic-github-big.svg" alt="github" />
@@ -1121,7 +1076,7 @@
                 </div>
                 <div style="margin-top: 40px;margin-left: 0px;">
                     <a href="https://github.com/devtron-labs/devtron.git" target="_blank"
-                        class="button-early-access button-early-access--mob">
+                        class="button-early-access button-early-access--mob" onclick='viewOnGithubGAEvent("Sneak Peak")'>
                         <img src="./images/ic-github-big.svg" alt="" />
                         View on Github
                     </a>
@@ -1769,7 +1724,7 @@
                     <img class="devtron-footer__logo" src="./images/devtron-header-logo.svg" width="120" height="32" />
                     <h3 class="devtron-footer__title">An open-source release orchestration & CI/CD platform for
                         Kubernetes</h3>
-                    <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="devtron-footer__git">
+                    <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="devtron-footer__git" onclick='viewOnGithubGAEvent("Footer")'>
                         <svg class="devtron-footer__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
