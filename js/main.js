@@ -298,6 +298,20 @@ function learnMoreGAEvent() {
   });
 }
 
+function joinCommunityGAEvent(social) {
+  gtag('event', 'Join Community Social Clicked', {
+    'event_category': 'Join Community Section',
+    'event_label': social
+  });
+}
+
+function getStartedGAEvent() {
+  gtag('event', 'Getting Started Button Clicked', {
+    'event_category': 'Get Started Section',
+    'event_label': ''
+  });
+}
+
 $(document).ready(function () {
   //Set initial positions
   // if (!isMobile() && !isLandscape() && vw > 768) {
