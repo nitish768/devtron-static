@@ -255,12 +255,12 @@ function copy(command) {
   try {
     textArea.select();
     document.execCommand('copy');
-    console.log("Copied");
   } catch (err) {
     console.error('Oops, unable to copy', err);
   }
   body.removeChild(textArea);
   $("#copy-toast").toast('show');
+  getStartedGAEvent(`copied: ${command}`);
 }
 
 function viewOnGithubGAEvent(label) {
@@ -305,10 +305,10 @@ function joinCommunityGAEvent(social) {
   });
 }
 
-function getStartedGAEvent() {
+function getStartedGAEvent(step) {
   gtag('event', 'Getting Started Button Clicked', {
     'event_category': 'Get Started Section',
-    'event_label': ''
+    'event_label': step
   });
 }
 
