@@ -21,6 +21,7 @@ const $sectionOneHeight = $(".section-hero").outerHeight();
 const triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
+
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -312,6 +313,31 @@ function getStartedGAEvent(step) {
   });
 }
 
+function scrollGAEvent() {
+  let options = {
+    rootMargin: '0px',
+    threshold: 0.2
+  }
+
+  let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log(entry.target.getAttribute('data-ga-event-label'));
+        gtag('event', `${entry.target.getAttribute('data-ga-event-label')}`, {
+          'event_category': 'Scroll',
+          'event_label': `${options.threshold}`,
+        });
+      }
+    });
+  }, options);
+  observer.observe(document.querySelector('.section-hero'));
+  observer.observe(document.querySelector('.section-why'));
+  observer.observe(document.querySelector('.section-landscape'));
+  observer.observe(document.querySelector('.section-testimonials'));
+  observer.observe(document.querySelector('.get-started'));
+  observer.observe(document.querySelector('.devtron-footer'));
+}
+
 $(document).ready(function () {
   //Set initial positions
   // if (!isMobile() && !isLandscape() && vw > 768) {
@@ -326,7 +352,7 @@ $(document).ready(function () {
   //     $(image2).css("position", "fixed").css("top", bottom.top).css("right", rightOffset);
   //   }
   // }
-
+  scrollGAEvent();
   getGithubStars();
   document.getElementById("defaultSelectedTab").click();
   if ($('.section-hero__gif-wrapper').is(':visible')) {
