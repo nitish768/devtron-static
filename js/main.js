@@ -322,7 +322,6 @@ function scrollGAEvent() {
   let observer = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry.target.getAttribute('data-ga-event-label'));
         gtag('event', `${entry.target.getAttribute('data-ga-event-label')}`, {
           'event_category': 'Scroll',
           'event_label': `${options.threshold}`,
