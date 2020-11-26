@@ -38,9 +38,19 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css?time=1604647304741">
+    <link rel="stylesheet" href="css/animations.css?time=1604647304741">
     <script src="js/scroll-out.min.js"></script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2082044, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -55,51 +65,6 @@
         data-autohide="true" data-animation="true" role="alert">
         <div class="toast-body toast-body--devtron">
             Copied!
-        </div>
-    </div>
-    <div class="modal bg-white fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content modal-content--early-access">
-                <div class="modal-header modal-header--early-access">
-                    <h2 class="modal-title modal-title--early-access" id="staticBackdropLabel">Early Access</h2>
-                    <button type="button" class="close close--early-access" data-dismiss="modal" aria-label="Close"
-                        style="z-index: 30">
-                        <span aria-hidden="true">
-                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.51263 10.4003C7.99193 9.87964 7.99193 9.03542 8.51263 8.51472C9.03332 7.99402 9.87755 7.99402 10.3982 8.51472L25.4832 23.5997C26.0039 24.1204 26.0039 24.9646 25.4832 25.4853C24.9625 26.006 24.1183 26.006 23.5976 25.4853L8.51263 10.4003Z"
-                                    fill="#828282" />
-                                <path
-                                    d="M8.51263 25.4853C7.99193 24.9646 7.99193 24.1204 8.51263 23.5997L23.5976 8.51472C24.1183 7.99402 24.9625 7.99402 25.4832 8.51472C26.0039 9.03542 26.0039 9.87964 25.4832 10.4003L10.3982 25.4853C9.87755 26.006 9.03332 26.006 8.51263 25.4853Z"
-                                    fill="#828282" />
-                            </svg>
-                        </span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="w-100">
-                        <label for="first-name" class="d-block early-access-form__label">First Name</label>
-                        <input type="text" id="first-name" placeholder="John" autofocus tab-index="1" name="first-name"
-                            class="d-block w-100 early-access-form__input early-access-form__input-margins" />
-                        <label for="last-name" class="d-block early-access-form__label">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Doe" autofocus tab-index="2" name="first-name"
-                            class="d-block w-100 early-access-form__input early-access-form__input-margins" />
-                        <label for="email" class="d-block early-access-form__label">Email <span
-                                style="position: relative; top: -5px">&lowast;</span></label>
-                        <input type="email" id="email" name="email" placeholder="Enter email id" tab-index="3"
-                            class="d-block w-100 early-access-form__input" required />
-                        <p class="early-access-form__para early-access-form__para-margins">We will send you an
-                            invitation email at the earliest.</p>
-                        <div id="successMessage" class="early-access-form__para early-access-form__para-margins"></div>
-                        <div id="errorMessage" class="early-access-form__para early-access-form__para-margins"></div>
-                        <div></div>
-                        <button type="submit" tab-index="3" class="d-block w-100 button-early-access"
-                            onclick="handleEarlyAccessFormSubmit(event)">Submit</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -118,7 +83,8 @@
                 <div class="main-nav__right">
                     <a class="main-nav__link-blog" href="#community">Community</a>
                     <a class="main-nav__link-blog" href="https://devtron.ai/blog/" target="_blank">Blog</a>
-                    <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="github-star">
+                    <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="github-star"
+                        onclick='viewOnGithubGAEvent("Nav")'>
                         <div class="github-star__right">
                             <svg class="github-star__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +104,7 @@
 
     <main>
         <section class="bg-blue section-hero__wrapper">
-            <div class="section-hero">
+            <div class="section-hero" data-ga-event-label="Section Hero">
                 <h1 data-scroll="out" class="main-title slide-up">Software delivery workflow
                     <span class="main-title--light d-block">for
                         <span class="img-underline">kubernetes</span>
@@ -171,7 +137,8 @@
                     <!-- <h3 class="section-hero__os-text">An open-source project</h3>
                     <p class="section-hero__try-now">Try it now!</p> -->
                     <a data-scroll="out" href="https://github.com/devtron-labs/devtron.git" target="_blank"
-                        class="button-early-access section-hero__view-github slide-up">
+                        class="button-early-access section-hero__view-github slide-up"
+                        onclick='viewOnGithubGAEvent("Hero")'>
                         <img src="./images/ic-github-big.svg" alt="" />
                         <div style="text-align: left;">
                             <p class="view-github__os">Open Source</p>
@@ -183,7 +150,7 @@
             </div>
         </section>
 
-        <section class="section-why">
+        <section class="section-why" data-ga-event-label="Section Why Devtron">
             <h2 data-scroll="out" class="secondary-title title slide-up animation-delay">
                 <b class="secondary-title--bold">Why</b>
                 <b class="secondary-title--light">we built devtron</b>
@@ -398,7 +365,7 @@
         </section>
 
         <section class="bg-blue section-landscape__wrapper">
-            <div class="section-landscape" style="overflow: hidden;">
+            <div class="section-landscape" style="overflow: hidden;" data-ga-event-label="Section Landscape">
                 <img data-scroll="out" src="./images/img-binoculars.png"
                     class="binoculars__position slide-up animation-delay">
                 <div class="section-landscape__top">
@@ -417,18 +384,33 @@
                     <div class="tabs">
                         <div id="policy-tab" class="tabs__activebar" style="height: 60px; transform: translateY(0px)">
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-0')" id="defaultSelectedTab">
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-0');landscapeTabGAEvent('Compliance')"
+                            id="defaultSelectedTab">
                             Compliance
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-1')">Policy Management</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-2')">Deploy Time App Debuggability
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-1');landscapeTabGAEvent('Policy Management')">Policy
+                            Management</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-2');landscapeTabGAEvent('Deploy Time')">Deploy Time App
+                            Debuggability
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-3')">Environment Management</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-4')">GitOps Platform</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-5')">Software Delivery Workflow
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-3');landscapeTabGAEvent('Environment Management')">
+                            Environment Management</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-4');landscapeTabGAEvent('GitOps Platform')">GitOps
+                            Platform</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-5');landscapeTabGAEvent('Software Delivery')">Software
+                            Delivery Workflow
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-6')">Operation Insights</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-7')">Cost</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-6');landscapeTabGAEvent('Operation Insights')">
+                            Operation Insights</div>
+                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-7');landscapeTabGAEvent('Cost')">
+                            Cost</div>
                     </div>
 
                     <div style="width: 70vw">
@@ -773,7 +755,7 @@
 
                 <div class="accordion devtron-landscape--mob" id="accordionExample">
                     <div>
-                        <div id="headingOne">
+                        <div id="headingOne" onclick="landscapeTabGAEvent('Compliance')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
@@ -812,7 +794,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingTwo">
+                        <div id="headingTwo" onclick="landscapeTabGAEvent('Policy Management')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
@@ -853,7 +835,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingThree">
+                        <div id="headingThree" onclick="landscapeTabGAEvent('Deploy Time')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
@@ -903,7 +885,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingFour">
+                        <div id="headingFour" onclick="landscapeTabGAEvent('Environment Management')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
@@ -953,7 +935,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingFive">
+                        <div id="headingFive" onclick="landscapeTabGAEvent('GitOps Platform')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
@@ -983,7 +965,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingSix">
+                        <div id="headingSix" onclick="landscapeTabGAEvent('Software Delivery')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
@@ -1008,7 +990,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingSeven">
+                        <div id="headingSeven" onclick="landscapeTabGAEvent('Operation Insights')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
@@ -1037,7 +1019,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingEight">
+                        <div id="headingEight" onclick="landscapeTabGAEvent('Cost')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
@@ -1088,7 +1070,7 @@
                         <div class="featureHeading__next">NEXT</div>
                         <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(1)"></div>
                         <div class="featureHeading" onclick="featureHeadingsSwitcher.handleHeadingClick(2)"></div>
-                        <div class="section-sneakpeek__button-container">
+                        <div class="section-sneakpeek__button-container" onclick='viewOnGithubGAEvent("Sneak Peak")'>
                             <a href="https://github.com/devtron-labs/devtron.git" target="_blank"
                                 class="button-early-access">
                                 <img src="./images/ic-github-big.svg" alt="github" />
@@ -1121,7 +1103,8 @@
                 </div>
                 <div style="margin-top: 40px;margin-left: 0px;">
                     <a href="https://github.com/devtron-labs/devtron.git" target="_blank"
-                        class="button-early-access button-early-access--mob">
+                        class="button-early-access button-early-access--mob"
+                        onclick='viewOnGithubGAEvent("Sneak Peak")'>
                         <img src="./images/ic-github-big.svg" alt="" />
                         View on Github
                     </a>
@@ -1130,7 +1113,7 @@
         </section>
 
         <section class="bg-white">
-            <div class="devtron-stack">
+            <div class="devtron-stack" data-ga-event-label="Section Devtron Stack">
                 <h2 class="devtron-stack__title">Devtron is built on
                     <span class="devtron-stack__title--light">some of the most trusted and loved technologies</span>
                 </h2>
@@ -1146,7 +1129,7 @@
             <hr class="divider-join-community-learning" />
         </section>
 
-        <section class="easily-integrate">
+        <section class="easily-integrate" data-ga-event-label="Section Easily Integrate">
             <h2 data-scroll="out" class="secondary-title secondary-title--left slide-up animation-delay">
                 <span class="secondary-title--bold">Easily integrate</span>
                 <span class="secondary-title--light d-block">with your current stack</span>
@@ -1183,7 +1166,7 @@
         </section>
 
         <section class="bg-white">
-            <div class="section-testimonials">
+            <div class="section-testimonials" data-ga-event-label="Section Testimonial">
                 <div class="section-testimonials--desktop">
                     <h2 data-scroll="out" class="secondary-title secondary-title--left slide-up animation-delay">
                         <span class="secondary-title--light"> We’re starting to </span>
@@ -1503,7 +1486,7 @@
 
         <section class="bg-white" id="community">
             <hr class="divider-join-community-learning" />
-            <div class="join-community">
+            <div class="join-community" data-ga-event-label="Section Join Community">
                 <div class="join-community__left">
                     <h2 data-scroll="out"
                         class="secondary-title secondary-title--left secondary-title--easily-integrate slide-up animation-delay">
@@ -1516,19 +1499,21 @@
                     </p>
                     <article data-scroll="out" class="join-community__grid slide-up animation-delay">
                         <div class="square-container ">
-                            <a href="https://discord.gg/72JDKy4" class="join-community__grid-item" target="_blank">
+                            <a href="https://discord.gg/72JDKy4" class="join-community__grid-item" target="_blank"
+                                onclick='joinCommunityGAEvent("discord")'>
                                 <img src="./images/eclair.svg" alt="">
                             </a>
                         </div>
                         <div class="square-container ">
                             <a href="https://www.facebook.com/groups/353685209144241/?ref=group_header" target="_blank"
-                                class="join-community__grid-item">
+                                class="join-community__grid-item" onclick='joinCommunityGAEvent("facebook")'>
                                 <img src="./images/facebook-colored.svg" alt="">
                             </a>
                         </div>
                         <div class="square-container ">
                             <a href="https://twitter.com/DevtronL" target="_blank" class="join-community__grid-item">
-                                <img src="./images/twitter-colored.svg" alt="">
+                                <img src="./images/twitter-colored.svg" alt=""
+                                    onclick='joinCommunityGAEvent("twitter")'>
                             </a>
                         </div>
                     </article>
@@ -1540,7 +1525,7 @@
         </section>
 
         <section class="bg-blue">
-            <div class="get-started">
+            <div class="get-started" data-ga-event-label="Section Get Started">
                 <h2 data-scroll="out"
                     class="secondary-title secondary-title--left secondary-title--white secondary-title--get-started slide-up animation-delay">
                     <span class="secondary-title--bold">Get started</span>
@@ -1571,7 +1556,8 @@
                 <article class="get-started__terminal">
                     <div class="get-started__icon-and-cmd">
                         <p class="get-started__command font-monospace">3. Edit value.yaml</p>
-                        <a href="https://docs.devtron.ai/setup/install#configuration" target="_blank" style="color: #F2C94C;">View Schema</a>
+                        <a href="https://docs.devtron.ai/setup/install#configuration" target="_blank"
+                            style="color: #F2C94C;" onclick='getStartedGAEvent("clicked: view schema")'>View Schema</a>
                     </div>
                 </article>
                 <article class="get-started__terminal">
@@ -1586,7 +1572,7 @@
                     </div>
                 </article>
                 <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank"
-                    class="get-started__guide slide-up animation-delay">
+                    class="get-started__guide slide-up animation-delay" onclick='getStartedGAEvent("guide")'>
                     <img src="images/ic-file.svg" class="guide__img" alt="" />
                     <div>
                         <p class="guide__guide">Guide</p>
@@ -1597,14 +1583,14 @@
         </section>
 
         <section class="bg-white section-contributor__bg">
-            <div class="section-contributor">
+            <div class="section-contributor" data-ga-event-label="Section Contribute">
                 <div class="section-contributor__content">
                     <h2 data-scroll="out" class="secondary-title secondary-title--left slide-up animation-delay">
                         <span class="secondary-title--light">Become a </span>
                         <span class="secondary-title--bold section-contributor--contributor">Contributor </span>
                     </h2>
                     <a href="https://github.com/devtron-labs/devtron/blob/main/CONTRIBUTING.md" target="_blank"
-                        class="button-early-access button-early-access--easily-integtate">
+                        class="button-early-access button-early-access--easily-integtate" onclick='learnMoreGAEvent()'>
                         Learn more
                         <img src="./images/line.svg" class="icon-learn-more" alt="" />
                     </a>
@@ -1614,7 +1600,7 @@
 
         <section class="bg-blue">
             <div class="bg-white" style="border-radius: 0 0 40px 40px">
-                <div class="section-learning section-learning--desktop">
+                <div class="section-learning section-learning--desktop" data-ga-event-label="Section Learning">
                     <div class="flex-centre section-learning__header-margins">
                         <h2 data-scroll="out" class="secondary-title secondary-title--left slide-up animation-delay">
                             <span class="secondary-title--bold">We love sharing</span>
@@ -1702,7 +1688,8 @@
         </section>
 
         <section class="bg-blue">
-            <div class="bg-white section-learning section-learning--mob" style="border-radius: 0 0 20px 20px">
+            <div class="bg-white section-learning section-learning--mob" style="border-radius: 0 0 20px 20px"
+                data-ga-event-label="Section Learning">
                 <h2 class="secondary-title secondary-title--left section-learning__header-margins">
                     <span class="secondary-title--bold">We love sharing</span>
                     <span class="secondary-title--light">our learnings</span>
@@ -1762,13 +1749,14 @@
     </main>
 
     <footer class="bg-blue">
-        <div class="devtron-footer">
+        <div class="devtron-footer" data-ga-event-label="Footer">
             <div class="devtron-footer__content">
                 <div class="devtron-footer__left">
                     <img class="devtron-footer__logo" src="./images/devtron-header-logo.svg" width="120" height="32" />
                     <h3 class="devtron-footer__title">An open-source release orchestration & CI/CD platform for
                         Kubernetes</h3>
-                    <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="devtron-footer__git">
+                    <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="devtron-footer__git"
+                        onclick='viewOnGithubGAEvent("Footer")'>
                         <svg class="devtron-footer__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1834,7 +1822,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/product.js"></script>
+    <script src="js/main.js?time=1604647304741"></script>
 </body>
 
 </html>
