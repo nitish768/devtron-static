@@ -21,7 +21,6 @@ const $sectionOneHeight = $(".section-hero").outerHeight();
 const triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
-
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
