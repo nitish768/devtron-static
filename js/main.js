@@ -313,6 +313,13 @@ function getStartedGAEvent(step) {
   });
 }
 
+function landscapeTabGAEvent(tabName) {
+  gtag('event', 'Section Landscape', {
+    'event_category': 'Section Landscape Tab',
+    'event_label': tabName
+  });
+}
+
 function scrollGAEvent() {
   let options = {
     rootMargin: '0px',

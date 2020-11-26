@@ -384,18 +384,33 @@
                     <div class="tabs">
                         <div id="policy-tab" class="tabs__activebar" style="height: 60px; transform: translateY(0px)">
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-0')" id="defaultSelectedTab">
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-0');landscapeTabGAEvent('Compliance')"
+                            id="defaultSelectedTab">
                             Compliance
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-1')">Policy Management</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-2')">Deploy Time App Debuggability
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-1');landscapeTabGAEvent('Policy Management')">Policy
+                            Management</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-2');landscapeTabGAEvent('Deploy Time')">Deploy Time App
+                            Debuggability
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-3')">Environment Management</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-4')">GitOps Platform</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-5')">Software Delivery Workflow
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-3');landscapeTabGAEvent('Environment Management')">
+                            Environment Management</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-4');landscapeTabGAEvent('GitOps Platform')">GitOps
+                            Platform</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-5');landscapeTabGAEvent('Software Delivery')">Software
+                            Delivery Workflow
                         </div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-6')">Operation Insights</div>
-                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-7')">Cost</div>
+                        <div class="tabs__item"
+                            onclick="handleTabChange(event, 'tab-6');landscapeTabGAEvent('Operation Insights')">
+                            Operation Insights</div>
+                        <div class="tabs__item" onclick="handleTabChange(event, 'tab-7');landscapeTabGAEvent('Cost')">
+                            Cost</div>
                     </div>
 
                     <div style="width: 70vw">
@@ -740,7 +755,7 @@
 
                 <div class="accordion devtron-landscape--mob" id="accordionExample">
                     <div>
-                        <div id="headingOne">
+                        <div id="headingOne" onclick="landscapeTabGAEvent('Compliance')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
@@ -779,7 +794,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingTwo">
+                        <div id="headingTwo" onclick="landscapeTabGAEvent('Policy Management')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
@@ -820,7 +835,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingThree">
+                        <div id="headingThree" onclick="landscapeTabGAEvent('Deploy Time')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
@@ -870,7 +885,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingFour">
+                        <div id="headingFour" onclick="landscapeTabGAEvent('Environment Management')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
@@ -920,7 +935,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingFive">
+                        <div id="headingFive" onclick="landscapeTabGAEvent('GitOps Platform')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
@@ -950,7 +965,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingSix">
+                        <div id="headingSix" onclick="landscapeTabGAEvent('Software Delivery')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
@@ -975,7 +990,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingSeven">
+                        <div id="headingSeven" onclick="landscapeTabGAEvent('Operation Insights')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
@@ -1004,7 +1019,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="headingEight">
+                        <div id="headingEight" onclick="landscapeTabGAEvent('Cost')">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
