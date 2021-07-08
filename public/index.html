@@ -1527,22 +1527,34 @@
         <section class="bg-blue">
             <div class="get-started" data-ga-event-label="Section Get Started">
                 <h2 data-scroll="out"
-                    class="secondary-title secondary-title--left secondary-title--white secondary-title--get-started slide-up animation-delay">
+                    class=" secondary-title--white secondary-title--get-started slide-up animation-delay secondary-title-center-align">
                     <span class="secondary-title--bold">Get started</span>
                     <span class="secondary-title--light">in minutes</span>
                 </h2>
-                <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd font-monospace">
-                        <p class="get-started__command">1. Run command to clone git repo</p>
-                        <img src="./images/ic-copy.svg" class="get-started__copy"
-                            onclick='copy("git clone https://github.com/devtron-labs/devtron-installation-script.git")' />
+                <div>
+                    <article class="get-started__terminal ">
+                        <div class="get-started__icon-and-cmd font-monospace">
+                            <p class="get-started__command">Run command to install Devtron using Helm3</p>
+                            <img src="./images/ic-copy.svg" class="get-started__copy"
+                                onclick='copy("git clone https://github.com/devtron-labs/devtron-installation-script.git")' />
+                        </div>
+                        <div class="get-started__shell font-monospace">
+                            <span style="color: rgb(242, 153, 74);">
+                                helm repo add devtron https://helm.devtron.ai
+                                <br />
+                                <br />
+                                helm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd \
+                            </span>
+                        </div>
+                    </article>
+                    <div class="secondary-title-center-align secondary-title--white">
+                        For pre-requisites and other installation options (helm2, kubectl), 
+                        <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank" class="get-started__guide-m-auto get-started__doc"
+                            onclick='getStartedGAEvent("guide")'>
+                            Refer documentation
+                        </a>
                     </div>
-                    <div class="get-started__shell font-monospace">
-                        <span style="color: rgb(242, 153, 74);">git clone </span>
-                        https://github.com/devtron-labs/devtron-installation-script.git
-                    </div>
-                </article>
-                <article class="get-started__terminal">
+                    <!-- <article class="get-started__terminal">
                     <div class="get-started__icon-and-cmd font-monospace">
                         <p class="get-started__command">2. Navigate to chart directory</p>
                         <img src="./images/ic-copy.svg" class="get-started__copy"
@@ -1570,15 +1582,17 @@
                         <span style="color: rgb(242, 153, 74);">helm install</span>
                         devtron . -f values.yaml
                     </div>
-                </article>
-                <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank"
-                    class="get-started__guide slide-up animation-delay" onclick='getStartedGAEvent("guide")'>
-                    <img src="images/ic-file.svg" class="guide__img" alt="" />
-                    <div>
-                        <p class="guide__guide">Guide</p>
-                        <p class="guide__getting-started">Getting Started</p>
-                    </div>
-                </a>
+                </article> -->
+                    <!-- <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank"
+                        class="get-started__guide-m-auto"
+                        onclick='getStartedGAEvent("guide")'>
+                        <img src="images/ic-file.svg" class="guide__img" alt="" />
+                        <div>
+                            <p class="guide__guide">Guide</p>
+                            <p class="guide__getting-started">Getting Started</p>
+                        </div>
+                    </a> -->
+                </div>
             </div>
         </section>
 
@@ -1603,7 +1617,7 @@
                 <div class="section-learning section-learning--desktop" data-ga-event-label="Section Learning">
                     <div class="flex-centre section-learning__header-margins">
                         <h2 data-scroll="out" class="secondary-title secondary-title--left slide-up animation-delay">
-                            <span class="secondary-title--bold">We love sharing</span>
+                            <span class="--bold">We love sharing</span>
                             <span class="secondary-title--light">our learnings</span>
                         </h2>
                         <a class="blue-anchors" href="https://devtron.ai/blog/" target="_blank"
@@ -1809,7 +1823,8 @@
             </div>
             <p class="devtron-footer__copyright-text devtron-footer__copyright-text--mob">Made with
                 <span class="devtron-footer__heart">&hearts;</span>
-                in India</p>
+                in India
+            </p>
             <div class="devtron-footer__copyright-indent">
                 <p class="devtron-footer__copyright-text">© 2020 DevtronLabs. All rights reserved</p>
                 <p class="devtron-footer__copyright-text devtron-footer__copyright-text--desktop">
