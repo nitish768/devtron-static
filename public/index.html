@@ -80,7 +80,7 @@
                         fill="white" />
                 </svg>
                 <div class="main-nav__right">
-                    <a class="main-nav__link-blog" href="https://docs.devtron.ai/">Docs</a>
+                    <a class="main-nav__link-blog" href="https://docs.devtron.ai/" target="_blank">Docs</a>
                     <a class="main-nav__link-blog" href="#community">Community</a>
                     <a class="main-nav__link-blog" href="https://devtron.ai/blog/" target="_blank">Blog</a>
                     <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="github-star"
@@ -1536,7 +1536,8 @@
                         <div class="get-started__icon-and-cmd font-monospace">
                             <p class="get-started__command">Run command to install Devtron using Helm3</p>
                             <img src="./images/ic-copy.svg" class="get-started__copy"
-                                onclick='copy("git clone https://github.com/devtron-labs/devtron-installation-script.git")' />
+                                onclick='copy(`helm repo add devtron https://helm.devtron.ai \nhelm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd \\`)'
+                                />
                         </div>
                         <div class="get-started__shell font-monospace">
                             <span style="color: rgb(242, 153, 74);">
@@ -1554,44 +1555,6 @@
                             Refer documentation
                         </a>
                     </div>
-                    <!-- <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd font-monospace">
-                        <p class="get-started__command">2. Navigate to chart directory</p>
-                        <img src="./images/ic-copy.svg" class="get-started__copy"
-                            onclick='copy("cd devtron-installation-script/charts")' />
-                    </div>
-                    <div class="get-started__shell font-monospace">
-                        <span style="color: rgb(242, 153, 74);">cd </span>
-                        devtron-installation-script/charts
-                    </div>
-                </article>
-                <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd">
-                        <p class="get-started__command font-monospace">3. Edit value.yaml</p>
-                        <a href="https://docs.devtron.ai/setup/install#configuration" target="_blank"
-                            style="color: #F2C94C;" onclick='getStartedGAEvent("clicked: view schema")'>View Schema</a>
-                    </div>
-                </article>
-                <article class="get-started__terminal">
-                    <div class="get-started__icon-and-cmd font-monospace">
-                        <p class="get-started__command">4. Run Command to install</p>
-                        <img src="./images/ic-copy.svg" class="get-started__copy"
-                            onclick='copy("helm install devtron . -f values.yaml")' />
-                    </div>
-                    <div class="get-started__shell font-monospace">
-                        <span style="color: rgb(242, 153, 74);">helm install</span>
-                        devtron . -f values.yaml
-                    </div>
-                </article> -->
-                    <!-- <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank"
-                        class="get-started__guide-m-auto"
-                        onclick='getStartedGAEvent("guide")'>
-                        <img src="images/ic-file.svg" class="guide__img" alt="" />
-                        <div>
-                            <p class="guide__guide">Guide</p>
-                            <p class="guide__getting-started">Getting Started</p>
-                        </div>
-                    </a> -->
                 </div>
             </div>
         </section>
