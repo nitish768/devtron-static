@@ -20,6 +20,8 @@ const $navbarHeight = $(".main-nav").outerHeight();
 const $sectionOneHeight = $(".section-hero").outerHeight();
 const triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+const RegEx = { emails:/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/ }
+const apiKey = "d7716f98-0457-4b9c-8dee-1549d95c9b69"
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -238,6 +240,36 @@ function getGithubStars() {
     }
   }
   xhr.send();
+}
+
+async function onSubscribe(email) {
+  if( email.length > 0 && RegEx.emails.test(email)) {
+    const URL = 'https://cors-anywhere.herokuapp.com/https://api.hubapi.com/crm/v3/objects/contacts?hapikey='+apiKey;
+    let body = { "inputs": [{"properties": {"email": email}}] }
+    let data = {}
+    data = { method: "POST",headers: {Accept: 'application/json','Content-Type': 'application/json'},body: body ? JSON.stringify(body) : undefined};
+    console.log('response',data)
+    await fetch(URL, data).then(response => response.json().then(data => ({data: data,status: response.status})
+  ).then(res => {
+      addContact(res.data, email);
+      console.log(res.status, res.data) 
+  }))
+    .catch(err => console.error(err));
+  } else{
+    alert('Enter valid email address')
+  }
+}
+
+async function addContact(res, email){
+  const URL = 'https://cors-anywhere.herokuapp.com/https://api.hubapi.com/contacts/v1/lists/1/add?hapikey='+apiKey;
+  let body = { "vids": [res.id],"emails": [email]}
+  let data = {}
+  data = { method: "POST",headers: {Accept: 'application/json','Content-Type': 'application/json'},body: body ? JSON.stringify(body) : undefined};
+  await fetch(URL, data).then(response => response.json().then(data => ({data: data,status: response.status})
+).then(res => {
+    console.log(res.status, res.data) 
+}))
+  .catch(err => console.error(err));
 }
 
 function emptyErrorandSuccess() {

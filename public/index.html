@@ -1524,8 +1524,26 @@
                     class="join-community__img join-community__img--desktop" />
             </div>
         </section>
-
-        <section class="bg-blue">
+        <section class="main-nav-light">
+            <div class="devtron-subscribe-section" data-ga-event-label="Section Subscribe">
+                <h6 data-scroll="out"
+                    class="slide-up animation-delay secondary-title-center-align align-middle subscribe-text">
+                    <span class="font-weight-normal">Keep up with the latest news about Kubernetes, DevOps, and
+                        Devtron.</span>
+                </h6>
+                <div style="align-items: center;">
+                    <input id="Subscribe-input" class="devtron-subscribe-input bg-white rounded" type="email" placeholder="Enter your email">
+                    </input>
+                    <a class="button-early-access button-early-access--easily-integtate"
+                        onclick='onSubscribe(document.getElementById("Subscribe-input").value)'>
+                        Subscribe
+                    </a>
+                </div>
+                <img src="./images/img-grass.svg" class="position-absolute grass-img" />
+                <img src="./images/img-mailbox.svg" class="position-absolute  mailbox-img" />
+            </div>
+        </section>
+        <section class="bg-blue border-t-l">
             <div class="get-started" data-ga-event-label="Section Get Started">
                 <h2 data-scroll="out"
                     class=" secondary-title--white secondary-title--get-started slide-up animation-delay secondary-title-center-align">
@@ -1634,8 +1652,8 @@
                         <div data-scroll="out"
                             class="card section-learning__grid-item learning-card slide-up animation-delay"
                             onclick="openBlogPage(2);blogCLickGAEvent('How to use')">
-                            <img src="./images/use-spot-save-cost-k8s-1.png"
-                                class="card-img-top learning-card__img" alt="">
+                            <img src="./images/use-spot-save-cost-k8s-1.png" class="card-img-top learning-card__img"
+                                alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     How to use Spot to achieve Cost Savings with Stability on Kubernetes
@@ -1648,8 +1666,7 @@
                         </div>
                         <div data-scroll="out" class="card section-learning__grid-item learning-card slide-up"
                             onclick="openBlogPage(3);blogCLickGAEvent('Migrating to')">
-                            <img src="./images/CTO_blog.png"
-                                class="card-img-top learning-card__img" alt="">
+                            <img src="./images/CTO_blog.png" class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must know
