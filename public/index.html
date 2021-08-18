@@ -67,6 +67,18 @@
             Copied!
         </div>
     </div>
+    <div role="alert" id="success-subscribe-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
+    data-delay="300" data-autohide="true" data-animation="true">
+        <div class="toast-body toast-body--devtron bg-blue">
+            Subscribed successfully
+        </div>
+   </div>
+   <div role="alert" id="error-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
+   data-delay="300" data-autohide="true" data-animation="true">
+       <div class="toast-body toast-body--devtron bg-red">
+           Invalid email address!
+       </div>
+  </div>
 
     <header class="">
         <nav class="main-nav">
@@ -1535,7 +1547,7 @@
                     <input id="Subscribe-input" class="devtron-subscribe-input bg-white rounded" type="email" placeholder="Enter your email">
                     </input>
                     <a class="button-early-access button-early-access--easily-integtate"
-                        onclick='onSubscribe(document.getElementById("Subscribe-input").value)'>
+                        onclick="onSubscribe(document.getElementById('Subscribe-input').value); document.getElementById('Subscribe-input').value = '' ; ">
                         Subscribe
                     </a>
                 </div>

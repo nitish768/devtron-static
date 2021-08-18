@@ -21,7 +21,6 @@ const $sectionOneHeight = $(".section-hero").outerHeight();
 const triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 const RegEx = { emails:/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/ }
-const apiKey = "d7716f98-0457-4b9c-8dee-1549d95c9b69"
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -117,7 +116,7 @@ ${textToAppend}`;
   document.execCommand("copy");
   document.body.removeChild(dummyTextArea);
   $('#linkedin-toast').toast({
-    delay: 3000,
+    delay: 4000,
   })
   $("#linkedin-toast").toast('show');
   setTimeout(() => {
@@ -244,32 +243,44 @@ function getGithubStars() {
 
 async function onSubscribe(email) {
   if( email.length > 0 && RegEx.emails.test(email)) {
-    const URL = 'https://cors-anywhere.herokuapp.com/https://api.hubapi.com/crm/v3/objects/contacts?hapikey='+apiKey;
-    let body = { "inputs": [{"properties": {"email": email}}] }
-    let data = {}
-    data = { method: "POST",headers: {Accept: 'application/json','Content-Type': 'application/json'},body: body ? JSON.stringify(body) : undefined};
-    console.log('response',data)
-    await fetch(URL, data).then(response => response.json().then(data => ({data: data,status: response.status})
-  ).then(res => {
-      addContact(res.data, email);
-      console.log(res.status, res.data) 
-  }))
-    .catch(err => console.error(err));
+     const xhr = new XMLHttpRequest();
+     const url = 'https://api.hsforms.com/submissions/v3/integration/submit/6866519/392bb609-8eb9-4bea-8131-f6863e7fd582'
+     const data = {
+       "submittedAt": new Date().getTime(),
+       "fields": [
+         {
+           "name": "email",
+           "value": email
+         }
+       ],
+       skipValidation: true
+     }
+ 
+     var final_data = JSON.stringify(data)    
+     xhr.open('POST', url);
+     xhr.setRequestHeader('Content-Type', 'application/json');
+     xhr.onreadystatechange = function() {
+         if(xhr.readyState == 4 && xhr.status == 200) { 
+          $('#success-subscribe-toast').toast({
+            delay: 4000,
+          })
+          $("#success-subscribe-toast").toast('show');
+         } else if (xhr.readyState == 4 && xhr.status == 400){ 
+             alert("Error in subscribing try after sometime");  
+         } else if (xhr.readyState == 4 && xhr.status == 403){ 
+             alert("Error in subscribing try after sometime");         
+         } else if (xhr.readyState == 4 && xhr.status == 404){ 
+             alert("Error in subscribing try after sometime");  
+         }
+        }
+     
+     xhr.send(final_data)
   } else{
-    alert('Enter valid email address')
+    $('#error-toast').toast({
+      delay: 3000,
+    })
+    $("#error-toast").toast('show');
   }
-}
-
-async function addContact(res, email){
-  const URL = 'https://cors-anywhere.herokuapp.com/https://api.hubapi.com/contacts/v1/lists/1/add?hapikey='+apiKey;
-  let body = { "vids": [res.id],"emails": [email]}
-  let data = {}
-  data = { method: "POST",headers: {Accept: 'application/json','Content-Type': 'application/json'},body: body ? JSON.stringify(body) : undefined};
-  await fetch(URL, data).then(response => response.json().then(data => ({data: data,status: response.status})
-).then(res => {
-    console.log(res.status, res.data) 
-}))
-  .catch(err => console.error(err));
 }
 
 function emptyErrorandSuccess() {
