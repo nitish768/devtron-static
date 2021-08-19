@@ -67,6 +67,18 @@
             Copied!
         </div>
     </div>
+    <div role="alert" id="success-subscribe-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
+        data-delay="300" data-autohide="true" data-animation="true">
+        <div class="toast-body toast-body--devtron bg-blue">
+            Thanks for signing up for our newsletter.
+        </div>
+    </div>
+    <div role="alert" id="error-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
+        data-delay="300" data-autohide="true" data-animation="true">
+        <div class="toast-body toast-body--devtron bg-red">
+            Invalid email address!
+        </div>
+    </div>
 
     <header class="">
         <nav class="main-nav">
@@ -1524,8 +1536,55 @@
                     class="join-community__img join-community__img--desktop" />
             </div>
         </section>
-
-        <section class="bg-blue">
+        <section class="main-nav-light">
+            <div class="section-testimonials--desktop">
+                <div class="devtron-subscribe-section--desktop" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                    <div class="align-end">
+                        <img src="./images/img-grass.svg" class=" " />
+                    </div>
+                    <div class="align-center">
+                        <h6 data-scroll="out"
+                            class="slide-up animation-delay secondary-title-center-align align-middle subscribe-text">
+                            <span class="font-weight-normal">Keep up with the latest news about Kubernetes, DevOps, and
+                                Devtron.</span>
+                        </h6>
+                        <div class="subscribe-inner">
+                            <input id="Subscribe-input" class="devtron-subscribe-input bg-white rounded" type="email"
+                                placeholder="Enter your email">
+                            </input>
+                            <button class="button-early-access subscribe-btn"
+                                onclick="onSubscribe(document.getElementById('Subscribe-input').value) ">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div class="align-end">
+                        <img src="./images/img-mailbox.svg" class="" />
+                    </div>
+                </div>
+            </div>
+            <div class="section-testimonials--mob">
+                <div class="devtron-subscribe-section--mob" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                    <div class="align-center">
+                        <h6 data-scroll="out"
+                            class="slide-up animation-delay secondary-title-center-align align-middle subscribe-text">
+                            <span class="font-weight-normal" style="font-size: smaller;">Keep up with the latest news about Kubernetes, DevOps, and
+                                Devtron.</span>
+                        </h6>
+                        <div class="subscribe-inner">
+                            <input id="Subscribe-input-mob" class="devtron-subscribe-input--mob bg-white rounded" type="email"
+                                placeholder="Enter your email">
+                            </input>
+                            <button class="button-early-access subscribe-btn" style="font-size:small; width: 36%;"
+                                onclick="onSubscribe(document.getElementById('Subscribe-input-mob').value) ">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-blue border-t-l">
             <div class="get-started" data-ga-event-label="Section Get Started">
                 <h2 data-scroll="out"
                     class=" secondary-title--white secondary-title--get-started slide-up animation-delay secondary-title-center-align">
@@ -1537,8 +1596,7 @@
                         <div class="get-started__icon-and-cmd font-monospace">
                             <p class="get-started__command">Run command to install Devtron using Helm3</p>
                             <img src="./images/ic-copy.svg" class="get-started__copy"
-                                onclick='copy(`helm repo add devtron https://helm.devtron.ai \nhelm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd \\`)'
-                                />
+                                onclick='copy(`helm repo add devtron https://helm.devtron.ai \nhelm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd \\`)' />
                         </div>
                         <div class="get-started__shell font-monospace">
                             <span style="color: rgb(242, 153, 74);">
@@ -1550,9 +1608,9 @@
                         </div>
                     </article>
                     <div class="secondary-title-center-align secondary-title--white">
-                        For pre-requisites and other installation options (helm2, kubectl), 
-                        <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank" class="get-started__guide-m-auto get-started__doc"
-                            onclick='getStartedGAEvent("guide")'>
+                        For pre-requisites and other installation options (helm2, kubectl),
+                        <a data-scroll="out" href="https://docs.devtron.ai/setup/install" target="_blank"
+                            class="get-started__guide-m-auto get-started__doc" onclick='getStartedGAEvent("guide")'>
                             Refer documentation
                         </a>
                     </div>
@@ -1634,8 +1692,8 @@
                         <div data-scroll="out"
                             class="card section-learning__grid-item learning-card slide-up animation-delay"
                             onclick="openBlogPage(2);blogCLickGAEvent('How to use')">
-                            <img src="./images/use-spot-save-cost-k8s-1.png"
-                                class="card-img-top learning-card__img" alt="">
+                            <img src="./images/use-spot-save-cost-k8s-1.png" class="card-img-top learning-card__img"
+                                alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     How to use Spot to achieve Cost Savings with Stability on Kubernetes
@@ -1648,8 +1706,7 @@
                         </div>
                         <div data-scroll="out" class="card section-learning__grid-item learning-card slide-up"
                             onclick="openBlogPage(3);blogCLickGAEvent('Migrating to')">
-                            <img src="./images/CTO_blog.png"
-                                class="card-img-top learning-card__img" alt="">
+                            <img src="./images/CTO_blog.png" class="card-img-top learning-card__img" alt="">
                             <div class="card-body">
                                 <p class="learning-card__text">
                                     Migrating to Kubernetes? Advantages Vs Dis-advantages a CTO must know

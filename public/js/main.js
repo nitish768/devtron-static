@@ -20,6 +20,7 @@ const $navbarHeight = $(".main-nav").outerHeight();
 const $sectionOneHeight = $(".section-hero").outerHeight();
 const triggeerHeight = ((Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - image1.height()) / 2);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+const RegEx = { emails:/^[^\s@]+@[^\s@]+\.[^\s@]+$/ }
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -115,7 +116,7 @@ ${textToAppend}`;
   document.execCommand("copy");
   document.body.removeChild(dummyTextArea);
   $('#linkedin-toast').toast({
-    delay: 3000,
+    delay: 4000,
   })
   $("#linkedin-toast").toast('show');
   setTimeout(() => {
@@ -238,6 +239,50 @@ function getGithubStars() {
     }
   }
   xhr.send();
+}
+
+async function onSubscribe(email) {
+  if( email.length > 0 && RegEx.emails.test(email)) {
+     const xhr = new XMLHttpRequest();
+     const url = 'https://api.hsforms.com/submissions/v3/integration/submit/6866519/392bb609-8eb9-4bea-8131-f6863e7fd582'
+     const data = {
+       "submittedAt": new Date().getTime(),
+       "fields": [
+         {
+           "name": "email",
+           "value": email
+         }
+       ],
+       skipValidation: true
+     }
+ 
+     var final_data = JSON.stringify(data)    
+     xhr.open('POST', url);
+     xhr.setRequestHeader('Content-Type', 'application/json');
+     xhr.onreadystatechange = function() {
+         if(xhr.readyState == 4 && xhr.status == 200) { 
+          $('#success-subscribe-toast').toast({
+            delay: 4000,
+          })
+          $("#success-subscribe-toast").toast('show');
+          document.getElementById('Subscribe-input').value = '';
+          document.getElementById('Subscribe-input-mob').value = '';
+         } else if (xhr.readyState == 4 && xhr.status == 400){ 
+             alert("Error in subscribing try after sometime");  
+         } else if (xhr.readyState == 4 && xhr.status == 403){ 
+             alert("Error in subscribing try after sometime");         
+         } else if (xhr.readyState == 4 && xhr.status == 404){ 
+             alert("Error in subscribing try after sometime");  
+         }
+        }
+     
+     xhr.send(final_data)
+  } else{
+    $('#error-toast').toast({
+      delay: 3000,
+    })
+    $("#error-toast").toast('show');
+  }
 }
 
 function emptyErrorandSuccess() {
