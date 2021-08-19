@@ -70,7 +70,7 @@
     <div role="alert" id="success-subscribe-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
     data-delay="300" data-autohide="true" data-animation="true">
         <div class="toast-body toast-body--devtron bg-blue">
-            Thank you for subscribing devtron.
+            Thanks for signing up for our newsletter.
         </div>
    </div>
    <div role="alert" id="error-toast" class="toast toast__wrapper" aria-live="assertive" aria-atomic="true"
@@ -1537,22 +1537,28 @@
             </div>
         </section>
         <section class="main-nav-light">
-            <div class="devtron-subscribe-section" data-ga-event-label="Section Subscribe">
-                <h6 data-scroll="out"
+            <div class="devtron-subscribe-section" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                <div class="align-end">
+                    <img src="./images/img-grass.svg" class=" " />
+                </div>
+                <div class="align-center">
+                    <h6 data-scroll="out"
                     class="slide-up animation-delay secondary-title-center-align align-middle subscribe-text">
                     <span class="font-weight-normal">Keep up with the latest news about Kubernetes, DevOps, and
                         Devtron.</span>
                 </h6>
-                <div style="align-items: center;">
+                <div class="subscribe-inner">
                     <input id="Subscribe-input" class="devtron-subscribe-input bg-white rounded" type="email" placeholder="Enter your email">
                     </input>
-                    <a class="button-early-access button-early-access--easily-integtate"
-                        onclick="onSubscribe(document.getElementById('Subscribe-input').value); document.getElementById('Subscribe-input').value = '' ; ">
+                    <button class="button-early-access subscribe-btn"
+                        onclick="onSubscribe(document.getElementById('Subscribe-input').value) ">
                         Subscribe
-                    </a>
+                    </button>
                 </div>
-                <img src="./images/img-grass.svg" class="position-absolute grass-img" />
-                <img src="./images/img-mailbox.svg" class="position-absolute  mailbox-img" />
+                </div>
+                <div class="align-end">
+                    <img src="./images/img-mailbox.svg" class="" />
+                </div>
             </div>
         </section>
         <section class="bg-blue border-t-l">

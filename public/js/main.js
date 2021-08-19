@@ -265,6 +265,7 @@ async function onSubscribe(email) {
             delay: 4000,
           })
           $("#success-subscribe-toast").toast('show');
+          document.getElementById('Subscribe-input').value = '';
          } else if (xhr.readyState == 4 && xhr.status == 400){ 
              alert("Error in subscribing try after sometime");  
          } else if (xhr.readyState == 4 && xhr.status == 403){ 
