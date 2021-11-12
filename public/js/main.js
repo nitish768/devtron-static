@@ -176,6 +176,17 @@ function toggleDisplay() {
   }
 }
 
+function showSupportProgram() {
+  var x = document.getElementsByClassName("main-nav__support_program")[0];
+  console.log(x)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
 function moveLearningCarouselLeft() {
   moveScroll(-000000);
   toggleDisplay();
@@ -363,6 +374,7 @@ function landscapeTabGAEvent(tabName) {
     'event_label': tabName
   });
 }
+
 
 function scrollGAEvent() {
   let options = {

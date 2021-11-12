@@ -93,6 +93,7 @@
                         fill="white" />
                 </svg>
                 <div class="main-nav__right">
+                    <div class="main-nav__link-blog" onclick="showSupportProgram()">Support Program 🤝</div>
                     <a class="main-nav__link-blog" href="https://docs.devtron.ai/" target="_blank">Docs</a>
                     <a class="main-nav__link-blog" href="#community">Community</a>
                     <a class="main-nav__link-blog" href="https://devtron.ai/blog/" target="_blank">Blog</a>
@@ -111,11 +112,39 @@
                         </div>
                     </a>
                 </div>
+
             </div>
         </nav>
     </header>
 
     <main>
+        <section class="section-why">
+            <h1 class="support-program">Devtron turns one 🎉</h1>
+            <div class="support-program__content">
+                <div class="support-program__description">
+                    In the Open Source spirit, our core team would love to
+                    <div class="support-program__accelerate">help 30 organizations to accelerate 🚀 </div>
+                    their journey adopting Kubernetes via Devtron!!!
+                </div>
+                <p>
+                    And, all we need is your feedback and possibly a good word from you about Devtron.
+                </p>
+            </div>
+        </section>
+        <section class='bg-white support-program__trusted-by'>
+            <div  class="support-program__devtron-stack">
+                <div class="support-program__devtron-stack__title">Trusted by</div>
+                <div class="devtron-stack__grid">
+                   <img src="./images/support-program-assets/logo-delhivery.png" class="devtron-stack__item" />
+                    <img src="./images/support-program-assets/logo-bharatpe.png" class="devtron-stack__item" />
+                    <img src="./images/support-program-assets/logo-livspace.png" class="devtron-stack__item" />
+                    <img src="./images/support-program-assets/logo-moglix.png" class="devtron-stack__item" />
+                    <img src="./images/support-program-assets/logo-xoxoday.png" class="devtron-stack__item" />
+                </div>
+            </div>
+            <hr class="divider-join-community-learning" />
+
+        </section>
         <section class="bg-blue section-hero__wrapper">
             <div class="section-hero" data-ga-event-label="Section Hero">
                 <h1 data-scroll="out" class="main-title slide-up">Software delivery workflow
@@ -1538,7 +1567,8 @@
         </section>
         <section class="main-nav-light">
             <div class="section-testimonials--desktop">
-                <div class="devtron-subscribe-section--desktop" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                <div class="devtron-subscribe-section--desktop" data-ga-event-label="Section Subscribe"
+                    style="min-height:0px">
                     <div class="align-end">
                         <img src="./images/img-grass.svg" class=" " />
                     </div>
@@ -1564,16 +1594,18 @@
                 </div>
             </div>
             <div class="section-testimonials--mob">
-                <div class="devtron-subscribe-section--mob" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                <div class="devtron-subscribe-section--mob" data-ga-event-label="Section Subscribe"
+                    style="min-height:0px">
                     <div class="align-center">
                         <h6 data-scroll="out"
                             class="slide-up animation-delay secondary-title-center-align align-middle subscribe-text">
-                            <span class="font-weight-normal" style="font-size: smaller;">Keep up with the latest news about Kubernetes, DevOps, and
+                            <span class="font-weight-normal" style="font-size: smaller;">Keep up with the latest news
+                                about Kubernetes, DevOps, and
                                 Devtron.</span>
                         </h6>
                         <div class="subscribe-inner">
-                            <input id="Subscribe-input-mob" class="devtron-subscribe-input--mob bg-white rounded" type="email"
-                                placeholder="Enter your email">
+                            <input id="Subscribe-input-mob" class="devtron-subscribe-input--mob bg-white rounded"
+                                type="email" placeholder="Enter your email">
                             </input>
                             <button class="button-early-access subscribe-btn" style="font-size:small; width: 36%;"
                                 onclick="onSubscribe(document.getElementById('Subscribe-input-mob').value) ">
