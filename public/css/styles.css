@@ -880,24 +880,15 @@ height: 400px;
 }
 
 .why-devtron {
-    right:20px;
 	padding: 64px 36.5px 20px 36.5px;
+	background-image: url(../images/support-program-assets/ic-why-devtron.jpeg);
+	background-repeat: no-repeat;
     color: #000a14;
 }
 
 .why-devtron__adoption {
 	display: flex;
 	flex-wrap: wrap
-}
-
-.why__background-image{
-    content:"";
-    position:absolute;
-    right:20px;
-	padding: 64px 36.5px 20px 36.5px;
-	background-image: url(../images/support-program-assets/ic-why-devtron.jpeg);
-	background-repeat: no-repeat;
-    color: #000a14;
 }
 
 .flex {
