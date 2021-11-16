@@ -712,6 +712,21 @@ section-hero__support_program {
 	height: 40px;
 }
 
+.support-program__apply-now{
+    color: #f2c94c;
+}
+
+.support-program__k8s{
+    display: block;
+    padding: 12px 135px;
+  background-color: #3e3ead;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
 .supported-by-devtron-description {
 	font-size: 18px;
     color: #000a14;
@@ -865,15 +880,24 @@ height: 400px;
 }
 
 .why-devtron {
+    right:20px;
 	padding: 64px 36.5px 20px 36.5px;
-	background-image: url(../images/support-program-assets/ic-why-devtron.jpeg);
-	background-repeat: no-repeat;
     color: #000a14;
 }
 
 .why-devtron__adoption {
 	display: flex;
 	flex-wrap: wrap
+}
+
+.why__background-image{
+    content:"";
+    position:absolute;
+    right:20px;
+	padding: 64px 36.5px 20px 36.5px;
+	background-image: url(../images/support-program-assets/ic-why-devtron.jpeg);
+	background-repeat: no-repeat;
+    color: #000a14;
 }
 
 .flex {
@@ -2187,7 +2211,9 @@ mark {
 }
 
 @media screen and (max-width:768px) {
-   
+    .support-program__k8{
+        display: none;
+    }
 	.popper__position {
 		width: 140px;
 		height: 140px
