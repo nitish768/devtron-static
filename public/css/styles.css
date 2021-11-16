@@ -714,7 +714,9 @@ section-hero__support_program {
 
 .supported-by-devtron-description {
 	font-size: 18px;
-	color: #000a14
+    color: #000a14;
+    max-width: 600px;
+    margin: auto;
 }
 
 .support-program__devtron-stack {
@@ -741,7 +743,11 @@ section-hero__support_program {
 .supported-by__image {
 	border-radius: 50px;
 	width: 64px;
-	height: 64px
+    height: 64px;
+}
+
+.support-program__by{
+padding-top: 20px;
 }
 
 .support-by-center-align {
@@ -807,7 +813,9 @@ section-hero__support_program {
 color: #000a14;
 height: 400px;
 }
-
+.carousel-indicators{
+    z-index: 1;
+}
 .carousel-indicators li{
     background-color: #f2c94c;
     width: 10px;
@@ -819,9 +827,14 @@ height: 400px;
 .carousel-control-next {
     border: 0px;
     transform: rotate(180deg); 
+    background-color: white;
+    justify-content: initial
 }
+
 .carousel-control-prev{
     border: 0px;
+    background-color: white;
+    justify-content: initial
 }
 .carousel-rotate {
     transform: rotate(180deg); 
@@ -829,6 +842,8 @@ height: 400px;
 }
 .carousel-caption{
     color: #000a14;
+    z-index: 1;
+    top: 0;
 }
 .carousel-flex{
     display: flex;
@@ -2202,6 +2217,9 @@ mark {
 }
 
 @media screen and (min-width:650px) {
+    .supported-by-devtron-description {
+        font-size: 24px;
+    }
     .why-devtron{
         padding: 0px;
     }
@@ -2358,7 +2376,7 @@ mark {
         padding: 100px 40px;
 	}
 	.section-why:after {
-		content: '';
+		/* content: ''; */
 		display: block;
 		background-image: url(../images/grey-dot-grid.png);
 		background-repeat: repeat;
