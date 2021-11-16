@@ -120,9 +120,8 @@
 
     <main>
 
-        <section class="section-why ">
+        <section class="section-why"> <!-- remove content='' from section-why::after-->
             <div>
-
                 <h1 class="support-program">Devtron turns one 🎉</h1>
                 <div class="support-program__content">
                     <div class="support-program__description">
@@ -146,6 +145,7 @@
                 </script>
             </div>
         </section>
+
         <section class='bg-white support-program__trusted-by join-community'>
             <div class="support-program__devtron-stack">
                 <div class="support-program__devtron-stack__title">Trusted by</div>
@@ -164,7 +164,7 @@
 
 
         <!-- <div class="support-program__supported-by">
-                        
+
                        <img class="supported-by__image" src="./images/support-program-assets//viktor-farcic.jpeg" />
                         <p class="supported-by-devtron-description">Devtron sits on top of some of the greatest tools such as
                             ArgoCD, Grafana, Clair. It is also
@@ -182,7 +182,7 @@
                                 <div class="supported-by__name">Viktor Farcic</div>
                             </div>
                             <div class="supported-by__description">Tech Reviewer, The DevOps Toolkit</div>
-        
+
                             <div class="support-program__group-radio">
                                 <div class="support-program__yellow-radio"></div>
                                 <div class="support-program__yellow-radio support-program__no-radio"></div>
@@ -218,30 +218,36 @@
                         </div>
                     </div> -->
                 <div class="carousel-item active">
-                    <div class="carousel-flex"><img src="./images/support-program-assets/viktor-farcic.jpeg"
-                            class="supported-by__image d-block" alt="viktor-farcic">
-                    </div>
+                    <!-- <div class="carousel-flex"> -->
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"></rect></svg>
+                        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400">
+                            <rect width="800" height="400" style="fill:rgb(255,255,255);" />
+                          </svg> -->
+                    <!-- </div> -->
                     <div class="carousel-caption d-none d-md-block">
+                        <div style="/*! width: 800px; */display: flex !important;align-items: center;justify-content: center;">
+                            <img src="./images/support-program-assets/viktor-farcic.jpeg" class="supported-by__image d-block" alt="viktor-farcic" style="display: flex !important;align-items: center;justify-content: center;">
+                        </div>
                         <div class="supported-by-devtron-description">
                             Devtron sits on top of some of the greatest tools
                             such as
                             ArgoCD, Grafana, Clair. It is also
                             User-Friendly and Intuitive
                         </div>
-                    </div>
-                    <div class="support-program__watch-you-tube">
-                        <img class="icon-24 you-tube__play-icon" src="./images/support-program-assets/ic-play.png" />
-                        <div class="support-program__watch-you-tube-description">
-                            Devtron - Kubernetes-Native User-Friendly CI, CD, and GitOps
-                            <div class="support-program__watch-you-tube-link">Watch Review on YouTube</div>
+                        <div class="support-program__watch-you-tube">
+                            <img class="icon-24 you-tube__play-icon" src="./images/support-program-assets/ic-play.png" />
+                            <div class="support-program__watch-you-tube-description">
+                                Devtron - Kubernetes-Native User-Friendly CI, CD, and GitOps
+                                <div class="support-program__watch-you-tube-link">Watch Review on YouTube</div>
+                            </div>
+                        </div>
+                        <div class="support-by-center-align">
+                            <div class="support-program__by">
+                                <div class="supported-by__name">Viktor Farcic</div>
+                            </div>
+                            <div class="supported-by__description">Tech Reviewer, The DevOps Toolkit</div>
                         </div>
                     </div>
-                    <p class="support-by-center-align">
-                    <div class="support-program__by">
-                        <div class="supported-by__name">Viktor Farcic</div>
-                    </div>
-                    <div class="supported-by__description">Tech Reviewer, The DevOps Toolkit</div>
-                    </p>
                 </div>
 
             </div>
