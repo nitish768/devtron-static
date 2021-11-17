@@ -252,10 +252,9 @@ function getGithubStars() {
   xhr.send();
 }
 
-function RequestAssistanceForm(e){
-  window.location.href="#request-form";
-  e.preventDefault();
-  e.stopPropagation(); 
+
+function RequestAssistanceForm(){
+  window.location.href="#adopt-k8-header";
 }
 
 async function onSubscribe(email) {
@@ -323,6 +322,21 @@ function copy(command) {
   body.removeChild(textArea);
   $("#copy-toast").toast('show');
   getStartedGAEvent(`copied: ${command}`);
+}
+
+
+function viewOnK8sAdoptionBannerGAEvent(label) {
+  gtag('event', 'View on Apply now K8s Adoption Banner Clicked', {
+    'event_category': 'View on K8s Adoption top most Banner',
+    'event_label': label
+  });
+}
+
+function viewOnAdoptK8sGAEvent(label) {
+  gtag('event', 'View on #AdoptK8sWithDevtron Nav Button Clicked', {
+    'event_category': 'View on #AdoptK8sWithDevtron',
+    'event_label': label
+  });
 }
 
 function viewOnGithubGAEvent(label) {

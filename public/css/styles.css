@@ -671,10 +671,10 @@ main>section {
 }
 
 .section-why {
-	overflow: visible;
 	position: relative;
-	padding: 112px 40px 179px 40px;
-    margin: auto;
+	padding: 64px 40px;
+	max-width: 1440px;
+	margin: auto
 }
 
 .adopt-k8-header{
@@ -685,7 +685,7 @@ main>section {
 .scroll-down{
     display: none;
 }
-/* .adopt-k8-header:after {
+.adopt-k8-header:after {
     content: '';
     display: block;
     background-image: url(../images/grey-dot-grid.png);
@@ -699,13 +699,17 @@ main>section {
     background-size: 50px;
     z-index: 0;
     opacity: 0.7
-} */
+}
 
 .support-program {
 	font-weight: 700;
 	padding-top: 60px;
 	padding-bottom: 30px;
 	font-size: 36px
+}
+
+.support-program__mobile{
+	display: none;
 }
 
 .support-program__accelerate{
@@ -779,8 +783,7 @@ margin-right: 0;
 }
 
 .support-program__k8s{
-    display: none;
-    padding: 12px 135px;
+    padding: 12px 40px;
         background-color: #3e3ead;
         color: white;
         font-size: 14px;
@@ -789,9 +792,6 @@ margin-right: 0;
         width: 100%;
         z-index: 10;
         text-align: center;
-}
-.top-space{
-    top:0
 }
 .supported-by-devtron-description {
 	font-size: 18px;
@@ -866,9 +866,15 @@ padding-top: 20px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
     padding-left: 16px;
-    color: #000a14;
+	color: #000a14;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 220px;
 }
-
+.top-space{
+	top:44px;
+}
 .support-program__watch-you-tube-link {
 	text-align: initial;
 	color: #06c
@@ -892,7 +898,7 @@ padding-top: 20px;
 
 .carousel-testimonial-view{
 color: #000a14;
-height: 400px;
+height: 470px;
 }
 .carousel-indicators{
     z-index: 1;
@@ -909,13 +915,21 @@ height: 400px;
     border: 0px;
     transform: rotate(180deg); 
     background-color: white;
-    justify-content: initial
+	justify-content: initial;
+	max-width: 40px;
+	top: auto;
+	bottom: auto;
 }
 
 .carousel-control-prev{
     border: 0px;
     background-color: white;
-    justify-content: initial
+	justify-content: initial;
+	max-width: 40px;
+	top: auto;
+	bottom: auto;
+	top: auto;
+	bottom: auto;
 }
 .carousel-rotate {
     transform: rotate(180deg); 
@@ -1041,7 +1055,15 @@ height: 400px;
 	border-radius: 12px;
 	padding: 30px;
 	color: #fff;
-    gap: 20px;
+	gap: 20px;
+	min-width: calc(100vw - 250px);
+	left: 120px;
+	margin-top: 20px;
+}
+
+.support-program__k8s:hover{
+	color: white;
+	background-color: #5959B9;
 }
 
 .know-more__right {
@@ -1074,7 +1096,6 @@ height: 400px;
 .icon-dim-40 {
 	width: 40px;
 	height: 40px;
-	margin-bottom: 18px
 }
 
 .know-more__left {
@@ -2225,7 +2246,7 @@ mark {
 	height: auto
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1024px) {
      .know-more__padding{
          padding: 0 135px;
      }
@@ -2256,7 +2277,8 @@ mark {
         right: 260px;
     }
     .section-why {
-        border-bottom-right-radius: 70px;
+		border-bottom-right-radius: 70px;
+		padding: 100px 40px
     }
 	.support-program__devtron-stack {
 		text-align: start
@@ -2271,6 +2293,9 @@ mark {
 }
 
 @media screen and (min-width:1224px) {
+	.scroll-down{
+		display: inline;
+	}
     .join-discord__img-wrapper {
         width: 48px;
         height: 48px;
@@ -2291,13 +2316,6 @@ mark {
     }
     .join-support-community{
         margin-top: 100px;
-    }
-    .know-more{
-        padding: 40px;
-        position: absolute;
-        min-width: calc(100vw - 250px);
-        left: 120px;
-        margin-top: 20px;
     }
     .devtron-adoption {
         content: '';
@@ -2346,13 +2364,40 @@ mark {
     }
 }
 
-@media screen and (min-width:450px) and (max-width:1000px) {
+@media screen and (min-width:450px) and (max-width:1250px) {
+	.carousel-control-next{
+		top: 0;
+		bottom: 0;
+	}
+	.carousel-control-prev{
+		top: 0;
+		bottom: 0;
+	}
+	
 	.request-form {
 		top: 380px
 	}
 }
 
+@media screen and (min-width:1250px) and (orientation:landscape){
+	.scroll-down{
+		display: inline;
+	}
+	.support-program__mobile{
+		display: inline;
+	}
+}
+
 @media screen and (min-width:1250px) {
+
+	.carousel-control-next {
+		top: 0;
+		bottom: 0;
+	}
+	.carousel-control-prev{
+		top: 0;
+		bottom: 0;
+	}
 	.why-devtron__adoption-left {
 		margin-right: 120px;
         margin-bottom: 120px;
@@ -2397,7 +2442,11 @@ mark {
 	.popper__position {
 		width: 140px;
 		height: 140px
-	}
+    }
+    
+}
+.d-md-block{
+    display: block !important;
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
@@ -2452,6 +2501,10 @@ mark {
 }
 
 @media screen and (min-width:650px) {
+	
+	.support-program__k8s{
+		padding: 12px 135px;
+	}
     .supported-by-devtron-description {
         font-size: 24px;
         padding-top: 20px;
@@ -2629,7 +2682,7 @@ mark {
 		border-bottom-left-radius: 100px
 	}
 	.section-why {
-        padding: 100px 40px;
+        padding: 100px 135px;
 	}
 	.section-why:after {
 		content: '';
@@ -2931,6 +2984,11 @@ mark {
 }
 
 @media screen and (min-width:1440px) and (orientation:landscape) {
+	.know-more{
+		margin-left: 135px;
+		margin-right: 135px;
+		min-width: calc(100vw - 526px)
+	}
     .why-devtron__adoption-left {
         margin-left: 270px;
     }
@@ -2998,11 +3056,6 @@ mark {
 	.section-hero {
 		min-height: unset
 	}
-}
-
-.know-more{
-    min-width: calc(100vw - 500px);
-    left: 240px;
 }
 
 .devtron-subscribe-section--desktop {

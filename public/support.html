@@ -95,7 +95,6 @@
                     </svg>
                 </a>
                 <div class="main-nav__right">
-                    <a class="main-nav__link-blog" href="./support.html">#AdoptK8sWithDevtron 🚀</a>
                     <a class="main-nav__link-blog" href="https://docs.devtron.ai/" target="_blank">Docs</a>
                     <a class="main-nav__link-blog" href="#community">Community</a>
                     <a class="main-nav__link-blog" href="https://devtron.ai/blog/" target="_blank">Blog</a>
@@ -121,7 +120,7 @@
 
     <main class="bg-white">
 
-        <section class="adopt-k8-header">
+        <section id="adopt-k8-header" class="adopt-k8-header">
             <div class="adopt-k8-header__flex alignment-with-header">
                 <div class="">
                     <h1 class="support-program">Devtron turns one 🎉</h1>
@@ -184,6 +183,7 @@
                         <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
 
                     </ol>
+
                     <div class="carousel-inner carousel-testimonial-view ">
 
                         <div class="carousel-item active">
@@ -435,7 +435,8 @@
                                     Play a bigger role in making Devtron better than ever, collaborate with us!!
                                 </div>
                             </div>
-                            <button onclick="RequestAssistanceForm()" class="why-devtron-request-btn">REQUEST ASSISTANCE</button>
+                            <button onclick="RequestAssistanceForm(); viewOnRequestAssistanceButton('Button')" class="why-devtron-request-btn">REQUEST
+                                ASSISTANCE</button>
                         </div>
                         <div class="why-devtron__adoption-right">
                             <div class="why-devtron__adoption-right-support">
@@ -452,13 +453,13 @@
                             </div>
                         </div>
                     </div>
-                  
+
                 </div>
                 <div class="know-more__padding">
                     <div class="flex justify know-more ">
                         <div class="know-more-left">
-                            Know more about Devtron and its features. <span class="right-direction">👉</span> 
-                           
+                            Know more about Devtron and its features. <span class="right-direction">👉</span>
+
                         </div>
                         <div class="know-more-right">
                             <a href="https://github.com/devtron-labs/devtron.git" target="_blank"
@@ -476,8 +477,8 @@
                         </div>
                     </div>
                 </div>
-                </div>
-               
+            </div>
+
 
         </section>
 
@@ -590,6 +591,41 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js?time=1606384360073"></script>
+    <script src="js/support.js?time=1606384360073"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            getGithubStars();
+        });
+        function getGithubStars() {
+            const URL = 'https://api.github.com/orgs/devtron-labs/repos?type=all&per_page=90&page=1';
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', URL);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    let list = response || [];
+                    let main = list.find(repo => repo.name.toLowerCase() === "devtron");
+                    let stars = main.stargazers_count || 0;
+                    if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
+                    document.querySelector('#star-count').innerText = stars;
+                }
+                else if (xhr.readyState == 4 && xhr.status == 400) {
+                }
+            }
+            xhr.send();
+
+            function viewOnRequestAssistanceButton(label) {
+                gtag('event', 'View on Request Assistance Button in adopt page', {
+                    'event_category': 'View on Request Assistance Button in adopt page',
+                    'event_label': label
+                });
+                console.log('hi')
+            }
+
+        }
+    </script>
 </body>
 
 </html>
