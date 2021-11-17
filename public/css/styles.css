@@ -766,6 +766,14 @@ margin-right: 0;
 	height: 40px;
 }
 
+.users-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
 .support-program__apply-now{
     color: #f2c94c;
 }
