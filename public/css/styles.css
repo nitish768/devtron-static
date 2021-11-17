@@ -682,7 +682,10 @@ main>section {
     position: relative;
 }
 
-.adopt-k8-header:after {
+.scroll-down{
+    display: none;
+}
+/* .adopt-k8-header:after {
     content: '';
     display: block;
     background-image: url(../images/grey-dot-grid.png);
@@ -696,7 +699,7 @@ main>section {
     background-size: 50px;
     z-index: 0;
     opacity: 0.7
-}
+} */
 
 .support-program {
 	font-weight: 700;
@@ -712,18 +715,24 @@ font-weight: bold;
 
 .support-program__top-description{
     padding-bottom: 30px;
+    font-size: 18px;
 }
 .support-program__bottom-description{
-    font-size: 24px;
+    font-size: 18px;
 }
-
+.m-auto{
+    margin: auto;
+}
+.mr-0{
+margin-right: 0;
+}
 .alignment-with-header{
     padding: 64px 40px 0 40px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	max-width: 1440px;
-	margin: auto
+    margin: auto;
 }
 
 .adopt-k8-header__flex{
@@ -731,7 +740,8 @@ font-weight: bold;
 }
 
 .request-form {
-	margin-top: 80px;
+    margin-top: 80px;
+    margin-bottom: 20px;
 	overflow: hidden;
 	z-index: 1;
 	overflow: visible;
@@ -932,12 +942,29 @@ height: 400px;
 	background-image: url(../images/support-program-assets/ic-why-devtron.jpeg);
 	background-repeat: no-repeat;
     color: #000a14;
-    border-top-right-radius: 70px;
+}
+
+.section-why:after {
+    content: '';
+    display: block;
+    background-image: url(../images/grey-dot-grid.png);
+    background-repeat: repeat;
+    background-position-y: top;
+    background-position-x: left;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-size: 50px;
+    z-index: -1;
+    opacity: .7
 }
 
 .devtron-adoption__flex-wrap {
 	display: flex;
-	flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex {
@@ -963,16 +990,16 @@ height: 400px;
 }
 
 .join-discord__img-wrapper {
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	border-radius: 24px;
 	background-color: #4155d5;
 	padding: 8.3px 8.3px 8.3px 8.3px
 }
 
 .join-discord__img {
-	width: 28px;
-	height: 28px;
+	width: 24px;
+	height: 24px;
     text-align: center;
     display: block;
     margin: auto;
@@ -986,10 +1013,17 @@ height: 400px;
 .why-devtron__adoption-left {
 	margin-bottom: 20px;
 	background-color: #fff;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 300;
 	max-width: 650px;
-	padding: 30px
+    padding: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.right-direction{
+    display: none;
 }
 
 .know-more {
@@ -1017,11 +1051,13 @@ height: 400px;
 	color: #fff;
 	border: 1px solid #fff
 }
-
+.know-more__padding{
+    padding: 64px 36.5px;
+}
 .why-devtron__adoption-right-support {
 	border-radius: 8px;
 	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .1);
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding: 30px;
 	background-color: #fff;
 	font-size: 14px
@@ -1039,13 +1075,12 @@ height: 400px;
 	border: 1px solid #fff
 }
 
-.why-devtron__accelerate {
-	text-align: center
-}
-
 .why-devtron__bold {
 	font-weight: 700;
 	font-size: 30px
+}
+.why-devtron__accelerate{
+    padding-bottom: 20px;
 }
 
 .why-devtron__accelerate-description {
@@ -2183,6 +2218,16 @@ mark {
 }
 
 @media screen and (min-width:1000px) {
+     .know-more__padding{
+         padding: 0 135px;
+     }
+
+    .support-program__top-description{
+        font-size: 24px;
+    }
+    .support-program__bottom-description{
+        font-size: 24px;
+    }
     .support-program__k8s {
         display: block;
         padding: 12px 135px;
@@ -2218,6 +2263,60 @@ mark {
 }
 
 @media screen and (min-width:1224px) {
+    .join-discord__img-wrapper {
+        width: 48px;
+        height: 48px;
+    }
+    .join-discord__img {
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    .right-direction{
+        display: inline;
+    }
+    .scroll-down{
+        display: block;
+    }
+    .join-support-community{
+        margin-top: 100px;
+    }
+    .know-more{
+        padding: 40px;
+        position: absolute;
+        min-width: calc(100vw - 520px);
+        left: 270px;
+        margin-top: 20px;
+    }
+    .devtron-adoption {
+        content: '';
+        display: block;
+        padding: 64px 36.5px 20px 36.5px;
+        background-image: url(../images/support-program-assets/ic-why-devtron.jpeg);
+        background-repeat: no-repeat;
+        color: #000a14;
+        border-top-right-radius: 70px;
+        background-position-x: left;
+        width: 60%;
+        min-height: 897px;
+        left: 50%;
+        right: 0;
+        top: 0;
+    }
+    .why-devtron__adoption-left {
+        position: absolute;
+        left: 0;
+        margin-left: 135px;
+        margin-bottom: 120px; 
+        font-size: 36px;
+        margin-right: 120px; 
+    }
+    .accelerate-devtron{
+        min-height: 894px;
+    }
     .why-devtron__description{
         padding-bottom: 30px;
     }
@@ -2247,10 +2346,14 @@ mark {
 
 @media screen and (min-width:1250px) {
 	.why-devtron__adoption-left {
-		margin-right: 20px;
+		margin-right: 120px;
         margin-bottom: 120px;
+        margin-left: 270px;
         padding: 60px
-	}
+    }
+    .why-devtron__adoption-right{
+        margin-left: 120px;
+    }
 	.why-devtron__adoption-right-support {
 		max-width: 400px
 	}
@@ -2291,6 +2394,13 @@ mark {
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    .support-program__top-description{
+        font-size: 24px;
+    }
+    .support-program__bottom-description{
+        font-size: 24px;
+    }
+    
     .section-why{
         max-width: 1440;
         margin: auto;
@@ -2332,7 +2442,6 @@ mark {
 }
 
 @media screen and (min-width:650px) {
-   
     .supported-by-devtron-description {
         font-size: 24px;
         padding-top: 20px;
@@ -2351,7 +2460,8 @@ mark {
 		font-size: 30px
 	}
 	.why-devtron__accelerate-description {
-		font-size: 14px
+        font-size: 14px;
+        padding-bottom: 20px;
 	}
 	.join-discord {
 		max-width: 250px;
@@ -2414,7 +2524,7 @@ mark {
 		font-size: 18px
 	}
 	.why-devtron__accelerate-description {
-		font-size: 14px
+        font-size: 14px;
 	}
 	.subtitle {
 		font-size: 1rem
