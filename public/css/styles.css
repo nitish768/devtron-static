@@ -2295,8 +2295,8 @@ mark {
     .know-more{
         padding: 40px;
         position: absolute;
-        min-width: calc(100vw - 520px);
-        left: 270px;
+        min-width: calc(100vw - 250px);
+        left: 120px;
         margin-top: 20px;
     }
     .devtron-adoption {
@@ -2356,7 +2356,6 @@ mark {
 	.why-devtron__adoption-left {
 		margin-right: 120px;
         margin-bottom: 120px;
-        margin-left: 270px;
         padding: 60px
     }
     .why-devtron__adoption-right{
@@ -2402,6 +2401,9 @@ mark {
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    .why-devtron__adoption-right{
+        max-width: 650px;
+    }
     .support-program__top-description{
         font-size: 24px;
     }
@@ -2507,6 +2509,10 @@ mark {
 }
 
 @media screen and (min-width:768px) and (orientation:landscape) {
+
+    .why-devtron__adoption-right{
+        max-width: 650px;
+    }
     .why-devtron__accelerate{
         text-align: left;
         line-height: 1.2;
@@ -2925,6 +2931,9 @@ mark {
 }
 
 @media screen and (min-width:1440px) and (orientation:landscape) {
+    .why-devtron__adoption-left {
+        margin-left: 270px;
+    }
 	.main-title {
 		margin-bottom: 60px
 	}
@@ -2989,6 +2998,11 @@ mark {
 	.section-hero {
 		min-height: unset
 	}
+}
+
+.know-more{
+    min-width: calc(100vw - 500px);
+    left: 240px;
 }
 
 .devtron-subscribe-section--desktop {
