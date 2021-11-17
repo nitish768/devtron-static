@@ -252,6 +252,12 @@ function getGithubStars() {
   xhr.send();
 }
 
+function RequestAssistanceForm(e){
+  window.location.href="#request-form";
+  e.preventDefault();
+  e.stopPropagation(); 
+}
+
 async function onSubscribe(email) {
   if( email.length > 0 && RegEx.emails.test(email)) {
      const xhr = new XMLHttpRequest();
