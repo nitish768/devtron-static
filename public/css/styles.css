@@ -2300,8 +2300,17 @@ mark {
         grid-template-columns: repeat(5, minmax(200px, 80px))
 	}
 }
+/* 
+@media screen and (min-width:1440px) and (max-width:1550px){
+	.why-devtron__adoption-left{
+		margin-left: 135px;
+	}
 
+} */
 @media screen and (min-width:1224px) {
+	.support-program{
+		padding-bottom: 60px;
+	}
 	.devtron-adoption__flex-wrap{
 		justify-content: flex-end;
 	}
@@ -3010,9 +3019,6 @@ mark {
 		margin-right: 120px;
 		min-width: calc(100vw - 526px)
 	}
-    .why-devtron__adoption-left {
-        margin-left: 270px;
-    }
 	.main-title {
 		margin-bottom: 60px
 	}
