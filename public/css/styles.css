@@ -689,7 +689,7 @@ main>section {
 .scroll-down{
     display: none;
 }
-/* .adopt-k8-header:after {
+.adopt-k8-header:after {
     content: '';
     display: block;
     background-image: url(../images/grey-dot-grid.png);
@@ -703,7 +703,7 @@ main>section {
     background-size: 50px;
     z-index: 0;
     opacity: 0.7
-} */
+}
 
 .support-program__form-wrapper{
 	max-width: 600px;
@@ -763,7 +763,7 @@ margin-right: 0;
     right: 36px;
 }
 
-                          /*------------ fixing psoition issue on header -----------------*/
+         /*------------ Responsive header of Devtron K8 support issue on header -----------------*/
 
  .support-program__bottom-description-wrapper{
 padding-bottom: 180px;
@@ -787,6 +787,7 @@ padding-bottom: 180px;
 	.support-program__trusted-by-wrapper {
 		margin-top: 320px;
 	}
+	
 }
 
 @media screen and (min-width:417px)  and (max-width:470px) {
@@ -851,8 +852,8 @@ padding-bottom: 180px;
 	.request-form-wrapper {
 		right: 260px;
 	}
-
 }
+  /*------------ Responsive header of Devtron K8 support issue on header -----------------*/
 .support-program__grid {
 	grid-gap: 20px;
 	align-items: center;
@@ -2393,13 +2394,13 @@ mark {
 .testimonial-wrapper{
 	overflow-x: visible;
 }
-/* 
+
 @media screen and (min-width:1440px) and (max-width:1550px){
 	.why-devtron__adoption-left{
 		margin-left: 135px;
 	}
 
-} */
+}
 @media screen and (min-width:1224px) {
 	.support-program{
 		padding-bottom: 60px;
@@ -2444,7 +2445,7 @@ mark {
         color: #000a14;
         border-top-right-radius: 70px;
         background-position-x: left;
-        width: 60%;
+        width: 50%;
         min-height: 897px;
         left: 50%;
         right: 0;
@@ -2507,7 +2508,6 @@ mark {
 }
 
 @media screen and (min-width:1250px) {
-
 	.carousel-control-next {
 		top: 0;
 		bottom: 0;
@@ -2621,7 +2621,10 @@ mark {
 }
 
 @media screen and (min-width:650px) {
-	
+	.request-form{
+		min-width: 400px;
+		min-height: 452px;
+	}
 	.support-program__k8s{
 		padding: 12px 135px;
 	}
