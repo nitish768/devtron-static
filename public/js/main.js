@@ -176,6 +176,17 @@ function toggleDisplay() {
   }
 }
 
+function showSupportProgram() {
+  var x = document.getElementsByClassName("main-nav__support_program")[0];
+  console.log(x)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
 function moveLearningCarouselLeft() {
   moveScroll(-000000);
   toggleDisplay();
@@ -239,6 +250,11 @@ function getGithubStars() {
     }
   }
   xhr.send();
+}
+
+
+function RequestAssistanceForm(){
+  window.location.href="#adopt-k8-header";
 }
 
 async function onSubscribe(email) {
@@ -308,6 +324,21 @@ function copy(command) {
   getStartedGAEvent(`copied: ${command}`);
 }
 
+
+function viewOnK8sAdoptionBannerGAEvent(label) {
+  gtag('event', 'View on Apply now K8s Adoption Banner Clicked', {
+    'event_category': 'View on K8s Adoption top most Banner',
+    'event_label': label
+  });
+}
+
+function viewOnAdoptK8sGAEvent(label) {
+  gtag('event', 'View on #AdoptK8sWithDevtron Nav Button Clicked', {
+    'event_category': 'View on #AdoptK8sWithDevtron',
+    'event_label': label
+  });
+}
+
 function viewOnGithubGAEvent(label) {
   gtag('event', 'View on Github Button Clicked', {
     'event_category': 'View on Github',
@@ -363,6 +394,7 @@ function landscapeTabGAEvent(tabName) {
     'event_label': tabName
   });
 }
+
 
 function scrollGAEvent() {
   let options = {

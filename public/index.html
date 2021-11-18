@@ -81,7 +81,10 @@
     </div>
 
     <header class="">
-        <nav class="main-nav">
+        <a onclick='viewOnK8sAdoptionBannerGAEvent("Banner")' href="./support.html" class="support-program__k8s">🔥 Want
+            to accelerate K8s? <span class="support-program__mobile">Our core team would love to help 30 companies do it
+                the Devtron way! 🔥</span><span class="support-program__apply-now">Apply Now 👋</span></a>
+        <nav class="main-nav top-space">
             <div class="main-nav__content">
                 <svg class="main-nav__logo" width="150" height="40" viewBox="0 0 150 40" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -93,6 +96,8 @@
                         fill="white" />
                 </svg>
                 <div class="main-nav__right">
+                    <a class="main-nav__link-blog" href="./support.html"
+                        onclick='viewOnAdoptK8sGAEvent("Nav")'>#AdoptK8sWithDevtron 🚀</a>
                     <a class="main-nav__link-blog" href="https://docs.devtron.ai/" target="_blank">Docs</a>
                     <a class="main-nav__link-blog" href="#community">Community</a>
                     <a class="main-nav__link-blog" href="https://devtron.ai/blog/" target="_blank">Blog</a>
@@ -118,7 +123,9 @@
     <main>
         <section class="bg-blue section-hero__wrapper">
             <div class="section-hero" data-ga-event-label="Section Hero">
-                <h1 data-scroll="out" class="main-title slide-up">Software delivery workflow
+                <h1 data-scroll="out" class="main-title slide-up">
+                    <span class="main-title--light d-block">Open source</span>
+                    Software delivery workflow
                     <span class="main-title--light d-block">for
                         <span class="img-underline">kubernetes</span>
                     </span>
@@ -1538,7 +1545,8 @@
         </section>
         <section class="main-nav-light">
             <div class="section-testimonials--desktop">
-                <div class="devtron-subscribe-section--desktop" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                <div class="devtron-subscribe-section--desktop" data-ga-event-label="Section Subscribe"
+                    style="min-height:0px">
                     <div class="align-end">
                         <img src="./images/img-grass.svg" class=" " />
                     </div>
@@ -1564,16 +1572,18 @@
                 </div>
             </div>
             <div class="section-testimonials--mob">
-                <div class="devtron-subscribe-section--mob" data-ga-event-label="Section Subscribe" style="min-height:0px">
+                <div class="devtron-subscribe-section--mob" data-ga-event-label="Section Subscribe"
+                    style="min-height:0px">
                     <div class="align-center">
                         <h6 data-scroll="out"
                             class="slide-up animation-delay secondary-title-center-align align-middle subscribe-text">
-                            <span class="font-weight-normal" style="font-size: smaller;">Keep up with the latest news about Kubernetes, DevOps, and
+                            <span class="font-weight-normal" style="font-size: smaller;">Keep up with the latest news
+                                about Kubernetes, DevOps, and
                                 Devtron.</span>
                         </h6>
                         <div class="subscribe-inner">
-                            <input id="Subscribe-input-mob" class="devtron-subscribe-input--mob bg-white rounded" type="email"
-                                placeholder="Enter your email">
+                            <input id="Subscribe-input-mob" class="devtron-subscribe-input--mob bg-white rounded"
+                                type="email" placeholder="Enter your email">
                             </input>
                             <button class="button-early-access subscribe-btn" style="font-size:small; width: 36%;"
                                 onclick="onSubscribe(document.getElementById('Subscribe-input-mob').value) ">
