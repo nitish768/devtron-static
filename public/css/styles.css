@@ -677,6 +677,10 @@ main>section {
 	margin: auto
 }
 
+.adopt-k8-wrapper{
+    background-color: #eeefe9;
+
+}
 .adopt-k8-header{
     background-color: #eeefe9;
     position: relative;
@@ -685,7 +689,7 @@ main>section {
 .scroll-down{
     display: none;
 }
-.adopt-k8-header:after {
+/* .adopt-k8-header:after {
     content: '';
     display: block;
     background-image: url(../images/grey-dot-grid.png);
@@ -699,10 +703,11 @@ main>section {
     background-size: 50px;
     z-index: 0;
     opacity: 0.7
-}
+} */
 
 .support-program__form-wrapper{
 	max-width: 600px;
+	z-index: 1;
 }
 
 .support-program {
@@ -743,17 +748,12 @@ margin-right: 0;
     margin: auto;
 }
 
-.adopt-k8-header__flex{
-    display: flex;
-}
-
 .request-form {
     margin-top: 80px;
     margin-bottom: 20px;
 	overflow: hidden;
 	z-index: 1;
 	overflow: visible;
-	min-width: 400px;
 	min-height: 452px;
 	padding: 30px;
 	border-radius: 8px;
@@ -763,6 +763,96 @@ margin-right: 0;
     right: 36px;
 }
 
+                          /*------------ fixing psoition issue on header -----------------*/
+
+ .support-program__bottom-description-wrapper{
+padding-bottom: 180px;
+}
+.request-form-wrapper{
+	z-index: 1;
+	right: 36px;
+	left: 36px;
+	position: absolute;
+	overflow: visible;
+	/* min-width: 300px; */
+	min-height: 452px;
+	padding: 30px;
+	border-radius: 8px;
+	background-color: #fff;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .25);
+    margin-top: 480px;
+}
+
+@media screen and (max-width:768px) {
+	.support-program__trusted-by-wrapper {
+		margin-top: 320px;
+	}
+}
+
+@media screen and (min-width:417px)  and (max-width:470px) {
+	.request-form-wrapper{
+		margin-top: 450px;
+	}
+	.support-program__trusted-by-wrapper {
+		padding-top: 40px;
+	}
+	
+}
+@media screen and (min-width:470px) and (max-width:768px) {
+	.request-form-wrapper{
+		margin-top: 400px;
+	}
+	.support-program__trusted-by-wrapper {
+		margin-top: 380px;
+	}
+	
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+	.request-form-wrapper{
+		margin-top: 380px;
+	}
+	.support-program__trusted-by-wrapper {
+		margin-top: 340px;
+	}
+}
+@media screen and (min-width:1024px) and (max-width:1242px) {
+	.support-program__trusted-by-wrapper {
+		margin-top: 300px;
+	}
+}
+@media screen and (min-width:1024px) and (max-width:1242px) {
+	.request-form-wrapper{
+		left: 135px;
+		right: 135px;
+	}
+	
+}
+
+@media screen and (min-width:1242px) and (max-width:1440px) {
+	.request-form-wrapper{
+		width: 400px;
+			margin: auto;
+			margin-right: 100px;
+			margin-top: 60px;
+	}
+}
+
+@media screen and (min-width:1440px) and (orientation:landscape) {
+	.request-form-wrapper{
+		width: 400px;
+			margin: auto;
+			margin-right: 100px;
+			margin-top: 60px;
+	}
+}
+
+@media screen and (min-width: 1800){
+	.request-form-wrapper {
+		right: 260px;
+	}
+
+}
 .support-program__grid {
 	grid-gap: 20px;
 	align-items: center;
@@ -2300,6 +2390,9 @@ mark {
         grid-template-columns: repeat(5, minmax(200px, 80px))
 	}
 }
+.testimonial-wrapper{
+	overflow-x: visible;
+}
 /* 
 @media screen and (min-width:1440px) and (max-width:1550px){
 	.why-devtron__adoption-left{
@@ -2429,7 +2522,7 @@ mark {
         padding: 60px
     }
     .why-devtron__adoption-right{
-        margin-left: 120px;
+        margin-left: 100px;
     }
 }
 @media screen and (min-width:1400px){
@@ -2589,7 +2682,10 @@ mark {
 }
 
 @media screen and (min-width:768px) and (orientation:landscape) {
-
+	.adopt-k8-header__flex{
+        display: flex;
+        flex-direction: row;
+    }
     .why-devtron__adoption-right{
         max-width: 650px;
     }
@@ -2600,12 +2696,11 @@ mark {
     }
     .scroll-down{
         position: absolute;
-        bottom: 0;
-        margin-bottom: 60px;
+		margin-bottom: 60px;
+		bottom: 0;
     }
     .adopt-k8-header__flex{
          display: flex;
-         flex-direction: column;
          position: relative;
     }
 	.why-devtron__bold {
@@ -2711,7 +2806,7 @@ mark {
 	.section-why {
         padding: 100px 135px;
 	}
-	.section-why:after {
+	/* .section-why:after {
 		content: '';
 		display: block;
 		background-image: url(../images/grey-dot-grid.png);
@@ -2726,7 +2821,7 @@ mark {
 		background-size: 50px;
 		z-index: -1;
 		opacity: .7
-	}
+	} */
 	.section-learning--mob {
 		display: none
 	}
@@ -2852,10 +2947,6 @@ mark {
 @media screen and (min-width:1024px) and (orientation:landscape) {
     .adopt-k8-header{
         position: relative;
-    }
-    .adopt-k8-header__flex{
-        display: flex;
-        flex-direction: row;
     }
     .alignment-with-header{
         padding: 100px 135px
@@ -3011,6 +3102,14 @@ mark {
 }
 
 @media screen and (min-width:1440px) and (orientation:landscape) {
+	.why-devtron__adoption-left {
+        position: absolute;
+        left: 135px;
+        margin-left: 120px;
+        margin-bottom: 120px; 
+        font-size: 36px;
+        margin-right: 120px; 
+    }
 	.devtron-adoption__flex-wrap{
 		justify-content: center;
 	}
