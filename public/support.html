@@ -34,10 +34,16 @@
         content="An open-source release orchestration & CI/CD platform | Simplified software delivery workflow for kubernetes">
     <meta name="twitter:image" content="https://devtron.ai/images/twitter_image.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://js.hsforms.net" crossorigin>
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css?time=16258199860193">
     <link rel="stylesheet" href="css/animations.css">
     <style>
@@ -63,7 +69,16 @@
             }
         }
     </style>
-    <script src="js/scroll-out.min.js"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" crossorigin="anonymous"></script>
+    <script>
+        hbspt.forms.create({
+            region: "na1",
+            portalId: "6866519",
+            formId: "19f10270-d854-41db-9a1f-a7fc0efad76f",
+            target: '#request-form',
+        });
+    </script>
+    <script defer src="https://unpkg.com/scroll-out/dist/scroll-out.min.js" crossorigin="anonymous"></script>
     <script>
         (function (h, o, t, j, a, r) {
             h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
@@ -162,16 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="request-form" class="request-form">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script>
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "6866519",
-                            formId: "19f10270-d854-41db-9a1f-a7fc0efad76f"
-                        });
-                    </script>
-                </div>
+                <div id="request-form" class="request-form"></div>
 
             </div>
         </section>
@@ -618,11 +624,11 @@
         </div>
     </footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js?time=1606384360073"></script>
-    <script src="js/support.js?time=1606384360073"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script defer src="js/main.js?time=1606384360073"></script>
+    <!-- <script src="js/support.js?time=1606384360073"></script> -->
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -647,14 +653,6 @@
                 }
             }
             xhr.send();
-
-            function viewOnRequestAssistanceButton(label) {
-                gtag('event', 'View on Request Assistance Button in adopt page', {
-                    'event_category': 'View on Request Assistance Button in adopt page',
-                    'event_label': label
-                });
-            }
-
         }
     </script>
 </body>
