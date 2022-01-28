@@ -395,6 +395,12 @@ function landscapeTabGAEvent(tabName) {
   });
 }
 
+function viewOnRequestAssistanceButton(label) {
+  gtag('event', 'View on Request Assistance Button in adopt page', {
+      'event_category': 'View on Request Assistance Button in adopt page',
+      'event_label': label
+  });
+}
 
 function scrollGAEvent() {
   let options = {
