@@ -1909,6 +1909,14 @@ mark {
   width: 30%;
   height: auto;
 }
+
+@media screen and (min-width:768px) and (max-width:882px){
+  .devtron-footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1024px) {
   .know-more__padding {
     padding: 0 135px;
@@ -2084,6 +2092,33 @@ mark {
   .why-devtron__adoption-right-support {
     max-width: 400px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:550px){
+  .devtron-footer__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .devtron-footer__social-mob{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+  .devtron-footer__left{
+    padding-right: 0px;
+    text-align: center;
+  }
+  .devtron-footer__title{
+    text-align: center;
+  }
+  .devtron-footer__right{
+    max-width: none;
+  }
+  .devtron-footer__copyright-text{
+    text-align: center;
+  }
+  .devtron-footer__copyright-indent{
+    display: block;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 768px) {

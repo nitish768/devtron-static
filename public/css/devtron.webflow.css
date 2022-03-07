@@ -1549,9 +1549,33 @@ strong {
     }
 }
 
+@media screen and (min-width: 479px) and (max-width: 767px){
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-member{
+    display: flex;
+  }
+  .team-content.pastel-01,.team-content.pastel-02,.team-content.pastel-03{
+    position:relative;
+  }
+
+  .card-bg.pastel-01,.card-bg.pastel-02,.card-bg.pastel-03,.card-bg.pastel-04{
+    background-color: #fff;
+  }
+
+.card-name.team.bottom{
+ display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container.flex.vertical.full {
     max-width: 80%;
+  }
+
+  .footer-brand{
+    display: none;
   }
 
   .nav-menu {
