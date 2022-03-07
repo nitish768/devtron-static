@@ -81,8 +81,8 @@ strong {
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 135px;
+  padding-left: 135px;
 }
 
 .container.flex {
@@ -1540,6 +1540,13 @@ strong {
   .menu-button.w--open {
     background-color: #5c3ebb;
   }
+}
+@media screen and (min-width: 992px) and (max-width: 1070px){
+    .container{
+      padding-right: 80px;
+      padding-left: 80px;
+
+    }
 }
 
 @media screen and (max-width: 767px) {
