@@ -54,7 +54,7 @@
             <div>Star</div>
           </div>
           <div class="git-count">
-            <div class="text-block">1.5K</div>
+            <div id="star-count"></div>
           </div>
         </a>
       </nav>
@@ -63,7 +63,7 @@
           <div>Star</div>
         </div>
         <div class="git-count">
-          <div class="text-block">1.5K</div>
+          <div id="star-count"></div>
         </div>
       </a>
     </div>
@@ -137,7 +137,7 @@
       <div class="footer-top white">
         <div class="footer-top-left"><img src="../images/Logo.svg" loading="lazy" alt="" class="brand">
           <p class="footer-text">An open-source release orchestration &amp; CI/CD platform for Kubernetes</p>
-          <a href="https://github.com/devtron-labs/devtron" target="_blank" class="nav-button footer w-inline-block"><img src="../images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
+          <a href="https://github.com/devtron-labs/devtron" target="_blank" class="nav-button footer w-inline-block gitshow"><img src="../images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
             <div>View on Github</div>
           </a>
         </div>
@@ -207,6 +207,31 @@ $(document).ready(function() {
     $(li).html(reformatedText);
   }
 });
+</script>
+<script>
+  $(document).ready(function () {
+            getGithubStars();
+        });
+  function getGithubStars() {
+  const URL = 'https://api.github.com/orgs/devtron-labs/repos?type=all&per_page=90&page=1';
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', URL);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      const response = JSON.parse(xhr.responseText);
+      let list = response || [];
+      let main = list.find(repo => repo.name.toLowerCase() === "devtron");
+      let stars = main.stargazers_count || 0;
+      if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
+      var countElements = document.querySelectorAll('#star-count');
+      countElements.forEach(p => p.innerHTML=stars)
+    }
+    else if (xhr.readyState == 4 && xhr.status == 400) {
+    }
+  }
+  xhr.send();
+}
 </script>
 </body>
 </html>

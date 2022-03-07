@@ -189,6 +189,10 @@ strong {
   
 }
 
+.gitshow{
+  display: flex;
+}
+
 .nav-button.footer {
   margin-top: 20px;
   margin-left: 0px;
@@ -554,7 +558,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 16px;
+  padding: 30px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1768,9 +1772,14 @@ strong {
     max-width: 100%;
   }
 
+  .social-wrapper{
+    padding: 30%;
+  }
+
   .social-grid {
     margin-right: 0px;
     margin-bottom: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .footer-image {
