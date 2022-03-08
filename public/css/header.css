@@ -634,7 +634,7 @@
   
     .nav-button {
       margin-right: 0px;
-      margin-left: 0px;
+      margin-left: auto;
     }
   
     .nav-button.menu {

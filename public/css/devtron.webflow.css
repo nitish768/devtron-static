@@ -1659,7 +1659,7 @@ strong {
 
   .nav-button {
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: auto;
   }
 
   .nav-button.menu {
@@ -1682,7 +1682,7 @@ strong {
   }
 
   .brand {
-    padding-left: 0px;
+    padding-left: 10px;
   }
 
   .hero-title.white {

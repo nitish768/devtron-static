@@ -2139,6 +2139,7 @@ mark {
   }
   .devtron-footer__content {
     flex-direction: row;
+    justify-content: space-between;
   }
   .fb-community {
     margin-bottom: 24px;
