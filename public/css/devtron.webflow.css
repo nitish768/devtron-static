@@ -1451,6 +1451,10 @@ strong {
     background-color: #140152;
   }
 
+  .brand{
+    padding-left: 18px;
+  }
+
   .flex {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1682,7 +1686,7 @@ strong {
   }
 
   .brand {
-    padding-left: 10px;
+    padding-left: 18px;
   }
 
   .hero-title.white {
