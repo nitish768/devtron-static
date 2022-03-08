@@ -1431,7 +1431,6 @@ strong {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 32px;
     margin-left: auto;
   }
   .nav-button.nav-button-show{
