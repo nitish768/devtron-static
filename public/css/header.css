@@ -228,7 +228,7 @@
       display: none;
     }
     .w-nav-brand {
-      padding-left: 10px;
+      padding-left: 18px;
     }
     .w-nav[data-collapse="medium"] .w-nav-button {
       display: block;
@@ -242,7 +242,7 @@
       display: block;
     }
     .w-nav-brand {
-      padding-left: 10px;
+      padding-left: 18px;
     }
   }
   @media screen and (max-width: 479px) {
@@ -253,7 +253,7 @@
       display: block;
     }
     .w-nav-brand {
-      padding-left: 10px;
+      padding-left: 18px;
     }
 
     .w-tab-link {
