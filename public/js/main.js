@@ -244,7 +244,8 @@ function getGithubStars() {
       let main = list.find(repo => repo.name.toLowerCase() === "devtron");
       let stars = main.stargazers_count || 0;
       if (stars >= 1000) stars = `${Math.trunc(10 * stars / 1000) / 10}K`;
-      document.querySelector('#star-count').innerText = stars;
+      let starCountEle = document.querySelectorAll('#star-count');
+      starCountEle.forEach(ele => ele.innerHTML = stars);
     }
     else if (xhr.readyState == 4 && xhr.status == 400) {
     }
