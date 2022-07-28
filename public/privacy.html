@@ -356,43 +356,6 @@ background-size: contain;
   <script>
  new Clipboard('.btn');
 </script>
-  <!--  F’in sweet Webflow Hacks  -->
-  <script>
-// when the DOM is ready
-$(document).ready(function() {
-  // get the li items
-  const listItems = $('li');
-  // for each li item
-  listItems.each(function(index, item){
-    // check for '~' character
-    // it's recommended to start with the deepest level of sub bullet
-    // to ensure only the relevant classes are applied
-    // if the li item text starts with '~~'
-    if($(item).text().startsWith('~~')){
-      // run indentText() function
-      indentText(this, 'hack20-sub-bullet-2');
-    }	// else if the li item starts with '~'
-    else if($(item).text().startsWith('~')){
-      // run indentText() function
-      indentText(this, 'hack20-sub-bullet');
-    }	
-  });
-  // indentText function
-  function indentText(li, className){
-    // add relevant className to li item
-    // if the li item text starts with '~~' add the sub-bullet-2 class
-    // else if the li item starts with '~' add the sub-bullet class
-    $(li).addClass(className);
-    // remove the '~' from the li items
-    // the regex /~+/g 
-    // matches any one or more ~ characters
-    const reformatedText = $(li).html().replace(/~+/g,'');
-    // replace the li item's html text that has ~ tags
-    // with the new text that removed the ~ character(s)
-    $(li).html(reformatedText);
-  }
-});
-</script>
 <script>
   $(document).ready(function () {
             getGithubStars();
