@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="css/styles.css?time=16258199860193">
     <link rel="stylesheet" href=" https://cdn.devtron.ai/css/animations.css">
     
+    
     <style>
         .nav-top{ top: 45px; }
         .padding_ticker{ padding-bottom: 12px; }
@@ -133,6 +134,7 @@
                 <a href="team.html" aria-current="page" class="nav-link white w-nav-link">Team</a>
                 <a href="careers.html" class="nav-link white w-nav-link">Careers</a>
                 <a href="https://devtron.ai/blog/" class="nav-link white w-nav-link" target="_blank">Blog</a>
+                <a href=" https://preview.devtron.ai/dashboard/" class="demo-button tab-view" target="_blank">Demo <img src="images/arrow-right.svg"></a>
                 <a href="https://github.com/devtron-labs/devtron.git" class="nav-button white w-inline-block nav-button-show" target="_blank">
                   <div class="flex"><img src="images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
                     <div>Star</div>
@@ -142,6 +144,7 @@
                   </div>
                 </a>
               </nav>
+              <a href=" https://preview.devtron.ai/dashboard/" class="demo-button margin-left" target="_blank">Demo <img src="images/arrow-right.svg"></a>
               <a href="https://github.com/devtron-labs/devtron.git" class="nav-button white w-inline-block" target="_blank">
                 <div class="flex"><img src="images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
                   <div>Star</div>
@@ -187,20 +190,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-hero__button-container">
+                <div class="section-hero__button-container mt-40"> 
                     <!-- <h3 class="section-hero__os-text">An open-source project</h3>
                     <p class="section-hero__try-now">Try it now!</p> -->
-                    <a data-scroll="out" href="https://github.com/devtron-labs/devtron.git" target="_blank"
-                        class="button-early-access section-hero__view-github slide-up"
+                    <a data-scroll="out" href="https://github.com/devtron-labs/devtron.git " target="_blank"
+                        class="button-early-access section-hero__view-github slide-up hero-github-button yellow-border"
                         onclick='viewOnGithubGAEvent("Hero")'>
-                        <img src="./images/ic-github-big.svg" alt="" />
+                        <img src="./images/ic-github-big-y.svg" alt="" class="desktop-only">
+                        <img src="./images/ic-github-big.svg" alt="" class="mobile-only">
                         <div style="text-align: left;">
                             <p class="view-github__os">Open Source</p>
                             <p>View on Github</p>
                         </div>
                     </a>
+                    <a data-scroll="out" href=" https://preview.devtron.ai/dashboard/" target="_blank"
+                    class="button-early-access  section-hero__view-github  slide-up hero-demo-button yellow-border">
+                    <div style="text-align: left;">
+                        <p class="view-github__os">TRY OUT</p>
+                        <p>Devtron</p>
+                    </div>
+                    <img src="images/arrow-right-y.svg" class="mobile-only">
+                    <img src="images/arrow-right-m.svg" class="desktop-only">
+                </a>
                 </div>
-                <img src="./images/scroll-down.svg" class="section-hero__scroll-down" alt="scroll-down" />
+                <img src="./images/scroll-down.svg" class="section-hero__scroll-down desktop-only" alt="scroll-down" />
             </div>
         </section>
 
@@ -1647,7 +1660,7 @@
                                 helm repo add devtron https://helm.devtron.ai
                                 <br />
                                 <br />
-                                helm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd \
+                                helm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd
                             </span>
                         </div>
                     </article>
