@@ -2158,6 +2158,10 @@ mark {
     }
 }
 
+.section-hero__button-container.mt-40 {
+    margin-top: 40px;
+}
+
 @media screen and (min-width:1024px) {
     .know-more__padding {
         padding: 0 135px
