@@ -2863,7 +2863,16 @@ mark {
     }
 }
 
-.hero-demo-button,
+.hero-demo-button {
+    border: 1px solid #F2C94C;
+    grid-template-columns: auto 24px !important;
+}
+
+.hero-demo-button img {
+    margin-left: 10px;
+    margin-right: 0 !important;
+}
+
 .hero-github-button {
     border: 1px solid #F2C94C;
 }
