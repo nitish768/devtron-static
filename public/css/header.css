@@ -610,4 +610,7 @@ strong {
   .demo-button.margin-left {
     display: flex;
   }
+  .demo-button.tab-view {
+    display: none;
+  }
 }
