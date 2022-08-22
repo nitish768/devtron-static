@@ -99,7 +99,7 @@ function handleTabChange(event, tabIdToDisplay) {
 function handleLinkedinClick(index, deviceType) {
   const textToAppend = `
 https://devtron.ai/?utm_source=linkedin&utm_medium=post&utm_campaign=quote
-  
+
 #devtron #kubernetes #continuousdeployment #devops
 `;
   if (deviceType === 'web') {
@@ -127,7 +127,7 @@ ${textToAppend}`;
 function handleTwitterIconClick(itemCountInClass, deviceType) {
   const textToAppend = `
 https://devtron.ai/?utm_source=twitter&utm_medium=tweet&utm_campaign=quote
-  
+
 #devtron #kubernetes #continuousdeployment #devops
 `;
 
@@ -272,27 +272,27 @@ async function onSubscribe(email) {
        ],
        skipValidation: true
      }
- 
-     var final_data = JSON.stringify(data)    
+
+     var final_data = JSON.stringify(data)
      xhr.open('POST', url);
      xhr.setRequestHeader('Content-Type', 'application/json');
      xhr.onreadystatechange = function() {
-         if(xhr.readyState == 4 && xhr.status == 200) { 
+         if(xhr.readyState == 4 && xhr.status == 200) {
           $('#success-subscribe-toast').toast({
             delay: 4000,
           })
           $("#success-subscribe-toast").toast('show');
           document.getElementById('Subscribe-input').value = '';
           document.getElementById('Subscribe-input-mob').value = '';
-         } else if (xhr.readyState == 4 && xhr.status == 400){ 
-             alert("Error in subscribing try after sometime");  
-         } else if (xhr.readyState == 4 && xhr.status == 403){ 
-             alert("Error in subscribing try after sometime");         
-         } else if (xhr.readyState == 4 && xhr.status == 404){ 
-             alert("Error in subscribing try after sometime");  
+         } else if (xhr.readyState == 4 && xhr.status == 400){
+             alert("Error in subscribing try after sometime");
+         } else if (xhr.readyState == 4 && xhr.status == 403){
+             alert("Error in subscribing try after sometime");
+         } else if (xhr.readyState == 4 && xhr.status == 404){
+             alert("Error in subscribing try after sometime");
          }
         }
-     
+
      xhr.send(final_data)
   } else{
     $('#error-toast').toast({
@@ -343,6 +343,19 @@ function viewOnAdoptK8sGAEvent(label) {
 function viewOnGithubGAEvent(label) {
   gtag('event', 'View on Github Button Clicked', {
     'event_category': 'View on Github',
+    'event_label': label
+  });
+}
+
+function tryDevtronHero() {
+  gtag('event', 'Try Devtron Hero', {
+    'event_category': 'Demo',
+  });
+}
+
+function demoHeader(label) {
+  gtag('event', 'Demo header', {
+    'event_category': 'Demo',
     'event_label': label
   });
 }
@@ -633,7 +646,7 @@ $(function () {
       $navbar.addClass("bg-white show-nav-github");
       $navbar.removeClass("main-nav-dark main-nav-light");
     }
-    //footer 
+    //footer
     else {
       var viewportOffset = $(".devtron-footer").get(0).getBoundingClientRect();
       if (viewportOffset.top <= 80) {
@@ -642,7 +655,7 @@ $(function () {
       }
     }
 
-    ///Landscape transition 
+    ///Landscape transition
     // if (!isMobile() && !isLandscape() && vw > 768) {
     //   if (scrollTop > ($sectionOne.height() + $navbarHeight)) {
     //     let image = $(image1).get(0).getBoundingClientRect();

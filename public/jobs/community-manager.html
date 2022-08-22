@@ -49,7 +49,7 @@
         <a href="../team.html" class="nav-link white w-nav-link">Team</a>
         <a href="../careers.html" class="nav-link white w-nav-link">Careers</a>
         <a href="https://devtron.ai/blog/" target="_blank" class="nav-link white w-nav-link">Blog</a>
-        <a href=" https://preview.devtron.ai/dashboard/" class="demo-button tab-view" target="_blank">Demo <img src="../images/arrow-right.svg"></a>
+        <a href=" https://preview.devtron.ai/dashboard/" class="demo-button tab-view" target="_blank" onclick="demoHeader('jobs/community-manager')">Demo <img src="../images/arrow-right.svg"></a>
         <a href="https://github.com/devtron-labs/devtron.git" class="nav-button menu w-inline-block nav-button-show" target="_blank">
           <div class="flex"><img src="../images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
             <div>Star</div>
@@ -59,7 +59,7 @@
           </div>
         </a>
       </nav>
-      <a href=" https://preview.devtron.ai/dashboard/" class="demo-button margin-left" target="_blank">Demo <img src="../images/arrow-right.svg"></a>
+      <a href=" https://preview.devtron.ai/dashboard/" class="demo-button margin-left" target="_blank" onclick="demoHeader('jobs/community-manager')">Demo <img src="../images/arrow-right.svg"></a>
       <a href="https://github.com/devtron-labs/devtron.git" class="nav-button w-inline-block" target="_blank">
         <div class="flex"><img src="../images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
           <div>Star</div>
@@ -203,7 +203,7 @@ $(document).ready(function() {
     else if($(item).text().startsWith('~')){
       // run indentText() function
       indentText(this, 'hack20-sub-bullet');
-    }	
+    }
   });
   // indentText function
   function indentText(li, className){
@@ -212,7 +212,7 @@ $(document).ready(function() {
     // else if the li item starts with '~' add the sub-bullet class
     $(li).addClass(className);
     // remove the '~' from the li items
-    // the regex /~+/g 
+    // the regex /~+/g
     // matches any one or more ~ characters
     const reformatedText = $(li).html().replace(/~+/g,'');
     // replace the li item's html text that has ~ tags
