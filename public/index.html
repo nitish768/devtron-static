@@ -46,8 +46,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/styles.css?time=16258199860193">
     <link rel="stylesheet" href=" https://cdn.devtron.ai/css/animations.css">
-    
-    
+
+
     <style>
         .nav-top{ top: 45px; }
         .padding_ticker{ padding-bottom: 12px; }
@@ -134,7 +134,7 @@
                 <a href="team.html" aria-current="page" class="nav-link white w-nav-link">Team</a>
                 <a href="careers.html" class="nav-link white w-nav-link">Careers</a>
                 <a href="https://devtron.ai/blog/" class="nav-link white w-nav-link" target="_blank">Blog</a>
-                <a href=" https://preview.devtron.ai/dashboard/" class="demo-button tab-view" target="_blank">Demo <img src="images/arrow-right.svg"></a>
+                <a href=" https://preview.devtron.ai/dashboard/" class="demo-button tab-view" target="_blank" onclick="demoHeader('homepage')">Demo <img src="images/arrow-right.svg"></a>
                 <a href="https://github.com/devtron-labs/devtron.git" class="nav-button white w-inline-block nav-button-show" target="_blank">
                   <div class="flex"><img src="images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
                     <div>Star</div>
@@ -144,7 +144,7 @@
                   </div>
                 </a>
               </nav>
-              <a href=" https://preview.devtron.ai/dashboard/" class="demo-button margin-left" target="_blank">Demo <img src="images/arrow-right.svg"></a>
+              <a href=" https://preview.devtron.ai/dashboard/" class="demo-button margin-left" target="_blank" onclick="demoHeader('homepage')">Demo <img src="images/arrow-right.svg"></a>
               <a href="https://github.com/devtron-labs/devtron.git" class="nav-button white w-inline-block" target="_blank">
                 <div class="flex"><img src="images/Github-logo.svg" loading="lazy" alt="" class="nav-icon">
                   <div>Star</div>
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-hero__button-container mt-40"> 
+                <div class="section-hero__button-container mt-40">
                     <!-- <h3 class="section-hero__os-text">An open-source project</h3>
                     <p class="section-hero__try-now">Try it now!</p> -->
                     <a data-scroll="out" href="https://github.com/devtron-labs/devtron.git " target="_blank"
@@ -204,7 +204,8 @@
                         </div>
                     </a>
                     <a data-scroll="out" href=" https://preview.devtron.ai/dashboard/" target="_blank"
-                    class="button-early-access  section-hero__view-github  slide-up hero-demo-button yellow-border">
+                    class="button-early-access  section-hero__view-github  slide-up hero-demo-button yellow-border"
+                    onclick="tryDevtronHero()">
                     <div style="text-align: left;">
                         <p class="view-github__os">TRY OUT</p>
                         <p>Devtron</p>
