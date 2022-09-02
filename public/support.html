@@ -452,7 +452,7 @@
                         type="button"
                         data-toggle="collapse"
                         data-target="#collapseOne"
-                        aria-expanded="true"
+                        aria-expanded="false"
                         aria-controls="collapseOne"
                       >
                         <img
@@ -466,7 +466,7 @@
 
                   <div
                     id="collapseOne"
-                    class="collapse show"
+                    class="collapse"
                     aria-labelledby="headingOne"
                     data-parent="#accordionExample"
                   >
@@ -696,7 +696,10 @@
               </div>
             </div>
           </div>
-          <div id="request-form" class="request-form"></div>
+          <div class="request-form">
+            <div class="form-header-text"> Submit your contact details & we will reach out to you.</div>
+            <div id="request-form"></div>
+          </div>
         </div>
       </section>
 
@@ -739,6 +742,8 @@
             <div class="know-more-devtron">
               <iframe
                 allowfullscreen="true"
+                frameBorder = '0'
+                
                 src="https://www.youtube.com/embed/bivq5hF3ESE"
               >
               </iframe>
@@ -1423,7 +1428,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="" id="exampleModalLabel">
+            <h6 style="font-size: 16px;" id="exampleModalLabel">
               Submit your contact details & we will reach out to you.
             </h6>
             <button

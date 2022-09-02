@@ -674,6 +674,7 @@ main>section {
 
 .support-program__form-wrapper {
     width: 100%;
+    margin-right: 32px;
     z-index: 1
 }
 
@@ -2186,11 +2187,11 @@ mark {
 .support-program__content {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, 214px);
+    grid-template-columns: repeat(auto-fit, 190px);
 }
 
 .support-box {
-    width: 214px;
+    width: 190px;
     color: #EDF1F5;
     display: flex;
     flex-direction: column;
@@ -2200,6 +2201,7 @@ mark {
     border-radius: 8px;
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
 }
 
 .support-box:hover {
@@ -2216,14 +2218,15 @@ mark {
     visibility: hidden;
     background: #2E1974;
     border-radius: 4px;
-    width: 400px;
-    padding: 16px 12px;
+    width: 300px;
+    padding: 16px;
     position: absolute;
     z-index: 2;
     bottom: 104%;
-    left: 28%;
+    left: 31%;
     margin-left: -60px;
     opacity: 0;
+    font-size: 14px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -2264,6 +2267,12 @@ mark {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.form-header-text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width:768px) and (max-width:882px) {
@@ -2771,7 +2780,7 @@ mark {
     .request-form {
         min-width: 400px;
         min-height: 452px;
-        max-height: 500px;
+        max-height: 600px;
     }
 
     .support-program__k8s {
@@ -2834,12 +2843,30 @@ mark {
     }
 }
 
+.support-program__content {
+    justify-content: space-between;
+}
+
+.support-program,
+.support-program_sub {
+    text-align: center;
+}
 @media screen and (min-width: 908px) {
     .adopt-k8-header__flex {
         display: flex;
         flex-direction: row;
         display: flex;
         position: relative
+    }
+
+    .support-program__content {
+        justify-content: start;
+    }
+    
+    .support-program,
+    .support-program_sub,
+    .support-box {
+        text-align: left;
     }
 }
 
@@ -3162,7 +3189,7 @@ mark {
     .section-learning,
     .section-testimonials,
     .section-why {
-        padding: 100px 135px
+        padding: 100px 100px
     }
 
     .main-title {
@@ -3271,8 +3298,8 @@ mark {
     }
 
     .section-hero {
-        padding-left: 135px;
-        padding-right: 135px
+        padding-left: 100px;
+        padding-right: 100px
     }
 
     .section-hero__gif-wrapper {
@@ -3307,6 +3334,10 @@ mark {
 @media screen and (min-width:1300px) and (orientation:landscape) {
     .section-hero__left {
         min-width: 30%
+    }
+
+    .support-program__content {
+        grid-template-columns: repeat(3, 220px);
     }
 
     .owl-carousel--section-why .item {
