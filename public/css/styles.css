@@ -2227,6 +2227,7 @@ mark {
     margin-left: -60px;
     opacity: 0;
     font-size: 14px;
+    text-align: start;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
