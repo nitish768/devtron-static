@@ -2310,7 +2310,7 @@ mark {
 
     .hero-github-button,
     .hero-github-button:hover {
-        background: #140152;
+        background: transparent;
         border: 1px solid #F2C94C;
         color: #F2C94C;
     }
@@ -3160,7 +3160,7 @@ mark {
 
     .hero-demo-button,
     .hero-demo-button:hover {
-        background: #140152;
+        background: transparent;
         color: #F2C94C;
     }
 

@@ -1486,8 +1486,7 @@
             let stars = main.stargazers_count || 0;
             if (stars >= 1000)
               stars = `${Math.trunc((10 * stars) / 1000) / 10}K`;
-            document.querySelector("#star-count").innerText = stars;
-            document.querySelector("#star-count2").innerText = stars;
+            ["#star-count","#star-count2"].map((id) => document.getElementById(id).innerText = stars)
           } else if (xhr.readyState == 4 && xhr.status == 400) {
           }
         };
