@@ -788,7 +788,7 @@
                         font-size: 10px;
                         margin-right: 70px;
                       "
-                      ><span id="star-count2"></span> Stars</span
+                      ><span id="star-count"></span> Stars</span
                     >
                     <p>View on Github</p>
                   </div>
@@ -1486,7 +1486,7 @@
             let stars = main.stargazers_count || 0;
             if (stars >= 1000)
               stars = `${Math.trunc((10 * stars) / 1000) / 10}K`;
-            ["#star-count","#star-count2"].map((id) => document.getElementById(id).innerText = stars)
+            document.getElementById("#star-count").innerText = stars
           } else if (xhr.readyState == 4 && xhr.status == 400) {
           }
         };

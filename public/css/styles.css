@@ -675,14 +675,14 @@ main>section {
 .support-program__form-wrapper {
     width: 100%;
     margin-right: 32px;
-    z-index: 1
+    z-index: 2
 }
 
 .support-program {
     font-weight: 300;
     padding-top: 60px;
     padding-bottom: 10px;
-    font-size: 48px;
+    font-size: 44px;
     color: #F2C94C;
 }
 
@@ -749,7 +749,8 @@ main>section {
     background-color: #fff;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .25);
     top: 400px;
-    right: 36px
+    right: 36px;
+    z-index: 1;
 }
 
 .support-program__grid {
@@ -2301,7 +2302,7 @@ mark {
 
 @media screen and (min-width:1024px) {
     .know-more__padding {
-        padding: 0 135px;
+        padding: 0 100px;
         margin-top: -85px;
     }
 
@@ -2845,7 +2846,7 @@ mark {
 }
 
 .support-program__content {
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .support-program,
@@ -3107,7 +3108,7 @@ mark {
     }
 
     .devtron-footer {
-        padding: 100px 80px 0
+        padding: 100px 100px 0
     }
 
     .devtron-footer__git {
@@ -3206,13 +3207,13 @@ mark {
     }
 
     .section-landscape {
-        padding-left: 135px;
-        padding-right: 135px;
+        padding-left: 100px;
+        padding-right: 100px;
         padding-top: 345px
     }
 
     .section-contributor {
-        padding: 94px 135px
+        padding: 94px 100px
     }
 
     .owl-carousel--section-why .item {
@@ -3281,7 +3282,7 @@ mark {
     }
 
     .devtron-stack {
-        padding: 80px 135px;
+        padding: 80px 100px;
         display: flex;
         justify-content: space-between
     }
@@ -3374,9 +3375,9 @@ mark {
         font-size: 1.1rem
     }
 
-    .section-hero {
+    /* .section-hero {
         padding: 135px
-    }
+    } */
 
     .section-hero__time {
         font-size: .88rem
@@ -3438,8 +3439,8 @@ mark {
     }
 
     .devtron-footer {
-        padding-left: 135px;
-        padding-right: 135px
+        padding-left: 100px;
+        padding-right: 100px
     }
 }
 
