@@ -326,16 +326,16 @@ function copy(command) {
 }
 
 
-function viewOnK8sAdoptionBannerGAEvent(label) {
-  gtag('event', 'View on Apply now K8s Adoption Banner Clicked', {
-    'event_category': 'View on K8s Adoption top most Banner',
+function viewOnDevopsInABoxBannerGAEvent(label) {
+  gtag('event', 'DevOpsInABox Banner', {
+    'event_category': 'DevOpsInABox',
     'event_label': label
   });
 }
 
-function viewOnAdoptK8sGAEvent(label) {
-  gtag('event', 'View on #AdoptK8sWithDevtron Nav Button Clicked', {
-    'event_category': 'View on #AdoptK8sWithDevtron',
+function viewOnDevopsInABoxGAEvent(label) {
+  gtag('event', 'DevOpsInABox Nav', {
+    'event_category': 'DevOpsInABox',
     'event_label': label
   });
 }
