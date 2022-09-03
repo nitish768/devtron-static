@@ -2782,7 +2782,7 @@ mark {
     .request-form {
         min-width: 400px;
         min-height: 452px;
-        max-height: 600px;
+        max-height: 700px;
     }
 
     .support-program__k8s {
@@ -3345,6 +3345,31 @@ mark {
     .owl-carousel--section-why .item {
         min-height: 510px
     }
+
+    .alignment-with-header,
+    .easily-integrate,
+    .get-started,
+    .join-community,
+    .section-learning,
+    .section-testimonials,
+    .section-why {
+        padding: 100px 135px
+    }
+
+    .devtron-footer,
+    .section-landscape,
+    .section-hero {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+
+    .devtron-stack {
+        padding: 80px 135px;
+    }
+
+    .section-contributor {
+        padding: 94px 135px;
+    }
 }
 
 @media screen and (min-width:1440px) and (orientation:landscape) {
@@ -3436,11 +3461,6 @@ mark {
 
     .popper__position {
         right: 0
-    }
-
-    .devtron-footer {
-        padding-left: 100px;
-        padding-right: 100px
     }
 }
 
