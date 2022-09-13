@@ -574,7 +574,6 @@ main>section {
 
 .yellow-button{
   background-color: #f2c94c;
-  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #140152;
@@ -862,8 +861,16 @@ main>section {
   font-weight: 700;
 }
 
+.fw-4{
+  font-weight: 400;
+}
+
 .fw-3{
   font-weight: 300;
+}
+
+.fw{
+  font-weight: 600;
 }
 
 .support-program__supported-by {
@@ -3640,3 +3647,10 @@ mark {
   height: 100%;
 }
 
+.m-0{
+  margin: 0;
+}
+
+.ml-8{
+  margin-left: 8px
+}
