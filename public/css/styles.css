@@ -2534,6 +2534,10 @@ mark {
     display: none;
   }
 
+  .support_devops-in-a-box{
+    margin-bottom: 24px;
+  }
+
   .request-button {
     background: #f2c94c;
     display: flex;
@@ -2547,7 +2551,9 @@ mark {
     border-radius: 0;
     color: #140152;
     z-index: 5;
-    cursor: pointer
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .request-form,
@@ -2688,6 +2694,17 @@ mark {
 
   .divider {
     display: none
+  }
+}
+
+@media screen and (min-width:451px) and (max-width:515px) {
+  .support-program{
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  .support-program_sub{
+    font-size: 20px;
   }
 }
 
@@ -3622,3 +3639,4 @@ mark {
 .h-100{
   height: 100%;
 }
+
