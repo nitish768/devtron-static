@@ -796,16 +796,14 @@ main>section {
 
 .trusted-by__item {
   width: auto;
-  height: 40px
+  height: 80px
 }
 
 .users-grid {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
-  gap: 60px;
   justify-content: space-around;
   margin-bottom: 20px;
-  grid-template-columns: repeat(3, 200px);
 }
 
 .get-started__doc,
@@ -1959,7 +1957,8 @@ mark {
 .request-button,
 .sneakpeek-desktop,
 .support__mobile {
-  display: none
+  display: none;
+  width: 100%;
 }
 
 .devtron-footer__href {
@@ -2549,7 +2548,8 @@ mark {
 
   .support__mobile {
     display: block;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+    width: 100%;
   }
 
   .card__support.card {
@@ -3561,6 +3561,7 @@ mark {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap
 }
 
 .p-12-24{
