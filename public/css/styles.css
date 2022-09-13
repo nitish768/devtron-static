@@ -793,7 +793,7 @@ main>section {
 .users-grid {
   display: grid;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 60px;
   justify-content: space-around;
   margin-bottom: 20px;
   grid-template-columns: repeat(3, 200px);
@@ -2197,7 +2197,7 @@ mark {
 }
 
 .modal-dialog {
-  margin: 28px 18px 0;
+  /* margin: 28px 18px 0; */
   display: flex;
   pointer-events: all
 }
