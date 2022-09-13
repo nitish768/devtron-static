@@ -703,6 +703,10 @@ main>section {
 
 .learn_yellow-button{
   margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .support-program__form-wrapper {
@@ -2586,7 +2590,10 @@ mark {
   }
 
   .support-program {
-    font-size: 48px
+    font-size: 48px;
+    margin-top: 24px;
+    line-height: 60px;
+
   }
 
   .support-program_sub {
