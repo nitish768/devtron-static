@@ -580,7 +580,6 @@ main>section {
   color: #140152;
   padding: 12px 24px;
   border-radius: 4px ;
-  border: 2px solid #5A206D;
 }
 .yellow-button:hover{
   color: #140152;
@@ -698,8 +697,7 @@ main>section {
 }
 
 .learn-devtron{
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-radius: 0 0 80px 80px;
   background: linear-gradient(180deg, #140152 0%, #000000 100%);
 }
 
@@ -812,7 +810,6 @@ main>section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 20px;
 }
 
 .get-started__doc,
