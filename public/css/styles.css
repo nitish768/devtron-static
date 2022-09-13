@@ -580,9 +580,14 @@ main>section {
   color: #140152;
   padding: 12px 24px;
   border-radius: 4px ;
+  border: 2px solid #5A206D;
 }
 .yellow-button:hover{
   color: #140152;
+}
+
+.yellow-button__shadow{
+  box-shadow: 0px 8px 20px rgba(160, 98, 104, 0.25);
 }
 
 .section-hero__time {
@@ -696,6 +701,10 @@ main>section {
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
   background: linear-gradient(180deg, #140152 0%, #000000 100%);
+}
+
+.learn_yellow-button{
+  margin-left: 20px;
 }
 
 .support-program__form-wrapper {
@@ -2221,7 +2230,7 @@ mark {
 .support-program__content {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 190px);
+  grid-template-columns: repeat(auto-fit, 190px);
   margin-top: 80px;
 }
 
@@ -2257,7 +2266,7 @@ mark {
   position: absolute;
   z-index: 2;
   bottom: 104%;
-  left: 31%;
+  left: 5%;
   margin-left: -60px;
   opacity: 0;
   font-size: 14px;
@@ -2303,6 +2312,16 @@ mark {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 24px
+}
+
+@media screen and (max-width:442px) {
+  .yellow-button {
+    margin-top: 20px;
+  }
+
+  .learn_yellow-button{
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:882px) {
@@ -2485,7 +2504,7 @@ mark {
 
   .accelerate-video {
     display: flex;
-    /* padding: 80px 256px 106px */
+    padding: 80px 256px 106px
   }
 
   .why-devtron__description {
@@ -2508,6 +2527,10 @@ mark {
   .know-more,
   .support-program {
     text-align: center
+  }
+
+  .yellow-button__hidden{
+    display: none;
   }
 
   .request-button {
@@ -2561,8 +2584,12 @@ mark {
     background-color: transparent
   }
 
+  .support-program__title{
+      margin: 0px;
+  }
+
   .support-program {
-    font-size: 32px
+    font-size: 48px
   }
 
   .support-program_sub {
@@ -2712,6 +2739,10 @@ mark {
     font-weight: 400;
     font-size: 18px
   }
+
+  .learn-devtron{
+    border-radius: 0px 0px 40px 40px;
+  }
 }
 
 .d-md-block {
@@ -2776,7 +2807,7 @@ mark {
   }
 
   .accelerate-video {
-    padding: 80px 80px 106px
+    padding: 80px 140px 106px
   }
 
   .accelerate-video h3 {
@@ -3557,8 +3588,7 @@ mark {
   margin: 0 16px
 }
 
-.flex{
-  display: flex;
+.flexbox-center{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap
@@ -3570,4 +3600,17 @@ mark {
 
 .mr-20{
   margin-right: 20px;
+}
+
+.icon-dim-24{
+  width: 24px;
+  height: 24px;
+}
+
+.fs-16{
+  font-size: 16px;
+}
+
+.flex-wrap{
+   flex-wrap: wrap
 }
