@@ -576,7 +576,7 @@ main>section {
   background-color: #f2c94c;
   font-size: 16px;
   line-height: 24px;
-  color: #140152;
+  color: #140152 !important;
   padding: 12px 24px;
   border-radius: 4px ;
 }
@@ -1975,7 +1975,6 @@ mark {
 .sneakpeek-desktop,
 .support__mobile {
   display: none;
-  width: 100%;
 }
 
 .devtron-footer__href {
@@ -2333,10 +2332,13 @@ mark {
 }
 
 @media screen and (min-width:768px) and (max-width:882px) {
-  .devtron-footer__content {
+  /* .devtron-footer__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between
+  } */
+  .devtron-footer__copyright-text--desktop{
+    display: block;
   }
 }
 
@@ -2556,7 +2558,7 @@ mark {
     right: 0;
     height: 64px;
     border-radius: 0;
-    color: #140152;
+    color: #140152 !important;
     z-index: 5;
     cursor: pointer;
     font-size: 16px;
