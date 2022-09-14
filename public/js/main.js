@@ -360,7 +360,7 @@ function tryDevtronHero() {
   });
 }
 
-function tryDevtronVieoSection() {
+function tryDevtronVideoSection() {
   gtag('event', 'Try Devtron Video Section', {
     'event_category': 'Demo',
   });
