@@ -333,10 +333,17 @@ function viewOnDevopsInABoxBannerGAEvent(label) {
   });
 }
 
+
 function viewOnDevopsInABoxGAEvent(label) {
   gtag('event', 'DevOpsInABox Nav', {
     'event_category': 'DevOpsInABox',
     'event_label': label
+  });
+}
+
+function scheduleADemo( eventName) {
+  gtag('event', eventName, {
+    'event_category': 'Schedule Demo',
   });
 }
 
@@ -353,6 +360,11 @@ function tryDevtronHero() {
   });
 }
 
+function tryDevtronVideoSection() {
+  gtag('event', 'Try Devtron Video Section', {
+    'event_category': 'Demo',
+  });
+}
 function demoHeader(label) {
   gtag('event', 'Demo header', {
     'event_category': 'Demo',
