@@ -2626,6 +2626,21 @@ mark {
   .request-form {
     top: 380px
   }
+
+  .devtron-footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.devtron-footer__copyright-text--mob{
+  display: none;
+}
+
+.footer-right_reverse{
+   display: flex;
+   justify-content: end;
+}
 }
 
 @media screen and (min-width:1250px) and (orientation:landscape) {
@@ -2702,6 +2717,15 @@ mark {
   .divider {
     display: none
   }
+
+  .devtron-footer__copyright-text--mob{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-right_reverse{
+     display: none;
+  }
 }
 
 @media screen and (min-width:451px) and (max-width:515px) {
@@ -2743,6 +2767,11 @@ mark {
 
   .devtron-footer__href img {
     width: 26%
+  }
+
+  .footer-right_reverse{
+    display: flex;
+    justify-content: end;
   }
 }
 
@@ -2848,6 +2877,10 @@ mark {
     margin: 42px 36px 0;
     font-weight: 400;
     font-size: 16px
+  }
+  .footer-right_reverse{
+    display: flex;
+    justify-content: end;
   }
 }
 
@@ -3200,6 +3233,17 @@ mark {
   .devtron-footer__href img {
     width: 26%
   }
+
+  .footer-right_reverse{
+    display: flex;
+    justify-content: end;
+  }
+
+  .devtron-footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
 }
 
 @media screen and (min-width:960px) {
@@ -3391,6 +3435,12 @@ mark {
   .section-learning__header-margins {
     margin-bottom: 40px
   }
+
+  .devtron-footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
 }
 
 @media screen and (min-width:1300px) and (orientation:landscape) {
