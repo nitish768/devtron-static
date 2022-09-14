@@ -267,6 +267,7 @@
               href=" https://preview.devtron.ai/dashboard/"
               class="demo-button tab-view"
               target="_blank"
+              onclick="demoHeader('homepage')"
               >Try Devtron <img src="images/icons/game-challeng.svg"/>
             </a>
             <a
@@ -290,8 +291,9 @@
           </nav>
           <a
             href=" https://preview.devtron.ai/dashboard/"
-            class="demo-button margin-left m-0"
+            class="demo-button margin-left"
             target="_blank"
+            onclick="demoHeader('homepage')"
             >Try Devtron <img src="images/icons/game-challeng.svg"/>
           </a>
           <a
@@ -325,8 +327,8 @@
               <p class="support-program_sub">
                 Unbox the only DevOps workflow you need!
               </p>
-              <a href=" https://preview.devtron.ai/dashboard/" class="yellow-button yellow-button__hidden tab-view yellow-button__shadow fw-6" target="_blank" data-toggle="modal"
-                data-target="#exampleModal" onclick='viewOnDevopsInABoxGAEvent("DevOpsInABoxScheduleDemo")'>Schedule a Demo <img class="ml-8" src="images/icons/handpointing.svg" /></a>
+              <a class="yellow-button yellow-button__hidden tab-view yellow-button__shadow fw-6" data-toggle="modal"
+                data-target="#exampleModal" onclick='scheduleADemo("DevOpsInABoxScheduleDemoHero")'>Schedule a Demo <img class="ml-8" src="images/icons/handpointing.svg" /></a>
             </div>
             <img
                 src="./images/support-program-assets/hero-devOps-in-a-box.png"
@@ -719,15 +721,15 @@
             <p>
               Along with the support for Onboarding and managing; You get a
               best-in-class CICD tool Integration Platform.
-            </p>
-            <div class="accelerate_try-devtron flex flex-wrap flexbox-center">
-              <a href=" https://preview.devtron.ai/dashboard/" class="demo-button p-12-24 fs-16 h-100 m-0" target="_blank">Try Devtron
-                 <img class="icon-dim-24"
-                  src="images/icons/game-challeng.svg" />
-              </a>
-              <a href=" https://preview.devtron.ai/dashboard/" class="yellow-button learn_yellow-button yellow-button__hidden fw-4" target="_blank"  data-toggle="modal"
-              data-target="#exampleModal" onclick='viewOnDevopsInABoxGAEvent("DevOpsInABoxScheduleDemo")'>Schedule a Demo <img
-                  src="images/icons/handpointing.svg" /></a>
+              </p>
+              <div class="accelerate_try-devtron flex flex-wrap flexbox-center">
+                <a href="https://preview.devtron.ai/dashboard/" class="demo-button p-12-24 fs-16 h-100 m-0" onclick="tryDevtronVieoSection()"
+                  target="_blank">Try Devtron
+                  <img class="icon-dim-24" src="images/icons/game-challeng.svg" />
+                </a>
+                <a class="yellow-button learn_yellow-button yellow-button__hidden fw-4" target="_blank" data-toggle="modal"
+                  data-target="#exampleModal" onclick='scheduleADemo("DevOpsInABoxScheduleDemoVideoSection")'>Schedule a Demo <img
+                    src="images/icons/handpointing.svg" /></a>
               </div>
           </div>
             </div>
@@ -1397,6 +1399,7 @@
       class="request-button"
       data-toggle="modal"
       data-target="#exampleModal"
+      onclick='scheduleADemo("DevOpsInABoxScheduleDemoMobile")'
     >
       SCHEDULE A DEMO
     </div>
