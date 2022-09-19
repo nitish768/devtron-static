@@ -672,32 +672,6 @@ main>section {
 	margin: auto
 }
 
-/* * CSS 1st commit change */
-
-.adopt-k8 {
-  position: relative;
-  background-color: #eeefe9;
-}
-
-.adopt-k8:after{
-    background-image: url(../images/grey-dot-grid.png);
-    background-position-x: left;
-    position: absolute;
-    background-size: 50px;
-    opacity: .7;
-    background-position-y: top;
-    content: "";
-}
-
-.adopt-k8:after {
-	display: block;
-	background-repeat: repeat;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	z-index: 0
-}
-
 .right-direction,
 .scroll-down,
 .support-program__mobile {
@@ -733,15 +707,6 @@ main>section {
 	justify-content: center;
 	align-items: center;
 	gap: 8px
-}
-
-.support-program__form-wrapper {
-	width: 100%;
-	margin-right: 32px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
-	align-items: center
 }
 
 .support-program {
@@ -2249,7 +2214,7 @@ mark {
 	pointer-events: all
 }
 
-.support-program__content {
+.devops-hero__grid-content {
 	display: grid;
 	width: 100%;
 	grid-template-columns: repeat(auto-fit, 190px);
@@ -2424,6 +2389,10 @@ mark {
 	.support-program__grid {
 		grid-template-columns: repeat(5, minmax(200px, 80px))
 	}
+
+  .support__flex-row{
+    flex-direction: row;
+  }
 }
 
 .testimonial-wrapper {
@@ -2539,6 +2508,10 @@ mark {
 		max-width: 1440;
 		margin: auto
 	}
+
+  .adopt-title{
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width:450px) {
@@ -2549,7 +2522,7 @@ mark {
 	}
 
 	.request-form,
-	.support-program__content,
+	.devops-hero__grid-content,
 	.yellow-button__hidden {
 		display: none
 	}
@@ -2962,7 +2935,7 @@ mark {
 	}
 }
 
-.support-program__content {
+.devops-hero__grid-content {
 	justify-content: center
 }
 
@@ -3447,7 +3420,7 @@ mark {
 		min-width: 30%
 	}
 
-	.support-program__content {
+	.devops-hero__grid-content {
 		grid-template-columns: repeat(4, 220px);
 		margin-top: 80px
 	}
@@ -3693,4 +3666,56 @@ mark {
 
 .ml-8 {
 	margin-left: 8px
+}
+
+/* Devops In a box css */
+
+.adopt-k8 {
+  position: relative;
+  background-color: #eeefe9;
+}
+
+.adopt-k8:after{
+    background-image: url(../images/grey-dot-grid.png);
+    background-position-x: left;
+    position: absolute;
+    background-size: 50px;
+    opacity: .7;
+    background-position-y: top;
+    content: "";
+}
+
+.adopt-k8:after {
+	display: block;
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 0
+}
+
+.devops-wrapper {
+	width: 100%;
+	margin-right: 32px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.support-program__form-wrapper{
+  max-width: 600px;
+  z-index: 1;
+}
+
+.adopt-title{
+  font-size: 40px;
+  color: #343a40;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+}
+
+.accelerate-devtron, .adopt-k8-wrapper, .section-hero__support_program {
+  background-color: #eeefe9;
 }
