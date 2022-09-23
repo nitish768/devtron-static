@@ -62,7 +62,7 @@ const featureHeadingsSwitcher = {
         featureHeadings[i].innerText = this.featureHeadingsTextAndURL[i].text;
       }
       else {
-        featureHeadings[i].innerHTML = `<div style="line-height: 1.5"><img src="${this.featureHeadingsTextAndURL[i].imgURL}" style="width: 80px; height: 50px; float: left; margin: 0 20px 0 0"/> ${this.featureHeadingsTextAndURL[i].text}</div>`
+        featureHeadings[i].innerHTML = `<div style="line-height: 1.5"><img src="${this.featureHeadingsTextAndURL[i].imgURL}" alt="${this.featureHeadingsTextAndURL[i].imgURL}" style="width: 80px; height: 50px; float: left; margin: 0 20px 0 0"/> ${this.featureHeadingsTextAndURL[i].text}</div>`
         // featureHeadings[i].innerHTML = `<div style="line-height: 1.5">${this.featureHeadingsTextAndURL[i].text}</div>`
 
       }
