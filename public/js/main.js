@@ -35,17 +35,17 @@ const featureHeadingsSwitcher = {
   featureHeadingsTextAndURL: [
     {
       text: 'App Monitoring and Debugging',
-      videoURL: './videos/App detail-comp-vdo.mp4',
+      videoURL: 'https://cdn.devtron.ai/videos/App detail-comp-vdo.mp4',
       imgURL: './images/app-detail-thumb.jpg',
     },
     {
       text: 'Customizable Security Policies & Visibility',
-      videoURL: './videos/Security-comp-vdo.mp4',
+      videoURL: 'https://cdn.devtron.ai/videos/Security-comp-vdo.mp4',
       imgURL: './images/security-thumb.jpg',
     },
     {
       text: 'Insightful Deployment metrics',
-      videoURL: './videos/deployment-metrics.mp4',
+      videoURL: 'https://cdn.devtron.ai/videos/deployment-metrics.mp4',
       imgURL: './images/dep-metrics-thumb.jpg',
     },
   ],
@@ -62,7 +62,7 @@ const featureHeadingsSwitcher = {
         featureHeadings[i].innerText = this.featureHeadingsTextAndURL[i].text;
       }
       else {
-        featureHeadings[i].innerHTML = `<div style="line-height: 1.5"><img src="${this.featureHeadingsTextAndURL[i].imgURL}" style="width: 80px; height: 50px; float: left; margin: 0 20px 0 0"/> ${this.featureHeadingsTextAndURL[i].text}</div>`
+        featureHeadings[i].innerHTML = `<div style="line-height: 1.5"><img src="${this.featureHeadingsTextAndURL[i].imgURL}" alt="${this.featureHeadingsTextAndURL[i].imgURL}" style="width: 80px; height: 50px; float: left; margin: 0 20px 0 0"/> ${this.featureHeadingsTextAndURL[i].text}</div>`
         // featureHeadings[i].innerHTML = `<div style="line-height: 1.5">${this.featureHeadingsTextAndURL[i].text}</div>`
 
       }
