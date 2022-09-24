@@ -35,17 +35,17 @@ const featureHeadingsSwitcher = {
   featureHeadingsTextAndURL: [
     {
       text: 'App Monitoring and Debugging',
-      videoURL: './videos/App detail-comp-vdo.mp4',
+      videoURL: 'https://cdn.devtron.ai/videos/App detail-comp-vdo.mp4',
       imgURL: './images/app-detail-thumb.jpg',
     },
     {
       text: 'Customizable Security Policies & Visibility',
-      videoURL: './videos/Security-comp-vdo.mp4',
+      videoURL: 'https://cdn.devtron.ai/videos/Security-comp-vdo.mp4',
       imgURL: './images/security-thumb.jpg',
     },
     {
       text: 'Insightful Deployment metrics',
-      videoURL: './videos/deployment-metrics.mp4',
+      videoURL: 'https://cdn.devtron.ai/videos/deployment-metrics.mp4',
       imgURL: './images/dep-metrics-thumb.jpg',
     },
   ],
