@@ -568,7 +568,6 @@ main>section {
 
 .support-program__title {
 	margin-bottom: 80px;
-	text-align: center
 }
 
 .yellow-button {
@@ -715,13 +714,6 @@ main>section {
 	line-height: 96px
 }
 
-.support-program_sub {
-	font-weight: 300;
-	margin-bottom: 40px;
-	font-size: 24px;
-	color: #edf1f5
-}
-
 .support-icon {
 	width: 48px;
 	height: 48px;
@@ -833,9 +825,7 @@ main>section {
 }
 
 .secondary-title-center-align,
-.support-program,
-.support-program__devtron-stack,
-.support-program_sub {
+.support-program__devtron-stack {
 	text-align: center
 }
 
@@ -2512,13 +2502,11 @@ mark {
 
 @media screen and (max-width:450px) {
 
-	.know-more,
-	.support-program {
+	.know-more{
 		text-align: center
 	}
 
 	.devops-hero__grid-content,
-	.request-form,
 	.yellow-button__hidden {
 		display: none
 	}
@@ -2583,11 +2571,6 @@ mark {
 		font-size: 48px;
 		margin-top: 24px;
 		line-height: 60px
-	}
-
-	.support-program_sub {
-		font-size: 16px;
-		text-align: center
 	}
 }
 
@@ -2707,9 +2690,6 @@ mark {
 		line-height: 72px
 	}
 
-	.support-program_sub {
-		font-size: 20px
-	}
 }
 
 @media screen and (min-width:550px) and (max-width:768px) {
@@ -2931,8 +2911,22 @@ mark {
 	}
 }
 
+/* Devops in a box  */
 .devops-hero__grid-content {
 	justify-content: center
+}
+
+.devops-hero__description{
+   font-weight: 600;
+   font-size: 20px;
+   color: #fff;
+   margin-bottom: 48px;
+}
+
+.devops__hero-sub{
+   color: #fff;
+   font-size: 18px;
+   margin-bottom: 32px;
 }
 
 @media screen and (min-width:908px) {
@@ -2946,9 +2940,7 @@ mark {
 		max-width: 708px
 	}
 
-	.support-box,
-	.support-program,
-	.support-program_sub {
+	.support-box{
 		text-align: center
 	}
 }
@@ -3697,7 +3689,6 @@ mark {
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
-	align-items: center
 }
 
 .support-program__form-wrapper {
