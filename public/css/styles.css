@@ -568,6 +568,7 @@ main>section {
 
 .support-program__title {
 	margin-bottom: 80px;
+	text-align: center
 }
 
 .yellow-button {
@@ -714,6 +715,13 @@ main>section {
 	line-height: 96px
 }
 
+.support-program_sub {
+	font-weight: 300;
+	margin-bottom: 40px;
+	font-size: 24px;
+	color: #edf1f5
+}
+
 .support-icon {
 	width: 48px;
 	height: 48px;
@@ -790,6 +798,7 @@ main>section {
 	height: 80px
 }
 
+.devtron-adoption__flex-wrap,
 .users-grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -806,6 +815,7 @@ main>section {
 }
 
 .support-program__k8s {
+	text-decoration: none;
 	padding: 12px 40px;
 	background-color: #3e3ead;
 	color: #fff;
@@ -1002,12 +1012,6 @@ main>section {
 	top: 0;
 	left: 50%;
 	z-index: -1
-}
-
-.devtron-adoption__flex-wrap {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center
 }
 
 .accelerate-demo-button,
@@ -2246,6 +2250,13 @@ mark {
 	text-align: start
 }
 
+.adopt-k8:after,
+.underline::after {
+	content: "";
+	position: absolute;
+	z-index: 0
+}
+
 .tooltippy:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1
@@ -2337,6 +2348,7 @@ mark {
 	}
 
 	.support-program__k8s {
+		text-decoration: none;
 		display: block;
 		padding: 12px 135px;
 		background-color: #3e3ead;
@@ -2502,11 +2514,13 @@ mark {
 
 @media screen and (max-width:450px) {
 
-	.know-more{
+	.know-more,
+	.support-program {
 		text-align: center
 	}
 
 	.devops-hero__grid-content,
+	.request-form,
 	.yellow-button__hidden {
 		display: none
 	}
@@ -2571,6 +2585,11 @@ mark {
 		font-size: 48px;
 		margin-top: 24px;
 		line-height: 60px
+	}
+
+	.support-program_sub {
+		font-size: 16px;
+		text-align: center
 	}
 }
 
@@ -2690,6 +2709,9 @@ mark {
 		line-height: 72px
 	}
 
+	.support-program_sub {
+		font-size: 20px
+	}
 }
 
 @media screen and (min-width:550px) and (max-width:768px) {
@@ -2852,6 +2874,7 @@ mark {
 	}
 
 	.support-program__k8s {
+		color: #fff;
 		padding: 12px 135px
 	}
 
@@ -2911,22 +2934,8 @@ mark {
 	}
 }
 
-/* Devops in a box  */
 .devops-hero__grid-content {
 	justify-content: center
-}
-
-.devops-hero__description{
-   font-weight: 600;
-   font-size: 20px;
-   color: #fff;
-   margin-bottom: 48px;
-}
-
-.devops__hero-sub{
-   color: #fff;
-   font-size: 18px;
-   margin-bottom: 32px;
 }
 
 @media screen and (min-width:908px) {
@@ -2940,9 +2949,27 @@ mark {
 		max-width: 708px
 	}
 
-	.support-box{
+	.support-box {
 		text-align: center
 	}
+
+  .devops__hero-section{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+   }
+
+   .support-program__title{
+    text-align: left;
+   }
+
+   .devops__ci-cd-mobile{
+     display: none;
+   }
+
+   .devops__ci-cd-desktop{
+     display: block;
+   }
 }
 
 @media screen and (min-width:768px) and (orientation:landscape) {
@@ -3670,17 +3697,14 @@ mark {
 .adopt-k8:after {
 	background-image: url(../images/grey-dot-grid.png);
 	background-position-x: left;
-	position: absolute;
 	background-size: 50px;
 	opacity: .7;
 	background-position-y: top;
-	content: "";
 	display: block;
 	background-repeat: repeat;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	z-index: 0
+	top: 0
 }
 
 .devops-wrapper {
@@ -3689,6 +3713,7 @@ mark {
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
+	align-items: center
 }
 
 .support-program__form-wrapper {
@@ -3702,4 +3727,49 @@ mark {
 	font-weight: 700;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	text-align: left
+}
+
+.devops-banner {
+	color: #fff;
+	position: fixed;
+	padding: 12px 0;
+	top: 0;
+	background: linear-gradient(90deg, #8314a2 0, #3e3ead 100%);
+	display: block;
+	z-index: 1000
+}
+
+.underline::after {
+	bottom: -16px;
+	left: 0;
+	width: 100%;
+	height: 32px;
+	background-image: url("https://uploads-ssl.webflow.com/61aeec2bcab0f63538b9256e/61b049e6a1ebe425bc1c07b5_Underline.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
+}
+
+/*Hero Section Devops in a box  */
+
+.devops__hero-section{
+ flex-direction: column;
+ text-align: center;
+}
+
+.devops-hero__grid-content {
+	justify-content: center
+}
+
+.devops-hero__description{
+   font-weight: 600;
+   font-size: 20px;
+   color: #fff;
+   margin-bottom: 48px;
+}
+
+.devops__hero-sub{
+   color: #fff;
+   font-size: 18px;
+   margin-bottom: 32px;
 }
