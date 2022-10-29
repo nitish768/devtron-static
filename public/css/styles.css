@@ -2308,6 +2308,16 @@ mark {
 	}
 }
 
+.modal-content{
+  z-index: 2;
+}
+
+/* @media (min-width: 576px){
+.mmodal-body {
+    padding: 24px;
+}
+} */
+
 @media screen and (min-width:768px) and (max-width:882px) {
 	.devtron-footer__copyright-text--desktop {
 		display: block
@@ -2585,6 +2595,11 @@ mark {
 		line-height: 60px
 	}
 
+  .contact-us__title{
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
+
 	.support-program_sub {
 		font-size: 16px;
 		text-align: center
@@ -2710,6 +2725,11 @@ mark {
 	.support-program_sub {
 		font-size: 20px
 	}
+
+  .contact-us__title{
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
 }
 
 @media screen and (min-width:550px) and (max-width:768px) {
@@ -3714,7 +3734,13 @@ mark {
 
 .support-program__form-wrapper {
 	max-width: 600px;
-	z-index: 1
+	z-index: 1;
+  margin-right: 20px;
+}
+
+.contact-us__title{
+  font-size: 2.3rem;
+  line-height: 1.3;
 }
 
 .adopt-title {
@@ -3789,6 +3815,11 @@ mark {
 		font-size: 72px
 	}
 
+  .contact-us__title{
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
+
 	.devops-hero__description {
 		margin-bottom: 60px !important
 	}
@@ -3806,4 +3837,9 @@ mark {
 	.devops-ci-cd {
 		width: 420px
 	}
+
+  .contact-us__title{
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
 }
