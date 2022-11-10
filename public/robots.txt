@@ -2,3 +2,7 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Disallow: /blog/ghost/
+Disallow: /tag/
+Sitemap: https://devtron.ai/sitemap.xml
+Sitemap: https://devtron.ai/blog/sitemap.xml
+Host: https://devtron.ai/
