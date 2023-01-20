@@ -302,6 +302,27 @@ async function onSubscribe(email) {
   }
 }
 
+const  onDownloadDataSheet = async() =>{
+    const url = "https://6866519.fs1.hubspotusercontent-na1.net/hubfs/6866519/PDF%20Assets/Devtron%20Product%20Datasheet%202023.pdf"
+    const filename = "devtron-datasheet.pdf"
+    const data = await fetch(url)
+    const blob = await data.blob()
+    const objectUrl = URL.createObjectURL(blob)
+
+    const link = document.createElement('a')
+
+    link.setAttribute('href', objectUrl)
+    link.setAttribute('download', filename)
+    link.style.display = 'none'
+
+    document.body.appendChild(link)
+
+    link.click()
+
+    document.body.removeChild(link)
+
+}
+
 function emptyErrorandSuccess() {
   const id = ['successMessage', 'errorMessage'];
   for (let i = 0; i < id.length; i++) {
