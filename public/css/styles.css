@@ -3266,6 +3266,60 @@ mark {
 	}
 }
 
+.kubernetes__h1{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.kubernetes__h1-pt-100{
+  padding-top: 100px
+}
+
+.kubernetes__mb-20{
+  margin-bottom: 20px;
+}
+
+.kubernetes__h2{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px
+}
+
+.kubernetes__h3{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px
+}
+
+.kubernetes__h4{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px
+}
+
+pre {
+  /* background: #140152 !important; */
+  background: #000a14;
+  color: #3dc9b0;
+  text-align: left;
+  padding-top: 16px;
+}
+
+pre .code-key{
+  color: #fff;
+}
+
+pre .code-red{
+  color: #f95870;
+}
+
+.kubernetes__code-blocks code {
+  background: #e1e9f5;
+  color: rgb(53, 47, 47);
+  margin-bottom: 16px;
+}
+
 @media screen and (min-width:960px) {
 	.easily-integrate__item:first-child {
 		margin-left: 0
@@ -3450,7 +3504,7 @@ mark {
 		grid-gap: 24px
 	}
 
-  .kubernets-dashboard--h1{
+  .kubernetes__h1{
     font-weight: 700;
     font-size: 36px;
     padding-bottom: 40px;

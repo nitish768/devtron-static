@@ -176,174 +176,308 @@
   </header>
 
   <main class="bg-white">
-    <section class="kubernets-dashboard">
-      <div id="hero" class="section hero wf-section">
+    <div class="alignment-with-header">
+      <section class="kubernets-dashboard">
         <div class="kubernets__dashboard">
-          <h1 class="kubernets-dashboard--h1">What is Kubernetes Dashboard </h1>
-          <p class="kubernets-para white">Kubernetes provides a command line (CLI) component called “kubectl” for
-            carrying core operations. But there are two significant hurdles to using CLI enterprise-wide</p>
-          <br />
-          <br />
+          <h1 class="kubernetes__h1 kubernetes__h1-pt-100">What is Kubernetes Dashboard </h1>
+          <p class="kubernetes__mb-20">Kubernetes provides a command line (CLI) component called “kubectl” for
+            carrying core operations. But there are two significant hurdles to using CLI enterprise-wide
 
+          </p>
           <ul>
             <li>The high learning curve for developers to adopt Kubernetes for deployment.</li>
             <li>Time-consuming and frustrating work for SREs and Ops team to monitor and troubleshoot multiple
               clusters at scale </li>
           </ul>
-          <br />
-
-          <p>
+          <p class="kubernetes__mb-20">
             Dashboard by Kubernetes ( also known as Kubernetes Dashboard) is a web-based user interface to deploy
             applications into the Kubernetes cluster, monitor the health of all the resources and troubleshoot them in
             case of any issues. The application is helpful for DevOps, Ops, and SRE teams to manage Kubernetes
             resources such as Deployments, Statefulsets, Jobs, etc. One can quickly deploy an application using
             manifest files and update the help from the UI itself.
           </p>
-          <br />
-          <br />
-          <div class="flex"><img src="images/kubernetes-dashboard/dashboard.png" alt="kubernetes-dashboard"></div>
+
+          <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/dashboard.png" alt="kubernetes-dashboard">
         </div>
-        <br/>
-        <br/>
+      </section>
 
-        <div class="kubernetes__features">
-          <h2>Features of Kubernetes Dashboard</h2>
-          <p>Kubernetes Dashboard is compelling for the DevOps team because of two primary features:</p>
-          <ul>
-            <li>Cluster-wide visibility and troubleshooting </li>
-            <li>UI-based deployments</li>
-          </ul>
-          <br/>
-          <br/>
+      <section class="kubernetes-features">
+        <h2 class="kubernetes__h2">Features of Kubernetes Dashboard</h2>
+        <p class="kubernetes__mb-20">Kubernetes Dashboard is compelling for the DevOps team because of two primary features:</p>
+        <ul>
+          <li>Cluster-wide visibility and troubleshooting </li>
+          <li>UI-based deployments</li>
+        </ul>
 
-          <h3>
-            Cluster-wide visibility and troubleshooting
-          </h3>
-          <p>The Kubernetes Dashboard will provide a view of various running workloads and their total count. DevOps
-            engineers will get the visibility of workloads, services, configurations and storage, and cluster view.
-          </p>
-          <br/>
-          <br/>
+        <h3 class="kubernetes__h3">
+          Cluster-wide visibility and troubleshooting
+        </h3>
+        <p class="kubernetes__mb-20">The Kubernetes Dashboard will provide a view of various running workloads and their total count. DevOps
+          engineers will get the visibility of workloads, services, configurations and storage, and cluster view.
+        </p>
 
-          <h4>Workload view</h4>
-          <p>Under the workload view, users will get the details of workloads resources such as Deployments, Pods,
-            ReplicaSets, DaemonSets, Job, and StatefulSet running in all the namespaces of a cluster. One can also
-            perform a granular search based on a particular namespace in a cluster. </p>
-        </div>
-        <img src="images/kubernetes-dashboard/workload.png" alt="kubernetes-dashboard">
-        <br/>
-        <br/>
+        <h4 class="kubernetes__h4">Workload view</h4>
+        <p class="kubernetes__mb-20">Under the workload view, users will get the details of workloads resources such as Deployments, Pods,
+          ReplicaSets, DaemonSets, Job, and StatefulSet running in all the namespaces of a cluster. One can also
+          perform a granular search based on a particular namespace in a cluster. </p>
 
-        <h4>Pods view</h4>
-        <p>One of the most important aspects of workloads can be the number of pods running in a specific node and its
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/workload.png" alt="kubernetes-dashboard">
+
+        <h4 class="kubernetes__h4">Pods view</h4>
+        <p class="kubernetes__mb-20">One of the most important aspects of workloads can be the number of pods running in a specific node and its
           respective namespace. </p>
-          <br/>
-        <img src="images/kubernetes-dashboard/pods.png" alt="kubernetes-dashboard">
-      </div>
-      <br />
 
-      <p>Users will get drilled down information about a pod, such as:</p>
-      <li> Metadata about labels and annotations</li>
-      <li> Resource consumption - CPU and memory utilization</li>
-      <li> date of creation and number of restarts </li>
-      <li>Events logs and persistent volume claim</li>
-      <br />
-      <br />
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/pods.png" alt="kubernetes-dashboard">
 
+        <p class="kubernetes__mb-20">Users will get drilled down information about a pod, such as:</p>
 
-      <p>Similarly, Kubernetes Dashboard also provides an aggregated view of namespaces and a detailed view of
-        services & ingress objects, configmaps, network policies, secrets, and persistent volume claims in a
-        namespace. </p>
+        <li> Metadata about labels and annotations</li>
+        <li> Resource consumption - CPU and memory utilization</li>
+        <li> date of creation and number of restarts </li>
+        <li>Events logs and persistent volume claim</li>
 
-      <br />
-      <br />
+        <p class="kubernetes__mb-20">Similarly, Kubernetes Dashboard also provides an aggregated view of namespaces and a detailed view of
+          services & ingress objects, configmaps, network policies, secrets, and persistent volume claims in a
+          namespace. </p>
 
-      <h4>Service and Ingress view</h4>
-      <p>Kubernetes Dashboard provides visibility about running Services and Ingress objects, including the
-        namespace each Service or ingress belongs to, their labels, and Cluster IP. Users can get far more
-        drilled-down information about each Service, such as labels, pods, endpoints, etc.</p>
-      <br />
-      <br />
+        <h4 class="kubernetes__h4">Service and Ingress view</h4>
+        <p class="kubernetes__mb-20">Kubernetes Dashboard provides visibility about running Services and Ingress objects, including the
+          namespace each Service or ingress belongs to, their labels, and Cluster IP. Users can get far more
+          drilled-down information about each Service, such as labels, pods, endpoints, etc.</p>
 
-      <h4>Configuration and storage view</h4>
-      <p>
-        Similar to any other object views, the Kubernetes Dashboard allows the details of Persistent Volume Claims
-        (PCVs) in a cluster along with their status, storage volume, storage class, annotations, labels, namespaces,
-        etc. The Dashboard also shows the configurations of the applications deployed into the cluster, which can be
-        edited from the UI directly.
-      </p>
+        <h4 class="kubernetes__h4">Configuration and storage view</h4>
+        <p class="kubernetes__mb-20">
+          Similar to any other object views, the Kubernetes Dashboard allows the details of Persistent Volume Claims
+          (PCVs) in a cluster along with their status, storage volume, storage class, annotations, labels, namespaces,
+          etc. The Dashboard also shows the configurations of the applications deployed into the cluster, which can be
+          edited from the UI directly.
+        </p>
 
-      <br />
-      <br />
+        <h3 class="kubernetes__h3">
+          UI-based Deployment
+        </h3>
+        <p class="kubernetes__mb-20">The Kubernetes Dashboard allows you to deploy any (workload) resources from the UI. You can create manifest
+          files in the browser, or you can upload your manifest files from a source such as Git. And the Kubernetes
+          Dashboard will directly communicate with the Kubernetes controller to get an object of a resource created
+          for you. In the below example, we have created a manifest file to create a pod with NGINX 1.19.0 image to
+          create a pod. </p>
+      </section>
 
-      <h3>
-        UI-based Deployment
-      </h3>
-      <p>The Kubernetes Dashboard allows you to deploy any (workload) resources from the UI. You can create manifest
-        files in the browser, or you can upload your manifest files from a source such as Git. And the Kubernetes
-        Dashboard will directly communicate with the Kubernetes controller to get an object of a resource created
-        for you. In the below example, we have created a manifest file to create a pod with NGINX 1.19.0 image to
-        create a pod. </p>
+      <section class="kubernetes-architecture">
 
-      <br />
-      <br />
+        <h2 class="kubernetes__h2">Kubernetes Dashboard architecture</h2>
+        <p class="kubernetes__mb-20">
+          Kubernetes Dashboard is an external service developed on top of Kubernetes architecture. Under the hood, the
+          Dashboard uses APIs to read all cluster-wide information for visibility into a single pane. It also uses the
+          APIs to deploy resources and applications into a cluster. Both CLI and Kubernetes Dashboards depend on the
+          kube-API-server to process the requests. To get started with the CLI, the Ops team must deploy the Kubernetes
+          Dashboard in the same cluster (similar to Kubectl deployment).
+        </p>
 
+        <h2 class="kubernetes__h2">Getting started with Kubernetes Dashboard</h2>
+        <p class="kubernetes__mb-20">To get started with Kubernetes Dashboard, you need to run the following commands in your cluster:</p>
 
-      <h2>Kubernetes Dashboard architecture</h2>
-      <p>
-        Kubernetes Dashboard is an external service developed on top of Kubernetes architecture. Under the hood, the
-        Dashboard uses APIs to read all cluster-wide information for visibility into a single pane. It also uses the
-        APIs to deploy resources and applications into a cluster. Both CLI and Kubernetes Dashboards depend on the
-        kube-API-server to process the requests. To get started with the CLI, the Ops team must deploy the Kubernetes
-        Dashboard in the same cluster (similar to Kubectl deployment).
-      </p>
+        <h4 class="kubernetes__h4">Step-1: Deploy Kubernetes Dashboard</h4>
+        <p class="kubernetes__mb-20">Run the below command to deploy the Kubernetes Dashboard app. </p>
 
-      <br />
-      <br />
+        <pre>
+          <code>
+            kubectl apply <span class="code-red">-f</span>
+            <span class="code-key">https:</span>//raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
+          </code>
+        </pre>
 
-      <h2>Getting started with Kubernetes Dashboard</h2>
-      <p>To get started with Kubernetes Dashboard, you need to run the following commands in your cluster:</p>
+        <p class="kubernetes__mb-20">
+          To access Kubernetes Dashboard from the local machine, one can create a secure channel to access the K8s
+          cluster
+          by running the following command:
+        </p>
 
-      <br />
-      <br />
+        <pre>
+          <code>kubectl proxy</code>
+        </pre>
 
-      <h4>Step-1: Deploy Kubernetes Dashboard</h4>
-      <p>Run the below command to deploy the Kubernetes Dashboard app. </p>
+        <p class="kubernetes__mb-20">You can access your Dashboard using the following URL:</p>
+          <code>
+            http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+          </code>
 
-      <br />
-      <br />
-<pre>
-      <code>
-        kubectl apply -f
-        https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
-      </code>
-    </pre>
-      <br />
-      <p>
-        To access Kubernetes Dashboard from the local machine, one can create a secure channel to access the K8s cluster
-        by running the following command:
-      </p>
+        <h4 class="kubernetes__h4">
+          Step-2: Create a service account
+        </h4>
+        <p class="kubernetes__mb-20">
+          The Kubernetes Dashboard is installed with minimal RBAC permissions, so you can access the Dashboard using a
+          bearer token. So you can create a service account and bind it to a cluster with admin rights.
+          You can use the following service account yaml file:
+        </p>
+        <pre >
+          <code >
+            <span class="code-key">apiVersion: </span>v1
+            <span class="code-key">kind:</span> ServiceAccount
+            <span class="code-key">metadata:</span>
+            <span class="code-key">   name:</span> admin-user
+            <span class="code-key">   namespace:</span> kubernetes-dashboard
+          </code>
+        </pre>
 
-      <br/>
-      <br/>
-      <code>kubectl proxy</code>
+        <p class="kubernetes__mb-20">Make service resources by using the command:</p>
+        <pre>
+          <code>kubectl - apply <span class="code-red">-f</span>  &#60;&#60;serviceaccount.yaml&#62;&#62; </code>
+        </pre>
 
-      <br/>
-      <br/>
+        <p class="kubernetes__mb-20">
+          You can use the following ClusterRoleBinding yaml to make the service account as cluster-admin:
+        </p>
 
-      <p>You can access your Dashboard using the following URL:</p>
+        <pre>
+        <code>
+         <span class="code-key">apiVersion:</span>  v1
+         <span class="code-key">kind:</span> ClusterRoleBinding
+          <span class="code-key">metadata:</span>
+          <span class="code-key">  name:</span> admin-user
+          <span class="code-key">roleRef:</span>
+          <span class="code-key">  apiGroup: </span>rbac.authorization.k8s.io
+          <span class="code-key">  Kind:</span> ClusterRole
+          <span class="code-key">  name:</span> cluster-admin
+          <span class="code-key"> subjects:</span>
+          <span class="code-key">  kind:</span> ServiceAccount
+          <span class="code-key"> name:</span> admin-user
+          <span class="code-key"> namespace:</span> kubernetes-dashboard
+        </code>
+      </pre>
 
+        <p class="kubernetes__mb-20">
+          Similary, apply the yaml file to create a ClusterRoleBinding resource in your cluster.
+        </p>
 
+        <h4 class="kubernetes__h4">Step-3: Generate bearer token</h4>
 
-      </div>
-      </div>
-    </section>
+        <p class="kubernetes__mb-20">Use the command to generate the bearer token </p>
+        <div class="kubernetes__mb-20 kubernetes__code-blocks">
+          <code >
+            kubectl -n kubernetes-dashboard get secret $(kubectl -n
+            kubernetes-dashboard get sa/admin-user -o
+            jsonpath="{.secrets[0].name}") -o go-template="{{.data.token |
+            Base64decode}}"
+          </code>
+        </div>
 
+        <h4 class="kubernetes__h4">Step-4: Use the token and get started with the Dashboard </h4>
+        <p class="kubernetes__mb-20">You can paste the bearer token to get started with Kubernetes Dashboard.</p>
+        <img class="kubernetes__mb-20" src="" />
 
-    <section class="bg-white">
+      </section>
 
-    </section>
+      <section class="kubernetes-limitations">
+        <h2 class="kubernetes__h2">Limitations of Kubernetes Dashboard</h2>
+        <p class="kubernetes__mb-20">
+          Using a UI-based Kubernetes Dashboard to replace CLI is undoubtedly good. However, there are a few limitations
+          that restrict its use cases to only small startups:
+        </p>
 
+        <ol>
+          <li>
+            <strong>Lack of multicluster view: </strong>
+            Kubernetes Dashboard provides the view pertinent to namespaces in
+            a single cluster. It does not offer a view of multiple clusters.
+          </li>
+          <li>
+            <strong> Minimal RBAC: </strong>
+            Kubernetes does not provide granular access control for various users. One has to be dependent on
+            token or kubeconfig files.
+          </li>
+          <li>
+            <strong>Lack of Single Sign On(SSO): </strong>
+            Kubernetes Dashboard does not provide SSO login services. SSO is essential for mid and large enterprises to
+            secure resources and applications in Kubernetes.
+          </li>
+          <li>
+            <strong>No Node management: </strong>
+            Kubernetes Dashboard DevOps team to view the node information such as status, labels, limits, and memory/CPU
+            requests, machine ID, addresses, allocated resources, pods, etc. But does not allow any provision to edit
+            nodes. This is essential because if a node is unhealthy, it will not run any pods and will not participate
+            in
+            cluster activity.
+          </li>
+          <li>
+            <strong>Zero visibility and manageability of HELM charts: </strong>
+            Many organizations use them to deploy their Kubernetes applications at scale. Unfortunately, Kubernetes
+            Dashboard does not provide the capability to HELM Dashboards.
+          </li>
+          <li>
+            <strong>Lack of application view: </strong>
+            Kubernetes Dashboard provides the resource or object view but needs to provide more information about
+            applications, making it cumbersome for developers to modify any deployments. Without application view,
+            Kubernetes Dashboard has restricted its usage to only the Ops team.
+          </li>
+          <li>
+            <strong>Audit: </strong>
+            Kubernetes Dashboard does not offer audit reports of deployments, such as who, when, and how an application
+            is
+            being deployed.
+          </li>
+        </ol>
+
+        <p class="kubernetes__mb-20">Note, although Kubernetes Dashboard is also developed to make the deployment easy from UI, today, there is no
+          mechanism to apply advanced deployment strategies such as canary from the UI.</p>
+      </section>
+
+      <section class="kubernetes-alternatives">
+        <h2 class="kubernetes__h2">Open source alternatives to Kubernetes Dashboards</h2>
+        <p class="kubernetes__mb-20">
+          There are four open-source alternatives to Kubernetes Dashboard, either built independently or on the top of
+          the
+          Dashboard project, to increase the capability of deployments, monitoring, and troubleshooting from UI.
+        </p>
+
+        <h3 class="kubernetes__h3">1. OpenLens:</h3>
+        <p class="kubernetes__mb-20">An open-source software with an MIT license used for multicluster management and monitoring workloads. It
+          also
+          provides basic HELM resource management and resource grouping, but it may require a learning curve. Secondly,
+          it
+          has a few blind spots as it does not provide HELM chart groups for multicluster deployments, Chart config
+          differences, etc. Read more about Devtron vs OpenLens.</p>
+
+        <h3 class="kubernetes__h3">2. Octant: </h3>
+        <p class="kubernetes__mb-20">
+          Open source dashboard started by VMware but is archived now- no community support, and you are on your own.
+          Initially, the project was targeted for developers to use the UI to ship code faster into clusters. Octane has
+          limited functionalities wrt cluster visualization and management. Read more about Devtron vs Octant.
+        </p>
+
+        <h3 class="kubernetes__h3">3. Komodor:</h3>
+        <p class="kubernetes__mb-20"> Komodor is another open-source platform for Kubernetes applications management and troubleshooting. You can
+          do
+          what Kubernetes Dashboard does and more- visibility into multiple clusters and HELM charts deployments and
+          configuration differentiation. Komodor proactively monitors the health of your clusters and helps you
+          troubleshoot your cluster with granular views into logs and events. But it may not be flexible for advance
+          deployments into multiple clouds and rollbacks. </p>
+
+        <h3 class="kubernetes__h3">4. Devtron Kubernetes Dashboard: </h3>
+        <p class="kubernetes__mb-20">
+          Devtron provides an open-source Kubernetes-native DevOps platform that automates the entire software delivery
+          process from CI, CD, GitOps, security and governance, progressive deployment, observability, monitoring, and
+          troubleshooting. Devtron Kubernetes dashboard provides powerful features in a single pane to make DevOps,
+          SREs,
+          and developers life simpler:
+        </p>
+
+        <ul>
+          <li>Multicluster resource monitoring and node management</li>
+          <li> HELM chart dashboard and management from a single pane of dashboard</li>
+          <li> Events and real-time logs, and pod execution for debugging</li>
+          <li> UI-based deployments (or modifications to existing manifest files)</li>
+          <li>Instant rollback of new deployments to production</li>
+          <li> DORA metrics</li>
+          <li>Granular RBAC for users, action and resources. </li>
+        </ul>
+      </section>
+
+      <section class="kubernetes-comparison">
+        <h2 class="kubernetes__h2">Tabular comparison: Vanilla Kubernetes Dashboard vs Devtron Kubernetes dashboard vs OpenLens vs Komodor</h2>
+      </section>
+
+    </div>
 
     <hr class="divider-join-community-learning" />
 
