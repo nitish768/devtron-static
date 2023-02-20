@@ -169,7 +169,7 @@ button:focus {
 	color: #000a14
 }
 
-.flex-centre {
+.flex-space-between {
 	display: flex;
 	align-items: center;
 	justify-content: space-between
@@ -203,6 +203,12 @@ button:focus {
 
 .accordion .btn[aria-expanded=true]::after {
 	content: "\f106"
+}
+
+.flex-center{
+  display: flex;
+	align-items: center;
+	justify-content: center
 }
 
 .binoculars__position {
@@ -3298,6 +3304,10 @@ mark {
   margin-bottom: 8px
 }
 
+.kubernetes__cell{
+  font-size: 16px;
+  font-weight: 600;
+}
 pre {
   /* background: #140152 !important; */
   background: #000a14;
@@ -3318,6 +3328,23 @@ pre .code-red{
   background: #e1e9f5;
   color: rgb(53, 47, 47);
   margin-bottom: 16px;
+}
+
+.kubernetes__grid-wrap{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(25, auto);
+}
+
+.kubernetes__tabular-headers{
+  background: #3569d8;
+  color: #fff;
+}
+
+.kubernetes_tabular-cell{
+   padding: 16px 8px;
+   justify-content: center;
+   border: 1px solid #000;
 }
 
 @media screen and (min-width:960px) {

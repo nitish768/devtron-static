@@ -203,7 +203,8 @@
 
       <section class="kubernetes-features">
         <h2 class="kubernetes__h2">Features of Kubernetes Dashboard</h2>
-        <p class="kubernetes__mb-20">Kubernetes Dashboard is compelling for the DevOps team because of two primary features:</p>
+        <p class="kubernetes__mb-20">Kubernetes Dashboard is compelling for the DevOps team because of two primary
+          features:</p>
         <ul>
           <li>Cluster-wide visibility and troubleshooting </li>
           <li>UI-based deployments</li>
@@ -212,22 +213,25 @@
         <h3 class="kubernetes__h3">
           Cluster-wide visibility and troubleshooting
         </h3>
-        <p class="kubernetes__mb-20">The Kubernetes Dashboard will provide a view of various running workloads and their total count. DevOps
+        <p class="kubernetes__mb-20">The Kubernetes Dashboard will provide a view of various running workloads and their
+          total count. DevOps
           engineers will get the visibility of workloads, services, configurations and storage, and cluster view.
         </p>
 
         <h4 class="kubernetes__h4">Workload view</h4>
-        <p class="kubernetes__mb-20">Under the workload view, users will get the details of workloads resources such as Deployments, Pods,
+        <p class="kubernetes__mb-20">Under the workload view, users will get the details of workloads resources such as
+          Deployments, Pods,
           ReplicaSets, DaemonSets, Job, and StatefulSet running in all the namespaces of a cluster. One can also
           perform a granular search based on a particular namespace in a cluster. </p>
 
-        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/workload.png" alt="kubernetes-dashboard">
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/workload.png" alt="kubernetes-workload">
 
         <h4 class="kubernetes__h4">Pods view</h4>
-        <p class="kubernetes__mb-20">One of the most important aspects of workloads can be the number of pods running in a specific node and its
+        <p class="kubernetes__mb-20">One of the most important aspects of workloads can be the number of pods running in
+          a specific node and its
           respective namespace. </p>
 
-        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/pods.png" alt="kubernetes-dashboard">
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/pods.png" alt="kubernetes-pods">
 
         <p class="kubernetes__mb-20">Users will get drilled down information about a pod, such as:</p>
 
@@ -236,12 +240,18 @@
         <li> date of creation and number of restarts </li>
         <li>Events logs and persistent volume claim</li>
 
-        <p class="kubernetes__mb-20">Similarly, Kubernetes Dashboard also provides an aggregated view of namespaces and a detailed view of
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/pods-details.png"
+          alt="kubernetes-pods-deatails">
+
+
+        <p class="kubernetes__mb-20">Similarly, Kubernetes Dashboard also provides an aggregated view of namespaces and
+          a detailed view of
           services & ingress objects, configmaps, network policies, secrets, and persistent volume claims in a
           namespace. </p>
 
         <h4 class="kubernetes__h4">Service and Ingress view</h4>
-        <p class="kubernetes__mb-20">Kubernetes Dashboard provides visibility about running Services and Ingress objects, including the
+        <p class="kubernetes__mb-20">Kubernetes Dashboard provides visibility about running Services and Ingress
+          objects, including the
           namespace each Service or ingress belongs to, their labels, and Cluster IP. Users can get far more
           drilled-down information about each Service, such as labels, pods, endpoints, etc.</p>
 
@@ -256,11 +266,16 @@
         <h3 class="kubernetes__h3">
           UI-based Deployment
         </h3>
-        <p class="kubernetes__mb-20">The Kubernetes Dashboard allows you to deploy any (workload) resources from the UI. You can create manifest
+        <p class="kubernetes__mb-20">The Kubernetes Dashboard allows you to deploy any (workload) resources from the UI.
+          You can create manifest
           files in the browser, or you can upload your manifest files from a source such as Git. And the Kubernetes
           Dashboard will directly communicate with the Kubernetes controller to get an object of a resource created
           for you. In the below example, we have created a manifest file to create a pod with NGINX 1.19.0 image to
           create a pod. </p>
+
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/ui-deployment.png"
+          alt="kubernetes-ui-deployment">
+
       </section>
 
       <section class="kubernetes-architecture">
@@ -273,9 +288,13 @@
           kube-API-server to process the requests. To get started with the CLI, the Ops team must deploy the Kubernetes
           Dashboard in the same cluster (similar to Kubectl deployment).
         </p>
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/kuberetes-dashboard-architecture.png"
+          alt="kuberetes-dashboard-architectur">
+
 
         <h2 class="kubernetes__h2">Getting started with Kubernetes Dashboard</h2>
-        <p class="kubernetes__mb-20">To get started with Kubernetes Dashboard, you need to run the following commands in your cluster:</p>
+        <p class="kubernetes__mb-20">To get started with Kubernetes Dashboard, you need to run the following commands in
+          your cluster:</p>
 
         <h4 class="kubernetes__h4">Step-1: Deploy Kubernetes Dashboard</h4>
         <p class="kubernetes__mb-20">Run the below command to deploy the Kubernetes Dashboard app. </p>
@@ -298,7 +317,7 @@
         </pre>
 
         <p class="kubernetes__mb-20">You can access your Dashboard using the following URL:</p>
-          <code>
+        <code>
             http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
           </code>
 
@@ -310,7 +329,7 @@
           bearer token. So you can create a service account and bind it to a cluster with admin rights.
           You can use the following service account yaml file:
         </p>
-        <pre >
+        <pre>
           <code >
             <span class="code-key">apiVersion: </span>v1
             <span class="code-key">kind:</span> ServiceAccount
@@ -354,7 +373,7 @@
 
         <p class="kubernetes__mb-20">Use the command to generate the bearer token </p>
         <div class="kubernetes__mb-20 kubernetes__code-blocks">
-          <code >
+          <code>
             kubectl -n kubernetes-dashboard get secret $(kubectl -n
             kubernetes-dashboard get sa/admin-user -o
             jsonpath="{.secrets[0].name}") -o go-template="{{.data.token |
@@ -364,7 +383,9 @@
 
         <h4 class="kubernetes__h4">Step-4: Use the token and get started with the Dashboard </h4>
         <p class="kubernetes__mb-20">You can paste the bearer token to get started with Kubernetes Dashboard.</p>
-        <img class="kubernetes__mb-20" src="" />
+        <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/access-kubernetes-cluster.png"
+          alt="access-kubernetes-cluster">
+
 
       </section>
 
@@ -418,7 +439,8 @@
           </li>
         </ol>
 
-        <p class="kubernetes__mb-20">Note, although Kubernetes Dashboard is also developed to make the deployment easy from UI, today, there is no
+        <p class="kubernetes__mb-20">Note, although Kubernetes Dashboard is also developed to make the deployment easy
+          from UI, today, there is no
           mechanism to apply advanced deployment strategies such as canary from the UI.</p>
       </section>
 
@@ -431,7 +453,8 @@
         </p>
 
         <h3 class="kubernetes__h3">1. OpenLens:</h3>
-        <p class="kubernetes__mb-20">An open-source software with an MIT license used for multicluster management and monitoring workloads. It
+        <p class="kubernetes__mb-20">An open-source software with an MIT license used for multicluster management and
+          monitoring workloads. It
           also
           provides basic HELM resource management and resource grouping, but it may require a learning curve. Secondly,
           it
@@ -446,7 +469,8 @@
         </p>
 
         <h3 class="kubernetes__h3">3. Komodor:</h3>
-        <p class="kubernetes__mb-20"> Komodor is another open-source platform for Kubernetes applications management and troubleshooting. You can
+        <p class="kubernetes__mb-20"> Komodor is another open-source platform for Kubernetes applications management and
+          troubleshooting. You can
           do
           what Kubernetes Dashboard does and more- visibility into multiple clusters and HELM charts deployments and
           configuration differentiation. Komodor proactively monitors the health of your clusters and helps you
@@ -474,7 +498,195 @@
       </section>
 
       <section class="kubernetes-comparison">
-        <h2 class="kubernetes__h2">Tabular comparison: Vanilla Kubernetes Dashboard vs Devtron Kubernetes dashboard vs OpenLens vs Komodor</h2>
+        <h2 class="kubernetes__h2">Tabular comparison: Vanilla Kubernetes Dashboard vs Devtron Kubernetes dashboard vs
+          OpenLens vs Komodor</h2>
+        <div class="kubernetes__grid-wrap">
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Dimensions</div>
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Capabilities</div>
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Devtron Kubernetes Dashboard</div>
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Kubernetes Dashboard</div>
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell"> OpenLens</div>
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Komodor</div>
+
+          <div class="kubernetes_tabular-cell">Cluster and resource management</div>
+          <div class="kubernetes_tabular-cell">Multucluster and multicloud view</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Event and real-time log monitoring</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Live metrics update</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Resource grouping and monitoring</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Node management</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Support for the custom image to use tools like k9s, netshoot, busybox, kubectl, for debugging</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+
+          <div class="kubernetes_tabular-cell">HELM Dashboard and management</div>
+          <div class="kubernetes_tabular-cell">HELM charts deployment</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Chart market place</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center"></div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Chart Groups for Multi-charts deployment</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Charts configuration and manifest Diff</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Deployment history of chartst</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Chart upgradation</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+
+          <div class="kubernetes_tabular-cell">Deployment</div>
+          <div class="kubernetes_tabular-cell">Manifest-based </div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Rollback</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Canary</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">DevOps KPIs (DORA metrics)</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Audit</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+
+
+          <div class="kubernetes_tabular-cell">Security</div>
+          <div class="kubernetes_tabular-cell">SSO (Google, Github, Google, Gitlab, etc)</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">RBAC (LDAP, SAML, etc )</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">◐</div>
+
+          <div class="kubernetes_tabular-cell">Integrations with DevOps tools</div>
+          <div class="kubernetes_tabular-cell">
+            - CI
+            - CD
+            - Monitoring
+            - Logging
+            </div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell">Deployment models</div>
+          <div class="kubernetes_tabular-cell">On-prem</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Managed (web-based)</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell">Saas</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+          <div class="kubernetes_tabular-cell">Enterprise support</div>
+          <div class="kubernetes_tabular-cell"></div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">❌</div>
+          <div class="kubernetes_tabular-cell flex-center">✔</div>
+
+        </div>
       </section>
 
     </div>
