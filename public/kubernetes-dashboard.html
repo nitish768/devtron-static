@@ -234,12 +234,13 @@
         <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/pods.png" alt="kubernetes-pods">
 
         <p class="kubernetes__mb-20">Users will get drilled down information about a pod, such as:</p>
-
-        <li> Metadata about labels and annotations</li>
-        <li> Resource consumption - CPU and memory utilization</li>
-        <li> date of creation and number of restarts </li>
-        <li>Events logs and persistent volume claim</li>
-
+        <ul>
+          <li> Metadata about labels and annotations</li>
+          <li> Resource consumption - CPU and memory utilization</li>
+          <li> date of creation and number of restarts </li>
+          <li>Events logs and persistent volume claim</li>
+        </ul>
+        <br />
         <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/pods-details.png"
           alt="kubernetes-pods-deatails">
 
@@ -317,10 +318,11 @@
         </pre>
 
         <p class="kubernetes__mb-20">You can access your Dashboard using the following URL:</p>
-        <code>
+        <div class="kubernetes__mb-20 kubernetes__code-blocks">
+          <code>
             http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
           </code>
-
+        </div>
         <h4 class="kubernetes__h4">
           Step-2: Create a service account
         </h4>
@@ -503,7 +505,8 @@
         <div class="kubernetes__grid-wrap">
           <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Dimensions</div>
           <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Capabilities</div>
-          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Devtron Kubernetes Dashboard</div>
+          <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Devtron Kubernetes Dashboard
+          </div>
           <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Kubernetes Dashboard</div>
           <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell"> OpenLens</div>
           <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Komodor</div>
@@ -545,7 +548,8 @@
 
 
           <div class="kubernetes_tabular-cell"></div>
-          <div class="kubernetes_tabular-cell">Support for the custom image to use tools like k9s, netshoot, busybox, kubectl, for debugging</div>
+          <div class="kubernetes_tabular-cell">Support for the custom image to use tools like k9s, netshoot, busybox,
+            kubectl, for debugging</div>
           <div class="kubernetes_tabular-cell flex-center">✔</div>
           <div class="kubernetes_tabular-cell flex-center">❌</div>
           <div class="kubernetes_tabular-cell flex-center">❌</div>
@@ -652,7 +656,7 @@
             - CD
             - Monitoring
             - Logging
-            </div>
+          </div>
           <div class="kubernetes_tabular-cell flex-center">✔</div>
           <div class="kubernetes_tabular-cell flex-center">❌</div>
           <div class="kubernetes_tabular-cell flex-center">❌</div>
@@ -688,6 +692,13 @@
 
         </div>
       </section>
+
+      <h2 class="kubernetes__h2">Getting started with Devtron Kubernetes Dashboard</h2>
+      <p>
+        To deploy and manage Kubernetes at scale in medium and large enterprises, DevOps, Ops, and SREs teams would
+        require a one-stop solution for observability and control of Kubernetes resources. Devtron Kubernetes Dashboard
+        provides free functionality, and it is open source. Get started with Devtron Kubernetes Dashboard today.
+      </p>
 
     </div>
 
