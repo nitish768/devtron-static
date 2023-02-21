@@ -24,26 +24,26 @@
       'page_path': location.href
     });
   </script>
-  <title>Contact Us Here | Devtron</title>
+  <title>What is Kubernetes Dashboard? | Devtron</title>
   <meta charset="utf-8">
-  <meta property="og:image" content="https://devtron.ai/images/twitter_image.png">
+  <meta property="og:image" content="https://devtron.ai/images/kubernetes-dasboard/kubernetes_dashboard.png">
   <meta property="og:url" content="https://devtron.ai">
   <meta property="og:type" content="website" />
   <meta name="description"
-    content="Contact us here. Share your preferred email id for us to reach you. Devtron is an open-source CI/CD platform for applications teams to deploy into Kubernetes.">
+    content="Open source Kubernetes Dashboard is helpful for UI-based deployment and management of Kubernetes resources. You will also learn the features, architecture, and open source alternatives.">
   <meta property="og:site_name" content="Devtron Labs" />
-  <meta property="og:title" content="Contact Us Here | Devtron" />
+  <meta property="og:title" content="What is Kubernetes Dashboard? | Devtron" />
   <meta property="og:description"
-    content="Contact us here. Share your preferred email id for us to reach you. Devtron is an open-source CI/CD platform for applications teams to deploy into Kubernetes." />
-  <meta itemprop="name" content="Contact Us Here | Devtron">
+    content="Open source Kubernetes Dashboard is helpful for UI-based deployment and management of Kubernetes resources. You will also learn the features, architecture, and open source alternatives." />
+  <meta itemprop="name" content="What is Kubernetes Dashboard? | Devtron">
   <meta itemprop="description"
-    content="Contact us here. Share your preferred email id for us to reach you. Devtron is an open-source CI/CD platform for applications teams to deploy into Kubernetes.">
-  <meta itemprop="image" content="https://devtron.ai/images/twitter_image.png">
+    content="Open source Kubernetes Dashboard is helpful for UI-based deployment and management of Kubernetes resources. You will also learn the features, architecture, and open source alternatives.">
+  <meta itemprop="image" content="https://devtron.ai/images/kubernetes-dasboard/kubernetes_dashboard.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact Us Here | Devtron">
+  <meta name="twitter:title" content="What is Kubernetes Dashboard? | Devtron">
   <meta name="twitter:description"
-    content="Contact us here. Share your preferred email id for us to reach you. Devtron is an open-source CI/CD platform for applications teams to deploy into Kubernetes.">
-  <meta name="twitter:image" content="https://devtron.ai/images/twitter_image.png">
+    content="Open source Kubernetes Dashboard is helpful for UI-based deployment and management of Kubernetes resources. You will also learn the features, architecture, and open source alternatives.">
+  <meta name="twitter:image" content="https://devtron.ai/images/kubernetes-dasboard/kubernetes_dashboard.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,7 +122,7 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <header class="">
+  <header>
     <div>
       <a onclick="viewOnDevopsInABoxBannerGAEvent('Banner')" href="./devops-in-a-box.html"
         class="support-program__k8s devops-banner">
@@ -182,7 +182,6 @@
           <h1 class="kubernetes__h1 kubernetes__h1-pt-100">What is Kubernetes Dashboard </h1>
           <p class="kubernetes__mb-20">Kubernetes provides a command line (CLI) component called “kubectl” for
             carrying core operations. But there are two significant hurdles to using CLI enterprise-wide
-
           </p>
           <ul>
             <li>The high learning curve for developers to adopt Kubernetes for deployment.</li>
@@ -198,7 +197,6 @@
           </p>
 
           <img class="kubernetes__mb-20" src="images/kubernetes-dashboard/dashboard.png" alt="kubernetes-dashboard">
-        </div>
       </section>
 
       <section class="kubernetes-features">
@@ -300,10 +298,11 @@
         <h4 class="kubernetes__h4">Step-1: Deploy Kubernetes Dashboard</h4>
         <p class="kubernetes__mb-20">Run the below command to deploy the Kubernetes Dashboard app. </p>
 
-        <pre>
+        <pre id="kubernetesDashboard">
           <code>
-            kubectl apply <span class="code-red">-f</span>
-            <span class="code-key">https:</span>//raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
+            <img src="./images/ic-copy.svg" class="get-started__copy" alt="copy"  onclick='copy(`kubectl apply -f \nhttps://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml`)' />
+           <div> kubectl apply <span class="code-red">-f</span></div>
+            <div><span class="code-key">https:</span>//raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml</div>
           </code>
         </pre>
 
@@ -314,11 +313,14 @@
         </p>
 
         <pre>
+          <img src="./images/ic-copy.svg" class="get-started__copy" alt="copy" onclick="copy(`kubectl proxy`)"/>
           <code>kubectl proxy</code>
         </pre>
 
         <p class="kubernetes__mb-20">You can access your Dashboard using the following URL:</p>
         <div class="kubernetes__mb-20 kubernetes__code-blocks">
+          <img src="./images/ic-copy.svg" class="get-started__copy" alt="copy"
+            onclick='copy(`http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/`)' />
           <code>
             http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
           </code>
@@ -333,16 +335,21 @@
         </p>
         <pre>
           <code >
-            <span class="code-key">apiVersion: </span>v1
-            <span class="code-key">kind:</span> ServiceAccount
-            <span class="code-key">metadata:</span>
-            <span class="code-key">   name:</span> admin-user
-            <span class="code-key">   namespace:</span> kubernetes-dashboard
+            <img src="./images/ic-copy.svg" class="get-started__copy" alt="copy"
+            onclick='copy(`apiVersion: v1 \nkind: ServiceAccount \nmetadata: \n   name: admin-user \nnamespace: kubernetes-dashboard`)' />
+
+            <div><span class="code-key">apiVersion: </span>v1</div>
+            <div><span class="code-key">kind:</span> ServiceAccount</div>
+            <div><span class="code-key">metadata:</span></div>
+            <div><span class="code-key">&nbsp;&nbsp;name:</span> admin-user</div>
+            <div><span class="code-key">&nbsp;&nbsp;namespace:</span> kubernetes-dashboard</div>
           </code>
         </pre>
 
         <p class="kubernetes__mb-20">Make service resources by using the command:</p>
         <pre>
+          <img src="./images/ic-copy.svg" class="get-started__copy" alt="copy"  onclick='copy(`kubectl - apply -f <<serviceaccount.yaml>>`)' />
+
           <code>kubectl - apply <span class="code-red">-f</span>  &#60;&#60;serviceaccount.yaml&#62;&#62; </code>
         </pre>
 
@@ -352,18 +359,20 @@
 
         <pre>
         <code>
-         <span class="code-key">apiVersion:</span>  v1
-         <span class="code-key">kind:</span> ClusterRoleBinding
-          <span class="code-key">metadata:</span>
-          <span class="code-key">  name:</span> admin-user
-          <span class="code-key">roleRef:</span>
-          <span class="code-key">  apiGroup: </span>rbac.authorization.k8s.io
-          <span class="code-key">  Kind:</span> ClusterRole
-          <span class="code-key">  name:</span> cluster-admin
-          <span class="code-key"> subjects:</span>
-          <span class="code-key">  kind:</span> ServiceAccount
-          <span class="code-key"> name:</span> admin-user
-          <span class="code-key"> namespace:</span> kubernetes-dashboard
+          <img src="./images/ic-copy.svg" class="get-started__copy" alt="copy"
+          onclick='copy(`apiVersion: v1 \nkind: ClusterRoleBinding \nmetadata: \n   name: admin-user \nroleRef: \n   apiGroup: rbac.authorization.k8s.io \n   kind: ClusterRole \n    name: cluster-admin \nsubjects: \n    kind: ServiceAccount\n    name: admin-user\n  namespace: kubernetes-dashboard`)' />
+            <div><span class="code-key">apiVersion:</span>  v1</div>
+            <div><span class="code-key">kind:</span> ClusterRoleBinding</div>
+            <div><span class="code-key">metadata:</span></div>
+            <div><span class="code-key">&nbsp;&nbsp;name:</span> admin-user</div>
+            <div><span class="code-key">roleRef:</span></div>
+            <div><span class="code-key">  &nbsp;&nbsp;apiGroup: </span>rbac.authorization.k8s.io</div>
+            <div><span class="code-key">  &nbsp;&nbsp;kind:</span> ClusterRole</div>
+            <div><span class="code-key">  &nbsp;&nbsp;name:</span> cluster-admin</div>
+            <div><span class="code-key">subjects:</span></div>
+            <div><span class="code-key">  &nbsp;&nbsp;kind:</span> ServiceAccount</div>
+            <div><span class="code-key">  &nbsp;&nbsp;name:</span> admin-user
+            <div><span class="code-key">  &nbsp;&nbsp;namespace:</span> kubernetes-dashboard</div>
         </code>
       </pre>
 
@@ -454,23 +463,23 @@
           Dashboard project, to increase the capability of deployments, monitoring, and troubleshooting from UI.
         </p>
 
-        <h3 class="kubernetes__h3">1. OpenLens:</h3>
+        <h3 class="kubernetes__h3"> <a href="https://github.com/lensapp/lens/" class="link" target="_blank">1. OpenLens:</a></h3>
         <p class="kubernetes__mb-20">An open-source software with an MIT license used for multicluster management and
           monitoring workloads. It
           also
           provides basic HELM resource management and resource grouping, but it may require a learning curve. Secondly,
           it
           has a few blind spots as it does not provide HELM chart groups for multicluster deployments, Chart config
-          differences, etc. Read more about Devtron vs OpenLens.</p>
+          differences, etc. Read more about <a href="https://devtron.ai/blog/devtron-vs-openlens-a-comparative-analysis/"  class="link" target="_blank"> Devtron vs OpenLens</a>.</p>
 
-        <h3 class="kubernetes__h3">2. Octant: </h3>
+        <h3 class="kubernetes__h3"><a href="https://github.com/vmware-archive/octant" class="link" target="_blank">2. Octant: </a></h3>
         <p class="kubernetes__mb-20">
           Open source dashboard started by VMware but is archived now- no community support, and you are on your own.
           Initially, the project was targeted for developers to use the UI to ship code faster into clusters. Octane has
-          limited functionalities wrt cluster visualization and management. Read more about Devtron vs Octant.
+          limited functionalities wrt cluster visualization and management. Read more about <a href="https://devtron.ai/blog/the-kubernetes-dashboard-you-need/"  class="link" target="_blank">Devtron vs Octant</a>.
         </p>
 
-        <h3 class="kubernetes__h3">3. Komodor:</h3>
+        <h3 class="kubernetes__h3"><a href="https://komodor.com/" class="link" target="_blank">3. Komodor:</a></h3>
         <p class="kubernetes__mb-20"> Komodor is another open-source platform for Kubernetes applications management and
           troubleshooting. You can
           do
@@ -479,18 +488,18 @@
           troubleshoot your cluster with granular views into logs and events. But it may not be flexible for advance
           deployments into multiple clouds and rollbacks. </p>
 
-        <h3 class="kubernetes__h3">4. Devtron Kubernetes Dashboard: </h3>
+        <h3 class="kubernetes__h3"><a href="https://devtron.ai/" class="link" target="_blank">4. Devtron Kubernetes Dashboard: </a></h3>
         <p class="kubernetes__mb-20">
           Devtron provides an open-source Kubernetes-native DevOps platform that automates the entire software delivery
           process from CI, CD, GitOps, security and governance, progressive deployment, observability, monitoring, and
-          troubleshooting. Devtron Kubernetes dashboard provides powerful features in a single pane to make DevOps,
+          troubleshooting. <a href="https://devtron.ai/blog/manage-kubernetes-like-a-pro-with-kubernetes-dashboard-by-devtron/" class="link" target="_blank">Devtron Kubernetes dashboard </a> provides powerful features in a single pane to make DevOps,
           SREs,
           and developers life simpler:
         </p>
 
         <ul>
-          <li>Multicluster resource monitoring and node management</li>
-          <li> HELM chart dashboard and management from a single pane of dashboard</li>
+          <li><a href="https://devtron.ai/blog/what-is-the-kubernetes-resource-browser-in-devtron/" class="link" target="_blank"> Multicluster resource monitoring and node management</a></li>
+          <li><a href="https://devtron.ai/blog/manage-kubernetes-like-a-pro-with-kubernetes-dashboard-by-devtron/" class="link" target="_blank"> HELM chart dashboard and management from a single pane of dashboard</a></li>
           <li> Events and real-time logs, and pod execution for debugging</li>
           <li> UI-based deployments (or modifications to existing manifest files)</li>
           <li>Instant rollback of new deployments to production</li>
@@ -499,7 +508,7 @@
         </ul>
       </section>
 
-      <section class="kubernetes-comparison">
+      <section class="kubernetes-comparison kubernetes__mb-20">
         <h2 class="kubernetes__h2">Tabular comparison: Vanilla Kubernetes Dashboard vs Devtron Kubernetes dashboard vs
           OpenLens vs Komodor</h2>
         <div class="kubernetes__grid-wrap">
