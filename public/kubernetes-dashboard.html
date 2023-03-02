@@ -482,20 +482,59 @@
             Dashboard project, to increase the capability of deployments, monitoring, and troubleshooting from UI.
           </p>
 
-          <h3 class="kubernetes__h3"> <a href="https://github.com/lensapp/lens/" class="link" target="_blank">1.
-              OpenLens:</a></h3>
-          <p class="kubernetes__mb-20">An open-source software with an MIT license used for multicluster management and
-            monitoring workloads. It
-            also
-            provides basic HELM resource management and resource grouping, but it may require a learning curve.
-            Secondly,
-            it
-            has a few blind spots as it does not provide HELM chart groups for multicluster deployments, Chart config
-            differences, etc. Read more about <a
-              href="https://devtron.ai/blog/devtron-vs-openlens-a-comparative-analysis/" class="link" target="_blank">
-              Devtron vs OpenLens</a>.</p>
+          <h3 class="kubernetes__h3"><a href="https://devtron.ai/" class="link" target="_blank">1. Devtron Kubernetes
+            Dashboard: </a></h3>
+        <p class="kubernetes__mb-20">
+          Devtron provides an open-source Kubernetes-native DevOps platform that automates the entire software
+          delivery
+          process from CI, CD, GitOps, security and governance, progressive deployment, observability, monitoring, and
+          troubleshooting. <a
+            href="https://devtron.ai/blog/manage-kubernetes-like-a-pro-with-kubernetes-dashboard-by-devtron/"
+            class="link" target="_blank">Devtron Kubernetes dashboard </a> provides powerful features in a single pane
+          to make DevOps,
+          SREs,
+          and developers life simpler:
+        </p> 
+        
+        <ul>
+          <li><a href="https://devtron.ai/blog/what-is-the-kubernetes-resource-browser-in-devtron/" class="link"
+              target="_blank"> Multicluster resource monitoring and node management</a></li>
+          <li><a href="https://devtron.ai/blog/manage-kubernetes-like-a-pro-with-kubernetes-dashboard-by-devtron/"
+              class="link" target="_blank"> HELM chart dashboard and management from a single pane of dashboard</a>
+          </li>
+          <li> Events and real-time logs, and pod execution for debugging</li>
+          <li> UI-based deployments (or modifications to existing manifest files)</li>
+          <li>Instant rollback of new deployments to production</li>
+          <li> DORA metrics</li>
+          <li>Granular RBAC for users, action and resources. </li>
+        </ul>
 
-          <h3 class="kubernetes__h3"><a href="https://github.com/vmware-archive/octant" class="link" target="_blank">2.
+        <h3 class="kubernetes__h3"> <a href="https://github.com/lensapp/lens/" class="link" target="_blank">2.
+          OpenLens:</a></h3>
+      <p class="kubernetes__mb-20">An open-source software with an MIT license used for multicluster management and
+        monitoring workloads. It
+        also
+        provides basic HELM resource management and resource grouping, but it may require a learning curve.
+        Secondly,
+        it
+        has a few blind spots as it does not provide HELM chart groups for multicluster deployments, Chart config
+        differences, etc. Read more about <a
+          href="https://devtron.ai/blog/devtron-vs-openlens-a-comparative-analysis/" class="link" target="_blank">
+          Devtron vs OpenLens</a>.
+        </p>
+
+        <h3 class="kubernetes__h3"><a href="https://komodor.com/" class="link" target="_blank">3. Komodor:</a></h3>
+        <p class="kubernetes__mb-20"> Komodor is another open-source platform for Kubernetes applications management
+          and
+          troubleshooting. You can
+          do
+          what Kubernetes Dashboard does and more- visibility into multiple clusters and HELM charts deployments and
+          configuration differentiation. Komodor proactively monitors the health of your clusters and helps you
+          troubleshoot your cluster with granular views into logs and events. But it may not be flexible for advance
+          deployments into multiple clouds and rollbacks. </p>
+
+
+          <h3 class="kubernetes__h3"><a href="https://github.com/vmware-archive/octant" class="link" target="_blank">4.
               Octant: </a></h3>
           <p class="kubernetes__mb-20">
             Open source dashboard started by VMware but is archived now- no community support, and you are on your own.
@@ -505,48 +544,12 @@
               href="https://devtron.ai/blog/the-kubernetes-dashboard-you-need/" class="link" target="_blank">Devtron vs
               Octant</a>.
           </p>
-
-          <h3 class="kubernetes__h3"><a href="https://komodor.com/" class="link" target="_blank">3. Komodor:</a></h3>
-          <p class="kubernetes__mb-20"> Komodor is another open-source platform for Kubernetes applications management
-            and
-            troubleshooting. You can
-            do
-            what Kubernetes Dashboard does and more- visibility into multiple clusters and HELM charts deployments and
-            configuration differentiation. Komodor proactively monitors the health of your clusters and helps you
-            troubleshoot your cluster with granular views into logs and events. But it may not be flexible for advance
-            deployments into multiple clouds and rollbacks. </p>
-
-          <h3 class="kubernetes__h3"><a href="https://devtron.ai/" class="link" target="_blank">4. Devtron Kubernetes
-              Dashboard: </a></h3>
-          <p class="kubernetes__mb-20">
-            Devtron provides an open-source Kubernetes-native DevOps platform that automates the entire software
-            delivery
-            process from CI, CD, GitOps, security and governance, progressive deployment, observability, monitoring, and
-            troubleshooting. <a
-              href="https://devtron.ai/blog/manage-kubernetes-like-a-pro-with-kubernetes-dashboard-by-devtron/"
-              class="link" target="_blank">Devtron Kubernetes dashboard </a> provides powerful features in a single pane
-            to make DevOps,
-            SREs,
-            and developers life simpler:
-          </p>
-
-          <ul>
-            <li><a href="https://devtron.ai/blog/what-is-the-kubernetes-resource-browser-in-devtron/" class="link"
-                target="_blank"> Multicluster resource monitoring and node management</a></li>
-            <li><a href="https://devtron.ai/blog/manage-kubernetes-like-a-pro-with-kubernetes-dashboard-by-devtron/"
-                class="link" target="_blank"> HELM chart dashboard and management from a single pane of dashboard</a>
-            </li>
-            <li> Events and real-time logs, and pod execution for debugging</li>
-            <li> UI-based deployments (or modifications to existing manifest files)</li>
-            <li>Instant rollback of new deployments to production</li>
-            <li> DORA metrics</li>
-            <li>Granular RBAC for users, action and resources. </li>
-          </ul>
         </section>
+
 
         <section class="kubernetes-comparison kubernetes__mb-20">
           <h2 class="kubernetes__h2">Tabular comparison: <br/> Vanilla Kubernetes Dashboard vs Devtron Kubernetes dashboard vs
-            OpenLens vs Komodor</h2>
+            OpenLens</h2>
           <div class="kubernetes__grid-wrap">
             <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Dimensions</div>
             <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Capabilities</div>
@@ -555,42 +558,42 @@
             </div>
             <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Kubernetes Dashboard</div>
             <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell"> OpenLens</div>
-            <div class="kubernetes__tabular-headers kubernetes__cell kubernetes_tabular-cell">Komodor</div>
+
 
             <div class="kubernetes_tabular-cell">Cluster and resource management</div>
             <div class="kubernetes_tabular-cell">Multucluster and multicloud view</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Event and real-time log monitoring</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Live metrics update</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Resource grouping and monitoring</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Node management</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+ 
 
 
             <div class="kubernetes_tabular-cell"></div>
@@ -599,7 +602,7 @@
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+   
 
 
             <div class="kubernetes_tabular-cell">HELM Dashboard and management</div>
@@ -607,35 +610,35 @@
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Chart market place</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center"></div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+       
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Chart Groups for Multi-charts deployment</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Charts configuration and manifest Diff</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Deployment history of chartst</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
 
             <div class="kubernetes_tabular-cell"></div>
@@ -643,7 +646,7 @@
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
 
             <div class="kubernetes_tabular-cell">Deployment</div>
@@ -651,35 +654,35 @@
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">❌</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Rollback</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">❌</div>
+ 
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Canary</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">❌</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">DevOps KPIs (DORA metrics)</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">❌</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Audit</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">❌</div>
+
 
 
             <div class="kubernetes_tabular-cell">Security</div>
@@ -687,14 +690,14 @@
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">❌</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">RBAC (LDAP, SAML, etc )</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">◐</div>
+
 
             <div class="kubernetes_tabular-cell">Integrations with DevOps tools</div>
             <div class="kubernetes_tabular-cell">
@@ -706,35 +709,35 @@
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell">Deployment models</div>
             <div class="kubernetes_tabular-cell">On-prem</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Managed (web-based)</div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell">Saas</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
             <div class="kubernetes_tabular-cell">Enterprise support</div>
             <div class="kubernetes_tabular-cell"></div>
             <div class="kubernetes_tabular-cell flex-center">✔</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
             <div class="kubernetes_tabular-cell flex-center">❌</div>
-            <div class="kubernetes_tabular-cell flex-center">✔</div>
+
 
           </div>
         </section>
