@@ -1,1 +1,1 @@
-Repository for static pages of devtron.ai
+Repository for static pages of devtron.aii
